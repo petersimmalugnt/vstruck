@@ -2,6 +2,10 @@ div {
   color: blue;
 }
 
+.testing {
+  font-size: 12px;
+}
+
 * {
-  color: red;
+  color: pink;
 }/*# sourceMappingURL=main.css.map */
