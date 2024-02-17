@@ -782,6 +782,10 @@ html {
     translate: -100% 0%;
   }
 }
+.piss {
+  color: green;
+}
+
 /* Search input */
 [class*=search-input-slot] input::-moz-placeholder {
   color: #171717;
