@@ -1,1 +1,1 @@
-const piss="piss";
+const piss="jävla rövhål";
