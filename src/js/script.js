@@ -1,4 +1,4 @@
-(function() {
+
 
   document.addEventListener("DOMContentLoaded", () => {
     const elements = [...document.querySelectorAll('[data-scroll-inview="true"], [data-inview-target]:not([data-inview-target=""])')];
@@ -23,14 +23,7 @@
 
       els.forEach(e => observer.observe(e));
     });
-  });
 
-})();
-
-
-
-  (function() {
-    document.addEventListener("DOMContentLoaded", () => {
 
       const dualRangeSlider = (minVal, maxVal, initFrom, initTo, callback) => {
   
@@ -100,4 +93,3 @@
 dualRangeSlider(0, 400, 100, 300);
 
     });
-  })();
