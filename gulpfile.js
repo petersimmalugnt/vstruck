@@ -8,7 +8,6 @@ const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 const del = require('del');
 const git = require('gulp-git');
-const { debounce } = require('lodash');
 
 function clean() {
   return del(['dist/*']);
@@ -22,20 +21,23 @@ function styles() {
     .pipe(postcss([cssnano()]))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dist/css'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    .pipe(autoGitCommit());
 }
 
 function scripts() {
   return gulp.src('src/js/**/*.js')
     .pipe(terser())
     .pipe(gulp.dest('dist/js'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    .pipe(autoGitCommit());
 }
 
 function copyHtml() {
   return gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
+    .pipe(autoGitCommit());
 }
 
 function autoGitCommit() {
@@ -54,22 +56,15 @@ function autoGitCommit() {
     });
 }
 
-const debouncedAutoGitCommit = debounce(() => {
-  autoGitCommit();
-}, 1000, {
-  'leading': false,
-  'trailing': true
-});
-
 function watch() {
   browserSync.init({
     server: {
       baseDir: './dist'
     }
   });
-  gulp.watch('src/sass/**/*.scss', gulp.series(styles, debouncedAutoGitCommit));
-  gulp.watch('src/js/**/*.js', gulp.series(scripts, debouncedAutoGitCommit));
-  gulp.watch('src/*.html', gulp.series(copyHtml, debouncedAutoGitCommit));
+  gulp.watch('src/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('src/js/**/*.js', gulp.series(scripts));
+  gulp.watch('src/*.html', gulp.series(copyHtml));
 }
 
 const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts, copyHtml), watch);
