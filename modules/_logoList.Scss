@@ -1,0 +1,10 @@
+[class*='logolist--link-marquee-container'] {
+	animation: logolist--link-marquee-container 25s linear infinite both;
+}
+[class*='logolist--link-marquee-wrapper']:hover [class*='logolist--link-marquee-container'] {
+	animation-play-state: paused;
+}
+@keyframes logolist--link-marquee-container {
+	0% { translate: 0% 0%; }
+  100% { translate: -100% 0%; }
+}
