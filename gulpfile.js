@@ -57,7 +57,7 @@ const { promisify } = require('util');
 const setTimeoutPromise = promisify(setTimeout);
 
 function delayedGitCommit() {
-  return setTimeoutPromise(2000).then(() => autoGitCommit());
+  return setTimeoutPromise(500).then(() => autoGitCommit());
 }
 
 function watch() {
