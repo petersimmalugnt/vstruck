@@ -13,22 +13,6 @@ function clean() {
   return del(['dist/*']);
 }
 
-function autoGitCommit() {
-  return gulp.src('./')
-    .pipe(git.add({ args: '-A' }))
-    .pipe(git.commit('Automatisk commit: sparade ändringar'))
-    .on('end', function() {
-      git.push('origin', 'main', function(err) {
-        if (err) {
-          console.error("Error pushing to Git:", err);
-          throw err;
-        } else {
-          console.log("Successfully pushed to Git.");
-        }
-      });
-    });
-}
-
 function styles() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -53,15 +37,38 @@ function copyHtml() {
     .pipe(browserSync.stream());
 }
 
+function autoGitCommit() {
+  return gulp.src('./')
+    .pipe(git.add({ args: '-A' }))
+    .pipe(git.commit('Automatisk commit: sparade ändringar'))
+    .on('end', function() {
+      git.push('origin', 'main', function(err) {
+        if (err) {
+          console.error("Error pushing to Git:", err);
+          throw err;
+        } else {
+          console.log("Successfully pushed to Git.");
+        }
+      });
+    });
+}
+
+const { promisify } = require('util');
+const setTimeoutPromise = promisify(setTimeout);
+
+function delayedGitCommit() {
+  return setTimeoutPromise(2000).then(() => autoGitCommit());
+}
+
 function watch() {
   browserSync.init({
     server: {
       baseDir: './dist'
     }
   });
-  gulp.watch('src/sass/**/*.scss', gulp.series(styles, autoGitCommit));
-  gulp.watch('src/js/**/*.js', gulp.series(scripts, autoGitCommit));
-  gulp.watch('src/*.html', gulp.series(copyHtml, autoGitCommit));
+  gulp.watch('src/sass/**/*.scss', gulp.series(styles, delayedGitCommit));
+  gulp.watch('src/js/**/*.js', gulp.series(scripts, delayedGitCommit));
+  gulp.watch('src/*.html', gulp.series(copyHtml, delayedGitCommit));
 }
 
 const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts, copyHtml), watch);
