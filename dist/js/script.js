@@ -1,1 +1,1 @@
-const piss="nisse";
+const piss="nisse",nisse="pisse";
