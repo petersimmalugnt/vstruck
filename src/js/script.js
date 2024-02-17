@@ -1,2 +1,2 @@
 const piss = "nisse";
-const russi = 'tussi';
+const russi = "tussi";
