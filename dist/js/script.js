@@ -1,1 +1,0 @@
-const piss="jävla rövhål";
