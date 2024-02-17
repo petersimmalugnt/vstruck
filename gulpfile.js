@@ -58,6 +58,13 @@ function autoGitCommit() {
     });
 }
 
+const { promisify } = require('util');
+const setTimeoutPromise = promisify(setTimeout);
+
+function delayedGitCommit() {
+  return setTimeoutPromise(1000).then(() => autoGitCommit());
+}
+
 // Bevaka förändringar och uppdatera i realtid
 function watch() {
   browserSync.init({
@@ -65,9 +72,9 @@ function watch() {
       baseDir: './dist'
     }
   });
-  gulp.watch('src/sass/**/*.scss', gulp.series(styles, autoGitCommit));
-  gulp.watch('src/js/**/*.js', gulp.series(scripts, autoGitCommit));
-  gulp.watch('src/*.html', gulp.series(copyHtml, autoGitCommit));
+  gulp.watch('src/sass/**/*.scss', gulp.series(styles, delayedGitCommit));
+  gulp.watch('src/js/**/*.js', gulp.series(scripts, delayedGitCommit));
+  gulp.watch('src/*.html', gulp.series(copyHtml, delayedGitCommit));
 }
 
 // Bygg och tjäna-uppgiften
