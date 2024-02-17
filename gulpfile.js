@@ -44,7 +44,12 @@ function autoGitCommit() {
     .pipe(git.commit('Automatisk commit: sparade ändringar'))
     .on('end', function() {
       git.push('origin', 'main', function(err) {
-        if (err) throw err;
+        if (err) {
+          console.error("Error pushing to Git:", err);
+          throw err;
+        } else {
+          console.log("Successfully pushed to Git.");
+        }
       });
     });
 }
