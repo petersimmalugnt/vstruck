@@ -1,5 +1,2 @@
-const piss = "nisse"
-const russi = 'tussi'
-
-
-
+const piss = "nisse";
+const russi = 'tussi';
