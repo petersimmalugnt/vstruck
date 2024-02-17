@@ -9,12 +9,10 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const git = require('gulp-git');
 
-// Rensa dist-mappen
 function clean() {
   return del(['dist/*']);
 }
 
-// Kompilera SASS till CSS, lägg till prefix
 function styles() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -26,7 +24,6 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
-// Minifiera och kopiera JavaScript
 function scripts() {
   return gulp.src('src/js/**/*.js')
     .pipe(terser())
@@ -34,14 +31,12 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
-// Kopiera HTML-filer till dist-mappen
 function copyHtml() {
   return gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 }
 
-// Automatisk Git-commit och push
 function autoGitCommit() {
   return gulp.src('./')
     .pipe(git.add({ args: '-A' }))
@@ -65,7 +60,6 @@ function delayedGitCommit() {
   return setTimeoutPromise(1000).then(() => autoGitCommit());
 }
 
-// Bevaka förändringar och uppdatera i realtid
 function watch() {
   browserSync.init({
     server: {
@@ -77,8 +71,6 @@ function watch() {
   gulp.watch('src/*.html', gulp.series(copyHtml, delayedGitCommit));
 }
 
-// Bygg och tjäna-uppgiften
 const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts, copyHtml), watch);
 
-// Definiera standarduppgiften
 gulp.task('default', buildAndServe);
