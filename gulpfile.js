@@ -27,26 +27,28 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
+function autoGitCommit() {
+  return gulp.src('./')
+    .pipe(git.add({ args: '-A' }))
+    .pipe(git.commit('Automatisk commit: sparade ändringar'))
+    .on('end', function() {
+      git.push('origin', 'main', function(err) {
+        if (err) throw err;
+      });
+    });
+}
+
 function watch() {
   browserSync.init({
     server: {
       baseDir: './dist'
     }
   });
-  gulp.watch('src/sass/**/*.scss', styles);
-  gulp.watch('src/js/**/*.js', scripts);
+  gulp.watch('src/sass/**/*.scss', gulp.series(styles, autoGitCommit));
+  gulp.watch('src/js/**/*.js', gulp.series(scripts, autoGitCommit));
   gulp.watch('dist/**/*').on('change', browserSync.reload);
 }
 
-// Task for committing changes automatically
-function autoGitCommit() {
-  return gulp.src('./')
-    .pipe(git.add({args: '-A'}))
-    .pipe(git.commit('Automatisk commit: sparade ändringar'));
-}
-
-// Combine styles and scripts tasks and then auto commit
 const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts), watch);
-const dev = gulp.series(buildAndServe, autoGitCommit);
 
-gulp.task('default', dev);
+gulp.task('default', buildAndServe);
