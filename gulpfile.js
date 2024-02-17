@@ -37,23 +37,20 @@ function styles() {
     .pipe(postcss([cssnano()]))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('dist/css'))
-    .pipe(browserSync.stream())
-    .pipe(autoGitCommit());
+    .pipe(browserSync.stream());
 }
 
 function scripts() {
   return gulp.src('src/js/**/*.js')
     .pipe(terser())
     .pipe(gulp.dest('dist/js'))
-    .pipe(browserSync.stream())
-    .pipe(autoGitCommit());
+    .pipe(browserSync.stream());
 }
 
 function copyHtml() {
   return gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))
-    .pipe(browserSync.stream())
-    .pipe(autoGitCommit());
+    .pipe(browserSync.stream());
 }
 
 function watch() {
