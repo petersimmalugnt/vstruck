@@ -59,9 +59,9 @@ function watch() {
       baseDir: './dist'
     }
   });
-  gulp.watch('src/sass/**/*.scss', gulp.series(styles));
-  gulp.watch('src/js/**/*.js', gulp.series(scripts));
-  gulp.watch('src/*.html', gulp.series(copyHtml));
+  gulp.watch('src/sass/**/*.scss', gulp.series(styles, autoGitCommit));
+  gulp.watch('src/js/**/*.js', gulp.series(scripts, autoGitCommit));
+  gulp.watch('src/*.html', gulp.series(copyHtml, autoGitCommit));
 }
 
 const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts, copyHtml), watch);
