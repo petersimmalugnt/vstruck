@@ -13,6 +13,22 @@ function clean() {
   return del(['dist/*']);
 }
 
+function autoGitCommit() {
+  return gulp.src('./')
+    .pipe(git.add({ args: '-A' }))
+    .pipe(git.commit('Automatisk commit: sparade ändringar'))
+    .on('end', function() {
+      git.push('origin', 'main', function(err) {
+        if (err) {
+          console.error("Error pushing to Git:", err);
+          throw err;
+        } else {
+          console.log("Successfully pushed to Git.");
+        }
+      });
+    });
+}
+
 function styles() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -38,22 +54,6 @@ function copyHtml() {
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream())
     .pipe(autoGitCommit());
-}
-
-function autoGitCommit() {
-  return gulp.src('./')
-    .pipe(git.add({ args: '-A' }))
-    .pipe(git.commit('Automatisk commit: sparade ändringar'))
-    .on('end', function() {
-      git.push('origin', 'main', function(err) {
-        if (err) {
-          console.error("Error pushing to Git:", err);
-          throw err;
-        } else {
-          console.log("Successfully pushed to Git.");
-        }
-      });
-    });
 }
 
 function watch() {
