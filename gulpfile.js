@@ -8,10 +8,12 @@ const browserSync = require('browser-sync').create();
 const del = require('del');
 const git = require('gulp-git');
 
+// Rensa dist-mappen
 function clean() {
   return del(['dist/*']);
 }
 
+// Kompilera SASS till CSS, lägg till prefix och minifiera
 function styles() {
   return gulp.src('src/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
@@ -20,6 +22,7 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
+// Minifiera och kopiera JavaScript
 function scripts() {
   return gulp.src('src/js/**/*.js')
     .pipe(terser())
@@ -27,6 +30,14 @@ function scripts() {
     .pipe(browserSync.stream());
 }
 
+// Kopiera HTML-filer till dist-mappen
+function copyHtml() {
+  return gulp.src('src/*.html')
+    .pipe(gulp.dest('dist'))
+    .pipe(browserSync.stream());
+}
+
+// Automatisk Git-commit och push
 function autoGitCommit() {
   return gulp.src('./')
     .pipe(git.add({ args: '-A' }))
@@ -38,6 +49,7 @@ function autoGitCommit() {
     });
 }
 
+// Bevaka förändringar och uppdatera i realtid
 function watch() {
   browserSync.init({
     server: {
@@ -46,9 +58,11 @@ function watch() {
   });
   gulp.watch('src/sass/**/*.scss', gulp.series(styles, autoGitCommit));
   gulp.watch('src/js/**/*.js', gulp.series(scripts, autoGitCommit));
-  gulp.watch('dist/**/*').on('change', browserSync.reload);
+  gulp.watch('src/*.html', gulp.series(copyHtml, autoGitCommit));
 }
 
-const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts), watch);
+// Bygg och tjäna-uppgiften
+const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts, copyHtml), watch);
 
+// Definiera standarduppgiften
 gulp.task('default', buildAndServe);
