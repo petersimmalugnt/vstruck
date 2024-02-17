@@ -13,15 +13,6 @@ function clean() {
   return del(['dist/*']);
 }
 
-// Kompilera SASS till CSS, lägg till prefix och minifiera
-function styles() {
-  return gulp.src('src/sass/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss([autoprefixer(), cssnano()]))
-    .pipe(gulp.dest('dist/css'))
-    .pipe(browserSync.stream());
-}
-
 // Kompilera SASS till CSS, lägg till prefix
 function styles() {
   return gulp.src('src/sass/**/*.scss')
