@@ -8,6 +8,7 @@ const terser = require('gulp-terser');
 const browserSync = require('browser-sync').create();
 const del = require('del');
 const git = require('gulp-git');
+const { debounce } = require('lodash');
 
 function clean() {
   return del(['dist/*']);
@@ -53,12 +54,12 @@ function autoGitCommit() {
     });
 }
 
-const { promisify } = require('util');
-const setTimeoutPromise = promisify(setTimeout);
-
-function delayedGitCommit() {
-  return setTimeoutPromise(1000).then(() => autoGitCommit());
-}
+const debouncedAutoGitCommit = debounce(() => {
+  autoGitCommit();
+}, 2000, {
+  'leading': false,
+  'trailing': true
+});
 
 function watch() {
   browserSync.init({
@@ -66,9 +67,9 @@ function watch() {
       baseDir: './dist'
     }
   });
-  gulp.watch('src/sass/**/*.scss', gulp.series(styles, delayedGitCommit));
-  gulp.watch('src/js/**/*.js', gulp.series(scripts, delayedGitCommit));
-  gulp.watch('src/*.html', gulp.series(copyHtml, delayedGitCommit));
+  gulp.watch('src/sass/**/*.scss', gulp.series(styles, debouncedAutoGitCommit));
+  gulp.watch('src/js/**/*.js', gulp.series(scripts, debouncedAutoGitCommit));
+  gulp.watch('src/*.html', gulp.series(copyHtml, debouncedAutoGitCommit));
 }
 
 const buildAndServe = gulp.series(clean, gulp.parallel(styles, scripts, copyHtml), watch);
