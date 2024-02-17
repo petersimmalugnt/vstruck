@@ -1,1 +1,1 @@
-const piss="nisse",nisse="pisse";
+const piss="nisse",nisse="pisse",kikki="lilli";
