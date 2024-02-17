@@ -22,6 +22,17 @@ function styles() {
     .pipe(browserSync.stream());
 }
 
+// Kompilera SASS till CSS, lägg till prefix
+function styles() {
+  return gulp.src('src/sass/**/*.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer()]))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(postcss([cssnano()]))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('dist/css'));
+}
+
 // Minifiera och kopiera JavaScript
 function scripts() {
   return gulp.src('src/js/**/*.js')
