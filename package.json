@@ -1,0 +1,22 @@
+{
+  "name": "vstruck",
+  "version": "1.0.0",
+  "description": "Trucksida",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Ditt Namn",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.2",
+    "browser-sync": "^2.27.7",
+    "cssnano": "^5.0.17",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-git": "^2.10.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-terser": "^2.0.1",
+    "sass": "^1.49.8"
+  }
+}
