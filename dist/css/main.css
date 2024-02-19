@@ -1237,7 +1237,12 @@ html {
 [data-tooltip] {
   position: relative;
   overflow: visible;
-  padding-right: 0.75em;
+  padding-right: 0.875em;
+}
+
+[data-tooltip]:hover {
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
 }
 
 [data-tooltip]:hover::before {
@@ -1247,7 +1252,7 @@ html {
   left: 50%;
   width: -moz-max-content;
   width: max-content;
-  max-width: 25ch;
+  max-width: 35ch;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 500;

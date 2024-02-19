@@ -343,7 +343,11 @@
 [data-tooltip] {
   position: relative;
   overflow: visible;
-  padding-right: 0.75em;
+  padding-right: 0.875em;
+}
+
+[data-tooltip]:hover {
+  text-decoration: dotted;
 }
 
 [data-tooltip]:hover::before {
@@ -352,7 +356,7 @@
   top: 0%;
   left: 50%;
   width: max-content;
-  max-width: 25ch;
+  max-width: 35ch;
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 500;
