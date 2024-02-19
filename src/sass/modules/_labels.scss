@@ -1,5 +1,6 @@
 [data-label-shape],
 [data-label-shape="0"] {
+  min-width: 3em;
   clip-path: polygon(
     1.5em calc(100% - 0em),
     calc(100% - 1.5049em) calc(100% - 0em),
