@@ -1266,7 +1266,7 @@ html {
   color: var(--vs-black);
   z-index: 100;
   border: 1px solid var(--vs-black);
-  box-shadow: outset;
+  box-shadow: -1rem 1rem 0 0 var(--vs-black);
 }
 
 [data-tooltip]::after {
