@@ -137,13 +137,13 @@
 [data-bg="orange"],
 [data-bg="orange"] .dd-toggle::after,
 [data-bg="orange"] .dd-link::after {
-  background-color: #ff9b4d !important;
+  background-color: var(--vs-prime) !important;
 }
 
 [data-bg="red"],
 [data-bg="red"] .dd-toggle::after,
 [data-bg="red"] .dd-link::after {
-  background-color: #fa7171 !important;
+  background-color: var(--red) !important;
 }
 
 [data-bg="yellow"],
