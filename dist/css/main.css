@@ -1252,7 +1252,7 @@ html {
 [data-tooltip]:hover::before {
   content: attr(data-tooltip);
   position: absolute;
-  top: 0%;
+  top: -1rem;
   left: 50%;
   width: -moz-max-content;
   width: max-content;
@@ -1266,7 +1266,7 @@ html {
   color: var(--vs-black);
   z-index: 100;
   border: 1px solid var(--vs-black);
-  box-shadow: -1rem 1rem 0 0 var(--vs-black);
+  box-shadow: -0.5rem 0.5rem 0 0 var(--vs-black);
 }
 
 [data-tooltip]::after {
