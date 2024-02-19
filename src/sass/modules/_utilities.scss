@@ -342,6 +342,7 @@
 
 [data-tooltip] {
   position: relative;
+  overflow: visible;
 }
 [data-tooltip]::after {
   content: attr(data-tooltip);

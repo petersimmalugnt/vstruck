@@ -1236,6 +1236,7 @@ html {
 
 [data-tooltip] {
   position: relative;
+  overflow: visible;
 }
 
 [data-tooltip]::after {
