@@ -344,6 +344,7 @@
   position: relative;
   overflow: visible;
   padding-right: 0.875em;
+  cursor: help;
 }
 
 [data-tooltip]:hover {
@@ -369,7 +370,7 @@
 }
 
 [data-tooltip]::after {
-  content: "i";
+  content: "?";
   clip-path: polygon(
     50% 0%,
     75% 6.7%,
