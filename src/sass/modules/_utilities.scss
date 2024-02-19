@@ -345,10 +345,12 @@
   overflow: visible;
   padding-right: 0.875em;
   cursor: help;
+  opacity: 0.75;
 }
 
 [data-tooltip]:hover {
   text-decoration: underline;
+  opacity: 1;
 }
 
 [data-tooltip]:hover::before {
