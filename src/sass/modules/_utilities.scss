@@ -345,10 +345,16 @@
   overflow: visible;
   padding-right: 0.875em;
   cursor: help;
-  background-image: linear-gradient(0deg, var(--steel) 50%, transparent 0%);
-  background-position: bottom;
-  background-size: 1em 0.125rem;
   background-repeat: repeat-x;
+  background-image: repeating-linear-gradient(
+    0deg,
+    #000,
+    #000 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  background-position: 0 100%;
+  background-size: 4px 1px;
 }
 
 [data-tooltip]:hover {
