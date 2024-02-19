@@ -952,37 +952,37 @@ html {
 [data-bg=black],
 [data-bg=black] .dd-toggle::after,
 [data-bg=black] .dd-link::after {
-  background-color: #171717 !important;
+  background-color: var(--vs-black) !important;
 }
 
 [data-bg=white],
 [data-bg=white] .dd-toggle::after,
 [data-bg=white] .dd-link::after {
-  background-color: #ffffff !important;
+  background-color: var(--white) !important;
 }
 
 [data-bg=dark-steel],
 [data-bg=dark-steel] .dd-toggle::after,
 [data-bg=dark-steel] .dd-link::after {
-  background-color: #8e9997 !important;
+  background-color: var(--dark-grey) !important;
 }
 
 [data-bg=medium-steel],
 [data-bg=medium-steel] .dd-toggle::after,
 [data-bg=medium-steel] .dd-link::after {
-  background-color: #aeb7b6 !important;
+  background-color: var(--silver) !important;
 }
 
 [data-bg=steel],
 [data-bg=steel] .dd-toggle::after,
 [data-bg=steel] .dd-link::after {
-  background-color: #d2d9d7 !important;
+  background-color: var(--light-grey) !important;
 }
 
 [data-bg=wellpapp],
 [data-bg=wellpapp] .dd-toggle::after,
 [data-bg=wellpapp] .dd-link::after {
-  background-color: #f0ebe6 !important;
+  background-color: var(--linen) !important;
 }
 
 [data-bg=orange],
@@ -1000,13 +1000,13 @@ html {
 [data-bg=yellow],
 [data-bg=yellow] .dd-toggle::after,
 [data-bg=yellow] .dd-link::after {
-  background-color: #fae57d !important;
+  background-color: var(--khaki) !important;
 }
 
 [data-bg=blue],
 [data-bg=blue] .dd-toggle::after,
 [data-bg=blue] .dd-link::after {
-  background-color: #7dd0fa !important;
+  background-color: var(--light-sky-blue) !important;
 }
 
 [data-margin-bottom=huge],
