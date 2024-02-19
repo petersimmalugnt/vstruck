@@ -1,1 +1,0 @@
-"use strict";var _dualRangeSlider=require("./modules/dualRangeSlider"),_inViewSticky=require("./modules/inViewSticky");document.addEventListener("DOMContentLoaded",(function(){(0,_inViewSticky.inViewSticky)(),(0,_dualRangeSlider.dualRangeSlider)(0,400,100,300)}));

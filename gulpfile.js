@@ -4,11 +4,15 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const rename = require("gulp-rename");
-const terser = require("gulp-terser");
 const browserSync = require("browser-sync").create();
 const del = require("del");
 const git = require("gulp-git");
-const babel = require("gulp-babel");
+const rollupStream = require("rollup-stream");
+const source = require("vinyl-source-stream");
+const terser = require("gulp-terser");
+const buffer = require("vinyl-buffer");
+const { nodeResolve } = require("@rollup/plugin-node-resolve");
+const commonjs = require("@rollup/plugin-commonjs");
 
 function clean() {
   return del(["dist/*"]);
@@ -27,15 +31,25 @@ function styles() {
 }
 
 function scripts() {
-  return gulp
-    .src("src/js/**/*.js")
-    .pipe(
-      babel({
-        presets: ["@babel/preset-env"],
-        plugins: ["@babel/plugin-transform-modules-commonjs"],
-      })
-    )
+  return rollupStream({
+    input: "src/js/script.js",
+    format: "iife",
+    plugins: [nodeResolve(), commonjs()],
+  })
+    .pipe(source("script.js"))
+    .pipe(buffer())
     .pipe(terser())
+    .pipe(gulp.dest("dist/js"))
+    .pipe(browserSync.stream());
+}
+
+function scripts() {
+  return rollupStream({
+    input: "src/js/script.js",
+    format: "iife",
+    plugins: [nodeResolve(), commonjs()],
+  })
+    .pipe(source("script.js"))
     .pipe(gulp.dest("dist/js"))
     .pipe(browserSync.stream());
 }
