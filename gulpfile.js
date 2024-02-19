@@ -30,21 +30,10 @@ function styles() {
 function scripts() {
   return gulp
     .src("src/js/**/*.js")
-    .pipe(terser())
-    .pipe(gulp.dest("dist/js"))
-    .pipe(browserSync.stream());
-}
-
-function scripts() {
-  return gulp
-    .src(
-      "src/js/modules/dualRangeSlider.js",
-      "src/js/modules/inViewSticky.js",
-      "src/js/script.js"
-    )
     .pipe(
       babel({
         presets: ["@babel/preset-env"],
+        plugins: ["@babel/plugin-transform-modules-commonjs"],
       })
     )
     .pipe(concat("bundle.js"))

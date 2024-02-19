@@ -1,4 +1,4 @@
-const inViewSticky = () => {
+export const inViewSticky = () => {
   const elements = [
     ...document.querySelectorAll(
       '[data-scroll-inview="true"], [data-inview-target]:not([data-inview-target=""])'
