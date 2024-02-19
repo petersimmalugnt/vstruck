@@ -1,4 +1,0 @@
-gulp.src([
-  'src/js/**/*.js',
-  'src/js/script.js'
-])
