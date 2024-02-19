@@ -1205,3 +1205,7 @@ html {
 [data-cursor-pointer=true] {
   cursor: pointer;
 }
+
+[data-flipx=true] {
+  scale: -100%;
+}
