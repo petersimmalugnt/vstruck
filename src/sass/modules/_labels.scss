@@ -283,5 +283,33 @@
   );
 }
 [data-label-shape="6"] {
-  clip-path: ;
+  clip-path: polygon(
+    0.6875rem calc(100% - 0.2635rem),
+    0.6875rem calc(100% - 0.0826rem),
+    0.6954rem calc(100% - 0rem),
+    calc(100% - 0.7831rem) calc(100% - 0rem),
+    calc(100% - 0.7455rem) calc(100% - 0.0529rem),
+    calc(100% - 0.7455rem) calc(100% - 0.1433rem),
+    calc(100% - 0.7223rem) calc(100% - 0.2242rem),
+    calc(100% - 0.2107rem) calc(100% - 0.7358rem),
+    calc(100% - 0.1782rem) calc(100% - 0.8179rem),
+    calc(100% - 0.0144rem) calc(100% - 1.4295rem),
+    calc(100% - 0rem) 1.4832rem,
+    calc(100% - 0.1872rem) 0.7843rem,
+    calc(100% - 0.2353rem) 0.7111rem,
+    calc(100% - 0.7455rem) 0.1989rem,
+    calc(100% - 0.7455rem) 0.018rem,
+    calc(100% - 0.8179rem) 0rem,
+    0.751rem 0rem,
+    0.6875rem 0.027rem,
+    0.6875rem 0.2079rem,
+    0.6629rem 0.2881rem,
+    0.2152rem 0.7358rem,
+    0.1828rem 0.8179rem,
+    0.0189rem 1.4295rem,
+    0.0045rem calc(100% - 1.4832rem),
+    0.1918rem calc(100% - 0.7843rem),
+    0.2398rem calc(100% - 0.7111rem),
+    0.6235rem calc(100% - 0.3274rem)
+  );
 }
