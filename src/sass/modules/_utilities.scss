@@ -340,11 +340,11 @@
   scale: -100%;
 }
 
-[data-tooltip] {
+[data-tooltip]:hover {
   position: relative;
   overflow: visible;
 }
-[data-tooltip]::after {
+[data-tooltip]:hover::after {
   content: attr(data-tooltip);
   position: absolute;
   top: 0%;
