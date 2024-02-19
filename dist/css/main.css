@@ -1237,7 +1237,7 @@ html {
 [data-tooltip] {
   position: relative;
   overflow: visible;
-  padding-right: 1em;
+  padding-right: 0.75em;
 }
 
 [data-tooltip]:hover::before {

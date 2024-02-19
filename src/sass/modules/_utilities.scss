@@ -343,8 +343,9 @@
 [data-tooltip] {
   position: relative;
   overflow: visible;
-  padding-right: 1em;
+  padding-right: 0.75em;
 }
+
 [data-tooltip]:hover::before {
   content: attr(data-tooltip);
   position: absolute;
@@ -362,6 +363,7 @@
   border-radius: 0.25em;
   z-index: 100;
 }
+
 [data-tooltip]::after {
   content: "i";
   clip-path: polygon(
