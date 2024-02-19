@@ -166,6 +166,7 @@
   );
 }
 [data-label-shape="4"] {
+  min-width: 6.5em;
   clip-path: polygon(
     3.625em 0em,
     calc(100% - 0.7527em) 0em,
