@@ -1,4 +1,4 @@
-export const dualRangeSlider = (minVal, maxVal, initFrom, initTo, callback) => {
+const dualRangeSlider = (minVal, maxVal, initFrom, initTo, callback) => {
   let curFrom = initFrom;
   let curTo = initTo;
 
