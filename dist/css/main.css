@@ -785,7 +785,7 @@ html {
     translate: -100% 0%;
   }
 }
-[data-label-shape][data-bg=""] {
+[data-label-shape] {
   background-color: #ffffff;
 }
 
