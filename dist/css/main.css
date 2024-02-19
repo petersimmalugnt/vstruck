@@ -1237,6 +1237,7 @@ html {
 [data-tooltip]:hover {
   position: relative;
   overflow: visible;
+  padding-right: 1em;
 }
 
 [data-tooltip]:hover::before {
@@ -1255,18 +1256,21 @@ html {
   background-color: var(--vs-black);
   color: var(--white);
   border-radius: 0.25em;
+  z-index: 100;
 }
 
 [data-tooltip]::after {
   content: "i";
   -webkit-clip-path: polygon(50% 0%, 75% 6.7%, 93.3% 25%, 100% 50%, 93.3% 75%, 75% 93.3%, 50% 100%, 25% 93.3%, 6.7% 75%, 0% 50%, 6.7% 25%, 25% 6.7%, 50% 0%);
           clip-path: polygon(50% 0%, 75% 6.7%, 93.3% 25%, 100% 50%, 93.3% 75%, 75% 93.3%, 50% 100%, 25% 93.3%, 6.7% 75%, 0% 50%, 6.7% 25%, 25% 6.7%, 50% 0%);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  translate: 0% -50%;
   font-size: 0.5em;
   line-height: 1.5em;
   width: 1.5em;
   height: 1.5em;
-  margin-top: -0.5em;
-  margin-left: 0.5em;
   display: inline-flex;
   justify-content: center;
   align-content: center;
