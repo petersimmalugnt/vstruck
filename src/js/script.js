@@ -3,4 +3,4 @@ document.addEventListener("DOMContentLoaded", () => {
   dualRangeSlider(0, 400, 100, 300);
 });
 
-const piss = "piss";
+const piss = "bajs";
