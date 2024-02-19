@@ -359,7 +359,7 @@
   background-color: var(--vs-black);
   color: var(--white);
 }
-[data-tooltip]:hover::after {
+[data-tooltip]::after {
   content: "i";
   clip-path: polygon(
     50% 0%,
