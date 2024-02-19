@@ -1242,8 +1242,7 @@ html {
 }
 
 [data-tooltip]:hover {
-  -webkit-text-decoration: dotted;
-          text-decoration: dotted;
+  text-decoration: underline;
 }
 
 [data-tooltip]:hover::before {
