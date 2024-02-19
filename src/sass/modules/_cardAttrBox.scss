@@ -1,6 +1,6 @@
-.attr-value[data-status="0"]::before,
-.attr-value[data-status="1"]::before,
-.attr-value[data-status="2"]::before {
+[data-status="0"] .attr-value::before,
+[data-status="1"] .attr-value::before,
+[data-status="2"] .attr-value::before {
   content: " ";
   clip-path: polygon(
     50% 0%,
@@ -23,12 +23,12 @@
   display: inline-block;
 }
 
-.attr-value[data-status="0"]::before {
+[data-status="0"] .attr-value::before {
   background-color: var(--green);
 }
-.attr-value[data-status="1"]::before {
+[data-status="1"] .attr-value::before {
   background-color: var(--khaki);
 }
-.attr-value[data-status="2"]::before {
+[data-status="2"] .attr-value::before {
   background-color: var(--red);
 }
