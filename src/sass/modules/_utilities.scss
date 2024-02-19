@@ -158,6 +158,12 @@
   background-color: var(--light-sky-blue) !important;
 }
 
+[data-bg="green"],
+[data-bg="green"] .dd-toggle::after,
+[data-bg="green"] .dd-link::after {
+  background-color: var(--green) !important;
+}
+
 [data-margin-bottom="huge"],
 [data-padding-top="huge"] {
   --spacing-top: 8rem;
