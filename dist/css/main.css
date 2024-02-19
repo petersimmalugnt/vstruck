@@ -1233,3 +1233,19 @@ html {
 [data-flipx=true] {
   scale: -100%;
 }
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  max-width: 25ch;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 500;
+  translate: -100% -50%;
+}
