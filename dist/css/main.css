@@ -1254,6 +1254,7 @@ html {
   padding: 0.5rem;
   background-color: var(--vs-black);
   color: var(--white);
+  border-radius: 0.25em;
 }
 
 [data-tooltip]::after {
