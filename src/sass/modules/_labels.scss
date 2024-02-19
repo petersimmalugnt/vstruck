@@ -119,7 +119,50 @@
   );
 }
 [data-label-shape="3"] {
-  clip-path: ;
+  clip-path: polygon(
+    0.75rem 0rem,
+    calc(100% - 0.8056rem) 0rem,
+    calc(100% - 0.7415rem) 0.0316rem,
+    calc(100% - 0.6501rem) 0.3728rem,
+    calc(100% - 0.4014rem) 0.6231rem,
+    calc(100% - 0.3258rem) 0.6627rem,
+    calc(100% - 0.07rem) 0.7313rem,
+    calc(100% - 0rem) 0.7659rem,
+    calc(100% - 0rem) calc(100% - 0.8214rem),
+    calc(100% - 0.0163rem) calc(100% - 0.7456rem),
+    calc(100% - 0.3574rem) calc(100% - 0.6542rem),
+    calc(100% - 0.4246rem) calc(100% - 0.5999rem),
+    calc(100% - 0.6119rem) calc(100% - 0.4126rem),
+    calc(100% - 0.6586rem) calc(100% - 0.3411rem),
+    calc(100% - 0.75rem) calc(100% - 0rem),
+    0.8056rem calc(100% - 0rem),
+    0.7415rem calc(100% - 0.0316rem),
+    0.6501rem calc(100% - 0.3728rem),
+    0.4014rem calc(100% - 0.6231rem),
+    0.3258rem calc(100% - 0.6627rem),
+    0.07rem calc(100% - 0.7313rem),
+    0rem calc(100% - 0.7659rem),
+    0rem calc(100% - 0.8542rem),
+    0rem calc(100% - 0.9425rem),
+    0rem calc(100% - 1.1191rem),
+    0rem calc(100% - 1.2073rem),
+    0rem calc(100% - 1.3839rem),
+    0rem calc(100% - 1.4722rem),
+    0rem 1.4395rem,
+    0rem 1.3512rem,
+    0rem 1.2629rem,
+    0rem 1.1746rem,
+    0rem 1.0863rem,
+    0rem 0.998rem,
+    0rem 0.9097rem,
+    0rem 0.8214rem,
+    0.0163rem 0.7456rem,
+    0.3574rem 0.6542rem,
+    0.4246rem 0.5999rem,
+    0.6119rem 0.4126rem,
+    0.6586rem 0.3411rem,
+    0.7271rem 0.0853rem
+  );
 }
 [data-label-shape="4"] {
   clip-path: ;
