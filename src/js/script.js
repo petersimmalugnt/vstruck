@@ -1,7 +1,5 @@
-//import { dualRangeSlider } from "./modules/DualRangeSlider";
-//import { inViewSticky } from "./modules/InViewSticky";
-const dualRangeSlider = require("./modules/DualRangeSlider");
-const inViewSticky = require("./modules/InViewSticky");
+import { dualRangeSlider } from "./modules/DualRangeSlider";
+import { inViewSticky } from "./modules/InViewSticky";
 
 document.addEventListener("DOMContentLoaded", () => {
   inViewSticky();
