@@ -58,6 +58,14 @@
   -webkit-box-orient: vertical;
 }
 
+[data-elipsis-third-line="true"] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
 [data-hide-scrollbar="true"] {
   scrollbar-width: none; /* for Firefox */
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
