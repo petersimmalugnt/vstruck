@@ -1243,6 +1243,8 @@ html {
   position: absolute;
   top: 0%;
   left: 50%;
+  width: -moz-max-content;
+  width: max-content;
   max-width: 25ch;
   font-size: 0.75rem;
   line-height: 1rem;
