@@ -1,4 +1,6 @@
-.attr-value::before {
+.attr-value[data-status="0"]::before,
+.attr-value[data-status="1"]::before,
+.attr-value[data-status="2"]::before {
   content: " ";
   clip-path: polygon(
     50% 0%,
@@ -15,9 +17,18 @@
     25% 6.7%,
     50% 0%
   );
-  background-color: var(--green);
   width: 0.75em;
   height: 0.75em;
   margin: 0.125em 0.5em 0 0;
   display: inline-block;
+}
+
+.attr-value[data-status="0"]::before {
+  background-color: var(--green);
+}
+.attr-value[data-status="1"]::before {
+  background-color: var(--khaki);
+}
+.attr-value[data-status="2"]::before {
+  background-color: var(--red);
 }
