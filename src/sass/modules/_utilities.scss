@@ -140,6 +140,12 @@
   background-color: #ff9b4d !important;
 }
 
+[data-bg="red"],
+[data-bg="red"] .dd-toggle::after,
+[data-bg="red"] .dd-link::after {
+  background-color: #fa7171 !important;
+}
+
 [data-bg="yellow"],
 [data-bg="yellow"] .dd-toggle::after,
 [data-bg="yellow"] .dd-link::after {
