@@ -37,7 +37,7 @@ function scripts() {
 
 function scripts() {
   return gulp
-    .src("src/js/**/*.js", "src/js/script.js")
+    .src("src/js/modules/*.js", "src/js/script.js")
     .pipe(
       babel({
         presets: ["@babel/preset-env"],
