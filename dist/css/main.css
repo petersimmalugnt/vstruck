@@ -1248,4 +1248,7 @@ html {
   line-height: 1rem;
   font-weight: 500;
   translate: -100% -50%;
+  padding: 0.5rem;
+  background-color: var(--vs-black);
+  color: var(--white);
 }
