@@ -1,57 +1,54 @@
 /* GUIDE STEP */
 
-  [class*='guide-item-result'] {
-    height: 0rem;
-    visibility: hidden;
-  }
+.guide-item-result {
+  height: 0rem;
+  visibility: hidden;
+}
 
-  [data-guide-step-current='true'] + [class*='guide-item-result'] {
-    height: 3.5rem;
-    visibility: visible;
-  }
+[data-guide-step-current="true"] + .guide-item-result {
+  height: 3.5rem;
+  visibility: visible;
+}
 
-  [class*='guide-item-step'] {
-    height: 3.5rem;
-  }
-  [class*='quide-step-q-wrapper'] {
-    transform: translateY(calc(100% + 1px));
-  }
-  [class*='guide-step-answer-wrapper'] {
-    transform: translateY(1px);
-  }
-  [class*='guide-btn-next'] {
-    transform: translateY(calc(-100% - 1px));
-  }
+.guide-item-step {
+  height: 3.5rem;
+}
+.quide-step-q-wrapper {
+  transform: translateY(calc(100% + 1px));
+}
+.guide-step-answer-wrapper {
+  transform: translateY(1px);
+}
+.guide-btn-next {
+  transform: translateY(calc(-100% - 1px));
+}
 
+.guide-step-slot :has(~ [data-guide-step-current="true"]) .guide-pagina {
+  --iconFill: var(--vs-black);
+  color: var(--white);
+}
 
-  [class*='guide-step-slot'] :has(~ [data-guide-step-current='true']) [class*='guide-pagina'] {
-    --iconFill: var(--vs-black);
-    color: var(--white);
-  }
+[data-guide-step-current="true"] {
+  height: 24rem;
+  visibility: visible;
+}
 
+[data-guide-step-current="true"] .quide-step-q-wrapper {
+  transform: translateY(0%);
+}
+[data-guide-step-current="true"] .guide-step-answer-wrapper {
+  transform: translateY(0px);
+}
+[data-guide-step-current="true"] .guide-pagina {
+  --iconFill: var(--linen);
+  color: var(--vs-black);
+  background-color: var(--white);
+}
 
-  [data-guide-step-current='true'] {
-    height: 24rem;
-    visibility: visible;
-  }
-
-  [data-guide-step-current='true'] [class*='quide-step-q-wrapper'] {
-    transform: translateY(0%);
-  }
-  [data-guide-step-current='true'] [class*='guide-step-answer-wrapper'] {
-    transform: translateY(0px);
-  }
-  [data-guide-step-current='true'] [class*='guide-pagina'] {
-    --iconFill: var(--linen);
-    color: var(--vs-black);
-    background-color: var(--white);
-  }
-
-
-  [data-guide-step-current='true'] + [data-guide-step-current] [class*='guide-btn-next'] {
-    transform: translateY(0%);
-  }
-  [data-guide-step-current='true'] + [data-guide-step-current] [class*='guide-pagina'] {
-    --iconFill: var(--white);
-    background-color: var(--light-grey);
-  }
+[data-guide-step-current="true"] + [data-guide-step-current] .guide-btn-next {
+  transform: translateY(0%);
+}
+[data-guide-step-current="true"] + [data-guide-step-current] .guide-pagina {
+  --iconFill: var(--white);
+  background-color: var(--light-grey);
+}
