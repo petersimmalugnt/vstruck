@@ -1,5 +1,5 @@
-import { dualRangeSlider } from "./modules/_dualRangeSlider";
-import { inViewSticky } from "./modules/_inViewSticky";
+import { dualRangeSlider } from "./modules/DualRangeSlider";
+import { inViewSticky } from "./modules/InViewSticky";
 
 document.addEventListener("DOMContentLoaded", () => {
   inViewSticky();
