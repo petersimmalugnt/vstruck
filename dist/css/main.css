@@ -785,6 +785,10 @@ html {
     translate: -100% 0%;
   }
 }
+[data-bg=""] {
+  background-color: #ffffff;
+}
+
 [data-label-shape][data-bg=black] {
   color: #ffffff;
 }
