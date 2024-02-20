@@ -1044,7 +1044,6 @@ html {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 0;
-  outline: 1px -0.5px solid var(--vs-black);
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-track {
@@ -1053,7 +1052,7 @@ html {
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-thumb {
-  background: var(--vs-black);
+  background: var(--silver);
   border-radius: 0;
 }
 
