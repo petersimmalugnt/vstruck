@@ -1032,12 +1032,30 @@ html {
 }
 
 [data-hide-scrollbar=true] {
-  scrollbar-width: none; /* for Firefox */
-  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 [data-hide-scrollbar=true]::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
+  display: none;
+}
+
+[data-hide-scrollbar=false]::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+[data-hide-scrollbar=false]::-webkit-scrollbar-track {
+  background: var(--steel);
+}
+
+[data-hide-scrollbar=false]::-webkit-scrollbar-thumb {
+  background: var(--vs-black);
+}
+
+[data-hide-scrollbar=false] {
+  scrollbar-width: thin;
+  scrollbar-color: var(--steel) var(--vs-black);
 }
 
 [data-hide-empty=true]:empty {
