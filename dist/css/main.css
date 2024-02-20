@@ -785,7 +785,7 @@ html {
     translate: -100% 0%;
   }
 }
-@container card (width > 472px) {
+@container card (width > 464px) {
   [data-card-horizontal-layout=true] .card-container {
     grid-auto-flow: column;
   }
