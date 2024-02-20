@@ -1,0 +1,36 @@
+/* Search input */
+.search-input-slot input::placeholder {
+  color: #171717;
+}
+
+.search-input-slot input:is(:active, :focus)::placeholder {
+  color: transparent;
+}
+
+.search-input-slot input {
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: none;
+  font-family: "IBM Plex Sans";
+  color: #171717;
+  font-size: 1.5rem;
+  line-height: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .search-input-slot input {
+    text-align: left;
+  }
+}
+
+@media (max-width: 479px) {
+  .search-input-slot input {
+    height: 4rem;
+    font-size: 1.25rem;
+  }
+}
