@@ -73,13 +73,13 @@
 
 [data-hide-scrollbar="true"]::-webkit-scrollbar {
   display: none;
-  margin-left: 0.5px;
 }
 
 [data-hide-scrollbar="false"]::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
   border-radius: 0;
+  margin-left: 0.5px;
 }
 
 [data-hide-scrollbar="false"]::-webkit-scrollbar-track {
