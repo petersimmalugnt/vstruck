@@ -38,23 +38,23 @@
   transition-duration: 0.2s;
 }
 
-.landingpage-hero-link:hover .head-arrow-title-wrapper {
+.landingpage-hero-link-wrapper:hover .head-arrow-title-wrapper {
   color: transparent;
   -webkit-text-stroke-color: #171717;
 }
 
-.landingpage-hero-link:hover .head-arrow-title-wrapper path {
+.landingpage-hero-link-wrapper:hover .head-arrow-title-wrapper path {
   fill: transparent;
 }
 
 .landingpage-hero-wrapper:hover
-  .landingpage-hero-link:not(:hover)
+  .landingpage-hero-link-wrapper:not(:hover)
   .head-arrow-title-wrapper {
   color: #171717;
 }
 
 .landingpage-hero-wrapper:hover
-  .landingpage-hero-link:not(:hover)
+  .landingpage-hero-link-wrapper:not(:hover)
   .head-arrow-title-wrapper
   path {
   fill: #171717;
@@ -71,7 +71,7 @@
   transition-delay: 0s, 0s, 0.25s;
 }
 
-.landingpage-hero-link:hover .landingpage-hero-marquee {
+.landingpage-hero-link-wrapper:hover .landingpage-hero-marquee {
   visibility: visible;
   opacity: 1;
   translate: 0% 0rem;
@@ -80,7 +80,7 @@
   transition-delay: 0s;
 }
 
-.landingpage-hero-link:hover .txt-marquee-sliding-container:hover {
+.landingpage-hero-link-wrapper:hover .txt-marquee-sliding-container:hover {
   animation-play-state: running;
 }
 
