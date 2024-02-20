@@ -1419,32 +1419,6 @@ html {
   --visibility-three-string: visible;
 }
 
-[data-hidden-one] {
-  --hidden-one: 0;
-  --hidden-one-string: hidden;
-}
-
-[data-hidden-one=true] {
-  --hidden-one: 1;
-  --hidden-one-string: visible;
-}
-
-[data-hidden-two] {
-  --hidden-two: 0;
-  --hidden-two-string: hidden;
-}
-
-[data-hidden-two=true] {
-  --hidden-two: 1;
-  --hidden-two-string: visible;
-}
-
-[data-hidden-three] {
-  --hidden-three: 0;
-  --hidden-three-string: hidden;
-}
-
-[data-hidden-three=true] {
-  --hidden-three: 1;
-  --hidden-three-string: visible;
+[data-is-hidden=true] {
+  display: none;
 }
