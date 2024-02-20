@@ -366,8 +366,8 @@
   background-image: linear-gradient(
     to bottom right,
     transparent calc(50% - 0.5px),
-    var(--vs-black) calc(50% - 0.5px),
-    var(--vs-black) calc(50% + 0.5px),
+    currentColor calc(50% - 0.5px),
+    currentColor calc(50% + 0.5px),
     transparent calc(50% + 0.5px)
   );
 }
