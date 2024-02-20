@@ -785,11 +785,19 @@ html {
     translate: -100% 0%;
   }
 }
-@container card (width > 461px) {
+@container card (width > 560px) {
   [data-card-horizontal-layout=true] .card-container {
     grid-auto-flow: column;
   }
   [data-card-horizontal-layout=true] .card-label-img-container {
+    font-size: 0.75rem;
+  }
+}
+@media screen and (width > 991px) {
+  .featured-products-card-list-v2[data-card-horizontal-layout=true] .card-container {
+    grid-auto-flow: column;
+  }
+  .featured-products-card-list-v2[data-card-horizontal-layout=true] .card-label-img-container {
     font-size: 0.75rem;
   }
 }
