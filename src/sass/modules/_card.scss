@@ -1,0 +1,9 @@
+@container card (width > 560px) {
+  [data-card-horizontal-layout="true"] .card-container {
+    grid-auto-flow: column;
+  }
+
+  [data-card-horizontal-layout="true"] .card-label-img-container {
+    font-size: 0.75rem;
+  }
+}

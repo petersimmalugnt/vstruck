@@ -785,6 +785,14 @@ html {
     translate: -100% 0%;
   }
 }
+@container card (width > 560px) {
+  [data-card-horizontal-layout=true] .card-container {
+    grid-auto-flow: column;
+  }
+  [data-card-horizontal-layout=true] .card-label-img-container {
+    font-size: 0.75rem;
+  }
+}
 [data-status="0"] .attr-value::before,
 [data-status="1"] .attr-value::before,
 [data-status="2"] .attr-value::before {
