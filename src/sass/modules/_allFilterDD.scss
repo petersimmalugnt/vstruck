@@ -7,3 +7,13 @@
   transition: translate calc(0.4s + calc(0.3s * var(--visibility-one, 0)))
     cubic-bezier(0.4, 0, 0, 1);
 }
+
+.all-filter-dd-list-cat-item-toggle-wrapper {
+  transition: translate calc(0.4s + (0.1s * var(--visibility-one, 0)))
+    cubic-bezier(calc(0.4 + (0.2 * var(--visibility-one, 0))), 0, 0, 1);
+}
+.all-filter-dd-list-cat-item-open-wrapper {
+  transition: translate calc(0.4s + (0.1s * var(--visibility-one, 0)))
+      cubic-bezier(calc(0.4 + (0.2 * var(--visibility-one, 0))), 0, 0, 1),
+    visibility 0s calc(0.4s - (0.4s * var(--visibility-one, 0)));
+}
