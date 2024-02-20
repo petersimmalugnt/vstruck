@@ -1,4 +1,4 @@
-@container card (width > 512px) {
+@container card (width > 480px) {
   [data-card-horizontal-layout="true"] .card-container {
     grid-auto-flow: column;
   }
