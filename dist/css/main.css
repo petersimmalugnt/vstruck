@@ -1240,9 +1240,9 @@ html {
   padding-right: 0.875em;
   cursor: help;
   background-repeat: repeat-x;
-  background-image: repeating-linear-gradient(0deg, #000 0px, #000 1px, transparent 1px, transparent 4px);
-  background-position: 0 50%;
-  background-size: 100% 10px;
+  background-image: repeating-linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 3px);
+  background-position: 0 100%;
+  background-size: 100% 2px;
 }
 
 [data-tooltip]:hover {
