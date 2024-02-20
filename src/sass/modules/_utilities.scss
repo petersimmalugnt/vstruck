@@ -71,11 +71,6 @@
   -ms-overflow-style: none;
 }
 
-[data-hide-scrollbar="false"] {
-  scrollbar-width: thin;
-  scrollbar-color: var(--silver) var(--vs-black);
-}
-
 [data-hide-scrollbar="true"]::-webkit-scrollbar {
   display: none;
   margin-left: 0.5px;
@@ -88,7 +83,7 @@
 }
 
 [data-hide-scrollbar="false"]::-webkit-scrollbar-track {
-  background: var(--silver);
+  background: var(--linen);
   border-radius: 0;
 }
 
