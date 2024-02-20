@@ -390,9 +390,33 @@
 [data-is-three="true"] {
   --is-three: 1;
 }
-[data-is-four] {
-  --is-four: 0;
+
+[data-visibility-one] {
+  --visibility-one: 0;
+  --visibility-one-string: hidden;
 }
-[data-is-four="true"] {
-  --is-four: 1;
+
+[data-visibility-one] {
+  --visibility-one: 1;
+  --visibility-one-string: visible;
+}
+
+[data-visibility-two] {
+  --visibility-two: 0;
+  --visibility-two-string: hidden;
+}
+
+[data-visibility-two] {
+  --visibility-two: 1;
+  --visibility-two-string: visible;
+}
+
+[data-visibility-three] {
+  --visibility-three: 0;
+  --visibility-three-string: hidden;
+}
+
+[data-visibility-three] {
+  --visibility-three: 1;
+  --visibility-three-string: visible;
 }
