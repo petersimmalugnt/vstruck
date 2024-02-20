@@ -19,3 +19,21 @@
     font-size: 0.75rem;
   }
 }
+
+.card-wrapper [data-bw-img="true"] {
+  will-change: filter, mix-blend-mode;
+  filter: contrast(85%) brightness(110%) grayscale(100%);
+  mix-blend-mode: multiply;
+}
+
+.card-wrapper:hover [data-bw-img="true"] {
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+@media (max-width: 767px) {
+  .card-wrapper [data-bw-img="true"] {
+    filter: none;
+    mix-blend-mode: normal;
+  }
+}

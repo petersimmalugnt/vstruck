@@ -48,26 +48,6 @@ html {
   grid-row-gap: 0;
 }
 
-/* Landing hero */
-.landing-hero-service-link,
-.landing-hero-truck-link {
-  font-size: clamp(64px, 14vw, 280px);
-}
-.landing-hero-arrow {
-  height: clamp(40px, 8.5vw, 170px);
-}
-:has(.landing-hero-service-link:hover) .landing-hero-truck-link,
-:has(.landing-hero-truck-link:hover) .landing-hero-service-link {
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-}
-:has(.landing-hero-service-link:hover) [data-arrow="truckar"] polygon {
-  fill: transparent;
-}
-:has(.landing-hero-service-link:hover) [data-arrow="service"] polygon {
-  fill: #171717;
-}
-
 /* Breadcrumbs */
 .bc-current-second:empty {
   display: none;
@@ -76,25 +56,6 @@ html {
 /* Filter Dropdown */
 .all-filter-dd-list-cat-item-toggle-nr:empty {
   display: none;
-}
-
-/* Card */
-.card-wrapper [data-bw-img="true"] {
-  will-change: filter, mix-blend-mode;
-  filter: contrast(85%) brightness(110%) grayscale(100%);
-  mix-blend-mode: multiply;
-}
-
-.card-wrapper:hover [data-bw-img="true"] {
-  filter: none;
-  mix-blend-mode: normal;
-}
-
-@media (max-width: 767px) {
-  .card-wrapper [data-bw-img="true"] {
-    filter: none;
-    mix-blend-mode: normal;
-  }
 }
 
 /* DD Dropdown */
