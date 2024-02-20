@@ -1,9 +1,9 @@
 .all-filter-dd-list-wrapper {
   transition: background-color 0.5s linear,
-    visibility 0s calc(0.5s * var(--visibility-one, 0)) linear;
+    visibility 0s calc(0.5s - calc(0.5s * var(--visibility-one, 0))) linear;
 }
 
 .all-filter-dd-list-container {
-  transition: translate calc(0.4s + (0.3s * var(--visibility-one, 0)))
+  transition: translate calc(0.4s + calc(0.3s * var(--visibility-one, 0)))
     cubic-bezier(0.4, 0, 0, 1);
 }
