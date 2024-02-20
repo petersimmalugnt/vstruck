@@ -1,32 +1,9 @@
-/*.all-filter-dd-list-wrapper {
-  visibility: hidden;
-  background-color: rgba(32, 64, 58, 0);
-  transition: background-color 0.5s linear, visibility 0s 0.5s linear;
+.all-filter-dd-list-wrapper {
+  transition: background-color 0.5s linear,
+    visibility 0s calc(0.5s * var(--visibility-one, 0)) linear;
 }
 
 .all-filter-dd-list-container {
-  will-change: translate;
-  translate: -100% 0%;
-  transition: translate 0.4s cubic-bezier(0.4, 0, 0, 1);
+  transition: translate calc(0.4s + (0.3s * var(--visibility-one, 0)))
+    cubic-bezier(0.4, 0, 0, 1);
 }
-
-.all-filter-dd-list-wrapper
-visibility: var(--visibility-one-string, hidden);
-background-color: rgba(32, 64, 58, calc(0.5 * var(--visibility-one, 0)));
-transition: background-color 0.5s linear, visibility 0s calc(0.5s * var(--visibility-one, 0)) linear;
-
-.all-filter-dd-list-container
- translate: calc(-100% * var(--visibility-one)) 0%;
-transition: translate calc(0.4s + (.3s * var(--visibility-one))) cubic-bezier(0.4, 0, 0, 1);
-
-
-.all-filter-dd-list-wrapper[data-is-open="true"] {
-  visibility: visible;
-  background-color: rgba(32, 64, 58, 0.5);
-  transition: background-color 0.5s linear, visibility 0s 0s linear;
-}
-
-.all-filter-dd-list-wrapper[data-is-open="true"] .all-filter-dd-list-container {
-  translate: 0% 0%;
-  transition: translate 0.7s cubic-bezier(0.4, 0, 0, 1);
-} */
