@@ -421,6 +421,6 @@
   --visibility-three-string: visible;
 }
 
-[data-is-hidden="true"] {
+[data-is-visible="false"] {
   display: none;
 }
