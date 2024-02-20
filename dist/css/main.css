@@ -1261,7 +1261,7 @@ html {
   line-height: 1rem;
   font-weight: 500;
   translate: -50% -100%;
-  padding: 0.75em;
+  padding: 1em;
   background-color: var(--white);
   color: var(--vs-black);
   z-index: 100;
