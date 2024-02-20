@@ -372,6 +372,28 @@ html {
   min-height: calc(1px + 3.5rem);
 }
 
+.all-filter-dd-list-wrapper {
+  visibility: hidden;
+  background-color: rgba(32, 64, 58, 0);
+  transition: background-color 0.5s linear;
+}
+
+.all-filter-dd-list-container {
+  will-change: translate;
+  translate: -100% 0%;
+  transition: translate 0.4s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.all-filter-dd-list-wrapper[data-is-open=true] {
+  visibility: visible;
+  background-color: rgb(32, 64, 58);
+}
+
+.all-filter-dd-list-container[data-is-open=true] {
+  translate: 0% 0%;
+  transition: translate 0.7s cubic-bezier(0.4, 0, 0, 1);
+}
+
 /* DUAL SLIDER */
 .dual-range-slider-wrapper {
   --drsThumbSize: 3rem;
