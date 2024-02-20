@@ -371,3 +371,28 @@
     transparent calc(50% + 0.5px)
   );
 }
+
+[data-is-one] {
+  --is-one: 0;
+}
+[data-is-one="true"] {
+  --is-one: 1;
+}
+[data-is-two] {
+  --is-two: 0;
+}
+[data-is-two="true"] {
+  --is-two: 1;
+}
+[data-is-three] {
+  --is-three: 0;
+}
+[data-is-three="true"] {
+  --is-three: 1;
+}
+[data-is-four] {
+  --is-four: 0;
+}
+[data-is-four="true"] {
+  --is-four: 1;
+}

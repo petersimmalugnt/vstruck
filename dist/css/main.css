@@ -587,28 +587,6 @@ html {
   background-color: var(--light-grey);
 }
 
-.testlist .head-arrow-title-wrapper {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #171717;
-  color: transparent;
-}
-
-.testlist .head-arrow-title-wrapper path {
-  vector-effect: non-scaling-stroke;
-  stroke-width: 1px;
-  stroke: #171717;
-  fill: transparent;
-}
-
-.testlist .head-arrow-title-wrapper:hover {
-  -webkit-text-stroke-color: transparent;
-  color: #171717;
-}
-
-.testlist .head-arrow-title-wrapper:hover path {
-  fill: #171717;
-}
-
 /* Landingpage hero */
 .landingpage-hero-wrapper .head-arrow-title-wrapper {
   -webkit-text-stroke-width: 1px;
@@ -667,6 +645,28 @@ html {
 
 .landingpage-hero-link-wrapper:hover .txt-marquee-sliding-container:hover {
   animation-play-state: running;
+}
+
+.testlist .head-arrow-title-wrapper {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #171717;
+  color: transparent;
+}
+
+.testlist .head-arrow-title-wrapper path {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1px;
+  stroke: #171717;
+  fill: transparent;
+}
+
+.testlist .head-arrow-title-wrapper:hover {
+  -webkit-text-stroke-color: transparent;
+  color: #171717;
+}
+
+.testlist .head-arrow-title-wrapper:hover path {
+  fill: #171717;
 }
 
 /* Passed CTA */
@@ -1370,4 +1370,36 @@ html {
 
 [data-no-image-bg-line=true] {
   background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+
+[data-is-one] {
+  --is-one: 0;
+}
+
+[data-is-one=true] {
+  --is-one: 1;
+}
+
+[data-is-two] {
+  --is-two: 0;
+}
+
+[data-is-two=true] {
+  --is-two: 1;
+}
+
+[data-is-three] {
+  --is-three: 0;
+}
+
+[data-is-three=true] {
+  --is-three: 1;
+}
+
+[data-is-four] {
+  --is-four: 0;
+}
+
+[data-is-four=true] {
+  --is-four: 1;
 }
