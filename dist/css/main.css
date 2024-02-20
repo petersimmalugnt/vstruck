@@ -380,6 +380,10 @@ html {
   transition: translate calc(0.4s + 0.3s * var(--visibility-one, 0)) cubic-bezier(0.4, 0, 0, 1);
 }
 
+.all-filter-dd-list-container {
+  transition: translate 0.7s cubic-bezier(0.4, 0, 0, 1);
+}
+
 /* DUAL SLIDER */
 .dual-range-slider-wrapper {
   --drsThumbSize: 3rem;
