@@ -361,3 +361,13 @@
 [data-flipx="true"] {
   scale: -100%;
 }
+
+[data-no-image-bg-line="true"] {
+  background-image: linear-gradient(
+    to bottom right,
+    transparent calc(50% - 0.5px),
+    var(--vs-black) calc(50% - 0.5px),
+    var(--vs-black) calc(50% + 0.5px),
+    transparent calc(50% + 0.5px)
+  );
+}
