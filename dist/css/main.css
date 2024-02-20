@@ -384,14 +384,14 @@ html {
   transition: translate 0.4s cubic-bezier(0.4, 0, 0, 1);
 }
 
-// .all-filter-dd-list-wrapper
-// visibility: var(--visibility-one-string);
-// rgba(32, 64, 58, calc(0.5 * var(--visibility-one)))
-// transition: background-color 0.5s linear, visibility 0s calc(0.5s * var(--visibility-one)) linear;
+.all-filter-dd-list-wrapper
+visibility: var(--visibility-one-string, hidden);
+background-color: rgba(32, 64, 58, calc(0.5 * var(--visibility-one, 0)));
+transition: background-color 0.5s linear, visibility 0s calc(0.5s * var(--visibility-one, 0)) linear;
 
-// .all-filter-dd-list-container
-// translate: calc(-100% * var(--visibility-one)) 0%;
-// transition: translate calc(0.4s + (.3s * var(--visibility-one))) cubic-bezier(0.4, 0, 0, 1);
+.all-filter-dd-list-container
+ translate: calc(-100% * var(--visibility-one)) 0%;
+transition: translate calc(0.4s + (.3s * var(--visibility-one))) cubic-bezier(0.4, 0, 0, 1);
 
 
 .all-filter-dd-list-wrapper[data-is-open="true"] {
