@@ -1242,7 +1242,7 @@ html {
   background-repeat: repeat-x;
   background-image: repeating-linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 3px);
   background-position: 0 100%;
-  background-size: 100% 2px;
+  background-size: 100% 1px;
 }
 
 [data-tooltip]:hover {
@@ -1283,6 +1283,8 @@ html {
     right: 1rem;
     transform: translateX(0%);
     pointer-events: none;
+    max-width: auto;
+    width: auto;
   }
 }
 [data-tooltip]::after {
