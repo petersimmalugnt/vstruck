@@ -1410,7 +1410,7 @@ transition: translate calc(0.4s + (.3s * var(--visibility-one))) cubic-bezier(0.
   --visibility-one-string: hidden;
 }
 
-[data-visibility-one] {
+[data-visibility-one=true] {
   --visibility-one: 1;
   --visibility-one-string: visible;
 }
@@ -1420,7 +1420,7 @@ transition: translate calc(0.4s + (.3s * var(--visibility-one))) cubic-bezier(0.
   --visibility-two-string: hidden;
 }
 
-[data-visibility-two] {
+[data-visibility-two=true] {
   --visibility-two: 1;
   --visibility-two-string: visible;
 }
@@ -1430,7 +1430,7 @@ transition: translate calc(0.4s + (.3s * var(--visibility-one))) cubic-bezier(0.
   --visibility-three-string: hidden;
 }
 
-[data-visibility-three] {
+[data-visibility-three=true] {
   --visibility-three: 1;
   --visibility-three-string: visible;
 }
