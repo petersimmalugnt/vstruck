@@ -1043,14 +1043,17 @@ html {
 [data-hide-scrollbar=false]::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
+  border-radius: 0;
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-track {
   background: var(--steel);
+  border-radius: 0;
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-thumb {
   background: var(--vs-black);
+  border-radius: 0;
 }
 
 [data-hide-scrollbar=false] {
