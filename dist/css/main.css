@@ -1284,6 +1284,7 @@ html {
     transform: translateX(0%);
     pointer-events: none;
     max-width: auto;
+    min-width: auto;
     width: auto;
   }
 }
