@@ -1258,7 +1258,7 @@ html {
   display: none;
   width: 100%;
   max-width: 30rem;
-  min-width: 20ch;
+  min-width: 20rem;
   padding: 1rem 1.25rem;
   border: 1px solid var(--vs-black);
   background-color: var(--white);
@@ -1270,13 +1270,18 @@ html {
   z-index: 100;
 }
 
-[data-tooltip]::before {
+[data-tooltip]:hover::before {
   display: flex;
 }
 
 @media screen and (max-width: 478px) {
   [data-tooltip]::before {
-    max-width: 100%;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    transform: translateX(0%);
+    pointer-events: none;
   }
 }
 [data-tooltip]::after {
