@@ -50,7 +50,7 @@ function copyHtml() {
 }
 
 function autoGitCommit() {
-  return gulp
+  /*return gulp
     .src("./")
     .pipe(git.add({ args: "-A" }))
     .pipe(git.commit("Automatisk commit: sparade ändringar"))
@@ -63,7 +63,7 @@ function autoGitCommit() {
           console.log("Successfully pushed to Git.");
         }
       });
-    });
+    });*/
 }
 
 const { promisify } = require("util");
