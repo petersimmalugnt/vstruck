@@ -1036,8 +1036,14 @@ html {
   -ms-overflow-style: none;
 }
 
+[data-hide-scrollbar=false] {
+  scrollbar-width: thin;
+  scrollbar-color: var(--silver) var(--vs-black);
+}
+
 [data-hide-scrollbar=true]::-webkit-scrollbar {
   display: none;
+  margin-left: 0.5px;
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar {
@@ -1047,7 +1053,7 @@ html {
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-track {
-  background: var(--steel);
+  background: var(--silver);
   border-radius: 0;
 }
 
@@ -1057,7 +1063,7 @@ html {
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-thumb:hover {
-  background: var(--orange);
+  background: var(--vs-prime);
   border-radius: 0;
 }
 
