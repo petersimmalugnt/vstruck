@@ -793,7 +793,7 @@ html {
     font-size: 0.75rem;
   }
 }
-@media screen and (width > 991px) {
+@media screen and (width > 767px) {
   .featured-products-card-list-v2[data-card-horizontal-layout=true] .card-container {
     grid-auto-flow: column;
   }
