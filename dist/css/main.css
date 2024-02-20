@@ -1061,11 +1061,6 @@ html {
   border-radius: 0;
 }
 
-[data-hide-scrollbar=false] {
-  scrollbar-width: thin;
-  scrollbar-color: var(--steel) var(--vs-black);
-}
-
 [data-hide-empty=true]:empty {
   display: none;
 }
