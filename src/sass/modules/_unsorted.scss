@@ -276,14 +276,15 @@ html {
   white-space: normal;
 }
 
-[data-scroll-inview] .txt-marquee-sticky-wrapper {
+[data-scroll-inview="true"] .txt-marquee-sticky-wrapper {
   position: static;
   inset: 0 0 auto 0;
   will-change: position, box-shadow;
   z-index: 999999;
 }
 
-[data-scroll-inview].passed .txt-marquee-sticky-wrapper {
+[data-scroll-inview="true"][data-scroll-passed="true"]
+  .txt-marquee-sticky-wrapper {
   position: fixed;
   box-shadow: 0 1px 0 0 #171717;
 }
@@ -351,7 +352,8 @@ html {
   transition: translate 0.3s cubic-bezier(0.4, 0, 0, 1);
 }
 
-.passed-link-wrapper-cta[data-scroll-inview="true"].passed > div {
+.passed-link-wrapper-cta[data-scroll-inview="true"][data-scroll-passed="true"]
+  > div {
   translate: 0% 0%;
 }
 
