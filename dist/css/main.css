@@ -1389,32 +1389,32 @@ html {
 
 [data-is-fr-one] {
   --is-fr-one: 0;
-  --is-fri-one-unit: 0fr;
+  --is-fr-one-unit: 0fr;
 }
 
 [data-is-fr-one=true] {
   --is-fr-one: 1;
-  --is-fri-one-unit: 1fr;
+  --is-fr-one-unit: 1fr;
 }
 
 [data-is-fr-two] {
   --is-fr-two: 0;
-  --is-fri-one-unit: 1fr;
+  --is-fr-one-unit: 1fr;
 }
 
 [data-is-fr-two=true] {
   --is-fr-two: 1;
-  --is-fri-one-unit: 1fr;
+  --is-fr-one-unit: 1fr;
 }
 
 [data-is-fr-three] {
   --is-fr-three: 0;
-  --is-fri-one-unit: 1fr;
+  --is-fr-one-unit: 1fr;
 }
 
 [data-is-fr-three=true] {
   --is-fr-three: 1;
-  --is-fri-one-unit: 1fr;
+  --is-fr-one-unit: 1fr;
 }
 
 [data-visibility-one] {
