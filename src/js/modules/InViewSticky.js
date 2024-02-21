@@ -22,18 +22,8 @@ export const inViewSticky = () => {
           const isPassed = entry.boundingClientRect.y <= 0 && !isIntersecting;
 
           [entry.target, ...targets].forEach((t) => {
-            ["passed", "inview", "notinview"].forEach((c) => {
-              t.setAttribute("data-scroll-passed", isPassed);
-              t.setAttribute("data-scroll-is-inview", isIntersecting);
-              t.classList.toggle(
-                c,
-                c === "passed"
-                  ? isPassed
-                  : c === "inview"
-                  ? isIntersecting
-                  : !isIntersecting
-              );
-            });
+            t.setAttribute("data-scroll-passed", isPassed);
+            t.setAttribute("data-scroll-is-inview", isIntersecting);
           });
         });
       },
