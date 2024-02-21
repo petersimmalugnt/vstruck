@@ -132,6 +132,7 @@
   font-size: inherit;
   height: 1.5em;
   line-height: 1.5em;
+  background-color: transparent !important;
 }
 .dual-input-container input[type="number"]::-webkit-inner-spin-button,
 .dual-input-container input[type="number"]::-webkit-outer-spin-button {
