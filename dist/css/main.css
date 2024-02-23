@@ -1153,7 +1153,7 @@ html {
 }
 
 [data-hide-empty=true]:empty {
-  display: none;
+  display: none !important;
 }
 
 [data-balance-text=true] {
