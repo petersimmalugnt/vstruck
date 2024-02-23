@@ -1,25 +1,37 @@
+/* LAYOUT: HORIZONTAL */
 @container card (width > 560px) {
-  [data-card-horizontal-layout="true"] .card-container {
+  [data-card-layout="horizontal"] .card-container {
     grid-auto-flow: column;
   }
 
-  [data-card-horizontal-layout="true"] .card-label-img-container {
+  [data-card-layout="horizontal"] .card-label-img-container {
     font-size: 0.75rem;
   }
 }
 
 @media screen and (width > 478px) {
-  .featured-products-card-list-v2[data-card-horizontal-layout="true"]
+  .featured-products-card-list-v2[data-card-layout="horizontal"]
     .card-container {
     grid-auto-flow: column;
   }
 
-  .featured-products-card-list-v2[data-card-horizontal-layout="true"]
+  .featured-products-card-list-v2[data-card-layout="horizontal"]
     .card-label-img-container {
     font-size: 0.75rem;
   }
 }
 
+/* LAYOUT: LIST */
+[data-card-layout="list"] .card-container {
+  background-color: red;
+  grid-auto-flow: column;
+}
+
+[data-card-layout="list"] .card-label-img-container {
+  font-size: 0.75rem;
+}
+
+/* BLACK AND WHITE TRUCK IMAGE */
 .card-wrapper [data-bw-img="true"] {
   will-change: filter, mix-blend-mode;
   filter: contrast(85%) brightness(110%) grayscale(100%);
@@ -36,9 +48,4 @@
     filter: none;
     mix-blend-mode: normal;
   }
-}
-
-[data-card-horizontal-layout="true"]:has(.card-all-attr-wrapper)
-  .card-container {
-  background-color: red;
 }
