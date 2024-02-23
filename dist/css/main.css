@@ -811,7 +811,7 @@ html {
 /* LAYOUT: LIST */
 [data-card-layout=list] .card-container {
   grid-template-columns: 1fr 2fr;
-  max-height: 21rem;
+  max-height: 31rem;
 }
 
 [data-card-layout=list] .card-label-img-container {
@@ -821,6 +821,7 @@ html {
 [data-card-layout=list] .card-img-wrapper,
 [data-card-layout=list] .card-no-img-container {
   aspect-ratio: auto;
+  height: 100%;
 }
 
 /* BLACK AND WHITE TRUCK IMAGE */
