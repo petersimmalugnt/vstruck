@@ -898,11 +898,13 @@ html {
 }
 
 [data-attr-box-table=true] .attr-title {
-  width: 6rem;
+  width: 10rem;
   height: 100%;
+  padding: 0 0.5rem;
   display: flex;
-  align-items: start;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  border-right: 1px dotted var(--vs-black);
 }
 
 [data-label-shape] {
