@@ -36,3 +36,8 @@
 [data-attr-value-size="large"] .attr-value {
   font-size: 1.25rem;
 }
+
+[data-attr-box-table="true"] {
+  flex-direction: row;
+  justify-content: center;
+}
