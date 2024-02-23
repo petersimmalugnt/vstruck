@@ -8,6 +8,12 @@
   --scrollBarWidth: 16px;
 }
 
+@media (max-width: 1080px) {
+  :root {
+    --scrollBarWidth: 0px;
+  }
+}
+
 @media (max-width: 1440px) {
   :root {
     --fsMin: 14;
