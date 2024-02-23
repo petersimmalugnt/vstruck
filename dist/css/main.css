@@ -626,6 +626,10 @@ html {
   fill: #171717;
 }
 
+.trucks-grid-list[data-trucks-grid-list=true] {
+  grid-template-columns: 1fr;
+}
+
 .testlist .head-arrow-title-wrapper {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #171717;
