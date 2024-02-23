@@ -824,7 +824,7 @@ html {
   height: 100%;
 }
 
-@container card (width < 50rem) {
+@container card (width < 60rem) {
   [data-card-layout=list] .card-container {
     grid-template-columns: 1fr 1fr;
   }
@@ -870,7 +870,7 @@ html {
     grid-template-columns: 1fr 1fr;
   }
 }
-@container attr-category-wrapper (width > 40rem) {
+@container attr-category-wrapper (width > 30rem) {
   .attr-table-category-wrapper[data-list-view=false] .attr-table-category-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
