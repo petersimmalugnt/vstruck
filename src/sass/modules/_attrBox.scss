@@ -55,3 +55,8 @@
   align-items: center;
   border-right: 1px dotted var(--vs-black);
 }
+
+.attr-table-category-wrapper[data-list-view="true"] .attr-valunit-container,
+[data-attr-box-table="true"] .attr-valunit-container {
+  width: auto;
+}
