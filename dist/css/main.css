@@ -824,6 +824,10 @@ html {
     mix-blend-mode: normal;
   }
 }
+[data-card-horizontal-layout=true]:has(.card-all-attr-wrapper) .card-container {
+  background-color: red;
+}
+
 [data-status="0"] .attr-value::before,
 [data-status="1"] .attr-value::before,
 [data-status="2"] .attr-value::before {

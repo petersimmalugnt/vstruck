@@ -37,3 +37,8 @@
     mix-blend-mode: normal;
   }
 }
+
+[data-card-horizontal-layout="true"]:has(.card-all-attr-wrapper)
+  .card-container {
+  background-color: red;
+}
