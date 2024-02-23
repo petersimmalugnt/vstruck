@@ -810,7 +810,7 @@ html {
 }
 /* LAYOUT: LIST */
 [data-card-layout=list] .card-container {
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
 }
 
 /* BLACK AND WHITE TRUCK IMAGE */
