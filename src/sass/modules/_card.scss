@@ -56,6 +56,13 @@
   }
 }
 
+@container card-attr-wrapper (width < 360px) {
+  .card-title-wrapper,
+  .card-attr-price-wrapper {
+    grid-area: span 1 / span 4 / span 1 / span 4 !important;
+  }
+}
+
 /* BLACK AND WHITE TRUCK IMAGE */
 .card-wrapper [data-bw-img="true"] {
   will-change: filter, mix-blend-mode;
