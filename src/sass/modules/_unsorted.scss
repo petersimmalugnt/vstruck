@@ -45,7 +45,7 @@ html {
   display: grid;
   --column-width: min(
     calc((100vw - var(--scrollBarWidth) - (13 * 1.5rem)) / 12),
-    calc((2000px - (11 * 28.5px)) / 12)
+    calc((2000px - var(--scrollBarWidth) - (11 * 28.5px)) / 12)
   );
   grid-template-columns: minmax(0px, 1fr) repeat(12, var(--column-width)) minmax(
       0px,
