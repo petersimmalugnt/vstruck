@@ -831,7 +831,7 @@ html {
 @media screen and (width <= 479px) {
   [data-card-layout=list] .card-container {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 9rem 1fr;
+    grid-template-rows: auto 12rem 1fr;
   }
 }
 /* BLACK AND WHITE TRUCK IMAGE */
