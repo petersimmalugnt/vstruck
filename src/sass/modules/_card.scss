@@ -29,10 +29,10 @@
 
 [data-card-layout="list"] .card-label-img-container {
   font-size: 0.75rem;
-  aspect-ratio: none;
 }
 
-[data-card-layout="list"] .card-img-wrapper {
+[data-card-layout="list"] .card-img-wrapper,
+[data-card-layout="list"] .card-no-img-container {
   aspect-ratio: none;
 }
 
