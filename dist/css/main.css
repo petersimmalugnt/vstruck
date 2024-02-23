@@ -870,7 +870,7 @@ html {
     grid-template-columns: 1fr 1fr;
   }
 }
-@container attr-category-wrapper (width > 30rem) {
+@container attr-category-wrapper (width > 40rem) {
   .attr-table-category-wrapper[data-list-view=false] .attr-table-category-list {
     grid-template-columns: 1fr 1fr 1fr;
   }
