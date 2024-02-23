@@ -894,6 +894,7 @@ html {
 [data-attr-box-table=true] {
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 [data-label-shape] {
