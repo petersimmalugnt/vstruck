@@ -854,12 +854,12 @@ html {
   }
 }
 @container attr-category-wrapper (width > 250px) {
-  .attr-table-category-list {
+  .attr-table-category-list[data-list-view=false] {
     grid-template-columns: 1fr 1fr;
   }
 }
 @container attr-category-wrapper (width > 500px) {
-  .attr-table-category-list {
+  .attr-table-category-list[data-list-view=false] {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
