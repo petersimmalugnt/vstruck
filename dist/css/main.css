@@ -8,7 +8,7 @@
   --scrollBarWidth: 16px;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 960px) {
   :root {
     --scrollBarWidth: 0px;
   }
