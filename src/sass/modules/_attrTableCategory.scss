@@ -1,0 +1,5 @@
+@container attr-category-wrapper (width > 500px) {
+  .attr-table-category-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
