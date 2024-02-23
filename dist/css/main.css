@@ -824,15 +824,21 @@ html {
   height: 100%;
 }
 
-@media screen and (width <= 991px) {
+@container card (width < 800px) {
   [data-card-layout=list] .card-container {
     grid-template-columns: 1fr 1fr;
   }
+  .card-all-attr-wrapper {
+    height: 24rem;
+  }
 }
-@media screen and (width <= 479px) {
+@container card (width < 500px) {
   [data-card-layout=list] .card-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 12rem 1fr;
+  }
+  .card-all-attr-wrapper {
+    grid-area: span 1/span 1/span 1/span 1;
   }
 }
 /* BLACK AND WHITE TRUCK IMAGE */
