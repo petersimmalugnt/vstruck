@@ -23,18 +23,17 @@
 
 /* LAYOUT: LIST */
 [data-card-layout="list"] .card-container {
-  grid-auto-flow: column;
-  grid-template-columns: 1fr 1fr 2fr;
-  max-height: 30rem;
+  // grid-auto-flow: column;
+  grid-template-columns: 1fr 3fr;
 }
 
-[data-card-layout="list"] .card-label-img-container {
-  font-size: 0.75rem;
-}
+// [data-card-layout="list"] .card-label-img-container {
+//   font-size: 0.75rem;
+// }
 
-[data-card-layout="list"] .card-img-wrapper {
-  aspect-ratio: none;
-}
+// [data-card-layout="list"] .card-img-wrapper {
+//   aspect-ratio: none;
+// }
 
 /* BLACK AND WHITE TRUCK IMAGE */
 .card-wrapper [data-bw-img="true"] {
