@@ -21,7 +21,7 @@
 }
 
 html {
-  font-size: clamp(1px * var(--fsMin), 1px * var(--fsMin) + (var(--fsMax) - var(--fsMin)) * (100dvw - 1px * var(--vpMin)) / (var(--vpMax) - var(--vpMin)), 1px * var(--fsMax));
+  font-size: clamp(1px * var(--fsMin), 1px * var(--fsMin) + (var(--fsMax) - var(--fsMin)) * (100vw - 1px * var(--vpMin)) / (var(--vpMax) - var(--vpMin)), 1px * var(--fsMax));
   line-height: 1.5rem;
 }
 
@@ -30,7 +30,7 @@ html {
   width: 100%;
   display: grid;
   --column-width: min(
-    calc((100dvw - (13 * 1.5rem)) / 12),
+    calc((100vw - 16px - (13 * 1.5rem)) / 12),
     calc((2000px - (11 * 28.5px)) / 12)
   );
   grid-template-columns: minmax(0px, 1fr) repeat(12, var(--column-width)) minmax(0px, 1fr);
