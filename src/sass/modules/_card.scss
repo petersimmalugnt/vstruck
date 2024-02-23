@@ -37,7 +37,7 @@
   height: 100%;
 }
 
-@container card (width < 64rem) {
+@container card (width < 62rem) {
   [data-card-layout="list"] .card-container {
     grid-template-columns: 1fr 1fr;
   }
