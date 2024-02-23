@@ -37,7 +37,7 @@
   height: 100%;
 }
 
-@media screen and (width <= 767px) {
+@media screen and (width <= 991px) {
   [data-card-layout="list"] .card-container {
     grid-template-columns: 1fr 1fr;
   }
