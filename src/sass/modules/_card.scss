@@ -56,7 +56,7 @@
   }
 }
 
-@container card-attr-wrapper (width < 360px) {
+@container card-attr-wrapper (width < 320px) {
   .card-title-wrapper,
   .card-attr-price-wrapper {
     grid-area: span 1 / span 4 / span 1 / span 4 !important;
