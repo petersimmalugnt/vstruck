@@ -810,8 +810,8 @@ html {
 }
 /* LAYOUT: LIST */
 [data-card-layout=list] .card-container {
-  background-color: red;
   grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 [data-card-layout=list] .card-label-img-container {
