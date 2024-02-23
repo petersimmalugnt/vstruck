@@ -813,6 +813,11 @@ html {
   grid-template-columns: 1fr 2fr;
 }
 
+[data-card-layout=list] .card-attr-slide-wrapper,
+[data-card-layout=list] .card-btn-quickview {
+  display: none;
+}
+
 [data-card-layout=list] .card-label-img-container {
   font-size: 0.75rem;
 }
