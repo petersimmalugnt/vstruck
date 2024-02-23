@@ -891,6 +891,7 @@ html {
   font-size: 1.25rem;
 }
 
+.attr-table-category-wrapper[data-list-view=true] .attr-box,
 [data-attr-box-table=true] {
   flex-direction: row;
   justify-content: start;
@@ -898,6 +899,7 @@ html {
   gap: 1rem;
 }
 
+.attr-table-category-wrapper[data-list-view=true] .attr-title,
 [data-attr-box-table=true] .attr-title {
   width: 10rem;
   height: 100%;
