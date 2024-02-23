@@ -896,7 +896,7 @@ html {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .attr-table-category-wrapper[data-list-view=true] .attr-title,
@@ -913,6 +913,7 @@ html {
 .attr-table-category-wrapper[data-list-view=true] .attr-valunit-container,
 [data-attr-box-table=true] .attr-valunit-container {
   width: auto;
+  padding: 0 0.5rem;
 }
 
 [data-label-shape] {
