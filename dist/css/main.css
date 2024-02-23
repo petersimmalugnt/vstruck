@@ -832,7 +832,7 @@ html {
     height: 24rem;
   }
 }
-@container card (width < 560px) {
+@container card (width < 480px) {
   [data-card-layout=list] .card-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 12rem 1fr;
