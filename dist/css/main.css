@@ -820,7 +820,7 @@ html {
 
 [data-card-layout=list] .card-img-wrapper,
 [data-card-layout=list] .card-no-img-container {
-  aspect-ratio: none;
+  aspect-ratio: auto;
 }
 
 /* BLACK AND WHITE TRUCK IMAGE */
