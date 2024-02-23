@@ -811,6 +811,7 @@ html {
 /* LAYOUT: LIST */
 [data-card-layout=list] .card-container {
   grid-template-columns: 1fr 2fr;
+  max-height: 31rem;
 }
 
 [data-card-layout=list] .card-label-img-container {
