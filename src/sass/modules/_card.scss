@@ -24,6 +24,7 @@
 /* LAYOUT: LIST */
 [data-card-layout="list"] .card-container {
   grid-template-columns: 1fr 2fr;
+  height: calc(31rem + 4px);
   max-height: calc(31rem + 4px);
 }
 
