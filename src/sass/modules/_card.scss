@@ -46,7 +46,7 @@
   }
 }
 
-@container card (width < 500px) {
+@container card (width < 560px) {
   [data-card-layout="list"] .card-container {
     grid-template-columns: 1fr;
     grid-template-rows: auto 12rem 1fr;
