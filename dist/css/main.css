@@ -901,7 +901,7 @@ html {
 
 .attr-table-category-wrapper[data-list-view=true] .attr-title,
 [data-attr-box-table=true] .attr-title {
-  width: 10rem;
+  width: 9.5rem;
   height: 100%;
   padding: 0 0.5rem;
   display: flex;
