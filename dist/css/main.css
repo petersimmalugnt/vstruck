@@ -809,10 +809,6 @@ html {
   }
 }
 /* LAYOUT: LIST */
-[data-card-layout=list] {
-  height: calc(31rem + 4px);
-}
-
 [data-card-layout=list] .card-container {
   grid-template-columns: 1fr 2fr;
 }
@@ -827,6 +823,11 @@ html {
   height: 100%;
 }
 
+@media screen and (width <= 767px) {
+  [data-card-layout=list] .card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /* BLACK AND WHITE TRUCK IMAGE */
 .card-wrapper [data-bw-img=true] {
   will-change: filter, mix-blend-mode;
