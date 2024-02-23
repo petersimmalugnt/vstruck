@@ -828,6 +828,11 @@ html {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (width <= 479px) {
+  [data-card-layout=list] .card-container {
+    grid-template-columns: 1fr;
+  }
+}
 /* BLACK AND WHITE TRUCK IMAGE */
 .card-wrapper [data-bw-img=true] {
   will-change: filter, mix-blend-mode;
