@@ -32,3 +32,7 @@
 [data-status="2"] .attr-value::before {
   background-color: var(--red);
 }
+
+[data-attr-value-size="large"] .attr-Value {
+  font-size: 1.25rem;
+}
