@@ -52,7 +52,7 @@
     grid-template-rows: auto 12rem 1fr;
   }
   .card-all-attr-wrapper {
-    grid-area: span 1 / span 1 / span 1 / span 1;
+    grid-area: span 1 / span 1 / span 1 / span 1 !important;
   }
 }
 
