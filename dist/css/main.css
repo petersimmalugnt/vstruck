@@ -940,7 +940,7 @@ html {
 
 .attr-box[data-attr-box-selectable=true]::before,
 .attr-box[data-attr-box-selected=true]::before {
-  content: "+";
+  content: " ";
   position: absolute;
   inset: 0 0 auto auto;
   width: 1rem;
@@ -949,13 +949,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "IBM Plex Mono";
   font-size: 0.75rem;
   line-height: 1em;
-  color: transparent;
+  color: var(--vs-black);
+  background-color: var(--khaki);
   -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
           clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
-  will-change: clip-path, color, content;
-  background-color: var(--khaki);
+  will-change: clip-path, content;
   z-index: -1;
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
@@ -965,6 +966,7 @@ html {
 }
 
 .attr-box[data-attr-box-selected=true]::before {
+  content: "+";
   -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 100% 100%);
           clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 100% 100%);
 }
@@ -975,7 +977,6 @@ html {
 
 .attr-box[data-attr-box-selectable=true]:hover::before,
 .attr-box[data-attr-box-selected=true]:hover::before {
-  color: var(--vs-black);
   -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
