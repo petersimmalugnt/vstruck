@@ -966,13 +966,16 @@ html {
 }
 
 .attr-box[data-attr-box-selected=true]::before {
-  content: "+";
   -webkit-clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 100% 100%);
           clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 100% 100%);
 }
 
 .attr-box[data-attr-box-selected=true]:hover::before {
   content: "—";
+}
+
+.attr-box[data-attr-box-selectable=true]:hover::before {
+  content: "+";
 }
 
 .attr-box[data-attr-box-selectable=true]:hover::before,
