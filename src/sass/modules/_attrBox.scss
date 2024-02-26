@@ -86,5 +86,5 @@
 }
 
 .attr-box[data-attr-box-selected="true"]:hover::before {
-  clip-path: polygon(33% 0%, 100% 0%, 100% 66%);
+  background-color: var(--red);
 }
