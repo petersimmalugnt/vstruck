@@ -26,7 +26,7 @@
 .card-table-attr-title-wrapper .card-table-attr-title-txt {
   translate: 0rem 0rem;
   will-change: translate;
-  transition: 0.3s cubic-bezier(0, 0, 0.1, 1);
+  transition: translate 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
 .card-table-attr-title-wrapper:hover::before,
