@@ -49,10 +49,10 @@
   translate: 0.5rem 0rem;
 }
 
-.trucks-grid-table::after {
+.trucks-grid-table-wrapper::after {
   content: " ";
-  position: absolute;
-  inset: 0 -0.5px 0 auto;
+  grid-area: 2 / 1 / 2 / 1;
+  justify-self: end;
   width: 0.25rem;
   border-right: 1px solid var(--vs-black);
   background-color: var(--dim-light-grey);
