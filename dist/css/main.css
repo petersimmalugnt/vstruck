@@ -961,8 +961,8 @@ html {
 }
 
 .attr-box[data-attr-box-selectable=true]:hover::before {
-  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
-          clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
+  -webkit-clip-path: polygon(75% 0%, 100% 0%, 100% 75%);
+          clip-path: polygon(75% 0%, 100% 0%, 100% 75%);
 }
 
 [data-label-shape] {
