@@ -85,5 +85,5 @@
 }
 
 .attr-box[data-attr-box-selectable="true"]:hover::before {
-  clip-path: polygon(75% 0%, 100% 0%, 100% 75%);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 25%);
 }
