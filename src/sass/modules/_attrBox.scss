@@ -61,3 +61,13 @@
   width: auto;
   padding: 0 0.5rem;
 }
+
+.attr-box[data-attr-box-selected="true"]::before {
+  content: " ";
+  position: absolute;
+  inset: 0 0 auto auto;
+  width: 1rem;
+  height: 1rem;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  background-color: var(--khaki);
+}
