@@ -32,9 +32,8 @@
 .card-table-attr-title-wrapper[data-order="dsc"]::before {
   opacity: 1;
 }
-.card-table-attr-title-wrapper:before
-  .card-table-attr-title-wrapper
-  .card-table-attr-title-wrapper[data-order="dsc"]::before {
+
+.card-table-attr-title-wrapper[data-order="dsc"]::before {
   rotate: 180deg;
 }
 
