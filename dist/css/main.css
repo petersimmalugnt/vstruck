@@ -985,6 +985,10 @@ html {
   content: "—";
 }
 
+.card-table-wrapper .attr-box[data-attr-table=true] {
+  padding: 0.5rem 1.5rem;
+}
+
 [data-label-shape] {
   background-color: #ffffff;
 }
