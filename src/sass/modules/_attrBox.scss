@@ -62,7 +62,7 @@
   padding: 0 0.5rem;
 }
 
-.attr-box[data-attr-selectable="true"]::before,
+.attr-box[data-attr-box-selectable="true"]::before,
 .attr-box[data-attr-box-selected="true"]::before {
   content: " ";
   position: absolute;
@@ -81,6 +81,6 @@
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
 
-.attr-box[data-attr-selectable="true"]:hover::before {
+.attr-box[data-attr-box-selectable="true"]:hover::before {
   clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
 }
