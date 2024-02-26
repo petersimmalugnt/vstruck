@@ -1027,6 +1027,11 @@ html {
   translate: 0.5rem 0rem;
 }
 
+.card-table-attr-title-wrapper[data-order=asc],
+.card-table-attr-title-wrapper[data-order=dsc] {
+  background-color: var(--silver);
+}
+
 [data-label-shape] {
   background-color: #ffffff;
 }

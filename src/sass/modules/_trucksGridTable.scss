@@ -46,3 +46,8 @@
 .card-table-attr-title-wrapper[data-order="dsc"] .card-table-attr-title-txt {
   translate: 0.5rem 0rem;
 }
+
+.card-table-attr-title-wrapper[data-order="asc"],
+.card-table-attr-title-wrapper[data-order="dsc"] {
+  background-color: var(--silver);
+}
