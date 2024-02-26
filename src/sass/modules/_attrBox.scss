@@ -68,12 +68,19 @@
 
 .attr-box[data-attr-box-selectable="true"]::before,
 .attr-box[data-attr-box-selected="true"]::before {
-  content: " ";
+  content: "+";
   position: absolute;
   inset: 0 0 auto auto;
   width: 1rem;
   height: 1rem;
-  clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.75rem;
+  line-height: 1em;
+  color: transparent;
+  clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
   will-change: clip-path, background-color;
   background-color: var(--khaki);
   z-index: -1;
@@ -81,12 +88,16 @@
     background-color 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
-.attr-box[data-attr-box-selectable="true"]:hover::before,
 .attr-box[data-attr-box-selected="true"]::before {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+  clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%);
 }
 
 .attr-box[data-attr-box-selected="true"]:hover::before {
+  content: "-";
   background-color: var(--dark-grey);
-  clip-path: polygon(25% 0%, 100% 0%, 100% 75%);
+}
+
+.attr-box[data-attr-box-selectable="true"]:hover::before,
+.attr-box[data-attr-box-selected="true"]:hover::before {
+  clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 0% 100%);
 }
