@@ -960,9 +960,9 @@ html {
   z-index: -1;
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
-  transition-property: color, background-color, -webkit-clip-path;
-  transition-property: clip-path, color, background-color;
-  transition-property: clip-path, color, background-color, -webkit-clip-path;
+  transition-property: color, -webkit-clip-path;
+  transition-property: clip-path, color;
+  transition-property: clip-path, color, -webkit-clip-path;
 }
 
 .attr-box[data-attr-box-selected=true]::before {
