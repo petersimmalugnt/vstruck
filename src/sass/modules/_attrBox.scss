@@ -97,12 +97,12 @@
 .attr-box[data-attr-box-selectable="true"]:hover::before,
 .attr-box[data-attr-box-selected="true"]:hover::before {
   clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: var(--silver);
 }
 
 .attr-box[data-attr-box-selectable="true"]:hover::before {
   content: "+";
 }
 .attr-box[data-attr-box-selected="true"]:hover::before {
+  background-color: var(--silver);
   content: "—";
 }
