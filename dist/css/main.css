@@ -974,7 +974,7 @@ html {
 .attr-box[data-attr-box-selected=true]:hover::before {
   -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  background-color: var(--steel);
+  background-color: var(--silver);
 }
 
 .attr-box[data-attr-box-selectable=true]:hover::before {
