@@ -957,9 +957,11 @@ html {
   will-change: clip-path, background-color;
   background-color: var(--khaki);
   z-index: -1;
-  transition: background-color 0.3s cubic-bezier(0, 0, 0.1, 1), -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
-  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1), background-color 0.3s cubic-bezier(0, 0, 0.1, 1);
-  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1), background-color 0.3s cubic-bezier(0, 0, 0.1, 1), -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
+  transition-property: background-color, color, -webkit-clip-path;
+  transition-property: clip-path, background-color, color;
+  transition-property: clip-path, background-color, color, -webkit-clip-path;
 }
 
 .attr-box[data-attr-box-selected=true]::before {
@@ -974,6 +976,7 @@ html {
 
 .attr-box[data-attr-box-selectable=true]:hover::before,
 .attr-box[data-attr-box-selected=true]:hover::before {
+  color: var(--vs-black);
   -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
