@@ -74,10 +74,11 @@
   width: 1rem;
   height: 1rem;
   clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
-  will-change: clip-path;
+  will-change: clip-path, background-color;
   background-color: var(--khaki);
   z-index: -1;
-  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
+  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1),
+    background-color 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
 .attr-box[data-attr-box-selectable="true"]:hover::before,
@@ -87,4 +88,5 @@
 
 .attr-box[data-attr-box-selected="true"]:hover::before {
   background-color: var(--dark-grey);
+  clip-path: polygon(25% 0%, 100% 0%, 100% 75%);
 }

@@ -947,12 +947,12 @@ html {
   height: 1rem;
   -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
           clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
-  will-change: clip-path;
+  will-change: clip-path, background-color;
   background-color: var(--khaki);
   z-index: -1;
-  transition: -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
-  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
-  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1), -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
+  transition: background-color 0.3s cubic-bezier(0, 0, 0.1, 1), -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
+  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1), background-color 0.3s cubic-bezier(0, 0, 0.1, 1);
+  transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1), background-color 0.3s cubic-bezier(0, 0, 0.1, 1), -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
 .attr-box[data-attr-box-selectable=true]:hover::before,
@@ -963,6 +963,8 @@ html {
 
 .attr-box[data-attr-box-selected=true]:hover::before {
   background-color: var(--dark-grey);
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 75%);
+          clip-path: polygon(25% 0%, 100% 0%, 100% 75%);
 }
 
 [data-label-shape] {
