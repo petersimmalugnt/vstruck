@@ -1009,21 +1009,21 @@ html {
 }
 
 .card-table-attr-title-wrapper:hover::before,
-.card-table-attr-title-wrapper[data-table-attr-title-order=asc]:hover::before,
-.card-table-attr-title-wrapper[data-table-attr-title-order=dsc]:hover::before {
+.card-table-attr-title-wrapper[data-order=asc]:hover::before,
+.card-table-attr-title-wrapper[data-order=dsc]:hover::before {
   opacity: 1;
 }
 
-.card-table-attr-title-wrapper[data-table-attr-title-order=dsc]:hover::before {
+.card-table-attr-title-wrapper[data-order=dsc]:hover::before {
   rotate: 180deg;
 }
 
 .card-table-attr-title-wrapper:hover::before,
 .card-table-attr-title-wrapper:hover .card-table-attr-title-txt,
-.card-table-attr-title-wrapper[data-table-attr-title-order=asc]:hover::before,
-.card-table-attr-title-wrapper[data-table-attr-title-order=asc]:hover .card-table-attr-title-txt,
-.card-table-attr-title-wrapper[data-table-attr-title-order=dsc]:hover::before,
-.card-table-attr-title-wrapper[data-table-attr-title-order=dsc]:hover .card-table-attr-title-txt {
+.card-table-attr-title-wrapper[data-order=asc]:hover::before,
+.card-table-attr-title-wrapper[data-order=asc]:hover .card-table-attr-title-txt,
+.card-table-attr-title-wrapper[data-order=dsc]:hover::before,
+.card-table-attr-title-wrapper[data-order=dsc]:hover .card-table-attr-title-txt {
   translate: 0.5rem 0rem;
 }
 
