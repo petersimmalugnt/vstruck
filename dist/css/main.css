@@ -989,7 +989,7 @@ html {
   padding: 0.5rem 1.5rem;
 }
 
-.card-table-attr-title-wrapper::after {
+.card-table-attr-title-wrapper::before {
   content: " ";
   width: 1em;
   height: 1em;
@@ -1000,11 +1000,11 @@ html {
   will-change: translate;
 }
 
-.card-table-attr-title-wrapper:hover::after {
+.card-table-attr-title-wrapper:hover::before {
   opacity: 1;
 }
 
-.card-table-attr-title-wrapper:hover::after,
+.card-table-attr-title-wrapper:hover::before,
 .card-table-attr-title-wrapper:hover .card-table-attr-title-txt {
   translate: 0.5rem 0rem;
 }
