@@ -989,6 +989,14 @@ html {
   padding: 0.5rem 1.5rem;
 }
 
+.card-table-attr-title-wrapper::before,
+.card-table-attr-title-wrapper .card-table-attr-title-txt {
+  will-change: translate;
+  transition-duration: 0.3s;
+  transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
+  transition-property: translate;
+}
+
 .card-table-attr-title-wrapper::before {
   content: " ";
   width: 1em;
@@ -997,17 +1005,11 @@ html {
           clip-path: polygon(17.55% 49.75%, 48.05% 78.55%, 78.85% 49.65%, 74.05% 44.15%, 51.85% 65.45%, 51.85% 18.75%, 44.65% 18.75%, 44.65% 65.75%, 22.45% 44.35%, 17.55% 49.75%);
   opacity: 0;
   background-color: currentColor;
+  transition-property: translate, opacity;
 }
 
 .card-table-attr-title-wrapper:hover::before {
   opacity: 1;
-}
-
-.card-table-attr-title-wrapper::before,
-.card-table-attr-title-wrapper .card-table-attr-title-txt {
-  translate: 0rem 0rem;
-  will-change: translate;
-  transition: translate 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
 .card-table-attr-title-wrapper:hover::before,
