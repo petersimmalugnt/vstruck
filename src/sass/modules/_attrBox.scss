@@ -81,12 +81,12 @@
   line-height: 1em;
   color: transparent;
   clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
-  will-change: clip-path, background-color;
+  will-change: clip-path, color, content;
   background-color: var(--khaki);
   z-index: -1;
   transition-duration: 0.3s;
   transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
-  transition-property: clip-path, background-color, color;
+  transition-property: clip-path, color;
 }
 
 .attr-box[data-attr-box-selected="true"]::before {
@@ -95,7 +95,6 @@
 
 .attr-box[data-attr-box-selected="true"]:hover::before {
   content: "—";
-  background-color: var(--silver);
 }
 
 .attr-box[data-attr-box-selectable="true"]:hover::before,
