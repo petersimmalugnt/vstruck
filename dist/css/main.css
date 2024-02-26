@@ -1014,7 +1014,7 @@ html {
   opacity: 1;
 }
 
-.card-table-attr-title-wrapper[data-order=dsc]:hover::before {
+.card-table-attr-title-wrapper:before .card-table-attr-title-wrapper .card-table-attr-title-wrapper[data-order=dsc]:hover::before {
   rotate: 180deg;
 }
 
