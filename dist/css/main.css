@@ -970,8 +970,8 @@ html {
 }
 
 .attr-box[data-attr-box-selected=true]:hover::before {
-  content: "-";
-  background-color: var(--dark-grey);
+  content: "—";
+  background-color: var(--silver);
 }
 
 .attr-box[data-attr-box-selectable=true]:hover::before,
