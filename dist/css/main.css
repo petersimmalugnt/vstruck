@@ -974,8 +974,8 @@ html {
 
 .attr-box[data-attr-box-selectable=true]:hover::before,
 .attr-box[data-attr-box-selected=true]:hover::before {
-  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 0% 100%);
-          clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 0% 100%);
+  -webkit-clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+          clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
 }
 
 [data-label-shape] {
