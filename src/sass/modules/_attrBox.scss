@@ -73,6 +73,12 @@
   inset: 0 0 auto auto;
   width: 1rem;
   height: 1rem;
+  font-size: 0.75rem;
+  line-height: 1em;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
   will-change: clip-path;
   background-color: var(--khaki);
@@ -80,10 +86,16 @@
   transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
-.attr-box[data-attr-box-selected="true"]::before {
+.attr-box[data-attr-box-selected="true"]::before,
+.attr-box[data-attr-box-selectable="true"]:hover::before {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
 
 .attr-box[data-attr-box-selectable="true"]:hover::before {
-  clip-path: polygon(25% 0%, 100% 0%, 100% 75%);
+  content: "+";
+}
+
+.attr-box[data-attr-box-selected="true"]:hover::before {
+  content: "-";
+  clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
 }
