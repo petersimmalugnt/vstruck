@@ -955,8 +955,8 @@ html {
   transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1), -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
-.attr-box[data-attr-box-selected=true]::before,
-.attr-box[data-attr-box-selectable=true]:hover::before {
+.attr-box[data-attr-box-selectable=true]:hover::before,
+.attr-box[data-attr-box-selected=true]::before {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
