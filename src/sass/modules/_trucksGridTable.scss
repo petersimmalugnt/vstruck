@@ -54,7 +54,7 @@
   position: absolute;
   inset: 0 -0.5px 0 auto;
   width: 0.25rem;
-  border: 1px solid var(--vs-black);
+  border-right: 1px solid var(--vs-black);
   background-color: var(--dim-light-grey);
   z-index: 3;
 }
