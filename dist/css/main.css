@@ -941,8 +941,10 @@ html {
   inset: 0 0 auto auto;
   width: 1rem;
   height: 1rem;
+  cursor: pointer;
   -webkit-clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
           clip-path: polygon(100% 0%, 100% 0%, 100% 0%);
+  will-change: clip-path;
   background-color: var(--khaki);
   z-index: -1;
   transition: -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
@@ -950,14 +952,14 @@ html {
   transition: clip-path 0.3s cubic-bezier(0, 0, 0.1, 1), -webkit-clip-path 0.3s cubic-bezier(0, 0, 0.1, 1);
 }
 
-.attr-box[data-attr-selectable=true]:hover::before {
-  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
-          clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
-}
-
 .attr-box[data-attr-box-selected=true]::before {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
+}
+
+.attr-box[data-attr-selectable=true]:hover::before {
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 50%);
 }
 
 [data-label-shape] {
