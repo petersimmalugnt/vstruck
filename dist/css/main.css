@@ -985,6 +985,30 @@ html {
   content: "—";
 }
 
+.card-table-wrapper .attr-box[data-attr-box-table=true] {
+  padding: 0.5rem 1.5rem;
+}
+
+.card-table-attr-title-wrapper::after {
+  content: " ";
+  width: 1em;
+  height: 1em;
+  -webkit-clip-path: polygon(17.55% 49.75%, 48.05% 78.55%, 78.85% 49.65%, 74.05% 44.15%, 51.85% 65.45%, 51.85% 18.75%, 44.65% 18.75%, 44.65% 65.75%, 22.45% 44.35%, 17.55% 49.75%);
+          clip-path: polygon(17.55% 49.75%, 48.05% 78.55%, 78.85% 49.65%, 74.05% 44.15%, 51.85% 65.45%, 51.85% 18.75%, 44.65% 18.75%, 44.65% 65.75%, 22.45% 44.35%, 17.55% 49.75%);
+  opacity: 0;
+  background-color: currentColor;
+  will-change: translate;
+}
+
+.card-table-attr-title-wrapper:hover::after {
+  opacity: 1;
+}
+
+.card-table-attr-title-wrapper:hover::after,
+.card-table-attr-title-wrapper:hover .card-table-attr-title-txt {
+  translate: 0.5rem 0rem;
+}
+
 [data-label-shape] {
   background-color: #ffffff;
 }
