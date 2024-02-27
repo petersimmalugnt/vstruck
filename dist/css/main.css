@@ -794,7 +794,7 @@ html {
   justify-items: start;
   align-items: end;
   cursor: pointer;
-  color: var(--dark-slate-grey);
+  color: var(--dark-aa);
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 0.75rem;
   line-height: 1rem;
