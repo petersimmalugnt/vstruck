@@ -11,6 +11,10 @@
 //   z-index: 10;
 // }
 
+.dropdown-wrapper {
+  z-index: 0;
+}
+
 .dropdown-wrapper:hover,
 .dropdown-wrapper[data-dd-open="true"] {
   z-index: 10;
@@ -73,6 +77,7 @@
 .dropdown-wrapper[data-dd-anchor-position*="top"] .dropdown-content-container {
   top: auto;
   bottom: 100%;
+  z-index: 0;
 }
 .dropdown-wrapper[data-dd-anchor-position*="bottom"]
   .dropdown-content-container {
