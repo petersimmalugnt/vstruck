@@ -23,10 +23,6 @@
 //   display: flex;
 // }
 
-.dropdown-wrapper {
-  background-color: red;
-}
-
 .dropdown-wrapper,
 .dropdown-toggle-wrapper:not([data-dd-open="true"]) {
   z-index: unset;
