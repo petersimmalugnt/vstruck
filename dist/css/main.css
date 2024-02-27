@@ -784,6 +784,11 @@ html {
 .supertext-rt[data-read-more=open]::after {
   position: absolute;
   inset: auto auto 0rem 0rem;
+  background-color: white;
+  height: 2.5rem;
+  display: flex;
+  justify-items: start;
+  align-items: end;
   cursor: pointer;
   color: #8e9997;
   font-family: "IBM Plex Sans Condensed", sans-serif;
