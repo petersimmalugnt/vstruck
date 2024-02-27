@@ -1071,7 +1071,7 @@ html {
   width: 4rem;
   min-height: 4rem;
   background-color: var(--white);
-  box-shadow: 0.25rem 0 0 0 var(--dim-light-grey);
+  box-shadow: 0.5rem 0 0 0 var(--dim-light-grey);
   outline-color: var(--vs-black);
   outline-offset: -0.5px;
   outline-style: solid;
