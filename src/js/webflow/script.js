@@ -138,9 +138,9 @@ const allFilterDdToggle = () => {
 };
 
 const dropDowns = () => {
-  document.querySelectorAll(".dropdown-toggle-container").forEach((btn) => {
+  document.querySelectorAll(".dropdown-toggle-wrapper").forEach((btn) => {
     btn.addEventListener("click", () => {
-      const parent = btn.closest(".dropdown-toggle-wrapper");
+      const parent = btn.closest(".dropdown-wrapper");
       if (parent)
         parent.dataset.ddOpen =
           parent.dataset.ddOpen === "true" ? "false" : "true";
