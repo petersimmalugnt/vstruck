@@ -192,6 +192,11 @@
   text-transform: uppercase;
 }
 
+.supertext-rt[data-read-more-is-closed="true"]:hover::after,
+.supertext-rt[data-read-more-is-closed="false"]:hover::after {
+  color: currentColor;
+}
+
 .supertext-rt[data-read-more-is-closed="true"]::after {
   content: "...Läs mer";
 }
