@@ -782,7 +782,7 @@ html {
 }
 
 .related-product-price-container {
-  animation: related-product-price-container 5s cubic-bezier(0.5, 0, 0.5, 1) both infinite;
+  animation: related-product-price-container 10s cubic-bezier(0.5, 0, 0.5, 1) both infinite;
 }
 
 @keyframes related-product-price-container {
@@ -803,12 +803,17 @@ html {
     rotate: -6deg;
     translate: 0 -1rem;
   }
-  25%, 75% {
+  16.5%, 46.5%, 82.5% {
     rotate: 6deg;
   }
-  50% {
+  33%, 66% {
     rotate: -6deg;
+  }
+  25%, 75% {
     translate: 0 1rem;
+  }
+  50% {
+    translate: 0 -1rem;
   }
 }
 .logolist--link-marquee-container {
