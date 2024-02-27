@@ -283,6 +283,10 @@ html {
   z-index: 0;
 }
 
+.dropdown-toggle-wrapper:not([data-dd-open=true]) {
+  z-index: unset;
+}
+
 .dropdown-wrapper {
   position: static;
 }
