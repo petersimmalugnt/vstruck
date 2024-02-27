@@ -160,13 +160,13 @@
 
 /* read more */
 
-.supertext-rt[data-read-more="open"],
-.supertext-rt[data-read-more="close"] {
+.supertext-rt[data-read-more-is-closed="true"],
+.supertext-rt[data-read-more-is-closed="false"] {
   padding-bottom: 2rem;
   position: relative;
 }
 
-.supertext-rt[data-read-more="close"] {
+.supertext-rt[data-read-more-is-closed="true"] {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -174,8 +174,8 @@
   -webkit-box-orient: vertical;
 }
 
-.supertext-rt[data-read-more="open"]::after,
-.supertext-rt[data-read-more="close"]::after {
+.supertext-rt[data-read-more-is-closed="true"]::after,
+.supertext-rt[data-read-more-is-closed="false"]::after {
   position: absolute;
   inset: auto 0rem 0rem 0rem;
   background-color: white;
@@ -192,10 +192,10 @@
   text-transform: uppercase;
 }
 
-.supertext-rt[data-read-more="open"]::after {
-  content: "— Läs mindre";
+.supertext-rt[data-read-more-is-closed="true"]::after {
+  content: "...Läs mer";
 }
 
-.supertext-rt[data-read-more="close"]::after {
-  content: "...Läs mer";
+.supertext-rt[data-read-more-is-closed="false"]::after {
+  content: "— Läs mindre";
 }
