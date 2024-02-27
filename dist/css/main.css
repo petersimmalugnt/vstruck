@@ -283,7 +283,15 @@ html {
   z-index: 0;
 }
 
-div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover,
+.dropdown-wrapper {
+  position: static;
+}
+
+.dropdown-wrapper[data-dd-open=true] {
+  position: relative;
+}
+
+div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdown-toggle-container,
 .dropdown-wrapper[data-dd-open=true] {
   z-index: 10;
 }
