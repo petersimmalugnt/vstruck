@@ -278,10 +278,7 @@ html {
 }
 
 /* DD Dropdown */
-.dropdown-wrapper:hover {
-  z-index: 11;
-}
-
+.dropdown-wrapper:hover,
 .dropdown-wrapper[data-dd-open=true] {
   z-index: 10;
 }
