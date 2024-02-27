@@ -770,18 +770,22 @@ html {
 }
 
 /* read more */
+.supertext-rt[data-read-more=open],
+.supertext-rt[data-read-more=close] {
+  padding-bottom: 2rem;
+  position: relative;
+}
+
 .supertext-rt[data-read-more=close] {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  padding-bottom: 2rem;
-  position: relative;
 }
 
-.supertext-rt[data-read-more=close]::after,
-.supertext-rt[data-read-more=open]::after {
+.supertext-rt[data-read-more=open]::after,
+.supertext-rt[data-read-more=close]::after {
   position: absolute;
   inset: auto 0rem 0rem 0rem;
   background-color: white;
@@ -798,12 +802,12 @@ html {
   text-transform: uppercase;
 }
 
-.supertext-rt[data-read-more=close]::after {
-  content: "...Läs mer";
-}
-
 .supertext-rt[data-read-more=open]::after {
   content: "— Läs mindre";
+}
+
+.supertext-rt[data-read-more=close]::after {
+  content: "...Läs mer";
 }
 
 .related-product-price-container {
