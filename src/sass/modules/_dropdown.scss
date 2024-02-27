@@ -10,12 +10,13 @@
 // .dropdown-wrapper:is(:hover, :focus, :focus-within) {
 //   z-index: 10;
 // }
-.dropdown-wrapper:hover {
+.dropdown-wrapper:hover,
+.dropdown-wrapper[data-dd-open="true"] {
   z-index: 10;
 }
 
-.dropdown-wrapper[data-dd-open="true"] {
-  z-index: 99999;
+.dropdown-wrapper:hover[data-dd-open="true"] {
+  z-index: 999999;
 }
 
 .dropdown-toggle-container,
