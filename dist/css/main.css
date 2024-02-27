@@ -283,6 +283,7 @@ html {
   z-index: 0;
 }
 
+div:has(.dropdown-wrapper[data-dd-open=true]) .dropdown-wrapper:hover,
 .dropdown-wrapper[data-dd-open=true] {
   z-index: 10;
 }
