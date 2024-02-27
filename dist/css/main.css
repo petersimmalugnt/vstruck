@@ -278,11 +278,11 @@ html {
 }
 
 /* DD Dropdown */
+.dropdown-wrapper:hover,
 .dropdown-wrapper {
   z-index: 0;
 }
 
-.dropdown-wrapper:hover,
 .dropdown-wrapper[data-dd-open=true] {
   z-index: 10;
 }
@@ -299,6 +299,7 @@ html {
 
 .dropdown-wrapper[data-dd-open=true] .dropdown-toggle-container,
 .dropdown-wrapper:hover .dropdown-toggle-container {
+  transform: translate(-4px, -4px);
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
 }
 
