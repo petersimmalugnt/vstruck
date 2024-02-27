@@ -86,66 +86,77 @@
 [data-bg="black"],
 [data-bg="black"] .dd-toggle::after,
 [data-bg="black"] .dd-link::after {
+  --bg-color: var(--vs-black);
   background-color: var(--vs-black) !important;
 }
 
 [data-bg="white"],
 [data-bg="white"] .dd-toggle::after,
 [data-bg="white"] .dd-link::after {
+  --bg-color: var(--white);
   background-color: var(--white) !important;
 }
 
 [data-bg="dark-steel"],
 [data-bg="dark-steel"] .dd-toggle::after,
 [data-bg="dark-steel"] .dd-link::after {
+  --bg-color: var(--dark-grey);
   background-color: var(--dark-grey) !important;
 }
 
 [data-bg="medium-steel"],
 [data-bg="medium-steel"] .dd-toggle::after,
 [data-bg="medium-steel"] .dd-link::after {
+  --bg-color: var(--silver);
   background-color: var(--silver) !important;
 }
 
 [data-bg="steel"],
 [data-bg="steel"] .dd-toggle::after,
 [data-bg="steel"] .dd-link::after {
+  --bg-color: var(--light-grey);
   background-color: var(--light-grey) !important;
 }
 
 [data-bg="wellpapp"],
 [data-bg="wellpapp"] .dd-toggle::after,
 [data-bg="wellpapp"] .dd-link::after {
+  --bg-color: var(--linen);
   background-color: var(--linen) !important;
 }
 
 [data-bg="orange"],
 [data-bg="orange"] .dd-toggle::after,
 [data-bg="orange"] .dd-link::after {
+  --bg-color: var(--vs-prime);
   background-color: var(--vs-prime) !important;
 }
 
 [data-bg="red"],
 [data-bg="red"] .dd-toggle::after,
 [data-bg="red"] .dd-link::after {
+  --bg-color: var(--red);
   background-color: var(--red) !important;
 }
 
 [data-bg="yellow"],
 [data-bg="yellow"] .dd-toggle::after,
 [data-bg="yellow"] .dd-link::after {
+  --bg-color: var(--khaki);
   background-color: var(--khaki) !important;
 }
 
 [data-bg="blue"],
 [data-bg="blue"] .dd-toggle::after,
 [data-bg="blue"] .dd-link::after {
+  --bg-color: var(--light-sky-blue);
   background-color: var(--light-sky-blue) !important;
 }
 
 [data-bg="green"],
 [data-bg="green"] .dd-toggle::after,
 [data-bg="green"] .dd-link::after {
+  --bg-color: var(--green);
   background-color: var(--green) !important;
 }
 
