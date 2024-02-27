@@ -28,7 +28,7 @@ div:has(.dropdown-wrapper[data-dd-open="true"])
   > .dropdown-wrapper:hover
   .dropdown-toggle-container,
 .dropdown-wrapper[data-dd-open="true"] {
-  z-index: 10;
+  z-index: 12;
 }
 
 .dropdown-wrapper:hover[data-dd-open="true"] {
