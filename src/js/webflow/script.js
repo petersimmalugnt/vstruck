@@ -138,19 +138,12 @@ const allFilterDdToggle = () => {
 };
 
 const dropDowns = () => {
-  document.querySelectorAll(".dropdown-toggle-wrapper").forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      event.stopPropagation();
-      const parent = btn.closest(".dropdown-wrapper");
-      if (parent)
-        parent.dataset.ddOpen =
-          parent.dataset.ddOpen === "true" ? "false" : "true";
-    });
-  });
-
-  document.addEventListener("click", () => {
+  document.addEventListener("click", (event) => {
+    const toggleBtn = event.target.closest(".dropdown-toggle-wrapper");
     document.querySelectorAll(".dropdown-wrapper").forEach((dropdown) => {
-      dropdown.dataset.ddOpen = "false";
+      const isCurrent = dropdown.contains(event.target);
+      dropdown.dataset.ddOpen =
+        isCurrent && !dropdown.dataset.ddOpen ? "true" : "false";
     });
   });
 };
