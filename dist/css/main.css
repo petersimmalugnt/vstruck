@@ -781,6 +781,18 @@ html {
   margin-bottom: 0;
 }
 
+.related-product-price-container {
+  animation: related-product-price-container 3s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+@keyframes related-product-price-container {
+  0%, 100% {
+    rotate: -12deg;
+  }
+  50% {
+    rotate: 12deg;
+  }
+}
 .logolist--link-marquee-container {
   animation: logolist--link-marquee-container 25s linear infinite both;
 }
