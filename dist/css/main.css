@@ -1251,7 +1251,8 @@ html {
      object-fit: contain;
 }
 
-[data-elipsis=true] {
+[data-elipsis=true],
+[data-elipsis-all=true] * {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
