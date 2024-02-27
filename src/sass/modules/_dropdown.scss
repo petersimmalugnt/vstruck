@@ -11,7 +11,8 @@
 //   z-index: 10;
 // }
 
-.dropdown-wrapper .dropdown-toggle-wrapper:not([data-dd-open="true"]) {
+.dropdown-wrapper,
+.dropdown-toggle-wrapper:not([data-dd-open="true"]) {
   z-index: unset;
 }
 
