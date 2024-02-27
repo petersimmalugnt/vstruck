@@ -10,7 +10,10 @@
 // .dropdown-wrapper:is(:hover, :focus, :focus-within) {
 //   z-index: 10;
 // }
-.dropdown-wrapper:hover,
+.dropdown-wrapper:hover {
+  z-index: 11;
+}
+
 .dropdown-wrapper[data-dd-open="true"] {
   z-index: 10;
 }
