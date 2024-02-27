@@ -788,7 +788,7 @@ html {
 .supertext-rt[data-read-more-is-closed=false]::after {
   position: absolute;
   inset: auto 0rem 0rem 0rem;
-  background-color: white;
+  background-color: var(--bg-color, var(--white));
   height: 2rem;
   display: flex;
   justify-items: start;
