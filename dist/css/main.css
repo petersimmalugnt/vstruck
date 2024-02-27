@@ -129,14 +129,7 @@ html {
   pointer-events: none;
 }
 
-.trucksingel-price-buy:has(.trucksingel-buy-btn:hover) .trucksingel-price {
-  color: #8e9997;
-}
-
-.trucksingel-price-buy:has(.trucksingel-price:hover) .trucksingel-buy-btn {
-  background-color: #aeb7b6;
-}
-
+/* guide */
 .guide-btn-next:hover + .guide-pagina {
   background-color: #aeb7b6;
 }
