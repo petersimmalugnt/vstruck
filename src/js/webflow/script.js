@@ -141,14 +141,16 @@ const dropDowns = () => {
   document.addEventListener("click", (event) => {
     const withinToggle = event.target.closest(".dropdown-toggle-wrapper");
     const withinContent = event.target.closest(".dropdown-content-container");
-
     document.querySelectorAll(".dropdown-wrapper").forEach((dropdown) => {
-      const isOpen = dropdown.dataset.ddOpen === "true";
-      const shouldToggle = withinToggle && dropdown.contains(withinToggle);
-
-      dropdown.dataset.ddOpen = shouldToggle
-        ? !isOpen
-        : (!withinContent && !isOpen).toString();
+      if (
+        withinToggle &&
+        withinToggle.closest(".dropdown-wrapper") === dropdown
+      ) {
+        dropdown.dataset.ddOpen =
+          dropdown.dataset.ddOpen === "true" ? "false" : "true";
+      } else if (!withinContent) {
+        dropdown.dataset.ddOpen = "false";
+      }
     });
   });
 };
