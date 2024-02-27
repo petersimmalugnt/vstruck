@@ -783,7 +783,7 @@ html {
 .supertext-rt[data-read-more=close]::after,
 .supertext-rt[data-read-more=open]::after {
   position: absolute;
-  inset: auto auto 0rem 0rem;
+  inset: auto 0rem 0rem 0rem;
   background-color: white;
   height: 2.5rem;
   display: flex;
