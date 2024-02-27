@@ -776,7 +776,7 @@ html {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  padding-bottom: 2.5rem;
+  padding-bottom: 2rem;
   position: relative;
 }
 
@@ -785,7 +785,7 @@ html {
   position: absolute;
   inset: auto 0rem 0rem 0rem;
   background-color: white;
-  height: 2.5rem;
+  height: 2rem;
   display: flex;
   justify-items: start;
   align-items: end;
