@@ -1,0 +1,1 @@
+function dropDowns(){document.querySelectorAll(".dropdown-toggle-container").array.forEach((e=>{e.addEventListener("click",(()=>e.dataset.ddOpen="true"===e.dataset.ddOpen?"false":"true"))}))}document.addEventListener("DOMContentLoaded",(()=>{dropDowns()}));

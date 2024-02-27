@@ -29,16 +29,17 @@ function styles() {
 
 function scripts() {
   return gulp
-    .src("src/js/**/*.js")
-    .pipe(
-      babel({
-        presets: ["@babel/preset-env"],
-        plugins: ["@babel/plugin-transform-modules-commonjs"],
-      })
-    )
-    .pipe(concat("bundle.js"))
+    .src("src/js/main/**/*.js")
     .pipe(terser())
-    .pipe(gulp.dest("dist/js"))
+    .pipe(gulp.dest("dist/js/main"))
+    .pipe(browserSync.stream());
+}
+
+function wfScripts() {
+  return gulp
+    .src("src/js/webflow/**/*.js")
+    .pipe(terser())
+    .pipe(gulp.dest("dist/js/webflow"))
     .pipe(browserSync.stream());
 }
 
@@ -80,13 +81,17 @@ function watch() {
     },
   });
   gulp.watch("src/sass/**/*.scss", gulp.series(styles, delayedGitCommit));
-  gulp.watch("src/js/**/*.js", gulp.series(scripts, delayedGitCommit));
+  gulp.watch("src/js/main/**/*.js", gulp.series(scripts, delayedGitCommit));
+  gulp.watch(
+    "src/js/webflow/**/*.js",
+    gulp.series(wfScripts, delayedGitCommit)
+  );
   gulp.watch("src/*.html", gulp.series(copyHtml, delayedGitCommit));
 }
 
 const buildAndServe = gulp.series(
   clean,
-  gulp.parallel(styles, scripts, copyHtml),
+  gulp.parallel(styles, scripts, wfScripts, copyHtml),
   watch
 );
 
