@@ -18,3 +18,19 @@
     translate: 0 -1rem;
   }
 }
+
+@keyframes related-product-price-container {
+  0%,
+  100% {
+    rotate: -6deg;
+    translate: 0 -1rem;
+  }
+  25%,
+  75% {
+    rotate: 6deg;
+  }
+  50% {
+    rotate: -6deg;
+    translate: 0 1rem;
+  }
+}
