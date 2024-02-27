@@ -7,8 +7,7 @@
   object-fit: contain;
 }
 
-[data-elipsis="true"],
-[data-elipsis-all="true"] * {
+[data-elipsis="true"] {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
