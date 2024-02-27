@@ -139,11 +139,12 @@ const allFilterDdToggle = () => {
 
 const dropDowns = () => {
   document.querySelectorAll(".dropdown-toggle-container").forEach((btn) => {
-    btn.addEventListener(
-      "click",
-      () =>
-        (btn.dataset.ddOpen = btn.dataset.ddOpen === "true" ? "false" : "true")
-    );
+    btn.addEventListener("click", () => {
+      const parent = btn.closest(".dropdown-toggle-wrapper");
+      if (parent)
+        parent.dataset.ddOpen =
+          parent.dataset.ddOpen === "true" ? "false" : "true";
+    });
   });
 };
 
