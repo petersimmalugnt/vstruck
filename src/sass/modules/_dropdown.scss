@@ -11,13 +11,12 @@
 //   z-index: 10;
 // }
 
-.dropdown-wrapper:hover,
-.dropdown-wrapper {
-  z-index: 0;
+.dropdown-wrapper .dropdown-toggle-wrapper:not([data-dd-open="true"]) {
+  z-index: unset;
 }
 
-.dropdown-toggle-wrapper:not([data-dd-open="true"]) {
-  z-index: unset;
+.dropdown-wrapper:hover {
+  z-index: 0;
 }
 
 .dropdown-wrapper {
