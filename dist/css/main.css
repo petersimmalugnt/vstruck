@@ -1382,6 +1382,7 @@ html {
   background-color: var(--green) !important;
 }
 
+/* css props colors */
 [data-var-color-one=black] {
   --color-one: var(--vs-black);
 }
@@ -1470,6 +1471,7 @@ html {
   --color-two: var(--green);
 }
 
+/* props margins & paddings */
 [data-margin-bottom=huge],
 [data-padding-top=huge] {
   --spacing-top: 8rem;

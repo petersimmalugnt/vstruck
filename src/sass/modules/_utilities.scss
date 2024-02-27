@@ -149,6 +149,7 @@
   background-color: var(--green) !important;
 }
 
+/* css props colors */
 [data-var-color-one="black"] {
   --color-one: var(--vs-black);
 }
@@ -216,6 +217,8 @@
 [data-var-color-two="green"] {
   --color-two: var(--green);
 }
+
+/* props margins & paddings */
 
 [data-margin-bottom="huge"],
 [data-padding-top="huge"] {
