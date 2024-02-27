@@ -487,7 +487,7 @@
 .related-product-price-container {
   border: 2em solid transparent;
   border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="67" height="67" viewBox="0 0 67 67"><path fill="#6437FF" transform="matrix(1 0 0 -1 33.2597 33.2597)" d="M-13.7766 33.2597L-33.2597 13.7766L-33.2597 -13.7766L-13.7766 -33.2597L13.7766 -33.2597L33.2597 -13.7766L33.2597 13.7766L13.7766 33.2597L-13.7766 33.2597Z"/></svg>')
-    30 fill round;
+    30 fill stretch;
   border-image-slice: 30;
-  border-image-repeat: round;
+  border-image-repeat: stretch;
 }
