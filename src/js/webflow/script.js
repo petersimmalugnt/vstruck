@@ -139,21 +139,16 @@ const allFilterDdToggle = () => {
 
 const dropDowns = () => {
   document.addEventListener("click", (event) => {
-    const clickedDropdownToggle = event.target.closest(
-      ".dropdown-toggle-wrapper"
-    );
-    const dropdowns = document.querySelectorAll(".dropdown-wrapper");
+    const withinToggle = event.target.closest(".dropdown-toggle-wrapper");
+    const withinContent = event.target.closest(".dropdown-content-container");
 
-    dropdowns.forEach((dropdown) => {
-      if (
-        clickedDropdownToggle &&
-        clickedDropdownToggle.closest(".dropdown-wrapper") === dropdown
-      ) {
-        dropdown.dataset.ddOpen =
-          dropdown.dataset.ddOpen === "true" ? "false" : "true";
-      } else {
-        dropdown.dataset.ddOpen = "false";
-      }
+    document.querySelectorAll(".dropdown-wrapper").forEach((dropdown) => {
+      const isOpen = dropdown.dataset.ddOpen === "true";
+      const shouldToggle = withinToggle && dropdown.contains(withinToggle);
+
+      dropdown.dataset.ddOpen = shouldToggle
+        ? !isOpen
+        : (!withinContent && !isOpen).toString();
     });
   });
 };
