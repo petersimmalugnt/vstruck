@@ -155,9 +155,24 @@ const dropDowns = () => {
   });
 };
 
+const cardSlider = () => {
+  document.querySelectorAll(".card-btn-quickview").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      const parent = btn.parentElement;
+      parent.style.setProperty(
+        "--attrslide",
+        getComputedStyle(parent).getPropertyValue("--attrslide").trim() === "3"
+          ? "0"
+          : "3"
+      );
+    })
+  );
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
   allFilterDdToggle();
   dropDowns();
+  cardSlider();
 });
