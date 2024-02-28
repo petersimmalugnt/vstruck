@@ -408,7 +408,7 @@
 }
 
 [data-no-image-bg-line="true"] {
-  --noimagebgline: 1;
+  --no-image-bg-line: 1;
   background-image: linear-gradient(
     to bottom right,
     transparent calc(50% - 0.5px),
