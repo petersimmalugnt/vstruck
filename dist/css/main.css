@@ -1840,6 +1840,18 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --is-three: 1;
 }
 
+[data-is-one=true]:hover {
+  --is-one-hover: 1;
+}
+
+[data-is-two=true]:hover {
+  --is-two-hover: 1;
+}
+
+[data-is-two=true]:hover {
+  --is-two-hover: 1;
+}
+
 [data-is-fr-one] {
   --is-fr-one: 0;
   --is-fr-one-unit: 0fr;
