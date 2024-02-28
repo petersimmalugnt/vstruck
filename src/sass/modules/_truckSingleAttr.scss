@@ -1,0 +1,4 @@
+.trucksingle-attr-category-wrapper {
+  will-change: grid-template-rows;
+  transition: grid-template-rows 0.5s cubic-bezier(0.3, 0, 0.1, 1);
+}
