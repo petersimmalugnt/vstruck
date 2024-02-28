@@ -1363,6 +1363,15 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   outline-width: 1px;
 }
 
+.trucksingel-imgs-pagination-wrapper {
+  counter-reset: imgNr;
+}
+
+.trucksingel-imgs-pagination-nr-txt {
+  counter-increment: imgNr;
+  content: counter(imgNr);
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;

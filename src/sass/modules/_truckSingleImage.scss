@@ -12,3 +12,12 @@
   outline-style: solid;
   outline-width: 1px;
 }
+
+.trucksingel-imgs-pagination-wrapper {
+  counter-reset: imgNr;
+}
+
+.trucksingel-imgs-pagination-nr-txt {
+  counter-increment: imgNr;
+  content: counter(imgNr);
+}
