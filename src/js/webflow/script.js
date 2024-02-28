@@ -190,9 +190,11 @@ const stAttrToggle = () => {
   document
     .querySelectorAll(".trucksingle-attr-category-title-wrapper")
     .forEach((el) =>
-      el.addEventListener("click", () =>
-        el.parentElement.toggleAttribute("data-is-fr-one")
-      )
+      el.addEventListener("click", () => {
+        const parent = el.parentElement;
+        const attrValue = parent.getAttribute("data-is-fr-one") !== "true";
+        parent.setAttribute("data-is-fr-one", attrValue);
+      })
     );
 };
 
