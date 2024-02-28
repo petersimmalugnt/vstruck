@@ -176,7 +176,7 @@ const readMoreToggle = () => {
     )
     .forEach((e) =>
       e.addEventListener("click", (event) => {
-        const { bottom } = element.getBoundingClientRect();
+        const { bottom } = e.getBoundingClientRect();
         const afterTop =
           bottom - parseFloat(getComputedStyle(element).fontSize) * 2;
         if (event.clientY >= afterTop && event.clientY <= bottom) {
