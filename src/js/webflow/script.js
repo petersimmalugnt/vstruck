@@ -175,9 +175,14 @@ const readMoreToggle = () => {
       "[data-read-more-is-closed='true'], [data-read-more-is-closed='false']"
     )
     .forEach((e) =>
-      e.addEventListener("click", () => {
-        e.dataset.readMoreIsClosed =
-          e.dataset.readMoreIsClosed === "false" ? "true" : "false";
+      e.addEventListener("click", (event) => {
+        const { bottom } = element.getBoundingClientRect();
+        const afterTop =
+          bottom - parseFloat(getComputedStyle(element).fontSize) * 2;
+        if (event.clientY >= afterTop && event.clientY <= bottom) {
+          e.dataset.readMoreIsClosed =
+            e.dataset.readMoreIsClosed === "false" ? "true" : "false";
+        }
       })
     );
 };
