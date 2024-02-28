@@ -1348,6 +1348,21 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
     font-size: 1.25rem;
   }
 }
+.trucksingel-imgs-pagination-wrapper::before {
+  content: "Bilder";
+  display: flex;
+  width: 5rem;
+  height: 2rem;
+  min-width: 5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--linen);
+  outline-color: var(--vs-black);
+  outline-offset: -0.5px;
+  outline-style: solid;
+  outline-width: 1px;
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
