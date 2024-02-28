@@ -1148,6 +1148,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   grid-area: 1/1/1/1;
 }
 
+.card-table-wrapper:hover .attr-box,
 .trucks-grid-table:has(.attr-box:nth-child(2):hover) .attr-box:nth-child(2),
 .trucks-grid-table:has(.attr-box:nth-child(3):hover) .attr-box:nth-child(3),
 .trucks-grid-table:has(.attr-box:nth-child(4):hover) .attr-box:nth-child(4),
@@ -1169,6 +1170,14 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 .trucks-grid-table:has(.attr-box:nth-child(20):hover) .attr-box:nth-child(20),
 .trucks-grid-table:has(.attr-box:nth-child(21):hover) .attr-box:nth-child(21) {
   background: rgba(255, 255, 255, 0.5);
+}
+
+.attr-box:hover {
+  background-color: var(--white);
+}
+
+.card-table-wrapper:hover {
+  background-color: var(--linen);
 }
 
 [data-label-shape] {
