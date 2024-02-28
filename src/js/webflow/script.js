@@ -186,6 +186,16 @@ const readMoreToggle = () => {
     );
 };
 
+const stAttrToggle = () => {
+  document
+    .querySelectorAll(".trucksingle-attr-category-title-wrapper")
+    .forEach((el) =>
+      el.addEventListener("click", () =>
+        el.parentElement.toggleAttribute("data-is-fr-one")
+      )
+    );
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
@@ -193,4 +203,5 @@ document.addEventListener("DOMContentLoaded", () => {
   dropDowns();
   cardSlider();
   readMoreToggle();
+  stAttrToggle();
 });
