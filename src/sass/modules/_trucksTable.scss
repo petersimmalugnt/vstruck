@@ -67,14 +67,21 @@
   grid-area: 1 / 1 / 1 / 1;
 }
 
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(2),
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(3),
+.card-table-wrapper :has(.attr-box:nth-child(2):hover) .attr-box:nth-child(2),
+.card-table-wrapper :has(.attr-box:nth-child(3):hover) .attr-box:nth-child(3),
 .card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(4),
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(5),
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(6),
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(7),
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(8),
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(9),
-.card-table-wrapper :has(.attr-box:nth-child(4):hover) .attr-box:nth-child(10) {
+.card-table-wrapper :has(.attr-box:nth-child(5):hover) .attr-box:nth-child(5),
+.card-table-wrapper :has(.attr-box:nth-child(6):hover) .attr-box:nth-child(6),
+.card-table-wrapper :has(.attr-box:nth-child(7):hover) .attr-box:nth-child(7),
+.card-table-wrapper :has(.attr-box:nth-child(8):hover) .attr-box:nth-child(8),
+.card-table-wrapper :has(.attr-box:nth-child(9):hover) .attr-box:nth-child(9),
+.card-table-wrapper :has(.attr-box:nth-child(10):hover) .attr-box:nth-child(10),
+.card-table-wrapper :has(.attr-box:nth-child(11):hover) .attr-box:nth-child(11),
+.card-table-wrapper :has(.attr-box:nth-child(12):hover) .attr-box:nth-child(12),
+.card-table-wrapper :has(.attr-box:nth-child(13):hover) .attr-box:nth-child(13),
+.card-table-wrapper :has(.attr-box:nth-child(14):hover) .attr-box:nth-child(14),
+.card-table-wrapper
+  :has(.attr-box:nth-child(15):hover)
+  .attr-box:nth-child(15) {
   background: rgba(255, 255, 255, 0.5);
 }
