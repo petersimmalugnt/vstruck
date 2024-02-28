@@ -1367,7 +1367,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   counter-reset: imgNr;
 }
 
-.trucksingel-imgs-pagination-nr-txt {
+.trucksingel-imgs-pagination-nr-txt::before {
   counter-increment: imgNr;
   content: counter(imgNr);
 }
