@@ -169,10 +169,24 @@ const cardSlider = () => {
   );
 };
 
+const readMoreToggle = () => {
+  document
+    .querySelectorAll(
+      "[data-read-more-is-closed='true'], [data-read-more-is-closed='false']"
+    )
+    .forEach((e) =>
+      e.addEventListener("click", () => {
+        e.dataset.readMoreIsClosed =
+          e.dataset.readMoreIsClosed === "false" ? "true" : "false";
+      })
+    );
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
   allFilterDdToggle();
   dropDowns();
   cardSlider();
+  readMoreToggle();
 });
