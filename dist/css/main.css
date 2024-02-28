@@ -1374,6 +1374,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 .trucksingel-imgs-pagination-nr-txt::before {
   counter-increment: imgNr;
+  content: counter(imgNr);
+}
+
+.trucksingel-imgs-pagination-nr-txt::before {
+  counter-increment: imgNr;
   content: counter(imgNr, imgNrFormat);
 }
 

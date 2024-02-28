@@ -25,5 +25,10 @@
 
 .trucksingel-imgs-pagination-nr-txt::before {
   counter-increment: imgNr;
+  content: counter(imgNr);
+}
+
+.trucksingel-imgs-pagination-nr-txt::before {
+  counter-increment: imgNr;
   content: counter(imgNr, imgNrFormat);
 }
