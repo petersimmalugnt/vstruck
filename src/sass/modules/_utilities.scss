@@ -436,14 +436,14 @@
 [data-is-three="true"] {
   --is-three: 1;
 }
-[data-is-one="true"]:hover {
+[data-is-one]:hover {
   --is-one-hover: 1;
 }
-[data-is-two="true"]:hover {
+[data-is-trhee]:hover {
   --is-two-hover: 1;
 }
-[data-is-two="true"]:hover {
-  --is-two-hover: 1;
+[data-is-two]:hover {
+  --is-three-hover: 1;
 }
 
 [data-is-fr-one] {
