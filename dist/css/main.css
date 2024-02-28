@@ -1168,11 +1168,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 .trucks-grid-table:has(.attr-box:nth-child(19):hover) .attr-box:nth-child(19),
 .trucks-grid-table:has(.attr-box:nth-child(20):hover) .attr-box:nth-child(20),
 .trucks-grid-table:has(.attr-box:nth-child(21):hover) .attr-box:nth-child(21) {
-  background-color: hsl(30, 18%, 86%);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .trucks-grid-table .attr-box:hover {
-  background-color: var(--white) !important;
+  background-color: var(--khaki) !important;
 }
 
 [data-label-shape] {
