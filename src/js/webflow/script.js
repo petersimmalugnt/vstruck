@@ -177,8 +177,7 @@ const readMoreToggle = () => {
     .forEach((e) =>
       e.addEventListener("click", (event) => {
         const { bottom } = e.getBoundingClientRect();
-        const afterTop =
-          bottom - parseFloat(getComputedStyle(element).fontSize) * 2;
+        const afterTop = bottom - parseFloat(getComputedStyle(e).fontSize) * 2;
         if (event.clientY >= afterTop && event.clientY <= bottom) {
           e.dataset.readMoreIsClosed =
             e.dataset.readMoreIsClosed === "false" ? "true" : "false";
