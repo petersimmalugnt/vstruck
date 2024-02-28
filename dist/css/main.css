@@ -1148,6 +1148,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   grid-area: 1/1/1/1;
 }
 
+.card-table-wrapper:has(:nth-child(4):hover):nth-child(4) {
+  background: red !important;
+}
+
 [data-label-shape] {
   background-color: #ffffff;
 }
