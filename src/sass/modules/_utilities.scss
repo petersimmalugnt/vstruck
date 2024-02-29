@@ -504,3 +504,12 @@
 [data-is-visible="false"] {
   display: none;
 }
+
+/* data scoll in view*/
+[data-scroll-inview="true"] {
+  --is-in-view: 1;
+}
+
+[data-scroll-passed="true"] {
+  --is-passed: 1;
+}
