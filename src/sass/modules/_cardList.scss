@@ -1,4 +1,4 @@
-.card-list-grid {
+/*.card-list-grid {
   --w: minmax(calc(25% - 1.125rem), 1fr);
   grid-auto-columns: var(--w);
   grid-template-columns: var(--w);
@@ -22,7 +22,7 @@
   .card-list-grid {
     --w: calc(100% - 4.5rem);
   }
-}
+}*/
 
 .card-list-grid {
   counter-reset: cardListItemCounter;
