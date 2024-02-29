@@ -1478,24 +1478,21 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   overflow: hidden;
   direction: normal;
   white-space: normal;
-  color: transparent;
+  color: rgba(0, 0, 0, var(--is-inview, 0));
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #171717;
-  translate: 0% 25%;
+  translate: 0% calc(-50% * var(--is-inview, 0) + 25%);
   --stack-delay: 0.1s;
   will-change: translate, color;
   transition-property: translate, color;
   transition-timing-function: cubic-bezier(0.75, 0, 0, 1), cubic-bezier(0.8, 0, 0.2, 1);
-  transition-duration: 0.6s, 0.1s;
+  transition-duration: calc(0.6s + 0.9s * var(--is-inview, 0)), calc(0.1s + 0.15s * var(--is-inview, 0));
   transition-delay: calc(0s + var(--nth-child) * var(--stack-delay)), calc(0.1s + var(--nth-child) * var(--stack-delay));
 }
 
-.card-list-grid[data-scroll-inview] .list-item-title:empty::before {
+[data-scroll-inview=true] .list-item-title:empty::before {
   --nth-child: 3;
   --stack-delay: 0.15s;
-  translate: 0% calc(50% * var(--is-inview, 0) - 25%);
-  color: #171717;
-  transition-duration: 1.5s, 0.25s;
   transition-delay: calc(0s + var(--nth-child) * var(--stack-delay)), calc(0.55s + var(--nth-child) * var(--stack-delay));
 }
 
