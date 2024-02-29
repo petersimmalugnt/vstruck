@@ -1387,10 +1387,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 @keyframes poi-outer {
   from {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.3);
   }
   to {
-    background-color: rgba(255, 255, 255, 0.75);
+    background-color: rgba(255, 255, 255, 0.6);
   }
 }
 .trucksingle-attr-category-wrapper {
