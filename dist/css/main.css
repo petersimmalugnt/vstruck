@@ -1382,15 +1382,15 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 .poi-outer {
-  animation: poi-outer 1s cubic-bezier(0.25, 0, 0.75, 1) alternate infinite;
+  animation: poi-outer 1s cubic-bezier(0.3, 0, 0.7, 1) alternate infinite;
 }
 
 @keyframes poi-outer {
   from {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.33);
   }
   to {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.66);
   }
 }
 .trucksingle-attr-category-wrapper {
