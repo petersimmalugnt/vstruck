@@ -34,7 +34,7 @@
 }
 
 .poi-outer {
-  animation: poi-outer 2s cubic-bezier(0.4, 0, 0.6, 1) alternate infinite;
+  animation: poi-outer 1s cubic-bezier(0.25, 0, 0.75, 1) alternate infinite;
 }
 
 @keyframes poi-outer {
