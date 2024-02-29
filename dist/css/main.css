@@ -2072,6 +2072,9 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 /* steps boleons */
 [data-step] {
+  --step-zero: 0;
+  --step-zero-fr: minmax(0px, 0fr);
+  --step-zero-visibility: hidden;
   --step-one: 0;
   --step-one-fr: minmax(0px, 0fr);
   --step-one-visibility: hidden;
@@ -2087,6 +2090,12 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-five: 0;
   --step-five-fr: minmax(0px, 0fr);
   --step-five-visibility: hidden;
+}
+
+[data-step="0"] {
+  --step-zero: 1;
+  --step-zero-fr: minmax(0px, 1fr);
+  --step-zero-visibility: visible;
 }
 
 [data-step="1"] {
