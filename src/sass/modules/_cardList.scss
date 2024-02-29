@@ -1,11 +1,11 @@
 /*.card-list-grid {
-  grid-auto-columns: minmax(calc(25% - 1.125rem), 1fr);
-  grid-template-columns: minmax(calc(25% - 1.125rem), 1fr);
-}*/
-@media (max-width: 2080px) {
-  .card-list-grid {
     grid-auto-columns: minmax(calc(29.1666666667% - 1.0625rem), 1fr);
     grid-template-columns: minmax(calc(29.1666666667% - 1.0625rem), 1fr);
+}*/
+@media (min-width: 2080px) {
+  .card-list-grid {
+    grid-auto-columns: minmax(calc(25% - 1.125rem), 1fr);
+    grid-template-columns: minmax(calc(25% - 1.125rem), 1fr);
   }
 }
 /*@media (max-width: 991px) {
