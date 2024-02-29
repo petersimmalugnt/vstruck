@@ -1491,7 +1491,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   transition-delay: calc(0s + var(--nth-child) * var(--stack-delay)), calc(0.1s + var(--nth-child) * var(--stack-delay));
 }
 
-[data-scroll-inview=true] .list-item-title:empty::before {
+[data-scroll-is-inview=true] .list-item-title:empty::before {
   transition-delay: calc(0s + var(--nth-child) * var(--stack-delay)), calc(0.55s + var(--nth-child) * var(--stack-delay));
 }
 
@@ -2061,7 +2061,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 /* data scoll in view*/
-[data-scroll-inview=true] {
+[data-scroll-is-inview=true] {
   --is-inview: 1;
 }
 
