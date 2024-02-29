@@ -1414,39 +1414,12 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   transition: grid-template-rows 0.5s cubic-bezier(0.3, 0, 0.1, 1);
 }
 
-/*.card-list-grid {
-  --w: minmax(calc(25% - 1.125rem), 1fr);
-  grid-auto-columns: var(--w);
-  grid-template-columns: var(--w);
-}
 @media (max-width: 2080px) {
   .card-list-grid {
-    --w: minmax(calc(29.1666666667% - 1.0625rem), 1fr);
+    grid-auto-columns: minmax(calc(29.1666666667% - 1.0625rem), 1fr);
+    grid-template-columns: minmax(calc(29.1666666667% - 1.0625rem), 1fr);
   }
 }
-@media (max-width: 991px) {
-  .card-list-grid {
-    --w: calc(41.6666666667% - 0.75rem);
-  }
-}
-@media (max-width: 767px) {
-  .card-list-grid {
-    --w: calc(66.6666666667% - 0.5rem);
-  }
-}
-@media (max-width: 478px) {
-  .card-list-grid {
-    --w: calc(100% - 4.5rem);
-  }
-}*/
-.card-list-grid {
-  counter-reset: cardListItemCounter;
-}
-
-.list-item-title {
-  counter-increment: cardListItemCounter;
-}
-
 .list-item-title:empty {
   max-width: 2ch;
   letter-spacing: 0;
