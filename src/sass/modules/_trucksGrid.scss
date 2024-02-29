@@ -1,4 +1,4 @@
 .trucks-grid-list[data-trucks-grid-list="true"] {
   --data-trucks-grid-list: 1;
-  grid-template-columns: 1fr !important;
+  grid-template-columns: minmax(0px, 100%) !important;
 }
