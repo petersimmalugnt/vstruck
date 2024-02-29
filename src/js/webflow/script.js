@@ -196,7 +196,7 @@ const stAttrToggle = () => {
           .forEach((allEl) => allEl.setAttribute("data-is-fr-one", "false"));
         const parent = el.parentElement;
         const attrValue = parent.getAttribute("data-is-fr-one") !== "true";
-        parent.setAttribute("data-is-fr-one", attrValue);
+        parent.setAttribute("data-is-fr-one", "true");
       })
     );
 };
