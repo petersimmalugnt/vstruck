@@ -51,6 +51,8 @@
   -webkit-text-stroke-color: #171717;
 }
 .list-item-title:empty::before {
+  --nth-child: 3;
+  --stack-delay: 0.15s;
   content: "0 " counter(cardListItemCounter);
   width: 1ch;
   min-width: 1ch;
@@ -64,7 +66,6 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #171717;
   translate: 0% calc((-50% * var(--is-inview, 0)) + 25%);
-  --stack-delay: 0.1s;
   will-change: translate, color;
   transition-property: translate, color;
   transition-timing-function: cubic-bezier(0.75, 0, 0, 1),
@@ -76,8 +77,6 @@
 }
 
 [data-scroll-inview="true"] .list-item-title:empty::before {
-  --nth-child: 3;
-  --stack-delay: 0.15s;
   transition-delay: calc(0s + (var(--nth-child) * var(--stack-delay))),
     calc(0.55s + (var(--nth-child) * var(--stack-delay)));
 }
