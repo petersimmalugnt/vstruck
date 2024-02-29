@@ -2118,3 +2118,13 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-five-fr: 1;
   --step-five-visibility: visible;
 }
+
+[data-grid-rows-transition=fast] {
+  will-change: grid-template-rows;
+  transition: grid-template-rows 0.5s cubic-bezier(0.3, 0, 0.1, 1);
+}
+
+[data-grid-rows-transition=slow] {
+  will-change: grid-template-rows;
+  transition: grid-template-rows 1s cubic-bezier(0.5, 0, 0.1, 1);
+}
