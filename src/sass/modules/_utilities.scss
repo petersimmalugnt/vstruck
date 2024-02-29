@@ -513,3 +513,20 @@
 [data-scroll-passed="true"] {
   --is-passed: 1;
 }
+
+[data-anchor-position*="top"] {
+  top: auto;
+  bottom: 100%;
+}
+[data-anchor-position*="bottom"] {
+  top: 100%;
+  bottom: auto;
+}
+[data-anchor-position*="right"] {
+  right: 0rem;
+  left: auto;
+}
+[data-anchor-position*="left"] {
+  right: auto;
+  left: 0rem;
+}
