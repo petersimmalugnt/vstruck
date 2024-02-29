@@ -191,6 +191,9 @@ const stAttrToggle = () => {
     .querySelectorAll(".trucksingle-attr-category-title-wrapper")
     .forEach((el) =>
       el.addEventListener("click", () => {
+        document
+          .querySelectorAll(".trucksingle-attr-category-title-wrapper")
+          .forEach((allEl) => allEl.setAttribute("data-is-fr-one", "false"));
         const parent = el.parentElement;
         const attrValue = parent.getAttribute("data-is-fr-one") !== "true";
         parent.setAttribute("data-is-fr-one", attrValue);
