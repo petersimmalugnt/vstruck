@@ -46,6 +46,6 @@
   }
 }
 
-.poi-wrapper:nth-child(1) {
-  background-color: red !important;
+.poi-slot .poi-wrapper:nth-child(1) {
+  scale: 3;
 }
