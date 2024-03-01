@@ -217,8 +217,13 @@ const buyingFormStep = () => {
     .querySelector(".bf-modal-back-btn")
     .addEventListener("click", (e) => {
       const wrapper = e.target.closest(".bf-wrapper");
-      const step = Math.max(1, parseInt(wrapper.getAttribute("data-step")) - 1);
-      wrapper.setAttribute("data-step", step);
+      let step = parseInt(wrapper.getAttribute("data-step")) - 1;
+      if (step < 1) {
+        wrapper.setAttribute("data-visibility-one", "false");
+        step = 1;
+      } else {
+        wrapper.setAttribute("data-step", step);
+      }
     });
 };
 
