@@ -595,5 +595,5 @@
 }
 [data-grid-rows-transition="slow"] {
   will-change: grid-template-rows;
-  transition: grid-template-rows 1s cubic-bezier(0.66, 0, 0, 1);
+  transition: grid-template-rows 0.7s cubic-bezier(0.75, 0, 0.1, 1);
 }
