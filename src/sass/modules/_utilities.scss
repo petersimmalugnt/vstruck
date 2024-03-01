@@ -541,51 +541,63 @@
 [data-step] {
   --step-zero: 0;
   --step-zero-fr: minmax(0px, 0fr);
+  --step-not-zero-fr: minmax(0px, 1fr);
   --step-zero-visibility: hidden;
   --step-one: 0;
   --step-one-fr: minmax(0px, 0fr);
+  --step-not-one-fr: minmax(0px, 1fr);
   --step-one-visibility: hidden;
   --step-two: 0;
   --step-two-fr: minmax(0px, 0fr);
+  --step-not-two-fr: minmax(0px, 1fr);
   --step-two-visibility: hidden;
   --step-three: 0;
   --step-three-fr: minmax(0px, 0fr);
+  --step-not-three-fr: minmax(0px, 1fr);
   --step-three-visibility: hidden;
   --step-four: 0;
   --step-four-fr: minmax(0px, 0fr);
+  --step-not-four-fr: minmax(0px, 1fr);
   --step-four-visibility: hidden;
   --step-five: 0;
   --step-five-fr: minmax(0px, 0fr);
+  --step-not-five-fr: minmax(0px, 1fr);
   --step-five-visibility: hidden;
 }
 [data-step="0"] {
   --step-zero: 1;
   --step-zero-fr: minmax(0px, 1fr);
+  --step-not-zero-fr: minmax(0px, 0fr);
   --step-zero-visibility: visible;
 }
 [data-step="1"] {
   --step-one: 1;
   --step-one-fr: minmax(0px, 1fr);
+  --step-not-one-fr: minmax(0px, 0fr);
   --step-one-visibility: visible;
 }
 [data-step="2"] {
   --step-two: 1;
   --step-two-fr: minmax(0px, 1fr);
+  --step-not-two-fr: minmax(0px, 0fr);
   --step-two-visibility: visible;
 }
 [data-step="3"] {
   --step-three: 1;
   --step-three-fr: minmax(0px, 1fr);
+  --step-not-three-fr: minmax(0px, 0fr);
   --step-three-visibility: visible;
 }
 [data-step="4"] {
   --step-four: 1;
   --step-four-fr: minmax(0px, 1fr);
+  --step-not-four-fr: minmax(0px, 0fr);
   --step-four-visibility: visible;
 }
 [data-step="5"] {
   --step-five: 1;
   --step-five-fr: minmax(0px, 1fr);
+  --step-not-five-fr: minmax(0px, 0fr);
   --step-five-visibility: visible;
 }
 
