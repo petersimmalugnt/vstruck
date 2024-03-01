@@ -203,6 +203,25 @@ const stAttrToggle = () => {
     );
 };
 
+/* buyingForm */
+const buyingFormStep = () => {
+  document
+    .querySelector(".bf-modal-submit-btn")
+    .addEventListener("click", (e) => {
+      const wrapper = e.target.closest(".bf-wrapper");
+      const step = Math.min(3, parseInt(wrapper.getAttribute("data-step")) + 1);
+      wrapper.setAttribute("data-step", step);
+    });
+
+  document
+    .querySelector(".bf-modal-back-btn")
+    .addEventListener("click", (e) => {
+      const wrapper = e.target.closest(".bf-wrapper");
+      const step = Math.max(1, parseInt(wrapper.getAttribute("data-step")) - 1);
+      wrapper.setAttribute("data-step", step);
+    });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
@@ -211,4 +230,5 @@ document.addEventListener("DOMContentLoaded", () => {
   cardSlider();
   readMoreToggle();
   stAttrToggle();
+  buyingFormStep();
 });
