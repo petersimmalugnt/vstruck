@@ -217,6 +217,15 @@ const buyingFormStep = () => {
   const submitBtn = leasingPopupWrapper.querySelector(".bf-modal-submit-btn");
 
   wrapper
+    .querySelectorAll(".bf-modal-close-btn", ".bf-emptyspace")
+    .forEach((closeEl) => {
+      closeEl.addEventListener("click", (e) => {
+        wrapper.setAttribute("data-step", "0");
+        setTimeout(() => wrapper.setAttribute("data-step", "-1"), 700);
+      });
+    });
+
+  wrapper
     .querySelector(".bf-modal-submit-btn")
     .addEventListener("click", (e) => {
       const step = Math.min(3, parseInt(wrapper.getAttribute("data-step")) + 1);
