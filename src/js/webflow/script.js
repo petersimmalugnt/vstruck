@@ -217,7 +217,7 @@ const buyingFormStep = () => {
   const submitBtn = leasingPopupWrapper.querySelector(".bf-modal-submit-btn");
 
   wrapper
-    .querySelectorAll(".bf-modal-close-btn", ".bf-emptyspace")
+    .querySelectorAll(".bf-modal-close-btn, .bf-emptyspace")
     .forEach((closeEl) => {
       closeEl.addEventListener("click", (e) => {
         wrapper.setAttribute("data-step", "0");
