@@ -207,7 +207,7 @@ const stAttrToggle = () => {
 const buyingFormStep = () => {
   const wrapper = document.querySelector(".bf-wrapper");
   const price = wrapper.querySelector(".bf-modal-price");
-  const priceUnit = priceContainer.querySelector(".bg-modal-price-unit");
+  const priceUnit = wrapper.querySelector(".bg-modal-price-unit");
   const buyingOptions = wrapper.querySelectorAll(
     ".bg-buying-option-slot .bf-modal-finance-option"
   );
