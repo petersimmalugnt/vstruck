@@ -1495,6 +1495,15 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --visibility: visible;
 }
 
+.bf-wrapper .bf-modal-nav-container .bf-modal-submit-btn::after {
+  content: "Gå Vidare";
+}
+
+.bf-wrapper[data-step="2"] .bf-modal-nav-container .bf-modal-submit-btn::after,
+.bf-wrapper[data-step="3"] .bf-modal-nav-container .bf-modal-submit-btn::after {
+  content: "Skicka förfrågan";
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
