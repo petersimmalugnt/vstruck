@@ -1481,7 +1481,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 .bg-leasing-popup-wrapper {
   will-change: visibility;
-  transition: visibility 500ms;
+  transition: visibility 500ms, background-color 500ms;
 }
 
 /* Utillities */
