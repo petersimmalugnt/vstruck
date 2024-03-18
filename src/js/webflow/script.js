@@ -226,6 +226,8 @@ const buyingFormStep = () => {
   wrapper.querySelector(".bf-modal-back-btn").addEventListener("click", (e) => {
     let step = parseInt(wrapper.getAttribute("data-step")) - 1;
     wrapper.setAttribute("data-step", step);
+    if (step === 0)
+      setTimeout(() => wrapper.setAttribute("data-step", "-1"), 700);
   });
 
   buyingOptions.forEach((option, index) => {
