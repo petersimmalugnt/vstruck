@@ -2089,29 +2089,35 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 /* steps boleons */
 [data-step] {
   --step-zero: 0;
-  --step-zero-fr: minmax(0px, 0fr);
-  --step-not-zero-fr: minmax(0px, 1fr);
-  --step-zero-visibility: hidden;
   --step-one: 0;
-  --step-one-fr: minmax(0px, 0fr);
-  --step-not-one-fr: minmax(0px, 1fr);
-  --step-one-visibility: hidden;
   --step-two: 0;
-  --step-two-fr: minmax(0px, 0fr);
-  --step-not-two-fr: minmax(0px, 1fr);
-  --step-two-visibility: hidden;
   --step-three: 0;
-  --step-three-fr: minmax(0px, 0fr);
-  --step-not-three-fr: minmax(0px, 1fr);
-  --step-three-visibility: hidden;
   --step-four: 0;
-  --step-four-fr: minmax(0px, 0fr);
-  --step-not-four-fr: minmax(0px, 1fr);
-  --step-four-visibility: hidden;
   --step-five: 0;
+  --step-zero-fr: minmax(0px, 0fr);
+  --step-one-fr: minmax(0px, 0fr);
+  --step-two-fr: minmax(0px, 0fr);
+  --step-three-fr: minmax(0px, 0fr);
+  --step-four-fr: minmax(0px, 0fr);
   --step-five-fr: minmax(0px, 0fr);
-  --step-not-five-fr: minmax(0px, 1fr);
+  --step-zero-visibility: hidden;
+  --step-one-visibility: hidden;
+  --step-two-visibility: hidden;
+  --step-three-visibility: hidden;
+  --step-four-visibility: hidden;
   --step-five-visibility: hidden;
+  --step-not-zero-fr: minmax(0px, 1fr);
+  --step-not-one-fr: minmax(0px, 1fr);
+  --step-not-two-fr: minmax(0px, 1fr);
+  --step-not-three-fr: minmax(0px, 1fr);
+  --step-not-four-fr: minmax(0px, 1fr);
+  --step-not-five-fr: minmax(0px, 1fr);
+  --step-not-zero-visibility: visible;
+  --step-not-one-visibility: visible;
+  --step-not-two-visibility: visible;
+  --step-not-three-visibility: visible;
+  --step-not-four-visibility: visible;
+  --step-not-five-visibility: visible;
 }
 
 [data-step="0"] {
@@ -2119,6 +2125,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-zero-fr: minmax(0px, 1fr);
   --step-not-zero-fr: minmax(0px, 0fr);
   --step-zero-visibility: visible;
+  --step-not-zero-visibility: hidden;
 }
 
 [data-step="1"] {
@@ -2126,6 +2133,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-one-fr: minmax(0px, 1fr);
   --step-not-one-fr: minmax(0px, 0fr);
   --step-one-visibility: visible;
+  --step-not-one-visibility: hidden;
 }
 
 [data-step="2"] {
@@ -2133,6 +2141,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-two-fr: minmax(0px, 1fr);
   --step-not-two-fr: minmax(0px, 0fr);
   --step-two-visibility: visible;
+  --step-not-two-visibility: hidden;
 }
 
 [data-step="3"] {
@@ -2140,6 +2149,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-three-fr: minmax(0px, 1fr);
   --step-not-three-fr: minmax(0px, 0fr);
   --step-three-visibility: visible;
+  --step-not-three-visibility: hidden;
 }
 
 [data-step="4"] {
@@ -2147,6 +2157,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-four-fr: minmax(0px, 1fr);
   --step-not-four-fr: minmax(0px, 0fr);
   --step-four-visibility: visible;
+  --step-not-four-visibility: hidden;
 }
 
 [data-step="5"] {
@@ -2154,6 +2165,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --step-five-fr: minmax(0px, 1fr);
   --step-not-five-fr: minmax(0px, 0fr);
   --step-five-visibility: visible;
+  --step-not-five-visibility: hidden;
 }
 
 [data-grid-rows-transition=fast] {
