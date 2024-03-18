@@ -18,3 +18,7 @@
 .bf-wrapper[data-step="3"] .bf-modal-nav-container .bf-modal-submit-btn::after {
   content: "Skicka förfrågan";
 }
+
+.bf-wrapper[data-step="-1"] {
+  display: none;
+}

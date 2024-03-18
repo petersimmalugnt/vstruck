@@ -1504,6 +1504,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   content: "Skicka förfrågan";
 }
 
+.bf-wrapper[data-step="-1"] {
+  display: none;
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
