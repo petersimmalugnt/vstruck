@@ -230,7 +230,7 @@ const buyingFormStep = () => {
   const leasingPopupWrapper = wrapper.querySelector(
     ".bf-leasing-popup-wrapper"
   );
-  const submitBtn = wrapper.querySelector(".bf-modal-submit-btn");
+  const submitBtn = leasingPopupWrapper.querySelector(".bf-modal-submit-btn");
 
   buyingOptions.forEach((option, index) => {
     option.addEventListener("click", () => {
