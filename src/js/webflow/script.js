@@ -206,6 +206,15 @@ const stAttrToggle = () => {
 /* buyingForm */
 const buyingFormStep = () => {
   const wrapper = document.querySelector(".bf-wrapper");
+  const price = wrapper.querySelector(".bf-modal-price");
+  const priceUnit = priceContainer.querySelector(".bg-modal-price-unit");
+  const buyingOptions = wrapper.querySelectorAll(
+    ".bg-buying-option-slot .bf-modal-finance-option"
+  );
+  const leasingPopupWrapper = wrapper.querySelector(
+    ".bf-leasing-popup-wrapper"
+  );
+  const submitBtn = leasingPopupWrapper.querySelector(".bf-modal-submit-btn");
 
   wrapper
     .querySelector(".bf-modal-submit-btn")
@@ -224,14 +233,6 @@ const buyingFormStep = () => {
     }
   });
 
-  const buyingOptions = wrapper.querySelectorAll(
-    ".bg-buying-option-slot .bf-modal-finance-option"
-  );
-  const leasingPopupWrapper = wrapper.querySelector(
-    ".bf-leasing-popup-wrapper"
-  );
-  const submitBtn = leasingPopupWrapper.querySelector(".bf-modal-submit-btn");
-
   buyingOptions.forEach((option, index) => {
     option.addEventListener("click", () => {
       buyingOptions.forEach((otherOption, otherIndex) => {
@@ -243,9 +244,15 @@ const buyingFormStep = () => {
 
       if (index === buyingOptions.length - 1) {
         leasingPopupWrapper.setAttribute("leasing-setting-open", "true");
+        price.textContent = "8.528";
+        priceUnit.textContent = "sek/mån";
       } else {
         leasingPopupWrapper.removeAttribute("leasing-setting-open");
       }
+
+      price.textContent =
+        index === 0 ? "84.000" : index === 1 ? "10.004" : "8.528";
+      priceUnit.textContent = index === 0 ? "mån" : "sek/mån";
     });
   });
 
