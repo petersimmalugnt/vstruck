@@ -205,26 +205,55 @@ const stAttrToggle = () => {
 
 /* buyingForm */
 const buyingFormStep = () => {
-  document
+  const wrapper = document.querySelector(".bf-wrapper");
+
+  wrapper
     .querySelector(".bf-modal-submit-btn")
     .addEventListener("click", (e) => {
-      const wrapper = e.target.closest(".bf-wrapper");
       const step = Math.min(3, parseInt(wrapper.getAttribute("data-step")) + 1);
       wrapper.setAttribute("data-step", step);
     });
 
-  document
-    .querySelector(".bf-modal-back-btn")
-    .addEventListener("click", (e) => {
-      const wrapper = e.target.closest(".bf-wrapper");
-      let step = parseInt(wrapper.getAttribute("data-step")) - 1;
-      if (step < 1) {
-        wrapper.setAttribute("data-visibility-one", "false");
-        step = 1;
+  wrapper.querySelector(".bf-modal-back-btn").addEventListener("click", (e) => {
+    let step = parseInt(wrapper.getAttribute("data-step")) - 1;
+    if (step < 1) {
+      wrapper.setAttribute("data-visibility-one", "false");
+      step = 1;
+    } else {
+      wrapper.setAttribute("data-step", step);
+    }
+  });
+
+  const buyingOptions = wrapper.querySelectorAll(
+    ".bg-buying-option-slot .bf-modal-finance-option"
+  );
+  const leasingPopupWrapper = wrapper.querySelector(
+    ".bf-leasing-popup-wrapper"
+  );
+  const submitBtn = wrapper.querySelector(".bf-modal-submit-btn");
+
+  buyingOptions.forEach((option, index) => {
+    option.addEventListener("click", () => {
+      buyingOptions.forEach((otherOption, otherIndex) => {
+        otherOption.setAttribute(
+          "data-is-one",
+          otherIndex === index ? "true" : "false"
+        );
+      });
+
+      if (index === buyingOptions.length - 1) {
+        leasingPopupWrapper.setAttribute("leasing-setting-open", "true");
       } else {
-        wrapper.setAttribute("data-step", step);
+        leasingPopupWrapper.removeAttribute("leasing-setting-open");
       }
     });
+  });
+
+  submitBtn.addEventListener("click", () => {
+    if (leasingPopupWrapper.getAttribute("leasing-setting-open") === "true") {
+      leasingPopupWrapper.setAttribute("leasing-setting-open", "false");
+    }
+  });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
