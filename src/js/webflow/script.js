@@ -269,16 +269,12 @@ const buyingFormStep = () => {
     }
   });
 
-  const ctaBtn = document.querySelector(".trucksingle-buy-container");
+  const ctaBtn = document.querySelector(".trucksingle-buy-btn");
   if (!ctaBtn) return;
-  ctaBtn
-    .querySelectorAll(".trucksingel-buy-btn, .passed-link-cta")
-    .forEach((closeEl) => {
-      closeEl.addEventListener("click", (e) => {
-        wrapper.setAttribute("data-step", "0");
-        setTimeout(() => wrapper.setAttribute("data-step", "1"), 10);
-      });
-    });
+  ctaBtn.addEventListener("click", (e) => {
+    wrapper.setAttribute("data-step", "0");
+    setTimeout(() => wrapper.setAttribute("data-step", "1"), 10);
+  });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
