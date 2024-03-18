@@ -206,6 +206,7 @@ const stAttrToggle = () => {
 /* buyingForm */
 const buyingFormStep = () => {
   const wrapper = document.querySelector(".bf-wrapper");
+  if (!wrapper) return;
   const price = wrapper.querySelector(".bf-modal-price");
   const priceUnit = wrapper.querySelector(".bg-modal-price-unit");
   const buyingOptions = wrapper.querySelectorAll(
@@ -267,6 +268,17 @@ const buyingFormStep = () => {
       leasingPopupWrapper.setAttribute("leasing-setting-open", "false");
     }
   });
+
+  const ctaBtn = document.querySelector(".trucksingle-buy-container");
+  if (!ctaBtn) return;
+  ctaBtn
+    .querySelectorAll(".trucksingel-buy-btn, .passed-link-cta")
+    .forEach((closeEl) => {
+      closeEl.addEventListener("click", (e) => {
+        wrapper.setAttribute("data-step", "0");
+        setTimeout(() => wrapper.setAttribute("data-step", "1"), 10);
+      });
+    });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
