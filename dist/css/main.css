@@ -1479,6 +1479,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --nth-child: 2;
 }
 
+.bg-leasing-popup-wrapper {
+  will-change: visibility;
+  transition: visibility 500ms;
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
