@@ -2,3 +2,12 @@
   will-change: visibility;
   transition: visibility 500ms, background-color 500ms;
 }
+.bf-leasing-popup-wrapper,
+.bf-leasing-popup-wrapper[leasing-setting-open="false"] {
+  --isOpen: 0;
+  --visibility: hidden;
+}
+.bf-leasing-popup-wrapper[leasing-setting-open="true"] {
+  --isOpen: 1;
+  --visibility: visible;
+}

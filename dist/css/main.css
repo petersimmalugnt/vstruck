@@ -1484,6 +1484,17 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   transition: visibility 500ms, background-color 500ms;
 }
 
+.bf-leasing-popup-wrapper,
+.bf-leasing-popup-wrapper[leasing-setting-open=false] {
+  --isOpen: 0;
+  --visibility: hidden;
+}
+
+.bf-leasing-popup-wrapper[leasing-setting-open=true] {
+  --isOpen: 1;
+  --visibility: visible;
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
