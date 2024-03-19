@@ -300,7 +300,7 @@ const truckSingelImagesScroll = () => {
 
         const scrollLoop = () => {
           currentProgress += ease(currentProgress);
-          if (currentProgress >= 0.99999999) {
+          if (currentProgress >= 0.99999999999999) {
             currentProgress = 1;
             wrapper.scrollLeft = targetPos + scrollPos;
             return;
