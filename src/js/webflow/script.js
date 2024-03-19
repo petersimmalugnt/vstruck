@@ -300,11 +300,11 @@ const truckSingelImagesScroll = () => {
             return;
           }
 
-          const ease = (x) => {
+          function easeOutCubic(x: number): number {
             return 1 - Math.pow(1 - x, 3);
-          };
+          }
 
-          currentProgress = ease(currentProgress);
+          currentProgress = easeOutCubic(currentProgress);
           wrapper.scrollLeft = targetPos * currentProgress;
           console.log(targetPos * currentProgress);
           window.requestAnimationFrame(scrollLoop);
