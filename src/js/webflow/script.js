@@ -299,14 +299,15 @@ const truckSingelImagesScroll = () => {
         let currentProgress = ease(0.01);
 
         const scrollLoop = () => {
+          currentProgress += ease(currentProgress);
           if (currentProgress >= 0.99999999) {
+            currentProgress = 1;
             wrapper.scrollLeft = targetPos + scrollPos;
             return;
           }
 
-          currentProgress += ease(currentProgress);
           wrapper.scrollLeft = targetPos * currentProgress + scrollPos;
-          console.log("cu: " + currentProgress);
+          console.log("currrrr: " + currentProgress);
           setTimeout(() => window.requestAnimationFrame(scrollLoop), 16);
         };
 
