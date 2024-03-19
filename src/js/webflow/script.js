@@ -281,8 +281,11 @@ const truckSingelImagesScroll = () => {
   console.log("truckSingelImagesScroll");
   const wrapper = document.querySelector(".trucksingle-imgs-list-wrapper");
   const container = wrapper.querySelector(".trucksingel-imgs-list-container");
+  onsole.log("truckSingelImagesScroll 2");
   const contWidth = container.clientWidth;
+  onsole.log("truckSingelImagesScroll 3");
   const contOffset = container.offsetLeft;
+  onsole.log("truckSingelImagesScroll 4");
 
   const pagina = wrapper.querySelectorAll(
     ".trucksingel-imgs-pagination-nr-wrapper"
