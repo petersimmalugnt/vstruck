@@ -293,7 +293,7 @@ const truckSingelImagesScroll = () => {
       e.addEventListener("click", () => {
         const scrollPos = wrapper.scrollLeft;
         const targetPos = (contWidth + offset) * i - scrollPos;
-        const addProg = 0.00000000001;
+        const addProg = 0.000000000000001;
         let currentProgress = 0;
 
         const scrollLoop = () => {
@@ -303,7 +303,7 @@ const truckSingelImagesScroll = () => {
           }
 
           const ease = (x) => {
-            return 1 - Math.pow(1 - x, 3);
+            return x * x * x;
           };
 
           currentProgress = ease(currentProgress + addProg);
