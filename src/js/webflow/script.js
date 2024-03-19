@@ -291,7 +291,7 @@ const truckSingelImagesScroll = () => {
     .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
     .forEach((e, i) => {
       e.addEventListener("click", () => {
-        const targetPos = contWidth + offset * i;
+        const targetPos = (contWidth + offset) * i;
         const scrollLoop = () => {};
         wrapper.scrollLeft = targetPos;
       });
