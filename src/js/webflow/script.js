@@ -278,6 +278,7 @@ const buyingFormStep = () => {
 };
 
 const truckSingelImagesScroll = () => {
+  console.log("truckSingelImagesScroll");
   const wrapper = document.querySelector(".trucksingle-imgs-list-wrapper");
   const container = wrapper.querySelector(".trucksingel-imgs-list-container");
   const contWidth = container.clientWidth;
