@@ -287,27 +287,30 @@ const truckSingelImagesScroll = () => {
     window.getComputedStyle(container).getPropertyValue("grid-column-gap")
   );
 
+  const lerp = (x, y, a) => x * (1 - a) + y * a;
+  const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a));
+  const invlerp = (x, y, a) => clamp((a - x) / (y - x));
+  const range = (x1, y1, x2, y2, a) => lerp(x2, y2, invlerp(x1, y1, a));
+  const diff = (a, b) => Math.abs(a - b);
+
   document
     .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
     .forEach((e, i) => {
       e.addEventListener("click", () => {
         const scrollPos = wrapper.scrollLeft;
         const targetPos = (contWidth + offset) * i - scrollPos;
-        const ease = (x) => {
-          return 1 - Math.pow(1 - x, 3);
-        };
-        let currentProgress = 0.00000001;
+        let currentProgress = 0;
 
         const scrollLoop = () => {
-          currentProgress += ease(currentProgress);
+          currentProgress = lerp(currentProgress, 1, 0.0001);
+
           if (currentProgress >= 0.999999999999999999) {
-            currentProgress = 1;
             wrapper.scrollLeft = targetPos + scrollPos;
             return;
           }
 
           wrapper.scrollLeft = targetPos * currentProgress + scrollPos;
-          console.log("kuken: " + currentProgress);
+          console.log("lerp: " + currentProgress);
           setTimeout(() => window.requestAnimationFrame(scrollLoop), 16);
         };
 
