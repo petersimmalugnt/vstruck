@@ -287,16 +287,19 @@ const truckSingelImagesScroll = () => {
     window.getComputedStyle(container).getPropertyValue("grid-column-gap")
   );
 
+  console.log(wrapper.scrollLeft);
+
   document
     .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
     .forEach((e, i) => {
       e.addEventListener("click", () => {
-        const targetPos = (contWidth + offset) * i;
+        const scrollPos = wrapper.scrollLeft;
+        const targetPos = (contWidth + offset) * i - scrollPos;
         let currentProgress = 0;
 
         const scrollLoop = () => {
           if (Math.abs(currentProgress - 1) < 0.0000001) {
-            wrapper.scrollLeft = targetPos;
+            wrapper.scrollLeft = targetPos + scrollPos;
             return;
           }
 
@@ -305,8 +308,7 @@ const truckSingelImagesScroll = () => {
           };
 
           currentProgress = ease(currentProgress + 0.0000001);
-          wrapper.scrollLeft = targetPos * currentProgress;
-          console.log("progres: " + targetPos * currentProgress);
+          wrapper.scrollLeft = targetPos * currentProgress + scrollPos;
           window.requestAnimationFrame(scrollLoop);
         };
 
