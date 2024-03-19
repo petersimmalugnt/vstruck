@@ -290,6 +290,7 @@ const truckSingelImagesScroll = () => {
   pagina.forEach((e, i) => {
     e.addEventListener("click", () => {
       const scrollLoop = () => {};
+      console.log(i);
       wrapper.scrollLeft = contOffset + contWidth * (i + 1);
     });
   });
