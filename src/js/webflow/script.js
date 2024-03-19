@@ -298,7 +298,7 @@ const truckSingelImagesScroll = () => {
           if (currentProgress === 1) return;
 
           const ease = (x) => {
-            return x + 0.0000001;
+            return x + 0.001;
             1; //1 - Math.pow(1 - x, 3);
           };
 
