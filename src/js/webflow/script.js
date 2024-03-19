@@ -278,22 +278,16 @@ const buyingFormStep = () => {
 };
 
 const truckSingelImagesScroll = () => {
-  console.log("truckSingelImagesScroll");
   const wrapper = document.querySelector(".trucksingle-imgs-list-wrapper");
   if (!wrapper) return;
   const container = wrapper.querySelector(".trucksingel-imgs-list-container");
   if (!container) return;
-  console.log("truckSingelImagesScroll 2");
   const contWidth = container.clientWidth;
-  console.log("truckSingelImagesScroll 3");
   const contOffset = container.offsetLeft;
-  console.log("truckSingelImagesScroll 4");
 
-  const pagina = wrapper.querySelectorAll(
+  const pagina = document.querySelectorAll(
     ".trucksingel-imgs-pagination-nr-wrapper"
   );
-
-  console.log(pagina);
 
   pagina.forEach((e, i) => {
     console.log("forEach" + i);
