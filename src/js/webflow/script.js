@@ -283,9 +283,9 @@ const truckSingelImagesScroll = () => {
   const container = wrapper.querySelector(".trucksingel-imgs-list-container");
   if (!container) return;
   const contWidth = container.clientWidth;
-  const contOffset = container.offsetLeft;
-
-  console.log(contOffset);
+  const offset = window
+    .getComputedStyle(container)
+    .getPropertyValue("grid-column-gap");
 
   const pagina = document.querySelectorAll(
     ".trucksingel-imgs-pagination-nr-wrapper"
@@ -295,8 +295,7 @@ const truckSingelImagesScroll = () => {
     console.log("forEach" + i);
     e.addEventListener("click", () => {
       const scrollLoop = () => {};
-      const offset = i > 0 ? contOffset : 0;
-      wrapper.scrollLeft = contWidth * i;
+      wrapper.scrollLeft = contWidth * i + offset;
     });
   });
 };
