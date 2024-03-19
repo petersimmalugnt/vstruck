@@ -277,6 +277,20 @@ const buyingFormStep = () => {
   });
 };
 
+const truckSingelImagesScroll = () => {
+  const container = document.querySelector(".trucksingel-imgs-list-container");
+  const contWidth = container.clientWidth;
+  const pagina = document.querySelectorAll(
+    ".trucksingel-imgs-pagination-nr-wrapper"
+  );
+
+  pagina.forEach((e, i) => {
+    console.log("---");
+    console.log(e);
+    console.log(i);
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
@@ -286,4 +300,5 @@ document.addEventListener("DOMContentLoaded", () => {
   readMoreToggle();
   stAttrToggle();
   buyingFormStep();
+  truckSingelImagesScroll();
 });
