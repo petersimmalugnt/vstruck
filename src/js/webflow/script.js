@@ -284,7 +284,7 @@ const truckSingelImagesScroll = () => {
   if (!container) return;
   const contWidth = wrapper.clientWidth;
   const contOffset = container.offsetLeft;
-  console.log("bajs");
+  console.log("piss");
 
   const pagina = document.querySelectorAll(
     ".trucksingel-imgs-pagination-nr-wrapper"
@@ -295,7 +295,7 @@ const truckSingelImagesScroll = () => {
     e.addEventListener("click", () => {
       const scrollLoop = () => {};
       console.log(i);
-      const offset = i > 0 ? contOffset : 0;
+      const offset = i > 0 ? contOffset * 2 : 0;
       wrapper.scrollLeft = contWidth * i - offset;
     });
   });
