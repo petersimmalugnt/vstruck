@@ -302,12 +302,12 @@ const truckSingelImagesScroll = () => {
             1; //1 - Math.pow(1 - x, 3);
           };
 
-          const newProgress = ease(currentProgress);
+          currentProgress = ease(currentProgress);
           const newPos = targetPos * newProgress;
 
           wrapper.scrollLeft = newPos;
 
-          if (newProgress === 1) return;
+          if (currentProgress === 1) return;
           window.requestAnimationFrame(scrollLoop());
         };
 
