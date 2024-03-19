@@ -296,7 +296,7 @@ const truckSingelImagesScroll = () => {
         const ease = (x) => {
           return x * x * x;
         };
-        let currentProgress = ease(0.01);
+        let currentProgress = ease(0.1);
 
         const scrollLoop = () => {
           if (Math.abs(currentProgress - 1) < 0.0000001) {
