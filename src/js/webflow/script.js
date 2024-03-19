@@ -295,18 +295,17 @@ const truckSingelImagesScroll = () => {
         let currentProgress = 0;
 
         const scrollLoop = () => {
-          if (currentProgress === 1) return;
+          if (Math.abs(currentProgress, 1) < 0.0001) {
+            wrapper.scrollLeft = targetPos;
+            return;
+          }
 
           const ease = (x) => {
             return 1 - Math.pow(1 - x, 3);
           };
 
           currentProgress = ease(currentProgress);
-          const newPos = targetPos * currentProgress;
-
-          wrapper.scrollLeft = newPos;
-
-          if (currentProgress === 1) return;
+          wrapper.scrollLeft = targetPos * currentProgress;
           window.requestAnimationFrame(scrollLoop());
         };
 
