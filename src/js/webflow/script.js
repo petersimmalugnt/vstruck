@@ -296,7 +296,7 @@ const truckSingelImagesScroll = () => {
         const ease = (x) => {
           return 1 - Math.pow(1 - x, 3);
         };
-        let currentProgress = ease(0.00001);
+        let currentProgress = ease(0.000000000000001);
 
         const scrollLoop = () => {
           currentProgress += ease(currentProgress);
@@ -307,7 +307,7 @@ const truckSingelImagesScroll = () => {
           }
 
           wrapper.scrollLeft = targetPos * currentProgress + scrollPos;
-          console.log("cuuuuu: " + currentProgress);
+          console.log("kuk: " + currentProgress);
           setTimeout(() => window.requestAnimationFrame(scrollLoop), 16);
         };
 
