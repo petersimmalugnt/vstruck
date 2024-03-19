@@ -306,10 +306,10 @@ const truckSingelImagesScroll = () => {
 
           currentProgress = ease(currentProgress);
           wrapper.scrollLeft = targetPos * currentProgress;
-          window.requestAnimationFrame(scrollLoop());
+          window.requestAnimationFrame(scrollLoop);
         };
 
-        window.requestAnimationFrame(scrollLoop());
+        window.requestAnimationFrame(scrollLoop);
       });
     });
 };
