@@ -307,7 +307,7 @@ const truckSingelImagesScroll = () => {
           }
 
           wrapper.scrollLeft = targetPos * currentProgress + scrollPos;
-          console.log("c: " + currentProgress);
+          console.log("cuuuuu: " + currentProgress);
           setTimeout(() => window.requestAnimationFrame(scrollLoop), 16);
         };
 
