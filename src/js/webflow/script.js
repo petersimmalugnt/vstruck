@@ -296,11 +296,11 @@ const truckSingelImagesScroll = () => {
         const ease = (x) => {
           return 1 - Math.pow(1 - x, 3);
         };
-        let currentProgress = 0.00001;
+        let currentProgress = 0.00000001;
 
         const scrollLoop = () => {
           currentProgress += ease(currentProgress);
-          if (currentProgress >= 0.99999999999999) {
+          if (currentProgress >= 0.999999999999999999) {
             currentProgress = 1;
             wrapper.scrollLeft = targetPos + scrollPos;
             return;
@@ -308,7 +308,7 @@ const truckSingelImagesScroll = () => {
 
           wrapper.scrollLeft = targetPos * currentProgress + scrollPos;
           console.log("kuk: " + currentProgress);
-          setTimeout(() => window.requestAnimationFrame(scrollLoop), 32);
+          setTimeout(() => window.requestAnimationFrame(scrollLoop), 16);
         };
 
         window.requestAnimationFrame(scrollLoop);
