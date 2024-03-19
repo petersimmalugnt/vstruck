@@ -287,8 +287,6 @@ const truckSingelImagesScroll = () => {
     window.getComputedStyle(container).getPropertyValue("grid-column-gap")
   );
 
-  console.log(wrapper.scrollLeft);
-
   document
     .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
     .forEach((e, i) => {
