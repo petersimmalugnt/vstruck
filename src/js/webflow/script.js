@@ -282,7 +282,7 @@ const truckSingelImagesScroll = () => {
   if (!wrapper) return;
   const container = wrapper.querySelector(".trucksingel-imgs-list-container");
   if (!container) return;
-  const contWidth = container.clientWidth;
+  const contWidth = wrapper.clientWidth;
   const contOffset = container.offsetLeft;
   console.log("bajs");
 
@@ -296,7 +296,7 @@ const truckSingelImagesScroll = () => {
       const scrollLoop = () => {};
       console.log(i);
       const offset = i > 0 ? contOffset : 0;
-      wrapper.scrollLeft = contWidth * i + offset;
+      wrapper.scrollLeft = contWidth * i - offset;
     });
   });
 };
