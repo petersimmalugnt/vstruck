@@ -284,7 +284,7 @@ const truckSingelImagesScroll = () => {
   if (!container) return;
   const contWidth = container.clientWidth;
   const contOffset = container.offsetLeft;
-  console.log(contOffset);
+  console.log("bajs");
 
   const pagina = document.querySelectorAll(
     ".trucksingel-imgs-pagination-nr-wrapper"
