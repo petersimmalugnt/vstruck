@@ -293,9 +293,8 @@ const truckSingelImagesScroll = () => {
     .forEach((e, i) => {
       e.addEventListener("click", () => {
         const scrollLoop = () => {};
-        const s = contWidth * i;
-        const o = i > 0 ? offset : 0;
-        wrapper.scrollLeft = s + o;
+        const s = contWidth + offset;
+        wrapper.scrollLeft = s * i;
       });
     });
 };
