@@ -283,16 +283,16 @@ const truckSingelImagesScroll = () => {
   const container = wrapper.querySelector(".trucksingel-imgs-list-container");
   if (!container) return;
   const contWidth = container.clientWidth;
-  const offset = window
-    .getComputedStyle(container)
-    .getPropertyValue("grid-column-gap");
+  const offset = parseInt(
+    window.getComputedStyle(container).getPropertyValue("grid-column-gap"),
+    10
+  );
 
   console.log("offset" + offset);
 
   document
     .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
     .forEach((e, i) => {
-      console.log("forEach" + i);
       e.addEventListener("click", () => {
         const scrollLoop = () => {};
         wrapper.scrollLeft = contWidth * i + offset;
