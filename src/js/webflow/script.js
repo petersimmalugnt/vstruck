@@ -288,6 +288,8 @@ const truckSingelImagesScroll = () => {
     ".trucksingel-imgs-pagination-nr-wrapper"
   );
 
+  console.log(pagina);
+
   pagina.forEach((e, i) => {
     console.log("forEach" + i);
     e.addEventListener("click", () => {
