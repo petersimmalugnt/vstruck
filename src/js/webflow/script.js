@@ -288,6 +288,7 @@ const truckSingelImagesScroll = () => {
   );
 
   pagina.forEach((e, i) => {
+    console.log("forEach" + i);
     e.addEventListener("click", () => {
       const scrollLoop = () => {};
       console.log(i);
