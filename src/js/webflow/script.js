@@ -298,12 +298,11 @@ const truckSingelImagesScroll = () => {
           if (currentProgress === 1) return;
 
           const ease = (x) => {
-            return x + 0.001;
-            1; //1 - Math.pow(1 - x, 3);
+            return 1 - Math.pow(1 - x, 3);
           };
 
           currentProgress = ease(currentProgress);
-          const newPos = targetPos * newProgress;
+          const newPos = targetPos * currentProgress;
 
           wrapper.scrollLeft = newPos;
 
