@@ -278,16 +278,20 @@ const buyingFormStep = () => {
 };
 
 const truckSingelImagesScroll = () => {
-  const container = document.querySelector(".trucksingel-imgs-list-container");
+  const wrapper = document.querySelector(".trucksingle-imgs-list-wrapper");
+  const container = wrapper.querySelector(".trucksingel-imgs-list-container");
   const contWidth = container.clientWidth;
-  const pagina = document.querySelectorAll(
+  const contOffset = container.offsetLeft;
+
+  const pagina = wrapper.querySelectorAll(
     ".trucksingel-imgs-pagination-nr-wrapper"
   );
 
   pagina.forEach((e, i) => {
-    console.log("---");
-    console.log(e);
-    console.log(i);
+    e.addEventListener("click", () => {
+      const scrollLoop = () => {};
+      wrapper.scrollLeft = contOffset + contWidth * (i + 1);
+    });
   });
 };
 
