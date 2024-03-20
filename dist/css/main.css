@@ -1707,6 +1707,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 /* css props colors */
+[data-var-color-one=currentcolor],
+[data-var-color-one=currentColor] {
+  --color-one: currentColor;
+}
+
 [data-var-color-one=black] {
   --color-one: var(--vs-black);
 }
@@ -1749,6 +1754,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 [data-var-color-one=green] {
   --color-one: var(--green);
+}
+
+[data-var-color-two=currentcolor],
+[data-var-color-two=currentColor] {
+  --color-two: currentColor;
 }
 
 [data-var-color-two=black] {
