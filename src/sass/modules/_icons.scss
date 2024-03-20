@@ -1,0 +1,21 @@
+.icons-wrapper {
+  --s: 1.5rem;
+  width: var(--s);
+  height: var(--s);
+}
+
+.icons-wrapper[data-size="tiny"] {
+  --s: 0.75;
+}
+.icons-wrapper[data-size="small"] {
+  --s: 1rem;
+}
+.icons-wrapper[data-size="medium"] {
+  --s: 1.25;
+}
+.icons-wrapper[data-size="large"] {
+  --s: 1.5;
+}
+.icons-wrapper[data-size="huge"] {
+  --s: 2.5rem;
+}
