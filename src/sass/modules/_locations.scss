@@ -20,3 +20,10 @@
 .locationitem-wrapper:hover .head-arrow-title-wrapper path {
   fill: #171717;
 }
+
+.locationitem-wrapper[data-step] .locationitem-staff-wrapper {
+  --step-two-fr: minmax(10rem, 0fr);
+}
+.locationitem-wrapper[data-step="2"] .locationitem-staff-wrapper {
+  --step-two-fr: minmax(10rem, 1fr);
+}

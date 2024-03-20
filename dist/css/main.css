@@ -1555,6 +1555,14 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   fill: #171717;
 }
 
+.locationitem-wrapper[data-step] .locationitem-staff-wrapper {
+  --step-two-fr: minmax(10rem, 0fr);
+}
+
+.locationitem-wrapper[data-step="2"] .locationitem-staff-wrapper {
+  --step-two-fr: minmax(10rem, 1fr);
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
