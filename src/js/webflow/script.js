@@ -287,34 +287,33 @@ const truckSingelImagesScroll = () => {
     window.getComputedStyle(container).getPropertyValue("grid-column-gap")
   );
 
-  const lerp = (x, y, a) => x * (1 - a) + y * a;
-  const clamp = (a, min = 0, max = 1) => Math.min(max, Math.max(min, a));
-  const invlerp = (x, y, a) => clamp((a - x) / (y - x));
-  const range = (x1, y1, x2, y2, a) => lerp(x2, y2, invlerp(x1, y1, a));
-  const diff = (a, b) => Math.abs(a - b);
-
   document
     .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
-    .forEach((e, i) => {
-      e.addEventListener("click", () => {
-        const scrollPos = wrapper.scrollLeft;
-        const targetPos = (contWidth + offset) * i - scrollPos;
-        let currentProgress = 0;
-
-        const scrollLoop = () => {
-          currentProgress = lerp(currentProgress, 1, 0.01);
-
-          if (currentProgress >= 0.999999999999999999) {
-            wrapper.scrollLeft = targetPos + scrollPos;
-            return;
-          }
-
-          wrapper.scrollLeft = targetPos * currentProgress + scrollPos;
-          console.log("l: " + currentProgress);
-          setTimeout(() => window.requestAnimationFrame(scrollLoop), 16);
+    .forEach((element, i) => {
+      element.addEventListener("click", () => {
+        const duration = 1000;
+        const startPosition = wrapper.scrollLeft;
+        const finalPosition = (contWidth + offset) * i;
+        const startTime = performance.now();
+        const easingFunction = (t) => {
+          return t;
         };
 
-        window.requestAnimationFrame(scrollLoop);
+        const animationStep = (timestamp) => {
+          const elapsedTime = timestamp - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const easingProgress = easingFunction(progress);
+          const currentPosition =
+            startPosition + (finalPosition - startPosition) * easingProgress;
+
+          wrapper.scrollLeft = currentPosition;
+
+          if (progress < 1) {
+            requestAnimationFrame(animationStep);
+          }
+        };
+
+        requestAnimationFrame(animationStep);
       });
     });
 };
