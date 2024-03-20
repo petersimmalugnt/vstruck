@@ -1546,11 +1546,15 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   fill: transparent;
 }
 
+.locationitem-wrapper[data-step="1"] .head-arrow-title-wrapper,
+.locationitem-wrapper[data-step="2"] .head-arrow-title-wrapper,
 .locationitem-wrapper:hover .head-arrow-title-wrapper {
   -webkit-text-stroke-color: transparent;
   color: #171717;
 }
 
+.locationitem-wrapper[data-step="1"] .head-arrow-title-wrapper path,
+.locationitem-wrapper[data-step="2"] .head-arrow-title-wrapper path,
 .locationitem-wrapper:hover .head-arrow-title-wrapper path {
   fill: #171717;
 }
