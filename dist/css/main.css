@@ -1548,7 +1548,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --fc: var(--color-two, var(--vs-black));
 }
 
-*:hover > .icons-wrapper[data-hover-reverse-colors=true],
+*:hover > .icons-wrapper[data-parent-hover-reverse-colors=true],
 .icons-wrapper[data-hover-reverse-colors=true]:hover {
   --bc: var(--color-two, var(--vs-black));
   --fc: var(--color-one, transparent);
