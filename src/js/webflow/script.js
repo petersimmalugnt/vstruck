@@ -291,12 +291,12 @@ const truckSingelImagesScroll = () => {
     .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
     .forEach((element, i) => {
       element.addEventListener("click", () => {
-        const duration = 1000;
+        const duration = 600;
         const startPosition = wrapper.scrollLeft;
         const finalPosition = (contWidth + offset) * i;
         const startTime = performance.now();
         const easingFunction = (t) => {
-          return t;
+          return 1 - Math.pow(1 - x, 3);
         };
 
         const animationStep = (timestamp) => {
