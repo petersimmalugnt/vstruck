@@ -26,3 +26,8 @@
   --bc: var(--color-one, transparent);
   --fc: var(--color-two, var(--vs-black));
 }
+
+.icons-wrapper[data-hover-reverse-colors="true"]:hover {
+  --bc: var(--color-two, var(--vs-black));
+  --fc: var(--color-one, transparent);
+}
