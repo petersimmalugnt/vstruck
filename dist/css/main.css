@@ -1536,6 +1536,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #171717;
   color: transparent;
+  cursor: pointer;
 }
 
 .locationitem-wrapper .head-arrow-title-wrapper path {
