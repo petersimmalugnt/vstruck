@@ -327,6 +327,19 @@ const truckSingelImagesScroll = () => {
   });
 };
 
+const locations = () => {
+  const wrapper = document.querySelectorAll(".locationitem-wrapper");
+  if (!wrapper) return;
+  wrapper.forEach((el) => {
+    el.querySelector(".head-arrow-title-wrapper").addEventListener(
+      "click",
+      () => {
+        el.dataset.step = el.dataset.step === "0" ? 1 : 0;
+      }
+    );
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
@@ -337,4 +350,5 @@ document.addEventListener("DOMContentLoaded", () => {
   stAttrToggle();
   buyingFormStep();
   truckSingelImagesScroll();
+  locations();
 });
