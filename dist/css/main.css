@@ -1543,6 +1543,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --s: 1em;
 }
 
+.icons-wrapper {
+  --bc: var(--color-one, transparent);
+  --fc: var(--color-two, var(--vs-black));
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
