@@ -660,28 +660,6 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   grid-template-columns: minmax(0px, 100%) !important;
 }
 
-.testlist .head-arrow-title-wrapper {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #171717;
-  color: transparent;
-}
-
-.testlist .head-arrow-title-wrapper path {
-  vector-effect: non-scaling-stroke;
-  stroke-width: 1px;
-  stroke: #171717;
-  fill: transparent;
-}
-
-.testlist .head-arrow-title-wrapper:hover {
-  -webkit-text-stroke-color: transparent;
-  color: #171717;
-}
-
-.testlist .head-arrow-title-wrapper:hover path {
-  fill: #171717;
-}
-
 /* Passed CTA */
 .passed-link-wrapper-cta[data-scroll-inview=true] > div {
   translate: 0% -101%;
@@ -1552,6 +1530,28 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 .icons-wrapper[data-hover-reverse-colors=true]:hover {
   --bc: var(--color-two, var(--vs-black));
   --fc: var(--color-one, transparent);
+}
+
+.locationitem-wrapper .head-arrow-title-wrapper {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #171717;
+  color: transparent;
+}
+
+.locationitem-wrapper .head-arrow-title-wrapper path {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1px;
+  stroke: #171717;
+  fill: transparent;
+}
+
+.locationitem-wrapper .head-arrow-title-wrapper:hover {
+  -webkit-text-stroke-color: transparent;
+  color: #171717;
+}
+
+.locationitem-wrapper .head-arrow-title-wrapper:hover path {
+  fill: #171717;
 }
 
 /* Utillities */

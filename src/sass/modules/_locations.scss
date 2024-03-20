@@ -1,0 +1,21 @@
+.locationitem-wrapper .head-arrow-title-wrapper {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #171717;
+  color: transparent;
+}
+
+.locationitem-wrapper .head-arrow-title-wrapper path {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1px;
+  stroke: #171717;
+  fill: transparent;
+}
+
+.locationitem-wrapper .head-arrow-title-wrapper:hover {
+  -webkit-text-stroke-color: transparent;
+  color: #171717;
+}
+
+.locationitem-wrapper .head-arrow-title-wrapper:hover path {
+  fill: #171717;
+}

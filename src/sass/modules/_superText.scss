@@ -1,25 +1,3 @@
-.testlist .head-arrow-title-wrapper {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #171717;
-  color: transparent;
-}
-
-.testlist .head-arrow-title-wrapper path {
-  vector-effect: non-scaling-stroke;
-  stroke-width: 1px;
-  stroke: #171717;
-  fill: transparent;
-}
-
-.testlist .head-arrow-title-wrapper:hover {
-  -webkit-text-stroke-color: transparent;
-  color: #171717;
-}
-
-.testlist .head-arrow-title-wrapper:hover path {
-  fill: #171717;
-}
-
 /* Passed CTA */
 .passed-link-wrapper-cta[data-scroll-inview="true"] > div {
   translate: 0% -101%;
