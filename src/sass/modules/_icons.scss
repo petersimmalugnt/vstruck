@@ -16,5 +16,9 @@
   --s: 1.5rem;
 }
 .icons-wrapper[data-size="huge"] {
-  --s: 2.5rem;
+  --s: 3rem;
+}
+
+.icons-wrapper[data-size="em"] {
+  --s: 1em;
 }

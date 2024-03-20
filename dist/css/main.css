@@ -1536,7 +1536,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 .icons-wrapper[data-size=huge] {
-  --s: 2.5rem;
+  --s: 3rem;
+}
+
+.icons-wrapper[data-size=em] {
+  --s: 1em;
 }
 
 /* Utillities */
