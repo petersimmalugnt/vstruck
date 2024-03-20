@@ -334,10 +334,12 @@ const locations = () => {
     el.querySelector(".head-arrow-title-wrapper").addEventListener(
       "click",
       () => {
-        el.dataset.step =
-          el.dataset.step === "0" ? 1 : el.dataset.step === "1" ? 2 : 0;
+        el.dataset.step = el.dataset.step === "0" ? 1 : 0;
       }
     );
+    el.querySelector(".showstaff").addEventListener("click", () => {
+      el.dataset.step = 2;
+    });
   });
 };
 
