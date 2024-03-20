@@ -11,11 +11,11 @@
   fill: transparent;
 }
 
-.locationitem-wrapper .head-arrow-title-wrapper:hover {
+.locationitem-wrapper:hover .head-arrow-title-wrapper {
   -webkit-text-stroke-color: transparent;
   color: #171717;
 }
 
-.locationitem-wrapper .head-arrow-title-wrapper:hover path {
+.locationitem-wrapper:hover .head-arrow-title-wrapper path {
   fill: #171717;
 }
