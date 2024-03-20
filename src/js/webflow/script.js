@@ -295,7 +295,7 @@ const truckSingelImagesScroll = () => {
         const startPosition = wrapper.scrollLeft;
         const finalPosition = (contWidth + offset) * i;
         const startTime = performance.now();
-        const easingFunction = (t) => {
+        const easingFunction = (x) => {
           return 1 - Math.pow(1 - x, 3);
         };
 
