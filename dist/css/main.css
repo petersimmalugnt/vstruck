@@ -2246,11 +2246,13 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 [data-grid-rows-transition=fast] {
+  transform-style: preserve-3d;
   will-change: grid-template-rows;
   transition: grid-template-rows 0.5s cubic-bezier(0.3, 0, 0.1, 1);
 }
 
 [data-grid-rows-transition=slow] {
+  transform-style: preserve-3d;
   will-change: grid-template-rows;
   transition: grid-template-rows 0.65s cubic-bezier(0.75, 0, 0.1, 1);
 }
