@@ -287,35 +287,44 @@ const truckSingelImagesScroll = () => {
     window.getComputedStyle(container).getPropertyValue("grid-column-gap")
   );
 
-  document
-    .querySelectorAll(".trucksingel-imgs-pagination-nr-wrapper")
-    .forEach((element, i) => {
-      element.addEventListener("click", () => {
-        const duration = 600;
-        const startPosition = wrapper.scrollLeft;
-        const finalPosition = (contWidth + offset) * i;
-        const startTime = performance.now();
-        const easingFunction = (x) => {
-          return 1 - Math.pow(1 - x, 3);
-        };
-
-        const animationStep = (timestamp) => {
-          const elapsedTime = timestamp - startTime;
-          const progress = Math.min(elapsedTime / duration, 1);
-          const easingProgress = easingFunction(progress);
-          const currentPosition =
-            startPosition + (finalPosition - startPosition) * easingProgress;
-
-          wrapper.scrollLeft = currentPosition;
-
-          if (progress < 1) {
-            requestAnimationFrame(animationStep);
-          }
-        };
-
-        requestAnimationFrame(animationStep);
+  elements = document.querySelectorAll(
+    ".trucksingel-imgs-pagination-nr-wrapper"
+  );
+  elements.forEach((element, i) => {
+    element.addEventListener("click", () => {
+      elements.forEach((e) => {
+        if (e === element) {
+          e.dataset.isOne = true;
+        } else {
+          e.dataset.isOne = false;
+        }
       });
+
+      const duration = 600;
+      const startPosition = wrapper.scrollLeft;
+      const finalPosition = (contWidth + offset) * i;
+      const startTime = performance.now();
+      const easingFunction = (x) => {
+        return 1 - Math.pow(1 - x, 3);
+      };
+
+      const animationStep = (timestamp) => {
+        const elapsedTime = timestamp - startTime;
+        const progress = Math.min(elapsedTime / duration, 1);
+        const easingProgress = easingFunction(progress);
+        const currentPosition =
+          startPosition + (finalPosition - startPosition) * easingProgress;
+
+        wrapper.scrollLeft = currentPosition;
+
+        if (progress < 1) {
+          requestAnimationFrame(animationStep);
+        }
+      };
+
+      requestAnimationFrame(animationStep);
     });
+  });
 };
 
 document.addEventListener("DOMContentLoaded", () => {
