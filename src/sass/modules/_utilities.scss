@@ -621,3 +621,28 @@
   will-change: grid-template-rows;
   transition: grid-template-rows 0.65s cubic-bezier(0.75, 0, 0.1, 1);
 }
+
+[data-clippath-circle="true"],
+[data-clippath="circle"] {
+  clip-path: polygon(
+    1.25em 0,
+    calc(100% - 1.25em) 0,
+    calc(100% - 0.6158em) 0.1766em,
+    calc(100% - 0.1766em) 0.6158em,
+    calc(100% - 0.1608em) 0.65em,
+    100% 1.25em,
+    calc(100% - 0.1608em) 1.85em,
+    calc(100% - 0.1766em) 1.8842em,
+    calc(100% - 0.6158em) 2.3234em,
+    calc(100% - 1.25em) 2.5em,
+    1.25em 2.5em,
+    0.6158em em 2.3234em,
+    0.1766em 1.8842em,
+    0.1608em 1.85em,
+    0 1.25em,
+    0.1608em 0.65em,
+    0.1766em 0.6158em,
+    0.6158em 0.1766em,
+    1.2125em 0.01em
+  );
+}
