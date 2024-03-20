@@ -165,6 +165,9 @@
 [data-var-color-one="currentColor"] {
   --color-one: currentColor;
 }
+[data-var-color-one="transparent"] {
+  --color-one: transparent;
+}
 [data-var-color-one="black"] {
   --color-one: var(--vs-black);
 }
@@ -202,6 +205,9 @@
 [data-var-color-two="currentcolor"],
 [data-var-color-two="currentColor"] {
   --color-two: currentColor;
+}
+[data-var-color-two="transparent"] {
+  --color-two: transparent;
 }
 [data-var-color-two="black"] {
   --color-two: var(--vs-black);

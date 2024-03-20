@@ -1712,6 +1712,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --color-one: currentColor;
 }
 
+[data-var-color-one=transparent] {
+  --color-one: transparent;
+}
+
 [data-var-color-one=black] {
   --color-one: var(--vs-black);
 }
@@ -1759,6 +1763,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 [data-var-color-two=currentcolor],
 [data-var-color-two=currentColor] {
   --color-two: currentColor;
+}
+
+[data-var-color-two=transparent] {
+  --color-two: transparent;
 }
 
 [data-var-color-two=black] {
