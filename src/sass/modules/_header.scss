@@ -16,7 +16,9 @@
     --delay: 0.1s;
     will-change: visibility;
     transform-style: preserve-3d;
-    transition: visibility calc(var(--delay) * var(--i, 0) + var(--dur));
+    transition-property: visibility;
+    transition-delay: calc(var(--delay) * 4);
+    transition-duration: var(--dur);
     visibility: hidden;
   }
   .navlinks[data-navlinks-open="true"] {
