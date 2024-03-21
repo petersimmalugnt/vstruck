@@ -1,8 +1,18 @@
 @media (max-width: 767px) {
+  .navlinks[data-navlinks-open] .header-navlink {
+    transition: translate 0.5s cubic-bezier(0.3, 0, 0.1, 1);
+  }
   .navlinks[data-navlinks-open="true"] {
     visibility: visible;
   }
   .navlinks[data-navlinks-open="false"] {
+    transition: visibility 0s 0.5s;
     visibility: hidden;
+  }
+  .navlinks[data-navlinks-open="true"] .header-navlink {
+    translate: 100vh 0;
+  }
+  .navlinks[data-navlinks-open="false"] .header-navlink {
+    translate: 100vh 0;
   }
 }
