@@ -23,7 +23,7 @@
     will-change: visibility;
     transform-style: preserve-3d;
     transition-property: visibility;
-    transition-delay: calc(var(--delay) * 6);
+    transition-delay: calc(var(--delay) * 4);
     transition-duration: var(--dur);
     visibility: hidden;
   }
@@ -42,7 +42,7 @@
   }
 
   .navlinks[data-navlinks-open="true"] .header-navlink {
-    transition-delay: calc(var(--delay) * (6 - var(--i, 0)));
+    transition-delay: calc(var(--delay) * (4 - var(--i, 0)));
     transition-timing-function: cubic-bezier(0, 0, 0.5, 1);
     translate: 0 0vh;
   }
