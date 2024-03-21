@@ -10,7 +10,7 @@
     visibility: hidden;
   }
   .navlinks[data-navlinks-open="true"] .header-navlink {
-    translate: 100vh 0;
+    translate: 0vh 0;
   }
   .navlinks[data-navlinks-open="false"] .header-navlink {
     translate: 100vh 0;
