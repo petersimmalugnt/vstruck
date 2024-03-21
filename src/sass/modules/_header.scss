@@ -1,0 +1,8 @@
+@media (max-width: 767px) {
+  .navlinks[data-navlinks-open="true"] {
+    visibility: visible;
+  }
+  .navlinks[data-navlinks-open="false"] {
+    visibility: hidden;
+  }
+}

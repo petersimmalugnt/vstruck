@@ -272,6 +272,14 @@ html {
   min-height: calc(1px + 3.5rem);
 }
 
+@media (max-width: 767px) {
+  .navlinks[data-navlinks-open=true] {
+    visibility: visible;
+  }
+  .navlinks[data-navlinks-open=false] {
+    visibility: hidden;
+  }
+}
 /* Filter Dropdown */
 .all-filter-dd-list-cat-item-toggle-nr:empty {
   display: none;
