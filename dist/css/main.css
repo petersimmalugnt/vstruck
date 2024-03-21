@@ -916,6 +916,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
     translate: -100% 0%;
   }
 }
+.logolist--text-container[data-not-sticky=true] {
+  position: static;
+}
+
 /* LAYOUT: HORIZONTAL */
 @container card (width > 560px) {
   [data-card-layout=horizontal] .card-container {

@@ -12,3 +12,7 @@
     translate: -100% 0%;
   }
 }
+
+.logolist--text-container[data-not-sticky="true"] {
+  position: static;
+}
