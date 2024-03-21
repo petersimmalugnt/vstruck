@@ -18,7 +18,7 @@
     --i: 5;
   }
   .navlinks[data-navlinks-open] {
-    --dur: 0.5s;
+    --dur: 0.4s;
     --delay: 0.06s;
     will-change: visibility;
     transform-style: preserve-3d;
@@ -28,8 +28,6 @@
     visibility: hidden;
   }
   .navlinks[data-navlinks-open="true"] {
-    --dur: 0.5s;
-    --delay: 0.06s;
     transition-delay: 0s;
     transition-duration: 0s;
     visibility: visible;
