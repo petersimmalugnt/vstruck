@@ -674,3 +674,10 @@
     1.2125em 0.01em
   );
 }
+
+[data-number-order="true"] {
+}
+
+[data-number-order="true"] [data-number-nr="before"]:before,
+[data-number-order="true"] [data-number-nr="before"]:before {
+}

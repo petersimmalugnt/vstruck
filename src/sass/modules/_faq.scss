@@ -1,0 +1,29 @@
+.cardlist-2-list-wrapper {
+  counter-reset: cardList2ItemCounter;
+}
+
+.cardlist-2-item-wrapper {
+  counter-increment: cardList2ItemCounter;
+}
+.cardlist-2-nr-container {
+  max-width: 2ch;
+  letter-spacing: 0;
+  height: 0.8em;
+  display: inline-flex;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: clip;
+  direction: rtl;
+}
+.cardlist-2-nr-container::before {
+  content: "0" counter(cardList2ItemCounter);
+}
+
+.cardlist-2-wrapper:is(
+    [data-bg="orange"],
+    [data-bg="dark-steel"],
+    [data-bg="medium-steel"]
+  )
+  .cardlist-2-nr-container {
+  color: #ffffff;
+}
