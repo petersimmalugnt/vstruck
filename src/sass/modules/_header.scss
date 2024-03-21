@@ -1,4 +1,8 @@
 @media (max-width: 767px) {
+  .navlinks[data-navlinks-open] {
+    --dur: 0.4s;
+    --delay: 0.06s;
+  }
   .header-navlink:nth-child(1) {
     --i: 1;
   }
@@ -12,14 +16,14 @@
     --i: 4;
   }
   .navlinks[data-navlinks-open] .header-navlink {
-    transition: translate 0.5s calc(0.1s * var(--i, 0))
+    transition: translate var(--dur) calc(var(--delay) * var(--i, 0))
       cubic-bezier(0.3, 0, 0.1, 1);
   }
   .navlinks[data-navlinks-open="true"] {
     visibility: visible;
   }
   .navlinks[data-navlinks-open="false"] {
-    transition: visibility calc(0.1s * var(--i, 0) + 0.5s);
+    transition: visibility calc(var(--delay) * var(--i, 0) + var(--dur));
     visibility: hidden;
   }
   .navlinks[data-navlinks-open="true"] .header-navlink {
