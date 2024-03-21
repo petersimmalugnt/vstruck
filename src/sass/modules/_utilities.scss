@@ -675,9 +675,24 @@
   );
 }
 
-[data-number-order="true"] {
+/* PADDED COUNTER */
+@counter-style nrFormatFallback {
+  system: numeric;
 }
 
-[data-number-order="true"] [data-number-nr="before"]:before,
-[data-number-order="true"] [data-number-nr="before"]:before {
+@counter-style nrFormat {
+  system: numeric;
+  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
+  pad: 2 "0";
+  fallback: nrFormatFallback;
+}
+
+[data-number-counter-reset="true"] {
+  counter-reset: nr;
+}
+
+[data-counter-reset="true"] [data-counter-increment="before"]::before,
+[data-counter-reset="true"] [data-counter-increment="after"]::after {
+  counter-increment: nr;
+  content: counter(nr, nrFormat);
 }
