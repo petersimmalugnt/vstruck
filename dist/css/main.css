@@ -1561,7 +1561,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 .wrapper-grid.comparetable-scroller {
   overflow-x: auto;
-  overflow-y: visible;
+  overflow-y: visible !important;
 }
 
 /* Utillities */
