@@ -1,7 +1,7 @@
 @media (max-width: 767px) {
   .navlinks[data-navlinks-open] {
-    --dur: 0.4s;
-    --delay: 0.06s;
+    --dur: 0.35s;
+    --delay: 0.03s;
   }
   .header-navlink:nth-child(1) {
     --i: 1;
@@ -17,7 +17,7 @@
   }
   .navlinks[data-navlinks-open] .header-navlink {
     transition: translate var(--dur) calc(var(--delay) * var(--i, 0))
-      cubic-bezier(0.3, 0, 0.1, 1);
+      cubic-bezier(0.4, 0, 0.1, 1);
   }
   .navlinks[data-navlinks-open="true"] {
     visibility: visible;
