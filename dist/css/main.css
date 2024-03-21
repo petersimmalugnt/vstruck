@@ -273,10 +273,6 @@ html {
 }
 
 @media (max-width: 767px) {
-  .navlinks[data-navlinks-open] {
-    --dur: 0.35s;
-    --delay: 0.03s;
-  }
   .header-navlink:nth-child(1) {
     --i: 1;
   }
@@ -289,21 +285,24 @@ html {
   .header-navlink:nth-child(4) {
     --i: 4;
   }
-  .navlinks[data-navlinks-open] .header-navlink {
-    transition: translate var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0.4, 0, 0.1, 1);
-  }
   .navlinks[data-navlinks-open=true] {
+    --dur: 0.35s;
+    --delay: 0.03s;
     visibility: visible;
   }
   .navlinks[data-navlinks-open=false] {
+    --dur: 0.35s;
+    --delay: 0.03s;
     transition: visibility calc(var(--delay) * var(--i, 0) + var(--dur));
     visibility: hidden;
   }
   .navlinks[data-navlinks-open=true] .header-navlink {
-    translate: 0 0vh;
+    transition: scale var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0, 0, 0.1, 1);
+    scale: 100%;
   }
   .navlinks[data-navlinks-open=false] .header-navlink {
-    translate: 0 100vh;
+    transition: scale var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0.8, 0, 1, 1);
+    scale: 75%;
   }
 }
 /* Filter Dropdown */
