@@ -314,7 +314,7 @@ html {
     translate: 0 100vh;
   }
   .navlinks[data-navlinks-open=true] .header-navlink {
-    transition-delay: calc(var(--delay) * (4 - var(--i, 0)));
+    transition-delay: calc(var(--delay) * (5 - var(--i, 0)));
     transition-timing-function: cubic-bezier(0, 0, 0.5, 1);
     translate: 0 0vh;
   }
