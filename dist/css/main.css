@@ -280,7 +280,7 @@ html {
     visibility: visible;
   }
   .navlinks[data-navlinks-open=false] {
-    transition: visibility 0s 0.5s;
+    transition: visibility 0.5s;
     visibility: hidden;
   }
   .navlinks[data-navlinks-open=true] .header-navlink {
