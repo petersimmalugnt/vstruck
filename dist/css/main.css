@@ -1559,6 +1559,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   fill: #171717;
 }
 
+.comparetable-scroller {
+  overflow-x: scroll;
+  overflow-y: visible;
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
