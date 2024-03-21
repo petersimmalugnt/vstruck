@@ -285,13 +285,19 @@ html {
   .header-navlink:nth-child(4) {
     --i: 4;
   }
+  .header-navlink:nth-child(4) {
+    --i: 5;
+  }
+  .header-navlink:nth-child(4) {
+    --i: 6;
+  }
   .navlinks[data-navlinks-open] {
     --dur: 0.35s;
     --delay: 0.06s;
     will-change: visibility;
     transform-style: preserve-3d;
     transition-property: visibility;
-    transition-delay: calc(var(--delay) * 4);
+    transition-delay: calc(var(--delay) * 6);
     transition-duration: var(--dur);
     visibility: hidden;
   }
@@ -304,11 +310,12 @@ html {
     transition-property: translate;
     transition-delay: calc(var(--delay) * var(--i, 0));
     transition-duration: var(--dur);
-    transition-timing-function: cubic-bezier(0.5, 0, 1, 1);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.7, 1);
     translate: 0 100vh;
   }
   .navlinks[data-navlinks-open=true] .header-navlink {
-    transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
+    transition-delay: calc(var(--delay) * (6 - var(--i, 0)));
+    transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
     translate: 0 0vh;
   }
 }
