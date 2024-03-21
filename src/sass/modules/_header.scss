@@ -18,7 +18,7 @@
     --i: 5;
   }
   .navlinks[data-navlinks-open] {
-    --dur: 0.35s;
+    --dur: 0.5s;
     --delay: 0.06s;
     will-change: visibility;
     transform-style: preserve-3d;
@@ -41,7 +41,7 @@
     transition-property: translate;
     transition-delay: calc(var(--delay) * var(--i, 0));
     transition-duration: var(--dur);
-    transition-timing-function: cubic-bezier(0.5, 0, 1, 1);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.7, 1);
     translate: 0 100vh;
   }
 
