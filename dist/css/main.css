@@ -287,12 +287,12 @@ html {
   }
   .navlinks[data-navlinks-open=true] {
     --dur: 0.35s;
-    --delay: 0.03s;
+    --delay: 0.05s;
     visibility: visible;
   }
   .navlinks[data-navlinks-open=false] {
-    --dur: 0.35s;
-    --delay: 0.03s;
+    --dur: 0.3s;
+    --delay: 0.05s;
     transition: visibility calc(var(--delay) * var(--i, 0) + var(--dur));
     visibility: hidden;
   }
@@ -301,8 +301,8 @@ html {
     scale: 100%;
   }
   .navlinks[data-navlinks-open=false] .header-navlink {
-    transition: scale var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0.8, 0, 1, 1);
-    scale: 75%;
+    transition: scale var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0.5, 0, 1, 1);
+    scale: 50%;
   }
 }
 /* Filter Dropdown */
