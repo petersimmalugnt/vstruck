@@ -1560,7 +1560,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 .comparetable-scroller {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: visible;
 }
 
