@@ -14,6 +14,8 @@
   .navlinks[data-navlinks-open] {
     --dur: 0.5s;
     --delay: 0.1s;
+    will-change: visibility;
+    transform-style: preserve-3d;
     transition: visibility calc(var(--delay) * var(--i, 0) + var(--dur));
     visibility: hidden;
   }
@@ -22,14 +24,19 @@
   }
 
   .navlinks[data-navlinks-open] .header-navlink {
-    transition: scale var(--dur) calc(var(--delay) * var(--i, 0))
-      cubic-bezier(0.5, 0, 1, 1);
-    scale: 0%;
+    will-change: translate, opacity;
+    transform-style: preserve-3d;
+    transition-property: scale, opacity;
+    transition-delay: calc(var(--delay) * var(--i, 0));
+    transition-duration: var(--dur);
+    transition-timing-function: cubic-bezier(0.5, 0, 1, 1);
+    scale: 0;
+    opacity: 0;
   }
 
   .navlinks[data-navlinks-open="true"] .header-navlink {
-    transition: scale var(--dur) calc(var(--delay) * var(--i, 0))
-      cubic-bezier(0, 0, 0.1, 1);
-    scale: 100%;
+    transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
+    scale: 1;
+    opacity: 1;
   }
 }
