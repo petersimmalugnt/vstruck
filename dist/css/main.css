@@ -2319,7 +2319,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   pad: 2 "0";
   fallback: nrFormatFallback;
 }
-[data-number-counter-reset=true] {
+[data-counter-reset=true] {
   counter-reset: nr;
 }
 

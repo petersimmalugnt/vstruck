@@ -687,7 +687,7 @@
   fallback: nrFormatFallback;
 }
 
-[data-number-counter-reset="true"] {
+[data-counter-reset="true"] {
   counter-reset: nr;
 }
 
