@@ -288,21 +288,19 @@ html {
   .navlinks[data-navlinks-open] {
     --dur: 0.5s;
     --delay: 0.1s;
+    transition: visibility calc(var(--delay) * var(--i, 0) + var(--dur));
+    visibility: hidden;
   }
   .navlinks[data-navlinks-open=true] {
     visibility: visible;
   }
-  .navlinks[data-navlinks-open=false] {
-    transition: visibility calc(var(--delay) * var(--i, 0) + var(--dur));
-    visibility: hidden;
+  .navlinks[data-navlinks-open] .header-navlink {
+    transition: scale var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0.5, 0, 1, 1);
+    scale: 0%;
   }
   .navlinks[data-navlinks-open=true] .header-navlink {
     transition: scale var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0, 0, 0.1, 1);
     scale: 100%;
-  }
-  .navlinks[data-navlinks-open=false] .header-navlink {
-    transition: scale var(--dur) calc(var(--delay) * var(--i, 0)) cubic-bezier(0.5, 0, 1, 1);
-    scale: 0%;
   }
 }
 /* Filter Dropdown */
