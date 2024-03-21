@@ -286,8 +286,8 @@ html {
     --i: 4;
   }
   .navlinks[data-navlinks-open] {
-    --dur: 0.5s;
-    --delay: 0.1s;
+    --dur: 0.35s;
+    --delay: 0.05s;
     will-change: visibility;
     transform-style: preserve-3d;
     transition-property: visibility;
