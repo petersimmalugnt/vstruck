@@ -287,7 +287,7 @@ html {
   }
   .navlinks[data-navlinks-open] {
     --dur: 0.35s;
-    --delay: 0.05s;
+    --delay: 0.06s;
     will-change: visibility;
     transform-style: preserve-3d;
     transition-property: visibility;
@@ -299,19 +299,17 @@ html {
     visibility: visible;
   }
   .navlinks[data-navlinks-open] .header-navlink {
-    will-change: translate, opacity;
+    will-change: translate;
     transform-style: preserve-3d;
-    transition-property: scale, opacity;
+    transition-property: translate;
     transition-delay: calc(var(--delay) * var(--i, 0));
     transition-duration: var(--dur);
     transition-timing-function: cubic-bezier(0.5, 0, 1, 1);
-    scale: 0;
-    opacity: 0;
+    translate: 0 100vh;
   }
   .navlinks[data-navlinks-open=true] .header-navlink {
     transition-timing-function: cubic-bezier(0, 0, 0.1, 1);
-    scale: 1;
-    opacity: 1;
+    translate: 0 0vh;
   }
 }
 /* Filter Dropdown */
