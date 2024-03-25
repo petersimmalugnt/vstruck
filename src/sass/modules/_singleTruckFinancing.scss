@@ -3,9 +3,9 @@
   --selWhite: var(--linen);
   --selSteel: transparent;
   --selYellow: transparent;
+  --showCta: 0;
   --selected: 0;
   --selected-fr: minmax(0px, 0fr);
-  --showCta: 0;
 }
 .stf-item:last-child {
   border-bottom: 1px solid var(--vs-black);
@@ -16,9 +16,9 @@
   --selSteel: var(--light-grey);
   --selYellow: var(--khaki);
   --selOrange: var(--vs-prime);
+  --showCta: 1;
   --selected: 0;
   --selected-fr: minmax(0px, 1fr);
-  --showCta: 1;
 }
 
 .stf-wrapper[data-show-compare="true"] .stf-item {
