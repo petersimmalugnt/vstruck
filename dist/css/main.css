@@ -1659,7 +1659,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --selected-fr: minmax(0px, 0fr);
 }
 
-.stf-item[data-is-selected=true] {
+.stf-item-container[data-is-selected=true] {
   border-bottom: 1px solid var(--vs-black);
 }
 
