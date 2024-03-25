@@ -22,8 +22,10 @@
   --selected-fr: minmax(0px, 1fr);
 }
 
-.stf-wrapper[data-show-compare="true"] .stf-item {
-  --showCta: 1;
+@media (min-width: 768px) {
+  .stf-wrapper[data-show-compare="true"] .stf-item {
+    --showCta: 1;
+  }
 }
 
 .stf-wrapper[data-show-compare] .stf-comparetable {
