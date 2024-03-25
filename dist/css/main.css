@@ -1659,6 +1659,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --showCta: 0;
 }
 
+.stf-item:last-child {
+  border-bottom: 1px solid var(--vs-black);
+}
+
 .stf-item[data-is-selected=true] {
   --selBlack: var(--vs-black);
   --selWhite: var(--white);

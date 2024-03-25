@@ -7,6 +7,9 @@
   --selected-fr: minmax(0px, 0fr);
   --showCta: 0;
 }
+.stf-item:last-child {
+  border-bottom: 1px solid var(--vs-black);
+}
 .stf-item[data-is-selected="true"] {
   --selBlack: var(--vs-black);
   --selWhite: var(--white);
