@@ -12,12 +12,12 @@
 }
 .stf-item[data-is-selected="true"] {
   --selBlack: var(--vs-black);
-  --selWhite: red;
+  --selWhite: var(--white);
   --selSteel: var(--light-grey);
   --selYellow: var(--khaki);
   --selOrange: var(--vs-prime);
   --showCta: 1;
-  --selected: 0;
+  --selected: 1;
   --selected-fr: minmax(0px, 1fr);
 }
 
