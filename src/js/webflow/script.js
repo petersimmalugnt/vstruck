@@ -367,7 +367,7 @@ const singelTruckFinances = () => {
       .querySelectorAll(".stf-radio-selector")
       .forEach((radioSelect, i) => {
         radioSelect.addEventListener("click", () => {
-          console.log(i);
+          radioWrapper.dataset.radioSelected = i + 1;
         });
       });
   });
