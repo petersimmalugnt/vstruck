@@ -15,6 +15,10 @@
 .stf-item[data-is-selected="true"]
   .stf-radio[data-radio-selected="2"]
   .stf-radio-selector:last-child {
+  --fill: white;
+}
+
+.stf-radio[data-radio-selected="1"] .stf-radio-selector:first-child,
+.stf-radio[data-radio-selected="2"] .stf-radio-selector:last-child {
   --check: var(--vs-black);
-  --fil: white;
 }
