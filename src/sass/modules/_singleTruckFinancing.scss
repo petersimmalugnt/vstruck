@@ -23,4 +23,5 @@
 .stf-radio[data-radio-selected="2"] .stf-radio-selector:last-child {
   --fill: var(--selWhite);
   --check: var(--vs-black);
+  background-color: var(--fill);
 }
