@@ -1651,7 +1651,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 .stf-item {
   --selBlack: transparent;
-  --selWhite: transparent;
+  --selWhite: var(--linen);
   --selSteel: transparent;
   --selYellow: transparent;
   --selected: 0;
