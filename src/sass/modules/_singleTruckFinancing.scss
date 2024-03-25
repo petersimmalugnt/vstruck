@@ -3,6 +3,8 @@
   --selWhite: transparent;
   --selSteel: transparent;
   --selYellow: transparent;
+  --selected: 0;
+  --selected-fr: minmax(0px, 0fr);
   --showCta: 0;
 }
 .stf-item[data-is-selected="true"] {
@@ -11,6 +13,8 @@
   --selSteel: var(--light-grey);
   --selYellow: var(--khaki);
   --selOrange: var(--vs-prime);
+  --selected: 0;
+  --selected-fr: minmax(0px, 1fr);
   --showCta: 1;
 }
 
