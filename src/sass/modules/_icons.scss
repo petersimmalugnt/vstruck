@@ -2,6 +2,8 @@
   --s: 1.5rem;
   width: var(--s);
   height: var(--s);
+  min-width: var(--s);
+  min-height: var(--s);
 }
 .icons-wrapper[data-size="tiny"] {
   --s: 0.75rem;
