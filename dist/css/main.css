@@ -1649,8 +1649,14 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   color: #ffffff;
 }
 
+.stf-item {
+  --selectedBlack: transparent;
+  --selectedWhite: transparent;
+}
+
 .stf-item[data-is-selected=true] {
-  --selectedCheck: var(--vs-black);
+  --selectedBlack: var(--vs-black);
+  --selectedWhite: white;
   background-color: red;
 }
 
