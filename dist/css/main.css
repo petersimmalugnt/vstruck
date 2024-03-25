@@ -1649,6 +1649,18 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   color: #ffffff;
 }
 
+.stf-item[data-is-selected=true] {
+  background-color: red;
+}
+
+.stf-wrapper[data-show-compare] .stf-comparetable {
+  --show: minmax(0px, 0fr);
+}
+
+.stf-wrapper[data-show-compare=true] .stf-comparetable {
+  --show: minmax(0px, 1fr);
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
