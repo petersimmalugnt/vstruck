@@ -349,7 +349,7 @@ const singelTruckFinances = () => {
   wrapper
     .querySelector(".stf-comparetable-btn")
     .addEventListener("click", () => {
-      wrapper.dataset.showCompare = !wrapper.dataset.showCompare;
+      wrapper.dataset.showCompare = !(wrapper.dataset.showCompare === "true");
     });
   const items = wrapper.querySelectorAll(".stf-item");
   items.forEach((item) => {
