@@ -1,11 +1,15 @@
 .stf-item {
-  --selectedBlack: transparent;
-  --selectedWhite: transparent;
+  --selBlack: transparent;
+  --selWhite: transparent;
+  --selSteel: transparent;
+  --selYellow: transparent;
 }
 .stf-item[data-is-selected="true"] {
-  --selectedBlack: var(--vs-black);
-  --selectedWhite: white;
-  background-color: red;
+  --selBlack: var(--vs-black);
+  --selWhite: var(--white);
+  --selSteel: var(--light-grey);
+  --selYellow: var(--khaki);
+  --selOrange: var(--vs-prime);
 }
 
 .stf-wrapper[data-show-compare] .stf-comparetable {
@@ -15,16 +19,8 @@
   --show: minmax(0px, 1fr);
 }
 
-.stf-item[data-is-selected="true"]
-  .stf-radio[data-radio-selected="1"]
-  .stf-radio-selector:first-child,
-.stf-item[data-is-selected="true"]
-  .stf-radio[data-radio-selected="2"]
-  .stf-radio-selector:last-child {
-  --fill: white;
-}
-
 .stf-radio[data-radio-selected="1"] .stf-radio-selector:first-child,
 .stf-radio[data-radio-selected="2"] .stf-radio-selector:last-child {
+  --fill: var(--selWhite);
   --check: var(--vs-black);
 }
