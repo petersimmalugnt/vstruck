@@ -1666,7 +1666,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --showCta: 1;
 }
 
-.stf-wrapper[data-show-compare] .stf-item {
+.stf-wrapper[data-show-compare=true] .stf-item {
   --showCta: 1;
 }
 
