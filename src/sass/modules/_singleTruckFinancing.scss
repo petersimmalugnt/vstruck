@@ -3,6 +3,7 @@
   --selWhite: transparent;
   --selSteel: transparent;
   --selYellow: transparent;
+  --selected: 0;
 }
 .stf-item[data-is-selected="true"] {
   --selBlack: var(--vs-black);
@@ -10,6 +11,7 @@
   --selSteel: var(--light-grey);
   --selYellow: var(--khaki);
   --selOrange: var(--vs-prime);
+  --selected: 1;
 }
 
 .stf-wrapper[data-show-compare] .stf-comparetable {
