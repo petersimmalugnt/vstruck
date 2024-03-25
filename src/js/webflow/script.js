@@ -353,7 +353,7 @@ const singelTruckFinances = () => {
     });
   const items = wrapper.querySelectorAll(".stf-item");
   items.forEach((item) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("mouseDown", () => {
       item.dataset.isSelected = true;
       items.forEach((otherItem) => {
         if (otherItem === item) return;
