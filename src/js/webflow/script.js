@@ -360,6 +360,16 @@ const singelTruckFinances = () => {
         otherItem.dataset.isSelected = false;
       });
     });
+
+    const radioWrapper = item.querySelector(".stf-radio");
+    if (!radioWrapper) return;
+    radioWrapper
+      .querySelectorAll("stf-radio-selector")
+      .forEach((radioSelect, i) => {
+        radioSelect.addEventListener("click", () => {
+          console.log(i);
+        });
+      });
   });
 };
 
