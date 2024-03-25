@@ -347,7 +347,7 @@ const singelTruckFinances = () => {
   const wrapper = document.querySelector(".stf-wrapper");
   if (!wrapper) return;
   wrapper
-    .querySelector("stf-comparetable-btn")
+    .querySelector(".stf-comparetable-btn")
     .addEventListener("click", () => {
       wrapper.dataset.dataShowCompare = !wrapper.dataset.dataShowCompare;
       console.log("show compare");
