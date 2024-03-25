@@ -9,10 +9,12 @@
   --show: minmax(0px, 1fr);
 }
 
-.stf-radio[data-radio-selected="1"] .stf-radio-selector:first-child {
-  background-color: red;
-}
-
-.stf-radio[data-radio-selected="2"] .stf-radio-selector:last-child {
-  background-color: red;
+.stf-item[data-is-selected="true"]
+  .stf-radio[data-radio-selected="1"]
+  .stf-radio-selector:first-child,
+.stf-item[data-is-selected="true"]
+  .stf-radio[data-radio-selected="2"]
+  .stf-radio-selector:last-child {
+  --check: var(--vs-black);
+  --fil: white;
 }
