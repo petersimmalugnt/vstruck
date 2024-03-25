@@ -25,3 +25,10 @@
   --check: var(--vs-black);
   background-color: var(--fill);
 }
+
+.stf-slider {
+  filter: grayscale(100%) brightness(200%);
+}
+.stf-item[data-is-selected="true"] .stf-slider {
+  filter: none;
+}
