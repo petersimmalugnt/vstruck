@@ -1661,6 +1661,14 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --show: minmax(0px, 1fr);
 }
 
+.stf-radio[data-radio-selected="1"] .stf-radio-selector:first-child {
+  background-color: red;
+}
+
+.stf-radio[data-radio-selected="2"] .stf-radio-selector:last-child {
+  background-color: red;
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
