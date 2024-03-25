@@ -1665,7 +1665,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 .stf-item[data-is-selected=true] {
   --selBlack: var(--vs-black);
-  --selWhite: var(--white);
+  --selWhite: red;
   --selSteel: var(--light-grey);
   --selYellow: var(--khaki);
   --selOrange: var(--vs-prime);
