@@ -343,6 +343,21 @@ const locations = () => {
   });
 };
 
+const singelTruckFinances = () => {
+  const wrapper = document.querySelector(".stf-wrapper");
+  if (!wrapper) return;
+  const items = wrapper.querySelectorAll(".stf-item");
+  items.forEach((item) => {
+    item.addEventListener("click", () => {
+      item.dataset.isSelected = true;
+      items.forEach((otherItem) => {
+        if (otherItem === item) return;
+        otherItem.dataset.isSelected = false;
+      });
+    });
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
@@ -354,4 +369,5 @@ document.addEventListener("DOMContentLoaded", () => {
   buyingFormStep();
   truckSingelImagesScroll();
   locations();
+  singelTruckFinances();
 });
