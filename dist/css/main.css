@@ -1650,6 +1650,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 .stf-item[data-is-selected=true] {
+  --selectedCheck: var(--vs-black);
   background-color: red;
 }
 
