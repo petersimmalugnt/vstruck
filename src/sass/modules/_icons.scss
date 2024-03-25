@@ -34,3 +34,9 @@
   --bc: var(--color-two, var(--vs-black));
   --fc: var(--color-one, transparent);
 }
+
+.icons-wrapper path,
+.icons-wrapper line,
+.icons-wrapper polygon {
+  vector-effect: non-scaling-stroke;
+}

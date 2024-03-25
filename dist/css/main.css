@@ -1587,6 +1587,12 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --fc: var(--color-one, transparent);
 }
 
+.icons-wrapper path,
+.icons-wrapper line,
+.icons-wrapper polygon {
+  vector-effect: non-scaling-stroke;
+}
+
 .locationitem-wrapper .head-arrow-title-wrapper {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #171717;
