@@ -538,7 +538,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   margin: 0;
   box-shadow: none;
   border-radius: 0 !important;
-  color: var(--vs-black);
+  color: var(--orange);
   width: 2ch;
   font-size: inherit;
   height: 1.5em;
