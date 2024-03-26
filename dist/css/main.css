@@ -532,8 +532,8 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   border: none;
   outline: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
-       appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
   padding: 0;
   margin: 0;
   box-shadow: none;
