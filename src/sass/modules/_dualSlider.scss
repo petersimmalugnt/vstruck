@@ -151,8 +151,9 @@
 .dual-input-container input[type="number"] {
   border: none;
   outline: none;
-  -webkit-appearance: none;
   appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
   padding: 0;
   margin: 0;
   box-shadow: none;
@@ -163,10 +164,6 @@
   height: 1.5em;
   line-height: 1.5em;
   background-color: transparent !important;
-}
-
-.dual-input-container input[type="number"] {
-  -moz-appearance: textfield;
 }
 
 .dual-input-container input[type="number"]::-webkit-inner-spin-button,
