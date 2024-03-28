@@ -1,0 +1,7 @@
+.pricetable-wrapper:is(
+    [data-bg="white"],
+    [data-bg="transparent"],
+    [data-bg=""]
+  ) {
+  --lihover: var(--white);
+}
