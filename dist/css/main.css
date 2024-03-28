@@ -1732,6 +1732,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --lihover: var(--white);
 }
 
+.pricetable-wrapper {
+  --bc: red !important;
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
