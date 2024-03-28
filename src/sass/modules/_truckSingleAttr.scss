@@ -5,6 +5,7 @@
   transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
 }
 
-.trucksingle-attr-category-attr-list[data-single-column="true"] {
+.trucksingle-attr-list-wrapper[data-single-column="true"]
+  .trucksingle-attr-category-attr-list {
   grid-template-columns: 1fr;
 }
