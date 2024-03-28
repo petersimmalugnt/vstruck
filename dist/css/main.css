@@ -1459,8 +1459,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 .trucksingle-attr-category-wrapper {
-  will-change: grid-template-rows;
-  transition: grid-template-rows 0.5s cubic-bezier(0.3, 0, 0.1, 1);
+  will-change: grid-template-rows, transform;
+  transition-property: grid-template-rows, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
 }
 
 @media (min-width: 2080px) {
