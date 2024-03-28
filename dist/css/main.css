@@ -1465,6 +1465,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
 }
 
+.trucksingle-attr-category-attr-list[data-single-column=true] {
+  grid-template-columns: 1fr;
+}
+
 @media (min-width: 2080px) {
   .card-list-grid {
     grid-auto-columns: minmax(calc(25% - 1.125rem), 1fr);
