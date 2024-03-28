@@ -84,6 +84,7 @@
 }
 
 [data-bg="black"],
+[data-hover-bg="black"]:hover,
 [data-bg="black"] .dd-toggle::after,
 [data-bg="black"] .dd-link::after {
   --bg-color: var(--vs-black);
@@ -91,6 +92,7 @@
 }
 
 [data-bg="white"],
+[data-hover-bg="white"]:hover,
 [data-bg="white"] .dd-toggle::after,
 [data-bg="white"] .dd-link::after {
   --bg-color: var(--white);
@@ -98,6 +100,7 @@
 }
 
 [data-bg="dark-steel"],
+[data-hover-bg="dark-steel"]:hover,
 [data-bg="dark-steel"] .dd-toggle::after,
 [data-bg="dark-steel"] .dd-link::after {
   --bg-color: var(--dark-grey);
@@ -105,6 +108,7 @@
 }
 
 [data-bg="medium-steel"],
+[data-hover-bg="medium-steel"]:hover,
 [data-bg="medium-steel"] .dd-toggle::after,
 [data-bg="medium-steel"] .dd-link::after {
   --bg-color: var(--silver);
@@ -112,6 +116,7 @@
 }
 
 [data-bg="steel"],
+[data-hover-bg="steel"]:hover,
 [data-bg="steel"] .dd-toggle::after,
 [data-bg="steel"] .dd-link::after {
   --bg-color: var(--light-grey);
@@ -119,6 +124,7 @@
 }
 
 [data-bg="wellpapp"],
+[data-hover-bg="wellpapp"]:hover,
 [data-bg="wellpapp"] .dd-toggle::after,
 [data-bg="wellpapp"] .dd-link::after {
   --bg-color: var(--linen);
@@ -126,6 +132,7 @@
 }
 
 [data-bg="orange"],
+[data-hover-bg="orange"]:hover,
 [data-bg="orange"] .dd-toggle::after,
 [data-bg="orange"] .dd-link::after {
   --bg-color: var(--vs-prime);
@@ -133,6 +140,7 @@
 }
 
 [data-bg="red"],
+[data-hover-bg="red"]:hover,
 [data-bg="red"] .dd-toggle::after,
 [data-bg="red"] .dd-link::after {
   --bg-color: var(--red);
@@ -140,6 +148,7 @@
 }
 
 [data-bg="yellow"],
+[data-hover-bg="yellow"]:hover,
 [data-bg="yellow"] .dd-toggle::after,
 [data-bg="yellow"] .dd-link::after {
   --bg-color: var(--khaki);
@@ -147,6 +156,7 @@
 }
 
 [data-bg="blue"],
+[data-hover-bg="blue"]:hover,
 [data-bg="blue"] .dd-toggle::after,
 [data-bg="blue"] .dd-link::after {
   --bg-color: var(--light-sky-blue);
@@ -154,6 +164,7 @@
 }
 
 [data-bg="green"],
+[data-hover-bg="green"]:hover,
 [data-bg="green"] .dd-toggle::after,
 [data-bg="green"] .dd-link::after {
   --bg-color: var(--green);
