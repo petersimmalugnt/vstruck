@@ -187,24 +187,24 @@ const readMoreToggle = () => {
 };
 
 const stAttrToggle = () => {
-  document
-    .querySelectorAll("trucksingle-attr-list-wrapper")
-    .forEach((wrapper) => {
-      wrapper
-        .querySelectorAll(".trucksingle-attr-category-title-wrapper")
-        .forEach((el) =>
-          el.addEventListener("click", () => {
-            wrapper
-              .querySelectorAll(".trucksingle-attr-category-title-wrapper")
-              .forEach((allEl) =>
-                allEl.parentElement.setAttribute("data-is-fr-one", "false")
-              );
-            const parent = el.parentElement;
-            const attrValue = parent.getAttribute("data-is-fr-one") !== "true";
-            parent.setAttribute("data-is-fr-one", attrValue);
-          })
-        );
-    });
+  const wrappers = document.querySelectorAll(".trucksingle-attr-list-wrapper");
+  if (!wrappers) return;
+  wrappers.forEach((wrapper) => {
+    wrapper
+      .querySelectorAll(".trucksingle-attr-category-title-wrapper")
+      .forEach((el) =>
+        el.addEventListener("click", () => {
+          wrapper
+            .querySelectorAll(".trucksingle-attr-category-title-wrapper")
+            .forEach((allEl) =>
+              allEl.parentElement.setAttribute("data-is-fr-one", "false")
+            );
+          const parent = el.parentElement;
+          const attrValue = parent.getAttribute("data-is-fr-one") !== "true";
+          parent.setAttribute("data-is-fr-one", attrValue);
+        })
+      );
+  });
 };
 
 /* buyingForm */
