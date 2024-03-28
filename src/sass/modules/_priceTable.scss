@@ -1,4 +1,4 @@
-.pricetable-wrapper:is(
+.pricetable-wrapper:not(
     [data-bg="white"],
     [data-bg="transparent"],
     [data-bg=""]
