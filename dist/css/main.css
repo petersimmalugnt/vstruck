@@ -1726,6 +1726,12 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   filter: none;
 }
 
+.pricetable-wrapper:not([data-bg=white],
+[data-bg=transparent],
+[data-bg=""]) {
+  --lihover: var(--white);
+}
+
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
