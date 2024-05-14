@@ -229,11 +229,11 @@ html {
 }
 
 [data-marquee-speed=veryslow] {
-  --txt-marquee-speed: 30s;
+  --txt-marquee-speed: 40s;
 }
 
 [data-marquee-speed=slow] {
-  --txt-marquee-speed: 25s;
+  --txt-marquee-speed: 30s;
 }
 
 [data-marquee-speed=normal] {
