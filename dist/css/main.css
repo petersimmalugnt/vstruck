@@ -193,6 +193,7 @@ html {
   text-transform: none;
   white-space: normal;
   overflow: hidden;
+  text-wrap: balance;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 2;
