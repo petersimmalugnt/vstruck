@@ -236,6 +236,19 @@ html {
     translate: -33.33333% 0%;
   }
 }
+.txt-marquee-icon-item > svg path:nth-child(2),
+.txt-marquee-icon-item > svg path:nth-child(3),
+.txt-marquee-icon-item > svg path:nth-child(4) {
+  display: none;
+}
+
+[data-marquee-icon=""] > svg path:nth-child(2),
+[data-marquee-icon=arrow] > svg path:nth-child(2),
+[data-marquee-icon=check] > svg path:nth-child(3),
+[data-marquee-icon=info] > svg path:nth-child(4) {
+  display: unset;
+}
+
 /* Full image */
 [data-full-image-bleed=false] .full-image-img-container {
   grid-column-end: 14 !important;
