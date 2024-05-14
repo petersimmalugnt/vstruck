@@ -200,6 +200,11 @@ html {
   letter-spacing: -0.0325em;
   text-transform: none;
   white-space: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 [data-scroll-inview="true"] .txt-marquee-sticky-wrapper {
