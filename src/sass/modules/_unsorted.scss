@@ -244,6 +244,22 @@ html {
   animation-direction: reverse;
 }
 
+[data-marquee-speed="veryslow"] {
+  --txt-marquee-speed: 30s;
+}
+[data-marquee-speed="slow"] {
+  --txt-marquee-speed: 25s;
+}
+[data-marquee-speed="normal"] {
+  --txt-marquee-speed: 20s;
+}
+[data-marquee-speed="fast"] {
+  --txt-marquee-speed: 15s;
+}
+[data-marquee-speed="veryfast"] {
+  --txt-marquee-speed: 10s;
+}
+
 @keyframes txt-marquee-sliding {
   0% {
     translate: 0% 0%;
