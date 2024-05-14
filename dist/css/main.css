@@ -220,7 +220,7 @@ html {
   fill: transparent;
 }
 
-.txt-marquee-item:hover .txt-marquee-icon-item path:last-child {
+.txt-marquee-item:hover .txt-marquee-icon-item path:not(:first-child) {
   fill: #171717;
 }
 
