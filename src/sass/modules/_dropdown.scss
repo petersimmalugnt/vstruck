@@ -85,22 +85,51 @@ div:has(.dropdown-wrapper[data-dd-open="true"])
   transform: translateX(50%);
 }
 
+.dropdown-content-container::before {
+  content: "";
+  position: sticky;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  margin-top: -1px;
+  transform: translate(-4.5px, -4.5px);
+  background-color: var(--vs-black);
+  box-shadow: 5px 0 var(--vs-black);
+}
+
+.dropdown-content-container::after {
+  content: "";
+  position: sticky;
+  z-index: 10;
+  bottom: 0px;
+  width: 100%;
+  height: 1px;
+  min-height: 1px;
+  margin-top: -0.5px;
+  transform: translate(-4.5px, 0px);
+  background-color: var(--vs-black);
+  box-shadow: 5px 0 var(--vs-black), 5px 1px var(--vs-black);
+}
+
 .dropdown-wrapper[data-dd-anchor-position*="top"] .dropdown-content-container {
   top: auto;
   bottom: 100%;
   z-index: -1;
 }
+
 .dropdown-wrapper[data-dd-anchor-position*="bottom"]
   .dropdown-content-container {
-  top: 100%;
+  top: calc(100% - 4.5px);
   bottom: auto;
 }
 .dropdown-wrapper[data-dd-anchor-position*="right"]
   .dropdown-content-container {
-  right: 0rem;
+  right: -0.5px;
   left: auto;
 }
 .dropdown-wrapper[data-dd-anchor-position*="left"] .dropdown-content-container {
   right: auto;
-  left: 0rem;
+  left: -4.5px;
 }
