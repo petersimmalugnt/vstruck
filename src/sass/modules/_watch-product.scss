@@ -1,3 +1,8 @@
 .watch-product-label-slot .attr-box {
   width: max-content;
 }
+
+.watch-product[data-is-inview="true"] .watch-product-container {
+  transform: translateY(0%) rotate(0deg);
+  opacity: 1;
+}

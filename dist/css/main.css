@@ -1774,6 +1774,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   width: max-content;
 }
 
+.watch-product[data-is-inview=true] .watch-product-container {
+  transform: translateY(0%) rotate(0deg);
+  opacity: 1;
+}
+
 .icons-wrapper {
   --s: 1.5rem;
   width: var(--s);
