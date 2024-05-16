@@ -1800,7 +1800,8 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   border-bottom: 1px solid var(--vs-black);
 }
 
-.stf-item[data-is-selected=true] {
+.stf-item[data-is-selected=true],
+.bf-leasing-popup-time-radio-container {
   --selBlack: var(--vs-black);
   --selWhite: var(--white);
   --selSteel: var(--light-grey);
