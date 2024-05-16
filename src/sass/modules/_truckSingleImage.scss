@@ -13,39 +13,6 @@
   outline-width: 1px;
 }
 
-/*@counter-style imgNrFormatFallback {
-  system: numeric;
-}
-
-@counter-style imgNrFormat {
-  system: numeric;
-  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
-  pad: 3 "0";
-  fallback: imgNrFormatFallback;
-}
-
-.trucksingel-imgs-pagination-wrapper {
-  counter-reset: imgNr;
-}
-
-.trucksingel-imgs-pagination-nr-txt::before {
-  counter-increment: imgNr;
-  content: counter(imgNr, imgNrFormat);
-}*/
-
-@counter-style imgNrFormatFallback {
-  system: numeric;
-  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
-}
-
-@counter-style imgNrFormat {
-  system: numeric;
-  symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
-  suffix: " ";
-  pad: 3 "0";
-  fallback: imgNrFormatFallback;
-}
-
 .trucksingel-imgs-pagination-wrapper {
   counter-reset: imgNr;
 }
@@ -53,13 +20,6 @@
 .trucksingel-imgs-pagination-nr-txt::before {
   counter-increment: imgNr;
   content: counter(imgNr, decimal-leading-zero);
-}
-
-@supports (counter-style: imgNrFormat) {
-  .trucksingel-imgs-pagination-nr-txt::before {
-    counter-increment: imgNr;
-    content: counter(imgNr, imgNrFormat);
-  }
 }
 
 .poi-outer {
