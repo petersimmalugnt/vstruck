@@ -94,3 +94,16 @@
   .related-product-img-container {
   --truckmove: 5;
 }
+
+/* TRUCKIMAGE MOVE IN MOBILE */
+
+[data-is-inview="true"]
+  > .related-product-container
+  > .related-product-img-container {
+  --truckmove-mobile: 0;
+}
+[data-passed="true"]
+  > .related-product-container
+  > .related-product-img-container {
+  --truckmove-mobile: -10;
+}
