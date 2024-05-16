@@ -39,7 +39,7 @@
 }
 
 @counter-style imgNrFormat {
-  system: fixed;
+  system: numeric;
   symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
   suffix: " ";
   pad: 3 "0";
@@ -55,9 +55,11 @@
   content: counter(imgNr, decimal-leading-zero);
 }
 
-.trucksingel-imgs-pagination-nr-txt::before {
-  counter-increment: imgNr;
-  content: counter(imgNr, imgNrFormat);
+@supports (counter-style: imgNrFormat) {
+  .trucksingel-imgs-pagination-nr-txt::before {
+    counter-increment: imgNr;
+    content: counter(imgNr, imgNrFormat);
+  }
 }
 
 .poi-outer {
