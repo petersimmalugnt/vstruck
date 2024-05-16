@@ -1561,12 +1561,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   content: counter(imgNr, decimal-leading-zero);
 }
 
-@supports (counter-style: imgNrFormat) {
-  .trucksingel-imgs-pagination-nr-txt::before {
-    counter-increment: imgNr;
-    content: counter(imgNr, imgNrFormat);
-  }
+.trucksingel-imgs-pagination-nr-txt::before {
+  counter-increment: imgNr;
+  content: counter(imgNr, imgNrFormat);
 }
+
 .poi-outer {
   animation: poi-outer 1s cubic-bezier(0.3, 0, 0.7, 1) alternate infinite;
 }
