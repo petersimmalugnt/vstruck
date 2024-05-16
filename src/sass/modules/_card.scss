@@ -81,3 +81,32 @@
     mix-blend-mode: normal;
   }
 }
+
+/* IMAGE MOVE */
+.card-moveimg-hovers:nth-child(1):hover ~ .card-img-img {
+  --truckmove: -15%;
+}
+.card-moveimg-hovers:nth-child(2):hover ~ .card-img-img {
+  --truckmove: -11.25%;
+}
+.card-moveimg-hovers:nth-child(3):hover ~ .card-img-img {
+  --truckmove: -7.5%;
+}
+.card-moveimg-hovers:nth-child(4):hover ~ .card-img-img {
+  --truckmove: -3.75%;
+}
+.card-moveimg-hovers:nth-child(5):hover ~ .card-img-img {
+  --truckmove: 0%;
+}
+.card-moveimg-hovers:nth-child(6):hover ~ .card-img-img {
+  --truckmove: 3.75%;
+}
+.card-moveimg-hovers:nth-child(7):hover ~ .card-img-img {
+  --truckmove: 7.5%;
+}
+.card-moveimg-hovers:nth-child(8):hover ~ .card-img-img {
+  --truckmove: 11.25%;
+}
+.card-moveimg-hovers:nth-child(9):hover ~ .card-img-img {
+  --truckmove: 15%;
+}
