@@ -707,3 +707,13 @@
   counter-increment: nr;
   content: counter(nr, nrFormat);
 }
+
+/* ADD FAKE PADDING IN SCROLLER */
+[data-fake-side-padding*="before"]::before,
+[data-fake-side-padding*="after"]::after {
+  content: "";
+  --fakepadding: calc((100vw - var(--container-width) - 3rem) / 2);
+  width: var(--fakepadding);
+  min-width: var(--fakepadding);
+  max-width: var(--fakepadding);
+}
