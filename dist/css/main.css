@@ -1549,7 +1549,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   system: fixed;
   symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
   suffix: " ";
-  pad: 3;
+  pad: 3 "0";
   fallback: imgNrFormatFallback;
 }
 .trucksingel-imgs-pagination-wrapper {
