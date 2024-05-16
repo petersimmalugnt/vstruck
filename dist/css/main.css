@@ -1541,36 +1541,32 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   counter-increment: imgNr;
   content: counter(imgNr, imgNrFormat);
 }*/
-/* Define fallback numeric counter style */
 @counter-style imgNrFormatFallback {
   system: numeric;
   symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
 }
-/* Define custom counter style with padding */
 @counter-style imgNrFormat {
   system: fixed;
   symbols: "0" "1" "2" "3" "4" "5" "6" "7" "8" "9";
   suffix: " ";
-  pad: 3 "0";
+  pad: 3;
   fallback: imgNrFormatFallback;
 }
-/* Reset counter for the wrapper */
 .trucksingel-imgs-pagination-wrapper {
   counter-reset: imgNr;
 }
 
-/* Increment and format counter before the text */
-.trucksingel-imgs-pagination-nr-txt::before {
-  counter-increment: imgNr;
-  content: counter(imgNr, imgNrFormat);
-}
-
-/* Fallback style for browsers not supporting @counter-style */
 .trucksingel-imgs-pagination-nr-txt::before {
   counter-increment: imgNr;
   content: counter(imgNr, decimal-leading-zero);
 }
 
+@supports (counter-style: imgNrFormat) {
+  .trucksingel-imgs-pagination-nr-txt::before {
+    counter-increment: imgNr;
+    content: counter(imgNr, imgNrFormat);
+  }
+}
 .poi-outer {
   animation: poi-outer 1s cubic-bezier(0.3, 0, 0.7, 1) alternate infinite;
 }
