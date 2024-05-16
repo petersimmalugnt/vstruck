@@ -351,6 +351,28 @@ html {
   min-height: calc(1px + 3.5rem);
 }
 
+/* Butten reset */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  box-shadow: none;
+}
+
 @media (max-width: 767px) {
   .navlinks .header-navlink:nth-child(1) {
     --i: 0;
