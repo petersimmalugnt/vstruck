@@ -23,6 +23,10 @@
   transform: translateY(calc(-100% - 1px));
 }
 
+.guide-btn-next:hover + .guide-pagina {
+  background-color: #aeb7b6;
+}
+
 .guide-step-slot :has(~ [data-guide-step-current="true"]) .guide-pagina {
   --iconFill: var(--vs-black);
   color: var(--white);

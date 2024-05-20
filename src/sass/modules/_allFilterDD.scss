@@ -1,3 +1,14 @@
+/* All filter DD param */
+.all-filter-dd-param-list > div {
+  padding: 1.5rem 0rem;
+  border-top: 1px dotted #171717;
+}
+
+.all-filter-dd-param-list > :last-child {
+  padding-bottom: 1.5rem;
+  min-height: calc(1px + 3.5rem);
+}
+
 .all-filter-dd-list-wrapper {
   transition: background-color 0.5s linear,
     visibility 0s calc(0.5s - calc(0.5s * var(--visibility-one, 0))) linear;

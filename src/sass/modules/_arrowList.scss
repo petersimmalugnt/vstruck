@@ -1,0 +1,22 @@
+/* Arrow-list */
+.arrow-list-rt p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+  }
+  @media (max-width: 991px) {
+    .arrow-list-rt p {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  }
+  @media (max-width: 478px) {
+    .arrow-list-rt p {
+      font-size: 1.25rem;
+      line-height: 1.75rem;
+    }
+  }
+  
+  .arrow-list-rt p:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }

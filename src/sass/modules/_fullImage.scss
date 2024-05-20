@@ -1,0 +1,31 @@
+/* Full image */
+[data-full-image-bleed="false"] .full-image-img-container {
+    grid-column-end: 14 !important;
+    grid-column-start: 2 !important;
+  }
+  @media (min-width: 992px) {
+    [data-full-image-bleed="false"] {
+      min-height: min(50vw, 1200px) !important;
+    }
+  }
+  
+  [data-full-image-bleed="false"] .full-image-alt-text-wrapper {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  [data-full-image-bleed="false"] {
+    padding: 1.5rem 0;
+  }
+  
+  .full-image-alt-text-icon:hover path:first-child {
+    fill: #171717;
+  }
+  
+  .full-image-alt-text-icon:hover path:last-child {
+    fill: #ffffff;
+  }
+  
+  .full-image-alt-text-icon:hover + .full-image-alt-text-p {
+    display: flex;
+  }
