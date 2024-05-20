@@ -72,33 +72,6 @@
   aspect-ratio: 1/ 1;
 }
 
-[data-aspectratio] {
-  aspect-ratio: var(--ar-x, 1) / var(--ar-y, 1);
-}
-
-[data-aspectratio^="1"] { --ar-x: 1; }
-[data-aspectratio^="2"] { --ar-x: 2; }
-[data-aspectratio^="3"] { --ar-x: 3; }
-[data-aspectratio^="4"] { --ar-x: 4; }
-[data-aspectratio^="5"] { --ar-x: 5; }
-[data-aspectratio^="6"] { --ar-x: 6; }
-[data-aspectratio^="7"] { --ar-x: 7; }
-[data-aspectratio^="8"] { --ar-x: 8; }
-[data-aspectratio^="9"] { --ar-x: 9; }
-[data-aspectratio^="10"] { --ar-x: 10; }
-[data-aspectratio^="16"] { --ar-x: 16; }
-[data-aspectratio$="1"] { --ar-y: 1; }
-[data-aspectratio$="2"] { --ar-y: 2; }
-[data-aspectratio$="3"] { --ar-y: 3; }
-[data-aspectratio$="4"] { --ar-y: 4; }
-[data-aspectratio$="5"] { --ar-y: 5; }
-[data-aspectratio$="6"] { --ar-y: 6; }
-[data-aspectratio$="7"] { --ar-y: 7; }
-[data-aspectratio$="8"] { --ar-y: 8; }
-[data-aspectratio$="9"] { --ar-y: 9; }
-[data-aspectratio$="10"] { --ar-y: 10; }
-[data-aspectratio$="16"] { --ar-y: 16; }
-
 @media (min-width: 992px) {
   body:has([data-stop-scrolling="true"]:hover) {
     overflow: hidden;
