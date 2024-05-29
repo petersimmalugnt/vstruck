@@ -717,3 +717,25 @@
   min-width: var(--fakepadding);
   max-width: var(--fakepadding);
 }
+
+/* CHECKER BG PATTERN */
+[data-checker-bg="true"] {
+  background-image: linear-gradient(
+      45deg,
+      var(--vs-black) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--vs-black) 75%,
+      var(--vs-black)
+    ),
+    linear-gradient(
+      45deg,
+      var(--vs-black) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--vs-black) 75%,
+      var(--vs-black)
+    );
+  background-size: 1rem 1rem;
+  background-position: 0 0, 0.5rem 0.5rem;
+}
