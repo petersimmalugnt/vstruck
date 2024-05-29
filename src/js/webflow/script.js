@@ -377,14 +377,20 @@ const singelTruckFinances = () => {
   });
 };
 
-const txtMarquee = () => {
-  marqueeRef = document.querySelectorAll(".txt-marquee-sliding-container");
-  marqueeRef?.forEach((marquee) => {
-    const marqueeWidth = Math.floor(marquee.offsetWidth);
-    const speed = marqueeWidth / 500;
-    marquee.style.setProperty("--txt-marquee-base-speed", `${speed}s`);
-    console.log(marqueeWidth);
+const setMarqueeSpeed = () => {
+  const marqueeRef = document.querySelectorAll(
+    ".txt-marquee-sliding-container"
+  );
+
+  const resizeObserver = new ResizeObserver(() => {
+    marqueeRef?.forEach((marquee) => {
+      const marqueeWidth = Math.floor(marquee.offsetWidth);
+      const speed = marqueeWidth / 500;
+      marquee.style.setProperty("--txt-marquee-base-speed", `${speed}s`);
+    });
   });
+
+  resizeObserver.observe(document.body);
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -399,5 +405,5 @@ document.addEventListener("DOMContentLoaded", () => {
   truckSingelImagesScroll();
   locations();
   singelTruckFinances();
-  txtMarquee();
+  setMarqueeSpeed();
 });
