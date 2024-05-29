@@ -379,8 +379,10 @@ const singelTruckFinances = () => {
 
 const txtMarquee = () => {
   marqueeRef = document.querySelectorAll(".txt-marquee-sliding-container");
-  marqueeRef.forEach((marquee) => {
-    const marqueeWidth = marquee.offsetWidth;
+  marqueeRef?.forEach((marquee) => {
+    const marqueeWidth = Math.floor(marquee.offsetWidth);
+    const speed = marqueeWidth / 500;
+    marquee.style.setProperty("--txt-marquee-base-speed", `${speed}s`);
     console.log(marqueeWidth);
   });
 };

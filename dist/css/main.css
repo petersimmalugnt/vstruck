@@ -248,7 +248,10 @@ button,
   }
 }
 .txt-marquee-sliding-container {
-  --txt-marquee-speed: calc(10s * var(--txt-marquee-speed-multiplier, 2));
+  --txt-marquee-base-speed: 10s;
+  --txt-marquee-speed: calc(
+    var(--txt-marquee-base-speed) * var(--txt-marquee-speed-multiplier, 2)
+  );
 }
 
 [data-marquee-reverse=true] .txt-marquee-sliding-container {
