@@ -1,0 +1,12 @@
+.loader-ticker {
+  animation: loader-ticker 1.25s cubic-bezier(0.66, 0, 0.44, 1) infinite;
+}
+
+@keyframes loader-ticker {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
