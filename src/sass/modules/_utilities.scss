@@ -720,22 +720,10 @@
 
 /* CHECKER BG PATTERN */
 [data-checker-bg="true"] {
-  background-image: linear-gradient(
-      45deg,
-      var(--vs-black) 25%,
-      transparent 25%,
-      transparent 75%,
-      var(--vs-black) 75%,
-      var(--vs-black)
-    ),
-    linear-gradient(
-      45deg,
-      var(--vs-black) 25%,
-      transparent 25%,
-      transparent 75%,
-      var(--vs-black) 75%,
-      var(--vs-black)
-    );
-  background-size: 1rem 1rem;
-  background-position: 0 0, 0.5rem 0.5rem;
+  background-image: linear-gradient(45deg, currentColor 25%, transparent 25%),
+    linear-gradient(-45deg, currentColor 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, currentColor 75%),
+    linear-gradient(-45deg, transparent 75%, currentColor 75%);
+  background-size: 4px 4px;
+  background-position: 0 0, 0 2px, 2px -2px, -2px 0px;
 }
