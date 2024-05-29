@@ -377,6 +377,14 @@ const singelTruckFinances = () => {
   });
 };
 
+const txtMarquee = () => {
+  marqueeRef = document.querySelectorAll(".txt-marquee-sliding-container");
+  marqueeRef.forEach((marquee) => {
+    const marqueeWidth = marquee.offsetWidth;
+    console.log(marqueeWidth);
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   runInViewChecker();
   dualRangeSlider(100, 400, 100, 300);
@@ -389,4 +397,5 @@ document.addEventListener("DOMContentLoaded", () => {
   truckSingelImagesScroll();
   locations();
   singelTruckFinances();
+  txtMarquee();
 });
