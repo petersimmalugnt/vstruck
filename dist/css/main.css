@@ -247,24 +247,28 @@ button,
     translate: -25% 0%;
   }
 }
+.txt-marquee-sliding-container {
+  --txt-marquee-speed: calc(10s * var(--txt-marquee-speed-multiplier, 2));
+}
+
 [data-marquee-reverse=true] .txt-marquee-sliding-container {
   animation-direction: reverse;
 }
 
 [data-marquee-speed=veryslow] {
-  --txt-marquee-speed: 40s;
+  --txt-marquee-speed-multiplier: 4;
 }
 
 [data-marquee-speed=slow] {
-  --txt-marquee-speed: 30s;
+  --txt-marquee-speed-multiplier: 3;
 }
 
 [data-marquee-speed=normal] {
-  --txt-marquee-speed: 20s;
+  --txt-marquee-speed-multiplier: 2;
 }
 
 [data-marquee-speed=fast] {
-  --txt-marquee-speed: 15s;
+  --txt-marquee-speed-multiplier: 1.5;
 }
 
 [data-marquee-speed=veryfast] {
