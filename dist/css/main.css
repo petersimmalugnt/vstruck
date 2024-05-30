@@ -58,8 +58,9 @@ html {
   pointer-events: none;
 }
 
-/* INPUT RESET */
-input {
+/* INPUT, TEXTAREA RESET */
+input,
+textarea {
   border-radius: 0 !important;
   -webkit-appearance: none;
   -moz-appearance: none;
