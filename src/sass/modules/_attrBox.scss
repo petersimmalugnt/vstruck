@@ -127,3 +127,8 @@
     padding: 0.5rem 0.75rem;
   }
 }
+
+.trucksingle-attr-category-backwrapper
+  .attr-box[data-attr-box-table="true"]:hover {
+  background-color: var(--khaki);
+}
