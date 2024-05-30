@@ -363,6 +363,10 @@
   letter-spacing: 0.025em !important;
 }
 
+[data-char-count-containerwidth="true"] {
+  font-size: calc(160cqw / var(--count)) !important;
+}
+
 [data-char-count="1"] {
   --count: 1 !important;
 }
