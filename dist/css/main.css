@@ -58,6 +58,14 @@ html {
   pointer-events: none;
 }
 
+/* INPUT RESET */
+input {
+  border-radius: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* Brand Marquee */
 /*.brand-marquee {
   animation: brand-marquee 60s infinite linear both;
