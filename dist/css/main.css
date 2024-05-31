@@ -1783,13 +1783,13 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
     grid-template-columns: minmax(calc((100% - 3rem) / 3), 1fr);
   }
 }
-@media (min-width: 797px) {
+@media (min-width: 767px) {
   .card-list-grid:not(:has(.list-item-wrapper:nth-child(3))) {
     grid-auto-columns: minmax(calc((100% - 1.5rem) / 2), 1fr);
     grid-template-columns: minmax(calc((100% - 1.5rem) / 2), 1fr);
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .card-list-grid:not(:has(.list-item-wrapper:nth-child(2))) {
     grid-auto-columns: minmax(100%, 1fr);
     grid-template-columns: minmax(100%, 1fr);
