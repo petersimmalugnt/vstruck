@@ -120,7 +120,7 @@ button,
     transform: translateX(100%);
   }
 }
-/*@media (min-width: 767px) and (max-width: 1208px) {
+@media (min-width: 767px) and (max-width: 1208px) {
   .featured-products-card-list-v2 {
     grid-auto-flow: column;
     grid-auto-columns: minmax(100%, 100%);
@@ -131,7 +131,7 @@ button,
     grid-row-start: 1;
     grid-row-end: 1;
   }
-}*/
+}
 /* p-img-section */
 .p-img-section-img-container:has([data-colored-img=""]) {
   background-color: transparent;
