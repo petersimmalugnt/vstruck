@@ -27,13 +27,19 @@
     font-size: 0.5rem;
   }
 }
-[data-small-txt-marquee-width="small"] {
+[data-small-txt-marquee-width="tiny"] {
   --txt-marquee-width: 32ch;
+}
+[data-small-txt-marquee-width="small"] {
+  --txt-marquee-width: 45ch;
 }
 [data-small-txt-marquee-width="medium"] {
   --txt-marquee-width: 55ch;
 }
 [data-small-txt-marquee-width="large"] {
+  --txt-marquee-width: 65ch;
+}
+[data-small-txt-marquee-width="huge"] {
   --txt-marquee-width: 75ch;
 }
 [data-small-txt-marquee="true"] {

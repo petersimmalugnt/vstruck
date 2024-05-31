@@ -49,3 +49,18 @@
     translate: 0 0vh;
   }
 }
+
+:has([data-nav-bg="black"]) .header-wrapper {
+  --bg-color: var(--vs-black);
+  background-color: var(--vs-black) !important;
+}
+
+:has([data-nav-bg="white"]) .header-wrapper {
+  --bg-color: var(--white);
+  background-color: var(--white) !important;
+}
+
+:has([data-nav-bg="dark-steel"]) .header-wrapper {
+  --bg-color: var(--dark-grey);
+  background-color: var(--dark-grey) !important;
+}

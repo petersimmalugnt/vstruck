@@ -207,8 +207,12 @@ button,
     font-size: 0.5rem;
   }
 }
-[data-small-txt-marquee-width=small] {
+[data-small-txt-marquee-width=tiny] {
   --txt-marquee-width: 32ch;
+}
+
+[data-small-txt-marquee-width=small] {
+  --txt-marquee-width: 45ch;
 }
 
 [data-small-txt-marquee-width=medium] {
@@ -216,6 +220,10 @@ button,
 }
 
 [data-small-txt-marquee-width=large] {
+  --txt-marquee-width: 65ch;
+}
+
+[data-small-txt-marquee-width=huge] {
   --txt-marquee-width: 75ch;
 }
 
@@ -432,55 +440,6 @@ button,
   }
   100% {
     transform: translateX(calc(-100% / var(--nth-dupli-items) - 0.75rem));
-  }
-}
-@media (max-width: 767px) {
-  .navlinks .header-navlink:nth-child(1) {
-    --i: 0;
-  }
-  .navlinks .header-navlink:nth-child(2) {
-    --i: 1;
-  }
-  .navlinks .header-navlink:nth-child(3) {
-    --i: 2;
-  }
-  .navlinks .header-navlink:nth-child(4) {
-    --i: 3;
-  }
-  .navlinks .header-navlink:nth-child(5) {
-    --i: 4;
-  }
-  .navlinks .header-navlink:nth-child(6) {
-    --i: 5;
-  }
-  .navlinks[data-navlinks-open] {
-    --dur: 0.4s;
-    --delay: 0.06s;
-    will-change: visibility;
-    transform-style: preserve-3d;
-    transition-property: visibility;
-    transition-delay: calc(var(--delay) * 4);
-    transition-duration: var(--dur);
-    visibility: hidden;
-  }
-  .navlinks[data-navlinks-open=true] {
-    transition-delay: 0s;
-    transition-duration: 0s;
-    visibility: visible;
-  }
-  .navlinks[data-navlinks-open] .header-navlink {
-    will-change: translate;
-    transform-style: preserve-3d;
-    transition-property: translate;
-    transition-delay: calc(var(--delay) * var(--i, 0));
-    transition-duration: var(--dur);
-    transition-timing-function: cubic-bezier(0.9, 0, 0.7, 1);
-    translate: 0 100vh;
-  }
-  .navlinks[data-navlinks-open=true] .header-navlink {
-    transition-delay: calc(var(--delay) * (4 - var(--i, 0)));
-    transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
-    translate: 0 0vh;
   }
 }
 /* Filter Dropdown */
@@ -2830,4 +2789,68 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   background-image: linear-gradient(45deg, currentColor 25%, transparent 25%), linear-gradient(-45deg, currentColor 25%, transparent 25%), linear-gradient(45deg, transparent 75%, currentColor 75%), linear-gradient(-45deg, transparent 75%, currentColor 75%);
   background-size: 4px 4px;
   background-position: 0 0, 0 2px, 2px -2px, -2px 0px;
+}
+
+@media (max-width: 767px) {
+  .navlinks .header-navlink:nth-child(1) {
+    --i: 0;
+  }
+  .navlinks .header-navlink:nth-child(2) {
+    --i: 1;
+  }
+  .navlinks .header-navlink:nth-child(3) {
+    --i: 2;
+  }
+  .navlinks .header-navlink:nth-child(4) {
+    --i: 3;
+  }
+  .navlinks .header-navlink:nth-child(5) {
+    --i: 4;
+  }
+  .navlinks .header-navlink:nth-child(6) {
+    --i: 5;
+  }
+  .navlinks[data-navlinks-open] {
+    --dur: 0.4s;
+    --delay: 0.06s;
+    will-change: visibility;
+    transform-style: preserve-3d;
+    transition-property: visibility;
+    transition-delay: calc(var(--delay) * 4);
+    transition-duration: var(--dur);
+    visibility: hidden;
+  }
+  .navlinks[data-navlinks-open=true] {
+    transition-delay: 0s;
+    transition-duration: 0s;
+    visibility: visible;
+  }
+  .navlinks[data-navlinks-open] .header-navlink {
+    will-change: translate;
+    transform-style: preserve-3d;
+    transition-property: translate;
+    transition-delay: calc(var(--delay) * var(--i, 0));
+    transition-duration: var(--dur);
+    transition-timing-function: cubic-bezier(0.9, 0, 0.7, 1);
+    translate: 0 100vh;
+  }
+  .navlinks[data-navlinks-open=true] .header-navlink {
+    transition-delay: calc(var(--delay) * (4 - var(--i, 0)));
+    transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
+    translate: 0 0vh;
+  }
+}
+:has([data-nav-bg=black]) .header-wrapper {
+  --bg-color: var(--vs-black);
+  background-color: var(--vs-black) !important;
+}
+
+:has([data-nav-bg=white]) .header-wrapper {
+  --bg-color: var(--white);
+  background-color: var(--white) !important;
+}
+
+:has([data-nav-bg=dark-steel]) .header-wrapper {
+  --bg-color: var(--dark-grey);
+  background-color: var(--dark-grey) !important;
 }
