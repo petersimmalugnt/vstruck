@@ -2854,3 +2854,43 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --bg-color: var(--dark-grey);
   background-color: var(--dark-grey) !important;
 }
+
+:has([data-nav-bg=medium-steel]) .header-wrapper {
+  --bg-color: var(--silver);
+  background-color: var(--silver) !important;
+}
+
+:has([data-nav-bg=steel]) .header-wrapper {
+  --bg-color: var(--light-grey);
+  background-color: var(--light-grey) !important;
+}
+
+:has([data-nav-bg=wellpapp]) .header-wrapper {
+  --bg-color: var(--linen);
+  background-color: var(--linen) !important;
+}
+
+:has([data-nav-bg=orange]) .header-wrapper {
+  --bg-color: var(--vs-prime);
+  background-color: var(--vs-prime) !important;
+}
+
+:has([data-nav-bg=red]) .header-wrapper {
+  --bg-color: var(--red);
+  background-color: var(--red) !important;
+}
+
+:has([data-nav-bg=yellow]) .header-wrapper {
+  --bg-color: var(--khaki);
+  background-color: var(--khaki) !important;
+}
+
+:has([data-nav-bg=blue]) .header-wrapper {
+  --bg-color: var(--light-sky-blue);
+  background-color: var(--light-sky-blue) !important;
+}
+
+:has([data-nav-bg=green]) .header-wrapper {
+  --bg-color: var(--green);
+  background-color: var(--green) !important;
+}
