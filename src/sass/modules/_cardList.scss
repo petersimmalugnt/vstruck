@@ -5,6 +5,15 @@
   }
 }
 
+.card-list-grid:not(:has(.list-item-wrapper:nth-child(4))) {
+  grid-auto-columns: minmax(calc((100% - 3rem) / 3), 1fr);
+  grid-template-columns: minmax(calc((100% - 3rem) / 3), 1fr);
+}
+.card-list-grid:not(:has(.list-item-wrapper:nth-child(3))) {
+  grid-auto-columns: minmax(calc((100% - 1.5rem) / 2), 1fr);
+  grid-template-columns: minmax(calc((100% - 1.5rem) / 2), 1fr);
+}
+
 .list-item-title:empty {
   max-width: 2ch;
   letter-spacing: 0;
