@@ -1783,7 +1783,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
     grid-template-columns: minmax(calc((100% - 3rem) / 3), 1fr);
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 991px) {
   .card-list-grid:not(:has(.list-item-wrapper:nth-child(3))) {
     grid-auto-columns: minmax(calc((100% - 1.5rem) / 2), 1fr);
     grid-template-columns: minmax(calc((100% - 1.5rem) / 2), 1fr);
