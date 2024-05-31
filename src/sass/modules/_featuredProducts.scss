@@ -1,0 +1,12 @@
+@media (min-width: 767px) and (max-width: 1208px) {
+  .featured-products-card-list-v2 {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(100%, 100%);
+    grid-template-columns: minmax(100%, 100%);
+    grid-template-rows: auto;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 1;
+  }
+}
