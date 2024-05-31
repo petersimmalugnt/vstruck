@@ -18,6 +18,12 @@
     grid-template-columns: minmax(calc((100% - 1.5rem) / 2), 1fr);
   }
 }
+@media (max-width: 991px) {
+  .card-list-grid:not(:has(.list-item-wrapper:nth-child(2))) {
+    grid-auto-columns: minmax(100%, 1fr);
+    grid-template-columns: minmax(100%, 1fr);
+  }
+}
 
 .list-item-title:empty {
   max-width: 2ch;
