@@ -25,6 +25,11 @@
 }
 
 /* position anchor point  */
+@media (max-width: 478px) {
+  .poi-popup {
+    transition: translate 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+}
 @media (min-width: 479px) {
   [data-anchor-position*="top"] {
     top: auto;
