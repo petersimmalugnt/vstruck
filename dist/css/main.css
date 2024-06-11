@@ -1733,7 +1733,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 /* position anchor point  */
 @media (max-width: 478px) {
   .poi-popup {
-    display: none;
+    display: flex;
   }
   .poi-wrapper:hover > .poi-popup,
   .poi-wrapper:focus > .poi-popup,
