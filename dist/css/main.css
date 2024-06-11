@@ -2622,26 +2622,24 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 /* position anchor point */
-[data-anchor-position*=top] {
-  top: auto;
-  bottom: 100%;
+@media (min-width: 479px) {
+  [data-anchor-position*=top] {
+    top: auto;
+    bottom: 100%;
+  }
+  [data-anchor-position*=bottom] {
+    top: 100%;
+    bottom: auto;
+  }
+  [data-anchor-position*=right] {
+    right: 0rem;
+    left: auto;
+  }
+  [data-anchor-position*=left] {
+    right: auto;
+    left: 0rem;
+  }
 }
-
-[data-anchor-position*=bottom] {
-  top: 100%;
-  bottom: auto;
-}
-
-[data-anchor-position*=right] {
-  right: 0rem;
-  left: auto;
-}
-
-[data-anchor-position*=left] {
-  right: auto;
-  left: 0rem;
-}
-
 /* steps boleons */
 [data-step] {
   --step-zero: 0;
