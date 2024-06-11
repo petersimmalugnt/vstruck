@@ -23,3 +23,7 @@
   --x: 37%;
   --y: 35%;
 }
+
+.poi-popup {
+  transition: scale 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
