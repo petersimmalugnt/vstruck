@@ -1737,6 +1737,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
     translate: unset;
     transform: unset;
     opacity: unset;
+    transform-origin: unset;
     will-change: bottom;
     bottom: -15rem;
     transition: bottom 0.5s cubic-bezier(0.4, 0, 0, 1);
