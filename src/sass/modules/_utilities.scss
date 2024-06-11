@@ -554,26 +554,6 @@
   --is-passed: 1;
 }
 
-/* position anchor point  */
-@media (min-width: 479px) {
-  [data-anchor-position*="top"] {
-    top: auto;
-    bottom: 100%;
-  }
-  [data-anchor-position*="bottom"] {
-    top: 100%;
-    bottom: auto;
-  }
-  [data-anchor-position*="right"] {
-    right: 1.5rem;
-    left: auto;
-  }
-  [data-anchor-position*="left"] {
-    right: auto;
-    left: 1.5rem;
-  }
-}
-
 /* steps boleons */
 [data-step] {
   --step-zero: 0;

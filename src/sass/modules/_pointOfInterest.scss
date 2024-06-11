@@ -27,3 +27,27 @@
 .poi-popup {
   transition: scale 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+
+/* position anchor point  */
+@media (min-width: 479px) {
+  [data-anchor-position*="top"] {
+    top: auto;
+    bottom: 100%;
+    transform-origin: 50% 100%;
+  }
+  [data-anchor-position*="bottom"] {
+    top: 100%;
+    bottom: auto;
+    transform-origin: 50% 0%;
+  }
+  [data-anchor-position*="right"] {
+    right: 1.5rem;
+    left: auto;
+    transform-origin: 0% 50%;
+  }
+  [data-anchor-position*="left"] {
+    right: auto;
+    left: 1.5rem;
+    transform-origin: 100% 50%;
+  }
+}
