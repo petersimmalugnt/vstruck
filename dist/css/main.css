@@ -2529,16 +2529,19 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 }
 
 [data-is-one]:hover,
+[data-is-one]:focus,
 [data-is-one]:focus-within {
   --is-one-hover: 1;
 }
 
 [data-is-two]:hover,
+[data-is-two]:focus,
 [data-is-two]:focus-within {
   --is-two-hover: 1;
 }
 
 [data-is-three]:hover,
+[data-is-three]:focus,
 [data-is-three]:focus-within {
   --is-three-hover: 1;
 }
