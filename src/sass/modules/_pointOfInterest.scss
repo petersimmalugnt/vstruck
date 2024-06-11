@@ -27,19 +27,21 @@
 /* position anchor point  */
 @media (max-width: 478px) {
   .poi-popup {
-    scale: unset;
-    translate: unset;
-    transform: unset;
-    opacity: unset;
-    transform-origin: unset;
-    will-change: bottom;
-    bottom: -15rem;
-    transition: bottom 0.5s cubic-bezier(0.4, 0, 0, 1);
+    // scale: unset;
+    // translate: unset;
+    // transform: unset;
+    // opacity: unset;
+    // transform-origin: unset;
+    // will-change: bottom;
+    // bottom: -15rem;
+    // transition: bottom 0.5s cubic-bezier(0.4, 0, 0, 1);
+    display: none;
   }
   .poi-wrapper:hover .poi-popup,
   .poi-wrapper:focus .poi-popup,
   .poi-wrapper:focus-within .poi-popup {
-    bottom: 0rem;
+    // bottom: 0rem;
+    display: flex;
   }
 }
 @media (min-width: 479px) {
