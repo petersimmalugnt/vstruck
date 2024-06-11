@@ -43,11 +43,11 @@
   [data-anchor-position*="right"] {
     right: 1.5rem;
     left: auto;
-    transform-origin: 0% 50%;
+    transform-origin: 100% 50%;
   }
   [data-anchor-position*="left"] {
     right: auto;
     left: 1.5rem;
-    transform-origin: 100% 50%;
+    transform-origin: 0% 50%;
   }
 }
