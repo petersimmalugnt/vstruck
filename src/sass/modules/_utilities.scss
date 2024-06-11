@@ -549,21 +549,23 @@
 }
 
 /* position anchor point */
-[data-anchor-position*="top"] {
-  top: auto;
-  bottom: 100%;
-}
-[data-anchor-position*="bottom"] {
-  top: 100%;
-  bottom: auto;
-}
-[data-anchor-position*="right"] {
-  right: 0rem;
-  left: auto;
-}
-[data-anchor-position*="left"] {
-  right: auto;
-  left: 0rem;
+@media (min-width: 479px) {
+  [data-anchor-position*="top"] {
+    top: auto;
+    bottom: 100%;
+  }
+  [data-anchor-position*="bottom"] {
+    top: 100%;
+    bottom: auto;
+  }
+  [data-anchor-position*="right"] {
+    right: 0rem;
+    left: auto;
+  }
+  [data-anchor-position*="left"] {
+    right: auto;
+    left: 0rem;
+  }
 }
 
 /* steps boleons */
