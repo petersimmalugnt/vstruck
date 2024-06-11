@@ -1730,17 +1730,25 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --y: 35%;
 }
 
-/* position anchor point  */
-@media (max-width: 478px) {
-  .poi-popup {
-    display: flex;
-  }
-  .poi-wrapper:hover > .poi-popup,
-  .poi-wrapper:focus > .poi-popup,
-  .poi-wrapper:focus-within > .poi-popup {
-    display: flex;
-  }
+[data-poi-is-open=false] .poi-inner {
+  transform: scale(1);
 }
+
+[data-poi-is-open=true] .poi-inner {
+  transform: scale(2);
+}
+
+[data-poi-is-open=false] .poi-popup {
+  transform: scale(0);
+  opacity: 0;
+}
+
+[data-poi-is-open=true] .poi-popup {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* position anchor point  */
 @media (min-width: 479px) {
   [data-anchor-position*=top] {
     top: auto;
