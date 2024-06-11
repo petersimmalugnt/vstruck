@@ -32,15 +32,15 @@
   transform: scale(2);
 }
 
-[data-poi-is-open="false"] .poi-popup {
-  transform: scale(0);
-  opacity: 0;
-}
+// [data-poi-is-open="false"] .poi-popup {
+//   transform: scale(0);
+//   opacity: 0;
+// }
 
-[data-poi-is-open="true"] .poi-popup {
-  transform: scale(1);
-  opacity: 1;
-}
+// [data-poi-is-open="true"] .poi-popup {
+//   transform: scale(1);
+//   opacity: 1;
+// }
 
 /* position anchor point  */
 @media (min-width: 479px) {
