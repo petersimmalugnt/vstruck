@@ -1734,6 +1734,14 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   transition: scale 150ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+.poi-wrapper .poi-popup {
+  scale: 0;
+}
+
+.poi-wrapper:hover .poi-popup {
+  scale: 1;
+}
+
 /* position anchor point  */
 @media (min-width: 479px) {
   [data-anchor-position*=top] {
