@@ -2621,7 +2621,7 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --is-passed: 1;
 }
 
-/* position anchor point */
+/* position anchor point  */
 @media (min-width: 479px) {
   [data-anchor-position*=top] {
     top: auto;
