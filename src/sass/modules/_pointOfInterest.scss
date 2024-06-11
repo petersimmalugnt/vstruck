@@ -26,8 +26,14 @@
 
 /* position anchor point  */
 @media (max-width: 478px) {
-  .poi-popup {
-    transition: translate 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  .poi-wrapper .poi-popup {
+    bottom: 15rem;
+    transition: bottom 0.3s cubic-bezier(0.4, 0, 0, 1);
+  }
+  .poi-wrapper:hover .poi-popup,
+  .poi-wrapper:focus .poi-popup,
+  .poi-wrapper:focus-within .poi-popup {
+    bottom: 0rem;
   }
 }
 @media (min-width: 479px) {
