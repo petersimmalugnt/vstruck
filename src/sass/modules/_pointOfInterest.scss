@@ -32,7 +32,9 @@
   scale: 0;
 }
 
-.poi-wrapper:hover .poi-popup {
+.poi-wrapper:hover .poi-popup,
+.poi-wrapper:focus .poi-popup,
+.poi-wrapper:focus-within .poi-popup {
   scale: 1;
 }
 
