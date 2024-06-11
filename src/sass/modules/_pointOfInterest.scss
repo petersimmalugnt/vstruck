@@ -37,9 +37,9 @@
     // transition: bottom 0.5s cubic-bezier(0.4, 0, 0, 1);
     display: none;
   }
-  .poi-wrapper:hover .poi-popup,
-  .poi-wrapper:focus .poi-popup,
-  .poi-wrapper:focus-within .poi-popup {
+  .poi-wrapper:hover > .poi-popup,
+  .poi-wrapper:focus > .poi-popup,
+  .poi-wrapper:focus-within > .poi-popup {
     // bottom: 0rem;
     display: flex;
   }

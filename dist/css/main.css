@@ -1735,9 +1735,9 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   .poi-popup {
     display: none;
   }
-  .poi-wrapper:hover .poi-popup,
-  .poi-wrapper:focus .poi-popup,
-  .poi-wrapper:focus-within .poi-popup {
+  .poi-wrapper:hover > .poi-popup,
+  .poi-wrapper:focus > .poi-popup,
+  .poi-wrapper:focus-within > .poi-popup {
     display: flex;
   }
 }
