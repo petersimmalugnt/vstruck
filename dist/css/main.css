@@ -1732,7 +1732,11 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 
 /* position anchor point  */
 @media (max-width: 478px) {
-  .poi-wrapper .poi-popup {
+  .poi-popup {
+    scale: unset;
+    translate: unset;
+    transform: unset;
+    opacity: unset;
     will-change: bottom;
     bottom: -15rem;
     transition: bottom 0.5s cubic-bezier(0.4, 0, 0, 1);
