@@ -1,0 +1,25 @@
+.poi-outer {
+  animation: poi-outer 1s cubic-bezier(0.3, 0, 0.7, 1) alternate infinite;
+}
+
+@keyframes poi-outer {
+  from {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  to {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.poi-slot .poi-wrapper:nth-child(1) {
+  --x: 45%;
+  --y: 75%;
+}
+.poi-slot .poi-wrapper:nth-child(2) {
+  --x: 75%;
+  --y: 45%;
+}
+.poi-slot .poi-wrapper:nth-child(3) {
+  --x: 37%;
+  --y: 35%;
+}

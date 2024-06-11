@@ -465,13 +465,16 @@
 [data-is-three="true"] {
   --is-three: 1;
 }
-[data-is-one]:hover {
+[data-is-one]:hover,
+[data-is-one]:active {
   --is-one-hover: 1;
 }
-[data-is-two]:hover {
+[data-is-two]:hover,
+[data-is-two]:active {
   --is-two-hover: 1;
 }
-[data-is-three]:hover {
+[data-is-three]:hover,
+[data-is-three]:active {
   --is-three-hover: 1;
 }
 

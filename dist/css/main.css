@@ -1692,6 +1692,17 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   content: counter(imgNr, decimal-leading-zero);
 }
 
+.trucksingle-attr-category-wrapper {
+  will-change: grid-template-rows, transform;
+  transition-property: grid-template-rows, transform;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
+}
+
+.trucksingle-attr-grid-wrapper[data-single-column=true] .trucksingle-attr-category-attr-list {
+  grid-template-columns: 1fr;
+}
+
 .poi-outer {
   animation: poi-outer 1s cubic-bezier(0.3, 0, 0.7, 1) alternate infinite;
 }
@@ -1717,17 +1728,6 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
 .poi-slot .poi-wrapper:nth-child(3) {
   --x: 37%;
   --y: 35%;
-}
-
-.trucksingle-attr-category-wrapper {
-  will-change: grid-template-rows, transform;
-  transition-property: grid-template-rows, transform;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.3, 0, 0.1, 1);
-}
-
-.trucksingle-attr-grid-wrapper[data-single-column=true] .trucksingle-attr-category-attr-list {
-  grid-template-columns: 1fr;
 }
 
 @media (min-width: 2080px) {
@@ -2528,15 +2528,18 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   --is-three: 1;
 }
 
-[data-is-one]:hover {
+[data-is-one]:hover,
+[data-is-one]:active {
   --is-one-hover: 1;
 }
 
-[data-is-two]:hover {
+[data-is-two]:hover,
+[data-is-two]:active {
   --is-two-hover: 1;
 }
 
-[data-is-three]:hover {
+[data-is-three]:hover,
+[data-is-three]:active {
   --is-three-hover: 1;
 }
 
