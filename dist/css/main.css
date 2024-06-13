@@ -1626,6 +1626,10 @@ div:has(.dropdown-wrapper[data-dd-open=true]) > .dropdown-wrapper:hover .dropdow
   color: var(--white);
 }
 
+.search-module-wrapper[data-padding-bottom=none] {
+  --spacing-bottom: 5px !important;
+}
+
 /* Search input */
 .search-input-slot input::-moz-placeholder {
   color: #171717;
