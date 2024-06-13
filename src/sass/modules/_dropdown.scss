@@ -5,26 +5,9 @@
 
 /* DD Dropdown */
 
-// .dropdown-wrapper:has(.w--open),
-// .dropdown-wrapper[data-dd-open="true"],
-// .dropdown-wrapper:is(:hover, :focus, :focus-within) {
-//   z-index: 10;
-// }
-
-// .dropdown-toggle-wrapper:is(:hover, .w--open) .dropdown-toggle-container,
-// .dropdown-wrapper[data-dd-open="true"] .dropdown-toggle-container,
-// .dropdown-wrapper:is(:hover, :focus, :focus-within) .dropdown-toggle-container {
-//   transform: translate(-4px, -4px);
-//   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
-// }
-
-// .dropdown-wrapper[data-dd-open="true"] .dropdown-content-container,
-// .dropdown-wrapper:is(:focus, :focus-within) .dropdown-content-container {
-//   display: flex;
-// }
-
 .dropdown-wrapper,
-.dropdown-toggle-wrapper:not([data-dd-open="true"]) {
+.dropdown-toggle-wrapper:not([data-dd-open="true"]),
+.dropdown-toggle-wrapper:not([data-dd-active="true"]) {
   z-index: unset;
 }
 
@@ -32,18 +15,24 @@
   position: static;
 }
 
-.dropdown-wrapper[data-dd-open="true"] {
+.dropdown-wrapper[data-dd-open="true"],
+.dropdown-wrapper[data-dd-active="true"] {
   position: relative;
 }
 
 div:has(.dropdown-wrapper[data-dd-open="true"])
   > .dropdown-wrapper:hover
   .dropdown-toggle-container,
-.dropdown-wrapper[data-dd-open="true"] {
+.dropdown-wrapper[data-dd-open="true"],
+div:has(.dropdown-wrapper[data-dd-active="true"])
+  > .dropdown-wrapper:hover
+  .dropdown-toggle-container,
+.dropdown-wrapper[data-dd-active="true"] {
   z-index: 12;
 }
 
-.dropdown-wrapper:hover[data-dd-open="true"] {
+.dropdown-wrapper:hover[data-dd-open="true"],
+.dropdown-wrapper:hover[data-dd-active="true"] {
   z-index: 999999;
 }
 
@@ -54,6 +43,7 @@ div:has(.dropdown-wrapper[data-dd-open="true"])
 }
 
 .dropdown-wrapper[data-dd-open="true"] .dropdown-toggle-container,
+.dropdown-wrapper[data-dd-active="true"] .dropdown-toggle-container,
 .dropdown-wrapper:hover .dropdown-toggle-container {
   transform: translate(-4px, -4px);
   background-image: linear-gradient(to bottom, #ffffff, #ffffff);
