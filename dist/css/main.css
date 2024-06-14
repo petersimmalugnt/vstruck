@@ -1678,7 +1678,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     font-size: 1.25rem;
   }
 }
-.trucksingel-imgs-pagination-wrapper::before {
+.trucksingel-imgs-pagination-wrapper::before,
+.quote-imgs-pagination-wrapper::before {
   content: "Bilder";
   display: flex;
   width: 5rem;
@@ -1693,7 +1694,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   outline-width: 1px;
 }
 
-.trucksingel-imgs-pagination-wrapper {
+.trucksingel-imgs-pagination-wrapper,
+.quote-imgs-pagination-wrapper {
   counter-reset: imgNr;
 }
 

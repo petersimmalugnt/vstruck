@@ -1,4 +1,5 @@
-.trucksingel-imgs-pagination-wrapper::before {
+.trucksingel-imgs-pagination-wrapper::before,
+.quote-imgs-pagination-wrapper::before {
   content: "Bilder";
   display: flex;
   width: 5rem;
@@ -13,7 +14,8 @@
   outline-width: 1px;
 }
 
-.trucksingel-imgs-pagination-wrapper {
+.trucksingel-imgs-pagination-wrapper,
+.quote-imgs-pagination-wrapper {
   counter-reset: imgNr;
 }
 
