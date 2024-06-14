@@ -1748,6 +1748,16 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   transform: scale(2);
 }
 
+[data-poi-is-open=false] .poi-popup {
+  opacity: 0;
+  transform: scale(0);
+}
+
+[data-poi-is-open=true] .poi-popup {
+  opacity: 1;
+  transform: scale(1);
+}
+
 /* position anchor point  */
 @media (min-width: 479px) {
   [data-anchor-position*=top] {
