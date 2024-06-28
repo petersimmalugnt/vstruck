@@ -504,6 +504,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
 }
 
+.dropdown-item-toggle-icon[data-toggle-param=true] {
+  --fc: var(--dark-grey);
+}
+
 .dropdown-item-toggle-icon[data-toggle-param=true] path:nth-child(1),
 .dropdown-item-radio-icon[data-toggle-param=true] path:nth-child(2) {
   fill: currentcolor;
