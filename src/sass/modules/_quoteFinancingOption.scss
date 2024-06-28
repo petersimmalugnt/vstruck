@@ -1,0 +1,14 @@
+.quote-financing-option[data-is-selected="false"] {
+  --check: transparent;
+  background-color: hsla(126.11111111111109, 0%, 100%, 0);
+  outline-offset: -0.5px;
+  outline-style: solid;
+  outline-width: 1px;
+  color: var(--dark-grey);
+  outline-color: currentcolor;
+}
+
+.quote-financing-option[data-is-selected="false"]:hover {
+  --check: currentcolor;
+  color: var(--vs-black);
+}

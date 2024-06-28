@@ -1,0 +1,1 @@
+.quote-addon[data-is-selected=false]{background-color:transparent;color:var(--dark-grey);outline-color:currentcolor;outline-offset:-.5px;outline-style:solid;outline-width:1px}.quote-addon[data-is-selected=false]:hover{color:var(--vs-black)}

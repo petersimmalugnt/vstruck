@@ -1,0 +1,11 @@
+.quote-addon[data-is-selected="false"] {
+  outline-offset: -0.5px;
+  outline-style: solid;
+  outline-width: 1px;
+  color: var(--dark-grey);
+  outline-color: currentcolor;
+  background-color: transparent;
+}
+.quote-addon[data-is-selected="false"]:hover {
+  color: var(--vs-black);
+}

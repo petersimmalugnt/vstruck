@@ -2079,54 +2079,34 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   --lihover: var(--white);
 }
 
-.quote-table-head-cell:last-child,
-.quote-table-cell:last-child {
-  background-color: var(--linen);
-  position: sticky;
-  right: 0px;
-  border-left: 1px solid var(--vs-black);
+.quote-addon[data-is-selected=false] {
+  outline-offset: -0.5px;
+  outline-style: solid;
+  outline-width: 1px;
+  color: var(--dark-grey);
+  outline-color: currentcolor;
+  background-color: transparent;
 }
 
-.quote-table-row:hover:first-child {
-  background-color: inherit;
+.quote-addon[data-is-selected=false]:hover {
+  color: var(--vs-black);
 }
 
-.quote-table-row:hover .quote-table-trucknocell {
-  background-color: var(--linen);
+.quote-financing-option[data-is-selected=false] {
+  --check: transparent;
+  background-color: hsla(126.1111111111, 0%, 100%, 0);
+  outline-offset: -0.5px;
+  outline-style: solid;
+  outline-width: 1px;
+  color: var(--dark-grey);
+  outline-color: currentcolor;
 }
 
-.quote-table-row:hover .quote-table-cell:last-child {
-  background-color: inherit;
+.quote-financing-option[data-is-selected=false]:hover {
+  --check: currentcolor;
+  color: var(--vs-black);
 }
 
-.quote-table-head-cell {
-  --init: 1;
-}
-
-.quote-table-head-cell:hover,
-[data-is-one=true].quote-table-head-cell {
-  --init: 0;
-}
-
-.quote-table-head-cell .icons-wrapper,
-.quote-table-head-cell :last-child {
-  transition: translate 0.3s cubic-bezier(0.4, 0, 0, 1), rotate 0.3s cubic-bezier(0.4, 0, 0, 1);
-}
-
-.quote-table-head-cell .icons-wrapper {
-  translate: calc((-1em - 1.75rem) * var(--init));
-  rotate: calc(180deg * var(--is-two));
-}
-
-.quote-table-head-cell :last-child {
-  translate: calc((-1em - 0.75rem) * (var(--init)));
-}
-
-@media (min-width: 992px) {
-  .quote-table-cell-truck:hover .quote-table-truckcard {
-    display: flex;
-  }
-}
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
@@ -2987,4 +2967,87 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 :has([data-nav-bg=green]) .header-wrapper {
   --bg-color: var(--green);
   background-color: var(--green) !important;
+}
+
+@media print {
+  html {
+    font-size: 10pt !important;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+  @page {
+    size: A4;
+    margin: 0cm;
+  }
+  [data-print-hide=true],
+  [data-print-show=false] {
+    display: none;
+  }
+  [data-print-no-break=true] {
+    page-break-inside: avoid;
+  }
+  .quote-infooooooo {
+    background-color: transparent !important;
+  }
+  .quote-submit-btn {
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+  .quote-info-inside-container {
+    flex-direction: column;
+  }
+  .quote-attrs-wrapper,
+  .quote-images {
+    width: 100%;
+    order: unset;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  .quote-freetext-container {
+    flex-direction: row;
+  }
+  .quote-cost-slot {
+    grid-auto-flow: column;
+  }
+  [data-elipsis=true] {
+    overflow: unset;
+    text-overflow: unset;
+    white-space: unset;
+    word-break: break-word;
+  }
+  .quote-head-info .attr-box {
+    justify-content: start;
+    gap: 1rem 0;
+  }
+  .quote-head-title-container {
+    grid-column: 2/8 !important;
+    overflow: hidden;
+  }
+  .trucksingle-attr-grid-wrapper {
+    padding-top: 2.5rem !important;
+    padding-bottom: 2.5rem !important;
+  }
+  .trucksingle-attr-list-wrapper {
+    gap: 1.5rem;
+  }
+  .trucksingle-attr-grid-wrapper [data-is-fr-one] {
+    --is-fr-one: 1 !important;
+    --is-fr-one-unit: 1fr !important;
+  }
+  .trucksingle-attr-category-title-container {
+    background-color: var(--light-grey);
+  }
+  .trucksingle-attr-category-attr-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .quote-images {
+    height: 100vh;
+  }
+  .quote-images-container > *:not(:first-child) {
+    display: none;
+  }
 }
