@@ -787,8 +787,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-color: var(--white);
 }
 
-.textinputbox-input-slot:hover .dual-range-slider-input-container input[type=range].to-slider {
-  --empty-border-color: var(--white);
+.textinputbox-input-slot:hover .dual-range-slider-input-container {
+  --light-grey: var(--white);
 }
 
 /* GUIDE STEP */
