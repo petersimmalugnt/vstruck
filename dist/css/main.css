@@ -2636,6 +2636,26 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   scale: -100%;
 }
 
+[data-fs-em=tiny] {
+  font-size: 0.75em;
+}
+
+[data-fs-em=small] {
+  font-size: 1em;
+}
+
+[data-fs-em=medium] {
+  font-size: 1.25em;
+}
+
+[data-fs-em=large] {
+  font-size: 1.5em;
+}
+
+[data-fs-em=huge] {
+  font-size: 2em;
+}
+
 [data-no-image-bg-line=true] {
   --no-image-bg-line: 1;
   background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
