@@ -504,7 +504,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   transition-timing-function: cubic-bezier(0.4, 0, 0, 1);
 }
 
-.dropdown-item-toggle-icon[data-toggle-param=true] {
+.dropdown-item-toggle-icon[data-toggle-param=false] {
   --fc: var(--dark-grey);
 }
 
