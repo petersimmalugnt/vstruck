@@ -754,7 +754,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   --drsThumbSize: 1.5rem;
   --border-size: 1px;
   --gap: 0.75rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
