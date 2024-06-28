@@ -67,11 +67,11 @@ div:has(.dropdown-wrapper[data-dd-active="true"])
 
 .dropdown-item-toggle-icon[data-toggle-param="true"] path:nth-child(1),
 .dropdown-item-radio-icon[data-toggle-param="true"] path:nth-child(2) {
-  fill: #171717;
+  fill: currentcolor;
 }
 
 .dropdown-item-toggle-icon[data-toggle-param="true"] path:nth-child(2) {
-  fill: #ffffff;
+  fill: var(--white);
   transform: translateX(50%);
 }
 
