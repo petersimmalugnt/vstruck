@@ -2079,6 +2079,54 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   --lihover: var(--white);
 }
 
+.quote-table-head-cell:last-child,
+.quote-table-cell:last-child {
+  background-color: var(--linen);
+  position: sticky;
+  right: 0px;
+  border-left: 1px solid var(--vs-black);
+}
+
+.quote-table-row:hover:first-child {
+  background-color: inherit;
+}
+
+.quote-table-row:hover .quote-table-trucknocell {
+  background-color: var(--linen);
+}
+
+.quote-table-row:hover .quote-table-cell:last-child {
+  background-color: inherit;
+}
+
+.quote-table-head-cell {
+  --init: 1;
+}
+
+.quote-table-head-cell:hover,
+[data-is-one=true].quote-table-head-cell {
+  --init: 0;
+}
+
+.quote-table-head-cell .icons-wrapper,
+.quote-table-head-cell :last-child {
+  transition: translate 0.3s cubic-bezier(0.4, 0, 0, 1), rotate 0.3s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.quote-table-head-cell .icons-wrapper {
+  translate: calc((-1em - 1.75rem) * var(--init));
+  rotate: calc(180deg * var(--is-two));
+}
+
+.quote-table-head-cell :last-child {
+  translate: calc((-1em - 0.75rem) * (var(--init)));
+}
+
+@media (min-width: 992px) {
+  .quote-table-cell-truck:hover .quote-table-truckcard {
+    display: flex;
+  }
+}
 /* Utillities */
 [data-obj-fit-cover=true] {
   -o-object-fit: cover;
