@@ -3,6 +3,8 @@
   --drsThumbSize: 3rem;
   --leftPercent: 0%;
   --rightPercent: 100%;
+  --border-size: 2px;
+  --gap: 1.5rem;
 }
 .dual-range-slider-input-container {
   height: var(--drsThumbSize);
@@ -24,8 +26,8 @@
   inset: 0 0 0 0;
   background-color: transparent;
   --border-color: transparent;
-  border-left: 2px solid var(--border-color);
-  border-right: 2px solid var(--border-color);
+  border-left: var(--border-size) solid var(--border-color);
+  border-right: var(--border-size) solid var(--border-color);
 }
 
 .dual-range-slider-input-container input[type="range"].to-slider {
@@ -45,7 +47,7 @@
       transparent 6px
     );
   background-repeat: no-repeat;
-  background-size: 100% 2px;
+  background-size: 100% var(--border-size);
   background-position: center;
 }
 
@@ -77,6 +79,7 @@
   outline: none !important;
   border: none !important;
 }
+
 .dual-range-slider-input-container input[type="range"]::-moz-range-thumb {
   -webkit-appearance: none;
   pointer-events: all;
@@ -185,4 +188,43 @@
   font-size: 2rem;
   grid-area: 1 / 1 / 2 / 3 !important;
   justify-self: center !important;
+}
+
+.dual-range-slider-wrapper[data-slider-size="tiny"],
+.dual-range-slider-wrapper[data-slider-size="tiny"][data-single-slider="true"]
+  [data-to-input-container] {
+  --drsThumbSize: 1.5rem;
+  --border-size: 1px;
+  --gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.dual-range-slider-wrapper[data-slider-size="small"],
+.dual-range-slider-wrapper[data-slider-size="small"][data-single-slider="true"]
+  [data-to-input-container] {
+  --drsThumbSize: 2rem;
+  --border-size: 1.5px;
+  --gap: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.dual-range-slider-wrapper[data-slider-size="large"],
+.dual-range-slider-wrapper[data-slider-size="large"][data-single-slider="true"]
+  [data-to-input-container] {
+  --drsThumbSize: 3rem;
+  --gap: 1.5rem;
+  font-size: 2rem;
+}
+
+.sliderinputbox:hover
+  .dual-range-slider-input-container
+  input[type="range"]::-webkit-slider-thumb:not(:active) {
+  background-color: var(--white);
+}
+.sliderinputbox:hover
+  .dual-range-slider-input-container
+  input[type="range"]::-moz-range-thumb:not(:active) {
+  background-color: var(--white);
 }
