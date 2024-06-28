@@ -2161,15 +2161,15 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 }
 
 [data-span-cols="2"] {
-  grid-column-end: span 1;
+  grid-column-end: span 2;
 }
 
 [data-span-cols="3"] {
-  grid-column-end: span 1;
+  grid-column-end: span 3;
 }
 
 [data-span-cols="4"] {
-  grid-column-end: span 1;
+  grid-column-end: span 4;
 }
 
 [data-span-rows="1"] {
@@ -2177,15 +2177,15 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 }
 
 [data-span-rows="2"] {
-  grid-row-end: span 1;
+  grid-row-end: span 2;
 }
 
 [data-span-rows="3"] {
-  grid-row-end: span 1;
+  grid-row-end: span 3;
 }
 
 [data-span-rows="4"] {
-  grid-row-end: span 1;
+  grid-row-end: span 4;
 }
 
 [data-obj-fit-cover=true] {
