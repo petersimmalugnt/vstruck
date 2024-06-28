@@ -774,11 +774,15 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   font-size: 2rem;
 }
 
-.sliderinputbox:hover .dual-range-slider-input-container input[type=range]::-webkit-slider-thumb:not(:active) {
+.textinputbox-input-slot .dual-range-slider-wrapper {
+  padding: 2.25rem 1.5rem 1.5rem 1.5rem;
+}
+
+.textinputbox-input-slot:hover .dual-range-slider-input-container input[type=range]::-webkit-slider-thumb:not(:active) {
   background-color: var(--white);
 }
 
-.sliderinputbox:hover .dual-range-slider-input-container input[type=range]::-moz-range-thumb:not(:active) {
+.textinputbox-input-slot:hover .dual-range-slider-input-container input[type=range]::-moz-range-thumb:not(:active) {
   background-color: var(--white);
 }
 

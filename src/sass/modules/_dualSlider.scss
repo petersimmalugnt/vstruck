@@ -218,12 +218,16 @@
   font-size: 2rem;
 }
 
-.sliderinputbox:hover
+.textinputbox-input-slot .dual-range-slider-wrapper {
+  padding: 2.25rem 1.5rem 1.5rem 1.5rem;
+}
+
+.textinputbox-input-slot:hover
   .dual-range-slider-input-container
   input[type="range"]::-webkit-slider-thumb:not(:active) {
   background-color: var(--white);
 }
-.sliderinputbox:hover
+.textinputbox-input-slot:hover
   .dual-range-slider-input-container
   input[type="range"]::-moz-range-thumb:not(:active) {
   background-color: var(--white);
