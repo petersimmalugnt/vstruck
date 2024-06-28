@@ -753,7 +753,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 .dual-range-slider-wrapper[data-slider-size=tiny][data-single-slider=true] [data-to-input-container] {
   --drsThumbSize: 1.5rem;
   --border-size: 1px;
-  --gap: 0.5rem;
+  --gap: 0.75rem;
   font-size: 1rem;
   font-weight: 500;
 }
