@@ -32,7 +32,6 @@
 
 .dual-range-slider-input-container input[type="range"].to-slider {
   --border-color: var(--vs-black);
-  --empty-border-color: var(--light-grey);
   background: linear-gradient(
       to right,
       transparent var(--leftPercent),
@@ -42,8 +41,8 @@
     ),
     repeating-linear-gradient(
       to right,
-      var(--empty-border-color) 0px,
-      var(--empty-border-color) 4px,
+      var(--light-grey) 0px,
+      var(--light-grey) 4px,
       transparent 4px,
       transparent 6px
     );
@@ -221,17 +220,6 @@
 
 .textinputbox-input-slot .dual-range-slider-wrapper {
   padding: 2.25rem 1.5rem 1.5rem 1.5rem;
-}
-
-.textinputbox-input-slot:hover
-  .dual-range-slider-input-container
-  input[type="range"]::-webkit-slider-thumb:not(:active) {
-  background-color: var(--white);
-}
-.textinputbox-input-slot:hover
-  .dual-range-slider-input-container
-  input[type="range"]::-moz-range-thumb:not(:active) {
-  background-color: var(--white);
 }
 
 .textinputbox-input-slot:hover .dual-range-slider-input-container {
