@@ -596,6 +596,19 @@
   --is-passed: 1;
 }
 
+/* is selected */
+[data-is-selected] {
+  --is-selected: 0;
+  --is-selected-fr: minmax(0px, 0fr);
+  --is-selected-visibility: hidden;
+}
+
+[data-is-selected="true"] {
+  --is-selected: 1;
+  --is-selected-fr: minmax(0px, 1fr);
+  --is-selected-visibility: visible;
+}
+
 /* steps boleons */
 [data-step] {
   --step-zero: 0;
