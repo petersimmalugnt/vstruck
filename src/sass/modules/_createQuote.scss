@@ -1,0 +1,41 @@
+.createquote-financing-option-container:after {
+  content: "";
+  position: absolute;
+  inset: 0px 0px 0px auto;
+  width: 1px;
+  background-color: var(--white);
+  z-index: 10;
+}
+.createquote-financing-option-container .textinputbox {
+  border-right: 1px dotted var(--vs-black);
+  border-top: 1px dotted var(--vs-black);
+}
+
+.createquote-financing-option-container > div {
+  outline-offset: 0px;
+  outline-color: transparent;
+  outline-style: none;
+  outline-width: 0px;
+}
+
+.createquote-financing-option-item[data-is-selected] {
+  transition: grid-template-rows 0.5s cubic-bezier(0.4, 0, 0, 1);
+}
+.createquote-financing-option-item[data-is-selected="true"] {
+  color: var(--vs-black);
+}
+
+.createquote-financing-option-item:hover
+  .createquote-financing-option-toggle-container {
+  background-color: var(--light-grey);
+}
+
+.createquote-financing-option-item[data-is-selected="true"]
+  .createquote-financing-option-toggle-container {
+  background-color: var(--green);
+}
+
+.createquote-financing-option-item[data-is-selected="true"]
+  .createquote-financing-option-toggle-container:hover {
+  background-color: var(--light-grey);
+}

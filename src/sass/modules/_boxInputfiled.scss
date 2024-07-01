@@ -1,0 +1,6 @@
+.textinputbox[data-has-error="true"] {
+  background-color: var(--red) !important;
+}
+.textinputbox[data-has-error="true"] > .textinputbox-error {
+  display: flex;
+}

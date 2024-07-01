@@ -1,0 +1,29 @@
+.modal-wrapper[data-modal-is-open] {
+  display: none;
+}
+.modal-wrapper[data-modal-is-open="true"] {
+  display: flex;
+  animation: modal-wrapper-open 0.5s cubic-bezier(0.5, 0, 0.5, 1) both;
+}
+
+@keyframes modal-wrapper-open {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: var(--dark-aa);
+  }
+}
+
+.modal-wrapper[data-modal-is-open="true"] > .modal-container {
+  animation: modal-container-open 0.8s cubic-bezier(0.6, 0, 0.1, 1) both;
+}
+
+@keyframes modal-container-open {
+  0% {
+    transform: translateY(100vh);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
