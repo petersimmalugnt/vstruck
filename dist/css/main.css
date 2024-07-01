@@ -2305,6 +2305,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     transform: translateY(0%);
   }
 }
+.togglebox-wrapper[data-is-selected=true] {
+  background-color: var(--linen);
+}
+
 /* Utillities */
 [data-span-cols="1"] {
   grid-column-end: span 1;
