@@ -2964,13 +2964,15 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 [data-is-selected] {
   --is-selected: 0;
   --is-selected-fr: minmax(0px, 0fr);
-  --is-selected-visibility: hidden;
+  --is-not-selected: 1;
+  --is-selected-display: hidden;
 }
 
 [data-is-selected=true] {
   --is-selected: 1;
   --is-selected-fr: minmax(0px, 1fr);
-  --is-selected-visibility: visible;
+  --is-not-selected: 0;
+  --is-not-selected-display: hidden;
 }
 
 /* steps boleons */
