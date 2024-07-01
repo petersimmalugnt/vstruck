@@ -2309,6 +2309,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-color: var(--linen) !important;
 }
 
+.togglebox-wrapper[data-is-selected=true] {
+  grid-row-end: span 2;
+}
+
 /* Utillities */
 [data-span-cols="1"] {
   grid-column-end: span 1;

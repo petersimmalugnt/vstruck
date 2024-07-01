@@ -1,3 +1,7 @@
 .togglebox-wrapper[data-is-selected="true"] {
   background-color: var(--linen) !important;
 }
+
+.togglebox-wrapper[data-is-selected="true"] {
+  grid-row-end: span 2;
+}
