@@ -2239,6 +2239,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-color: var(--light-grey);
 }
 
+.createquote .dropdown-wrapper {
+  min-height: 4rem;
+}
+
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
