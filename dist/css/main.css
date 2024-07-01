@@ -2261,6 +2261,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   color: var(--vs-black);
 }
 
+.createquote-financing-option:hover .createquote-financing-option-title {
+  background-color: var(--light-grey);
+}
+
 .modal-wrapper[data-modal-is-open] {
   display: none;
 }
