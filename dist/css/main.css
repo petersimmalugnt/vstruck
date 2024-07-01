@@ -2253,6 +2253,12 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   min-height: 4rem;
 }
 
+.createquote[data-created-quote=true] > .createquote-img-container,
+.createquote[data-created-quote=true] > .createquote-form-container,
+.createquote[data-created-quote=false] > .createquote-successmessage {
+  display: none;
+}
+
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
