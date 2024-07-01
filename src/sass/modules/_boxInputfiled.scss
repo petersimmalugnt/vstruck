@@ -4,3 +4,8 @@
 .textinputbox[data-has-error="true"] > .textinputbox-error {
   display: flex;
 }
+
+.textinputbox input:disabled {
+  background: none;
+  cursor: unset;
+}

@@ -2198,6 +2198,11 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   display: flex;
 }
 
+.textinputbox input:disabled {
+  background: none;
+  cursor: unset;
+}
+
 .createquote-financing-option-container:after {
   content: "";
   position: absolute;
