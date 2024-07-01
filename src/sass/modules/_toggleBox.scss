@@ -1,7 +1,7 @@
-.togglebox-wrapper[data-is-selected="true"] {
+.togglebox-wrapper[data-is-selected="true"][data-has-slot-content="true"] {
   background-color: var(--linen) !important;
 }
 
-.togglebox-wrapper[data-is-selected="true"] {
+.togglebox-wrapper[data-is-selected="true"][data-has-slot-content="true"] {
   grid-column-end: span 2 !important;
 }
