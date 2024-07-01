@@ -8,4 +8,5 @@
 .textinputbox input:disabled {
   background: none !important;
   cursor: pointer !important;
+  pointer-events: none;
 }
