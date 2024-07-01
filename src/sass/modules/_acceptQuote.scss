@@ -1,0 +1,5 @@
+.acceptquote[data-accepted-quote="true"] > .acceptquote-summery-container,
+.acceptquote[data-accepted-quote="true"] > .acceptquote-form-container,
+.acceptquote[data-accepted-quote="false"] > .quote-successmessage {
+  display: none;
+}
