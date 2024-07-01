@@ -3,5 +3,5 @@
 }
 
 .togglebox-wrapper[data-is-selected="true"] {
-  grid-row-end: span 2 !important;
+  grid-column-end: span 2 !important;
 }
