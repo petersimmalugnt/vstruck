@@ -2199,8 +2199,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 }
 
 .textinputbox input:disabled {
-  background: none;
-  cursor: unset;
+  background: none !important;
+  cursor: unset !important;
 }
 
 .createquote-financing-option-container:after {

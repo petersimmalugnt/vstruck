@@ -6,6 +6,6 @@
 }
 
 .textinputbox input:disabled {
-  background: none;
-  cursor: unset;
+  background: none !important;
+  cursor: unset !important;
 }
