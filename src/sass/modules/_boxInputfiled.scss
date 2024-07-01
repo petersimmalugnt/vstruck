@@ -1,7 +1,7 @@
 [data-has-error="true"] {
   background-color: var(--red) !important;
 }
-[data-has-error="true"] > .textinputbox-error {
+[data-has-error="true"] > [data-error-message="true"] {
   display: flex;
 }
 
