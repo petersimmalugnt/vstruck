@@ -2317,6 +2317,12 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   display: none;
 }
 
+.acceptquote[data-accepted-quote=true] > .acceptquote-summery-container,
+.acceptquote[data-accepted-quote=true] > .acceptquote-form-container,
+.acceptquote[data-accepted-quote=false] > .quote-successmessage {
+  display: none;
+}
+
 /* Utillities */
 [data-span-cols="1"] {
   grid-column-end: span 1;
