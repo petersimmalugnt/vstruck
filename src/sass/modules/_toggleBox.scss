@@ -1,4 +1,6 @@
-.togglebox-wrapper[data-is-selected="true"][data-has-slot-content="true"] {
+.togglebox-wrapper[data-is-selected="true"][data-has-slot-content="true"]:not(
+    :hover
+  ) {
   background-color: var(--linen) !important;
 }
 

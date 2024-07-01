@@ -2305,7 +2305,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     transform: translateY(0%);
   }
 }
-.togglebox-wrapper[data-is-selected=true][data-has-slot-content=true] {
+.togglebox-wrapper[data-is-selected=true][data-has-slot-content=true]:not(:hover) {
   background-color: var(--linen) !important;
 }
 
