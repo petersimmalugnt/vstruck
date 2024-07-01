@@ -46,6 +46,6 @@
 
 .createquote[data-created-quote="true"] > .createquote-img-container,
 .createquote[data-created-quote="true"] > .createquote-form-container,
-.createquote[data-created-quote="false"] > .createquote-successmessage {
+.createquote[data-created-quote="false"] > .quote-successmessage {
   display: none;
 }
