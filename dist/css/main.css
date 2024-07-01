@@ -2975,6 +2975,11 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   --is-not-selected-display: hidden;
 }
 
+[data-is-selected=false] [data-hide-is-selected=true],
+[data-is-selected=true] [data-hide-is-not-selected=true] {
+  display: none;
+}
+
 /* steps boleons */
 [data-step] {
   --step-zero: 0;
