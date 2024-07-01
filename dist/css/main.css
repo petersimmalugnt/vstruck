@@ -2204,6 +2204,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   pointer-events: none;
 }
 
+.textinputbox:has(input:disabled) {
+  cursor: pointer;
+}
+
 .createquote-financing-option-container:after {
   content: "";
   position: absolute;

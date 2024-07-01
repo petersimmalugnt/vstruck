@@ -10,3 +10,7 @@
   cursor: pointer !important;
   pointer-events: none;
 }
+
+.textinputbox:has(input:disabled) {
+  cursor: pointer;
+}
