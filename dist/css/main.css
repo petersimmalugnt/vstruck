@@ -2313,8 +2313,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   grid-column-end: span 2 !important;
 }
 
-.togglebox-wrapper[data-is-selected=false] .togglebox-slot-wrapper,
-.togglebox-wrapper[data-has-slot-content=false] .togglebox-slot-wrapper {
+.togglebox-wrapper[data-has-slot-content=false] [data-hide-is-selected] {
   display: none;
 }
 
