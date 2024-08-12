@@ -36,6 +36,9 @@
 [data-attr-value-size="large"] .attr-value {
   font-size: 1.25rem;
 }
+[data-attr-value-size="huge"] .attr-value {
+  font-size: 2rem;
+}
 
 .attr-table-category-wrapper[data-list-view="true"] .attr-box,
 [data-attr-box-table="true"] {
