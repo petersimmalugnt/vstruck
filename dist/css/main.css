@@ -2505,6 +2505,32 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-color: var(--red) !important;
 }
 
+[data-modal-width=tiny] {
+  width: auto;
+}
+
+[data-modal-width=small] {
+  width: 25%;
+  min-width: min(31rem, 100%);
+  max-width: 720px;
+}
+
+[data-modal-width=medium] {
+  width: 75%;
+  min-width: min(48rem, 100%);
+  max-width: 960px;
+}
+
+[data-modal-width=large] {
+  width: 100%;
+  min-width: min(1440px, 100%);
+  max-width: 1440px;
+}
+
+[data-modal-width=huge] {
+  width: 100%;
+}
+
 [data-bg=yellow],
 [data-hover-bg=yellow]:hover,
 [data-bg=yellow] .dd-toggle::after,
