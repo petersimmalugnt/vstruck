@@ -1352,6 +1352,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 
 [data-attr-value-size=huge] .attr-value {
   font-size: 2rem;
+  font-family: "IBM Plex Sans Condensed", "sans-serif";
+  font-weight: 500;
 }
 
 .attr-table-category-wrapper[data-list-view=true] .attr-box,
