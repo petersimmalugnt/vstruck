@@ -2529,6 +2529,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 
 [data-modal-width=huge] {
   width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 [data-bg=yellow],
