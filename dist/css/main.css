@@ -2671,6 +2671,64 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 }
 
 /* props margins & paddings */
+[data-base-padding-x=none] {
+  --padding-x: 0;
+}
+
+[data-base-padding-x=tiny] {
+  --padding-x: 0.5rem;
+}
+
+[data-base-padding-x=small] {
+  --padding-x: 1rem;
+}
+
+[data-base-padding-x=medium] {
+  --padding-x: 1.5rem;
+}
+
+[data-base-padding-x=large] {
+  --padding-x: 2rem;
+}
+
+[data-base-padding-x=large] {
+  --padding-x: 3rem;
+}
+
+[data-base-padding-y=none] {
+  --padding-y: 0;
+}
+
+[data-base-padding-y=tiny] {
+  --padding-y: 0.5rem;
+}
+
+[data-base-padding-y=small] {
+  --padding-y: 1rem;
+}
+
+[data-base-padding-y=medium] {
+  --padding-y: 1.5rem;
+}
+
+[data-base-padding-y=large] {
+  --padding-y: 2rem;
+}
+
+[data-base-padding-x=large] {
+  --padding-y: 3rem;
+}
+
+[data-base-padding-x]:not([data-base-padding-x=""]) {
+  padding-top: var(--padding-x, 0) !important;
+  padding-bottom: var(--padding-x, 0) !important;
+}
+
+[data-base-padding-y]:not([data-base-padding-y=""]) {
+  padding-right: var(--padding-y, 0) !important;
+  padding-left: var(--padding-y, 0) !important;
+}
+
 [data-margin-bottom=huge],
 [data-padding-top=huge] {
   --spacing-top: 8rem;
