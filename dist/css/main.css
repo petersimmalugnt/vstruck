@@ -3408,6 +3408,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   .quote-images {
     display: block;
     height: 20rem;
+    max-height: 20rem;
   }
   .quote-freetext-container {
     flex-direction: row;
