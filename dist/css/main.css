@@ -3404,6 +3404,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     height: auto;
     display: block;
   }
+  .trucksingel-image-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
   .trucksingel-image-container,
   .quote-images {
     display: block;
