@@ -3366,18 +3366,13 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-color: var(--green) !important;
 }
 
-/* @media print {
+@media print {
   html {
     font-size: 10pt !important;
   }
   body {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
-  }
-  @page {
-    size: A4;
-    margin: 0cm;
-    padding: 0cm;
   }
   [data-print-hide=true],
   [data-print-show=false] {
@@ -3448,4 +3443,4 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   .quote-images-container > *:not(:first-child) {
     display: none;
   }
-} */
+}

@@ -6,10 +6,10 @@
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
-  @page {
-    size: A4;
-    margin: 0cm;
-  }
+  // @page {
+  //   size: A4;
+  //   margin: 0cm;
+  // }
   [data-print-hide="true"],
   [data-print-show="false"] {
     display: none;
