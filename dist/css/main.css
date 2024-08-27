@@ -1194,6 +1194,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   position: static;
 }
 
+[data-monochrome-logos=true] .logolist--link:not(:hover) {
+  filter: grayscale(100%), brightness(0);
+}
+
 /* LAYOUT: HORIZONTAL */
 @container card (width > 560px) {
   [data-card-layout=horizontal] .card-container {

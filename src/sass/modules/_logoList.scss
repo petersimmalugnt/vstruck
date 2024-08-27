@@ -16,3 +16,9 @@
 .logolist--text-container[data-not-sticky="true"] {
   position: static;
 }
+
+[data-monochrome-logos="true"] {
+  .logolist--link:not(:hover) {
+    filter: grayscale(100%), brightness(0);
+  }
+}
