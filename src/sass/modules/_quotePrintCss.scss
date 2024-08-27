@@ -78,6 +78,9 @@
   .quote-images {
     height: 100vh;
   }
+  .quote-images-container {
+    display: block;
+  }
   .quote-images-container > *:not(:first-child) {
     display: none;
   }
