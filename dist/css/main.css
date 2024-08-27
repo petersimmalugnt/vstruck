@@ -319,7 +319,7 @@ button,
 }
 
 [data-marquee-speed=veryfast] {
-  --txt-marquee-speed: 10s;
+  --txt-marquee-speed-multiplier: 1;
 }
 
 @keyframes txt-marquee-sliding {
