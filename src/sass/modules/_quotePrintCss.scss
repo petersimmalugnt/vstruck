@@ -17,8 +17,9 @@
   [data-print-no-break="true"] {
     page-break-inside: avoid;
   }
-  .quote-infooooooo {
-    background-color: transparent !important;
+  .quote-info {
+    // background-color: transparent !important;
+    min-height: auto;
   }
   .quote-submit-btn {
     position: relative;

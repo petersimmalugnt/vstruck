@@ -3385,8 +3385,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   [data-print-no-break=true] {
     page-break-inside: avoid;
   }
-  .quote-infooooooo {
-    background-color: transparent !important;
+  .quote-info {
+    min-height: auto;
   }
   .quote-submit-btn {
     position: relative;
