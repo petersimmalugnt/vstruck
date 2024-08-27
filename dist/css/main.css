@@ -3451,4 +3451,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   .quote-images-container > *:not(:first-child) {
     display: none;
   }
+  .trucksingel-image-container {
+    height: 100px;
+    max-height: 100px;
+  }
 }
