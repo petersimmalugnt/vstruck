@@ -3395,6 +3395,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   }
   .quote-info-inside-container {
     flex-direction: column;
+    display: block;
   }
   .quote-attrs-wrapper,
   .quote-images {
