@@ -3377,7 +3377,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   /* @page {
     size: A4;
     margin: 0cm;
-  } */
+    padding: 0cm;
+  } */ 
   [data-print-hide=true],
   [data-print-show=false] {
     display: none;
