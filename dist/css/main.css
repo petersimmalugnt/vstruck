@@ -3387,6 +3387,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   }
   .quote-info {
     min-height: auto;
+    padding-bottom: 8rem !important;
   }
   .quote-submit-btn {
     position: relative;
