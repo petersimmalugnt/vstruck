@@ -7,8 +7,14 @@
   --vpMax: 1920;
   --scrollBarWidth: 16px;
   --grid-spacing: 1.5rem;
+  --viewport-width: 100vw;
   --column-width: min(
-    calc((100vw - var(--scrollBarWidth) - (13 * var(--grid-spacing))) / 12),
+    calc(
+      (
+          var(--viewport-width) - var(--scrollBarWidth) -
+            (13 * var(--grid-spacing))
+        ) / 12
+    ),
     calc((2000px - (11 * 28.5px)) / 12)
   );
   --container-width: calc(
@@ -3367,6 +3373,9 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 }
 
 @media print {
+  :root {
+    --viewport-width: 700px;
+  }
   html {
     font-size: 10pt !important;
   }

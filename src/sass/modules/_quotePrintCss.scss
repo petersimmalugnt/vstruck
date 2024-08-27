@@ -1,4 +1,7 @@
 @media print {
+  :root {
+    --viewport-width: 700px;
+  }
   html {
     font-size: 10pt !important;
   }
