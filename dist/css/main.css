@@ -3400,6 +3400,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   .quote-attrs-wrapper,
   .quote-images {
     width: 100%;
+    min-height: auto;
     height: auto;
     display: block;
   }
