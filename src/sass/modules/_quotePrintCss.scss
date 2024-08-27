@@ -7,8 +7,8 @@
     print-color-adjust: exact;
   }
   @page {
-    // size: A4;
-    margin: 0cm;
+    size: A4;
+    margin: 0cm !important;
   }
   [data-print-hide="true"],
   [data-print-show="false"] {
@@ -98,5 +98,8 @@
   }
   .quote-images-container > *:not(:first-child) {
     display: none;
+  }
+  .quote-addon {
+    display: flex;
   }
 }

@@ -3375,7 +3375,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     print-color-adjust: exact;
   }
   @page {
-    margin: 0cm;
+    size: A4;
+    margin: 0cm !important;
   }
   [data-print-hide=true],
   [data-print-show=false] {
@@ -3459,5 +3460,8 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   }
   .quote-images-container > *:not(:first-child) {
     display: none;
+  }
+  .quote-addon {
+    display: flex;
   }
 }
