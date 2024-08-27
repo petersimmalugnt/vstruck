@@ -1,83 +1,83 @@
-@media print {
-  html {
-    font-size: 10pt !important;
-  }
-  body {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-  // @page {
-  //   size: A4;
-  //   margin: 0cm;
-  // }
-  [data-print-hide="true"],
-  [data-print-show="false"] {
-    display: none;
-  }
-  [data-print-no-break="true"] {
-    page-break-inside: avoid;
-  }
-  .quote-infooooooo {
-    background-color: transparent !important;
-  }
-  .quote-submit-btn {
-    position: relative;
-    top: 0;
-    bottom: 0;
-  }
+// @media print {
+//   html {
+//     font-size: 10pt !important;
+//   }
+//   body {
+//     -webkit-print-color-adjust: exact;
+//     color-adjust: exact;
+//   }
+//   // @page {
+//   //   size: A4;
+//   //   margin: 0cm;
+//   // }
+//   [data-print-hide="true"],
+//   [data-print-show="false"] {
+//     display: none;
+//   }
+//   [data-print-no-break="true"] {
+//     page-break-inside: avoid;
+//   }
+//   .quote-infooooooo {
+//     background-color: transparent !important;
+//   }
+//   .quote-submit-btn {
+//     position: relative;
+//     top: 0;
+//     bottom: 0;
+//   }
 
-  .quote-info-inside-container {
-    flex-direction: column;
-  }
-  .quote-attrs-wrapper,
-  .quote-images {
-    width: 100%;
-    order: unset;
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: auto;
-  }
-  .quote-freetext-container {
-    flex-direction: row;
-  }
-  .quote-cost-slot {
-    grid-auto-flow: column;
-  }
-  [data-elipsis="true"] {
-    overflow: unset;
-    text-overflow: unset;
-    white-space: unset;
-    word-break: break-word;
-  }
-  .quote-head-info .attr-box {
-    justify-content: start;
-    gap: 1rem 0;
-  }
-  .quote-head-title-container {
-    grid-column: 2 / 8 !important;
-    overflow: hidden;
-  }
-  .trucksingle-attr-grid-wrapper {
-    padding-top: 2.5rem !important;
-    padding-bottom: 2.5rem !important;
-  }
-  .trucksingle-attr-list-wrapper {
-    gap: 1.5rem;
-  }
-  .trucksingle-attr-grid-wrapper [data-is-fr-one] {
-    --is-fr-one: 1 !important;
-    --is-fr-one-unit: 1fr !important;
-  }
-  .trucksingle-attr-category-title-container {
-    background-color: var(--light-grey);
-  }
-  .trucksingle-attr-category-attr-list {
-    grid-template-columns: 1fr 1fr;
-  }
-  .quote-images {
-    height: 100vh;
-  }
-  .quote-images-container > *:not(:first-child) {
-    display: none;
-  }
-}
+//   .quote-info-inside-container {
+//     flex-direction: column;
+//   }
+//   .quote-attrs-wrapper,
+//   .quote-images {
+//     width: 100%;
+//     order: unset;
+//     flex-grow: 0;
+//     flex-shrink: 1;
+//     flex-basis: auto;
+//   }
+//   .quote-freetext-container {
+//     flex-direction: row;
+//   }
+//   .quote-cost-slot {
+//     grid-auto-flow: column;
+//   }
+//   [data-elipsis="true"] {
+//     overflow: unset;
+//     text-overflow: unset;
+//     white-space: unset;
+//     word-break: break-word;
+//   }
+//   .quote-head-info .attr-box {
+//     justify-content: start;
+//     gap: 1rem 0;
+//   }
+//   .quote-head-title-container {
+//     grid-column: 2 / 8 !important;
+//     overflow: hidden;
+//   }
+//   .trucksingle-attr-grid-wrapper {
+//     padding-top: 2.5rem !important;
+//     padding-bottom: 2.5rem !important;
+//   }
+//   .trucksingle-attr-list-wrapper {
+//     gap: 1.5rem;
+//   }
+//   .trucksingle-attr-grid-wrapper [data-is-fr-one] {
+//     --is-fr-one: 1 !important;
+//     --is-fr-one-unit: 1fr !important;
+//   }
+//   .trucksingle-attr-category-title-container {
+//     background-color: var(--light-grey);
+//   }
+//   .trucksingle-attr-category-attr-list {
+//     grid-template-columns: 1fr 1fr;
+//   }
+//   .quote-images {
+//     height: 100vh;
+//   }
+//   .quote-images-container > *:not(:first-child) {
+//     display: none;
+//   }
+// }
