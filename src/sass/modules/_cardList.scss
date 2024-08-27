@@ -25,14 +25,6 @@
   }
 }
 
-.card-list--container {
-  counter-reset: cardListItemCounter;
-}
-
-.list-item-wrapper {
-  counter-increment: cardListItemCounter;
-}
-
 .list-item-title:empty {
   max-width: 2ch;
   letter-spacing: 0;

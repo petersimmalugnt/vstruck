@@ -1862,14 +1862,6 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     grid-template-columns: minmax(100%, 1fr);
   }
 }
-.card-list--container {
-  counter-reset: cardListItemCounter;
-}
-
-.list-item-wrapper {
-  counter-increment: cardListItemCounter;
-}
-
 .list-item-title:empty {
   max-width: 2ch;
   letter-spacing: 0;
