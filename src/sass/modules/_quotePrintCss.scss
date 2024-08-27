@@ -35,11 +35,15 @@
   .quote-images {
     width: 100%;
     height: auto;
-    order: unset;
     display: block;
+    // order: unset;
     // flex-grow: 0;
     // flex-shrink: 1;
     // flex-basis: auto;
+  }
+  .trucksingel-image-container {
+    display: block;
+    height: auto;
   }
   .quote-freetext-container {
     flex-direction: row;

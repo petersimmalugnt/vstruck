@@ -3401,8 +3401,11 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   .quote-images {
     width: 100%;
     height: auto;
-    order: unset;
     display: block;
+  }
+  .trucksingel-image-container {
+    display: block;
+    height: auto;
   }
   .quote-freetext-container {
     flex-direction: row;
