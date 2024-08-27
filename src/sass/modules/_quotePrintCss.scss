@@ -20,7 +20,6 @@
   .quote-info {
     // background-color: transparent !important;
     min-height: auto;
-    display: block;
   }
   .quote-submit-btn {
     position: relative;
@@ -32,13 +31,16 @@
     flex-direction: column;
     display: block;
   }
-  .quote-attrs-wrapper,
-  .quote-images {
+  .quote-attrs-wrapper {
     width: 100%;
     order: unset;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
+  }
+  .quote-images {
+    width: 100%;
+    display: block;
   }
   .quote-freetext-container {
     flex-direction: row;
