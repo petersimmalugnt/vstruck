@@ -291,35 +291,22 @@ button,
     translate: -25% 0%;
   }
 }
-.txt-marquee-sliding-container {
-  --txt-marquee-base-speed: 10s;
-  --txt-marquee-speed: calc(
-    var(--txt-marquee-base-speed) * var(--txt-marquee-speed-multiplier, 2)
-  );
+.txt-marquee-wrapper {
+  --txt-marquee-speed-desktop: 20s;
+  --txt-marquee-speed-mobile: 30s;
+  --txt-marquee-speed: var(--txt-marquee-speed-desktop);
 }
 
+@media screen and (max-width: 767px) {
+  .txt-marquee-wrapper {
+    --txt-marquee-speed: var(
+      --txt-marquee-speed-mobile,
+      var(--txt-marquee-speed-desktop)
+    );
+  }
+}
 [data-marquee-reverse=true] .txt-marquee-sliding-container {
   animation-direction: reverse;
-}
-
-[data-marquee-speed=veryslow] {
-  --txt-marquee-speed-multiplier: 4;
-}
-
-[data-marquee-speed=slow] {
-  --txt-marquee-speed-multiplier: 3;
-}
-
-[data-marquee-speed=normal] {
-  --txt-marquee-speed-multiplier: 2;
-}
-
-[data-marquee-speed=fast] {
-  --txt-marquee-speed-multiplier: 1.5;
-}
-
-[data-marquee-speed=veryfast] {
-  --txt-marquee-speed-multiplier: 1;
 }
 
 @keyframes txt-marquee-sliding {
