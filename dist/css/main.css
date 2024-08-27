@@ -3375,7 +3375,6 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     print-color-adjust: exact;
   }
   @page {
-    size: A4;
     margin: 0cm;
   }
   [data-print-hide=true],
