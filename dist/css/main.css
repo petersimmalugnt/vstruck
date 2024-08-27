@@ -3374,10 +3374,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
-  @page {
+  /* @page {
     size: A4;
     margin: 0cm;
-  }
+  } */
   [data-print-hide=true],
   [data-print-show=false] {
     display: none;
