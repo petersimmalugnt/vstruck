@@ -3397,16 +3397,14 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     flex-direction: column;
     display: block;
   }
-  .quote-attrs-wrapper {
+  .quote-attrs-wrapper,
+  .quote-images {
     width: 100%;
+    height: auto;
     order: unset;
     flex-grow: 0;
     flex-shrink: 1;
     flex-basis: auto;
-  }
-  .quote-images {
-    width: 100%;
-    display: block;
   }
   .quote-freetext-container {
     flex-direction: row;
@@ -3453,9 +3451,5 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   }
   .quote-images-container > *:not(:first-child) {
     display: none;
-  }
-  .trucksingel-image-container {
-    height: 100px;
-    max-height: 100px;
   }
 }
