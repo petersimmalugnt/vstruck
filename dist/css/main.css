@@ -3404,11 +3404,11 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     height: auto;
     display: block;
   }
-  .trucksingel-image-container {
+  .trucksingel-image-container,
+  .quote-images {
     display: block;
     height: auto;
     max-height: 60rem;
-    height: 100px;
   }
   .quote-freetext-container {
     flex-direction: row;

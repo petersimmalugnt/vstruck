@@ -42,11 +42,11 @@
     // flex-shrink: 1;
     // flex-basis: auto;
   }
-  .trucksingel-image-container {
+  .trucksingel-image-container,
+  .quote-images {
     display: block;
     height: auto;
     max-height: 60rem;
-    height: 100px;
   }
   .quote-freetext-container {
     flex-direction: row;
