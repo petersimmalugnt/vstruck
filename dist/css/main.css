@@ -1866,7 +1866,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   counter-reset: cardListItemCounter;
 }
 
-.list-item-title {
+.list-item-wrapper {
   counter-increment: cardListItemCounter;
 }
 
