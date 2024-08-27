@@ -10,13 +10,6 @@
     size: A4;
     margin: 0cm !important;
   }
-  [data-print-hide="true"],
-  [data-print-show="false"] {
-    display: none;
-  }
-  [data-print-no-break="true"] {
-    page-break-inside: avoid;
-  }
   .quote-info {
     // background-color: transparent !important;
     min-height: auto;
@@ -101,5 +94,13 @@
   }
   .quote-addon {
     display: flex;
+  }
+
+  [data-print-hide="true"],
+  [data-print-show="false"] {
+    display: none;
+  }
+  [data-print-no-break="true"] {
+    page-break-inside: avoid;
   }
 }

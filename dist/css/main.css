@@ -3378,13 +3378,6 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     size: A4;
     margin: 0cm !important;
   }
-  [data-print-hide=true],
-  [data-print-show=false] {
-    display: none;
-  }
-  [data-print-no-break=true] {
-    page-break-inside: avoid;
-  }
   .quote-info {
     min-height: auto;
     padding-bottom: 8rem !important;
@@ -3463,5 +3456,12 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   }
   .quote-addon {
     display: flex;
+  }
+  [data-print-hide=true],
+  [data-print-show=false] {
+    display: none;
+  }
+  [data-print-no-break=true] {
+    page-break-inside: avoid;
   }
 }
