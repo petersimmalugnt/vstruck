@@ -2950,6 +2950,14 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
 }
 
+[data-is-hidden=true] {
+  --is-hidden: none;
+}
+
+[data-is-hidden]:not(:hover, :focus, :focus-within) {
+  --is-hidden-hover: none;
+}
+
 [data-is-one] {
   --is-one: 0;
 }

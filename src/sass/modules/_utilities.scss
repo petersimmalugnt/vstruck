@@ -560,6 +560,13 @@
   );
 }
 
+[data-is-hidden="true"] {
+  --is-hidden: none;
+}
+[data-is-hidden]:not(:hover, :focus, :focus-within) {
+  --is-hidden-hover: none;
+}
+
 [data-is-one] {
   --is-one: 0;
 }
