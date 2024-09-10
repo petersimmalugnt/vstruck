@@ -2500,6 +2500,14 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-color: var(--linen) !important;
 }
 
+[data-bg=dark-wellpapp],
+[data-hover-bg=dark-wellpapp]:hover,
+[data-bg=dark-wellpapp] .dd-toggle::after,
+[data-bg=dark-wellpapp] .dd-link::after {
+  --bg-color: var(--dark-linen);
+  background-color: var(--dark-linen) !important;
+}
+
 [data-bg=orange],
 [data-hover-bg=orange]:hover,
 [data-bg=orange] .dd-toggle::after,
