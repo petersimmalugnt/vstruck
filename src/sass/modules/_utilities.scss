@@ -109,6 +109,14 @@
   mix-blend-mode: screen;
 }
 
+[data-bg="transparent"],
+[data-hover-bg="transparent"]:hover,
+[data-bg="transparent"] .dd-toggle::after,
+[data-bg="transparent"] .dd-link::after {
+  --bg-color: transparent;
+  background-color: transparent !important;
+}
+
 [data-bg="black"],
 [data-hover-bg="black"]:hover,
 [data-bg="black"] .dd-toggle::after,
