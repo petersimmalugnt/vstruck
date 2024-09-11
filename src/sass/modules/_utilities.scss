@@ -271,6 +271,9 @@
 [data-var-color-one="wellpapp"] {
   --color-one: var(--linen);
 }
+[data-var-color-one="dark-wellpapp"] {
+  --color-one: var(--dark-linen);
+}
 [data-var-color-one="orange"] {
   --color-one: var(--vs-prime);
 }
@@ -311,6 +314,9 @@
 }
 [data-var-color-two="wellpapp"] {
   --color-two: var(--linen);
+}
+[data-var-color-two="dark-wellpapp"] {
+  --color-two: var(--dark-linen);
 }
 [data-var-color-two="orange"] {
   --color-two: var(--vs-prime);

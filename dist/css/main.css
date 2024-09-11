@@ -2618,6 +2618,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   --color-one: var(--linen);
 }
 
+[data-var-color-one=dark-wellpapp] {
+  --color-one: var(--dark-linen);
+}
+
 [data-var-color-one=orange] {
   --color-one: var(--vs-prime);
 }
@@ -2669,6 +2673,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 
 [data-var-color-two=wellpapp] {
   --color-two: var(--linen);
+}
+
+[data-var-color-two=dark-wellpapp] {
+  --color-two: var(--dark-linen);
 }
 
 [data-var-color-two=orange] {
