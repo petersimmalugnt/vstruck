@@ -1334,6 +1334,17 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     grid-auto-flow: row !important;
   }
 }
+@container newcard-main-content (width < 23rem) {
+  .newcard-header {
+    grid-template-columns: auto 1fr !important;
+  }
+  .newcard-title-container {
+    grid-column: span 2 !important;
+  }
+  .newcard-price-container {
+    grid-column: span 1 !important;
+  }
+}
 @container newcard-header (width < 22rem) {
   .newcard-header {
     grid-template-columns: auto 1fr !important;
