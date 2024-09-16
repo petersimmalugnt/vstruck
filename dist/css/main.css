@@ -2328,11 +2328,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 
 /* Utillities */
 :root {
-  --dark-steel-mix: color-mix(
-    in srgb,
-    var(--bg-color),
-    hsl(185deg 27% 23%) 50%
-  );
+  --dark-steel-mix: color-mix(in srgb, red, hsl(185deg 27% 23%) 50%);
 }
 
 [data-span-cols="1"] {
