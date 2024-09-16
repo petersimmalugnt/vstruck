@@ -162,7 +162,7 @@
 [data-hover-bg="dark-steel-mix"]:hover,
 [data-bg="dark-steel-mix"] .dd-toggle::after,
 [data-bg="dark-steel-mix"] .dd-link::after {
-  --bg-color: var(--dark-steel-mix);
+  --bg-color: var(--bg-color);
   background-color: color-mix(
     in srgb,
     var(--linen),
@@ -218,30 +218,6 @@
   background-color: var(--red) !important;
 }
 
-[data-modal-width="tiny"] {
-  width: auto;
-}
-[data-modal-width="small"] {
-  width: 25%;
-  min-width: min(31rem, 100%);
-  max-width: 720px;
-}
-[data-modal-width="medium"] {
-  width: 75%;
-  min-width: min(48rem, 100%);
-  max-width: 960px;
-}
-[data-modal-width="large"] {
-  width: 100%;
-  min-width: min(1440px, 100%);
-  max-width: 1440px;
-}
-[data-modal-width="huge"] {
-  width: 100%;
-  min-width: 100%;
-  max-width: 100%;
-}
-
 [data-bg="yellow"],
 [data-hover-bg="yellow"]:hover,
 [data-bg="yellow"] .dd-toggle::after,
@@ -264,6 +240,31 @@
 [data-bg="green"] .dd-link::after {
   --bg-color: var(--green);
   background-color: var(--green) !important;
+}
+
+/* modal width */
+[data-modal-width="tiny"] {
+  width: auto;
+}
+[data-modal-width="small"] {
+  width: 25%;
+  min-width: min(31rem, 100%);
+  max-width: 720px;
+}
+[data-modal-width="medium"] {
+  width: 75%;
+  min-width: min(48rem, 100%);
+  max-width: 960px;
+}
+[data-modal-width="large"] {
+  width: 100%;
+  min-width: min(1440px, 100%);
+  max-width: 1440px;
+}
+[data-modal-width="huge"] {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 /* css props colors */

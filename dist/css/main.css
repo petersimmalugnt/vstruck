@@ -2496,7 +2496,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 [data-hover-bg=dark-steel-mix]:hover,
 [data-bg=dark-steel-mix] .dd-toggle::after,
 [data-bg=dark-steel-mix] .dd-link::after {
-  --bg-color: var(--dark-steel-mix);
+  --bg-color: var(--bg-color);
   background-color: color-mix(in srgb, var(--linen), hsl(185, 27%, 23%) 50%) !important;
 }
 
@@ -2548,6 +2548,31 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   background-color: var(--red) !important;
 }
 
+[data-bg=yellow],
+[data-hover-bg=yellow]:hover,
+[data-bg=yellow] .dd-toggle::after,
+[data-bg=yellow] .dd-link::after {
+  --bg-color: var(--khaki);
+  background-color: var(--khaki) !important;
+}
+
+[data-bg=blue],
+[data-hover-bg=blue]:hover,
+[data-bg=blue] .dd-toggle::after,
+[data-bg=blue] .dd-link::after {
+  --bg-color: var(--light-sky-blue);
+  background-color: var(--light-sky-blue) !important;
+}
+
+[data-bg=green],
+[data-hover-bg=green]:hover,
+[data-bg=green] .dd-toggle::after,
+[data-bg=green] .dd-link::after {
+  --bg-color: var(--green);
+  background-color: var(--green) !important;
+}
+
+/* modal width */
 [data-modal-width=tiny] {
   width: auto;
 }
@@ -2574,30 +2599,6 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-}
-
-[data-bg=yellow],
-[data-hover-bg=yellow]:hover,
-[data-bg=yellow] .dd-toggle::after,
-[data-bg=yellow] .dd-link::after {
-  --bg-color: var(--khaki);
-  background-color: var(--khaki) !important;
-}
-
-[data-bg=blue],
-[data-hover-bg=blue]:hover,
-[data-bg=blue] .dd-toggle::after,
-[data-bg=blue] .dd-link::after {
-  --bg-color: var(--light-sky-blue);
-  background-color: var(--light-sky-blue) !important;
-}
-
-[data-bg=green],
-[data-hover-bg=green]:hover,
-[data-bg=green] .dd-toggle::after,
-[data-bg=green] .dd-link::after {
-  --bg-color: var(--green);
-  background-color: var(--green) !important;
 }
 
 /* css props colors */
