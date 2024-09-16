@@ -1,13 +1,5 @@
 /* Utillities */
 
-:root {
-  --dark-steel-mix: color-mix(
-    in srgb,
-    var(--bg-color),
-    hsl(185deg 27% 23%) 50%
-  );
-}
-
 [data-span-cols="1"] {
   grid-column-end: span 1;
 }
@@ -283,6 +275,13 @@
 }
 [data-var-color-one="dark-steel"] {
   --color-one: var(--dark-grey);
+}
+[data-var-color-one="dark-steel-mix"] {
+  --color-one: color-mix(
+    in srgb,
+    var(--bg-color, white),
+    hsl(185deg 27% 23%) 50%
+  );
 }
 [data-var-color-one="medium-steel"] {
   --color-one: var(--silver);
