@@ -1,4 +1,5 @@
 /* Utillities */
+
 [data-span-cols="1"] {
   grid-column-end: span 1;
 }
@@ -147,6 +148,18 @@
 [data-bg="dark-steel"] .dd-link::after {
   --bg-color: var(--dark-grey);
   background-color: var(--dark-grey) !important;
+}
+
+[data-bg="dark-steel-mix"],
+[data-hover-bg="dark-steel-mix"]:hover,
+[data-bg="dark-steel-mix"] .dd-toggle::after,
+[data-bg="dark-steel-mix"] .dd-link::after {
+  --bg-color: color-mix(in srgb, var(--bg-color), hsl(185deg 27% 23%) 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--linen),
+    hsl(185deg 27% 23%) 50%
+  ) !important;
 }
 
 [data-bg="medium-steel"],
