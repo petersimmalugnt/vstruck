@@ -157,8 +157,8 @@
   --bg-color: var(--bg-color);
   background-color: color-mix(
     in srgb,
-    var(--linen),
-    hsl(185deg 27% 23%) 50%
+    var(--bg-color, white),
+    hsl(185deg 20% 30%) 60%
   ) !important;
 }
 
@@ -280,7 +280,7 @@
   --color-one: color-mix(
     in srgb,
     var(--bg-color, white),
-    hsl(185deg 27% 23%) 50%
+    hsl(185deg 20% 30%) 60%
   );
 }
 [data-var-color-one="medium-steel"] {

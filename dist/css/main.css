@@ -2489,7 +2489,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 [data-bg=dark-steel-mix] .dd-toggle::after,
 [data-bg=dark-steel-mix] .dd-link::after {
   --bg-color: var(--bg-color);
-  background-color: color-mix(in srgb, var(--linen), hsl(185, 27%, 23%) 50%) !important;
+  background-color: color-mix(in srgb, var(--bg-color, white), hsl(185, 20%, 30%) 60%) !important;
 }
 
 [data-bg=medium-steel],
@@ -2619,7 +2619,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   --color-one: color-mix(
     in srgb,
     var(--bg-color, white),
-    hsl(185deg 27% 23%) 50%
+    hsl(185deg 20% 30%) 60%
   );
 }
 
