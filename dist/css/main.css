@@ -1431,6 +1431,18 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     grid-template-columns: minmax(0px, 2fr) minmax(0px, 1fr);
   }
 }
+.newcard-img-container:empty {
+  background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
+}
+
+.newcard-img-container:empty:after {
+  content: "Ingen bild";
+  position: absolute;
+  z-index: 2;
+  background-color: var(--bg-color, var(--linen, transparent));
+  border: 4px solid var(--bg-color, var(--linen, transparent));
+}
+
 @container attr-category-wrapper (width > 16rem) {
   .attr-table-category-wrapper[data-list-view=false] .attr-table-category-list {
     grid-template-columns: 1fr 1fr;
@@ -3126,34 +3138,9 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   font-size: 2em;
 }
 
-[data-no-image-bg-line=true],
-[data-no-image=true] {
+[data-no-image-bg-line=true] {
   --no-image-bg-line: 1;
   background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
-}
-
-[data-no-image=true] .newcard-image {
-  display: none;
-}
-
-[data-no-image=true]:after {
-  content: "Ingen bild";
-  position: absolute;
-  z-index: 2;
-  background-color: var(--bg-color, var(--linen, transparent));
-  border: 4px solid var(--bg-color, var(--linen, transparent));
-}
-
-.newcard-img-container:empty {
-  background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
-}
-
-.newcard-img-container:empty:after {
-  content: "Ingen bild";
-  position: absolute;
-  z-index: 2;
-  background-color: var(--bg-color, var(--linen, transparent));
-  border: 4px solid var(--bg-color, var(--linen, transparent));
 }
 
 [data-is-hidden=true] {
