@@ -1453,7 +1453,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 
 [data-is-loading].newcard .newcard-preloader-container,
 [data-is-loading].newcard .newcard-preloader-container > *:first-child {
-  transition: translate 0.5s cubic-bezier(0.25, 0, 0.5, 1);
+  transition: translate 0.5s cubic-bezier(0.75, 0, 0.75, 1);
 }
 
 [data-is-loading=false].newcard .newcard-preloader-container {
