@@ -581,13 +581,11 @@
 }
 
 [data-has-pointer-events="true"],
-[data-has-local-pointer-events="true"]:not(*),
 [data-children-has-pointer-events="true"] * {
   pointer-events: auto;
 }
 
 [data-has-pointer-events="false"],
-[data-has-local-pointer-events="false"]:not(*),
 [data-children-has-pointer-events="false"] * {
   pointer-events: none;
 }
