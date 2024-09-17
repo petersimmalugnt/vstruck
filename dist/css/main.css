@@ -2475,7 +2475,7 @@ a > .bumper:hover .bumper-txt {
 
 .existingdeal-container .existingdeal-delete {
   translate: 101% 0;
-  transition: translate 0.2s cubic-bezier(0.4, 0, 0, 1);
+  transition: translate 0.35s cubic-bezier(0.4, 0, 0, 1);
 }
 
 .existingdeal-container:hover .existingdeal-delete {
