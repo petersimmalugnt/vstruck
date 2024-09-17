@@ -3092,6 +3092,16 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   cursor: pointer;
 }
 
+[data-has-pointer-events=true],
+[data-children-has-pointer-events=true] * {
+  pointer-events: auto;
+}
+
+[data-has-pointer-events=false],
+[data-children-has-pointer-events=false] * {
+  pointer-events: none;
+}
+
 [data-flipx=true] {
   scale: -100%;
 }
