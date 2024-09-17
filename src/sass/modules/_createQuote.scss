@@ -49,3 +49,12 @@
 .createquote[data-created-quote="false"] > .quote-successmessage {
   display: none;
 }
+
+.existingdeal-container .existingdeal-delete {
+  translate: 101% 0;
+  transition: translate 0.2s cubic-bezier(0.4, 0, 0, 1);
+}
+
+.existingdeal-container:hover .existingdeal-delete {
+  translate: 0 0;
+}
