@@ -151,20 +151,20 @@
 }
 
 /* card preloader animation */
-[data-is-loading].newcard .newcard-preloader {
-  transition: background-color 0.5s 0.2s cubic-bezier(0.5, 0, 0.5, 1);
-}
-[data-is-loading="false"].newcard .newcard-preloader {
-  background-color: transparent;
-}
+// [data-is-loading].newcard .newcard-preloader {
+//   transition: background-color 0.5s 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+// }
+// [data-is-loading="false"].newcard .newcard-preloader {
+//   background-color: transparent;
+// }
 
-[data-is-loading].newcard .newcard-preloader-container > *:first-child {
-  transition-property: translate, opacity;
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(0.75, 0, 0.75, 1);
-}
+// [data-is-loading].newcard .newcard-preloader-container > *:first-child {
+//   transition-property: translate, opacity;
+//   transition-duration: 0.5s;
+//   transition-timing-function: cubic-bezier(0.75, 0, 0.75, 1);
+// }
 
-[data-is-loading="false"].newcard .newcard-preloader > *:first-child {
-  opacity: 0;
-  translate: 0 30rem;
-}
+// [data-is-loading="false"].newcard .newcard-preloader > *:first-child {
+//   opacity: 0;
+//   translate: 0 4rem;
+// }
