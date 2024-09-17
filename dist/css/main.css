@@ -1421,16 +1421,6 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     box-shadow: white 0px calc(-0.5rem - 1.25em) 0px, white 0px calc(-0.75rem - 2em) 0px, white 0px calc(-1rem - 2.75em) 0px;
   }
 }
-@container newcard (width > 36rem) {
-  [data-card-layout=horizontal].newcard .newcard-main-content {
-    grid-template-columns: minmax(0px, 1.5fr) minmax(0px, 1fr);
-  }
-}
-@container newcard (width > 42rem) {
-  [data-card-layout=horizontal].newcard .newcard-main-content {
-    grid-template-columns: minmax(0px, 2fr) minmax(0px, 1fr);
-  }
-}
 .newcard-img-container:empty {
   background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
 }
