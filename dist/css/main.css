@@ -1443,6 +1443,63 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   border: 4px solid var(--bg-color, var(--linen, transparent));
 }
 
+.bumper .bumper-icon,
+.bumper .bumper-txt {
+  transition-property: opacity, transform;
+}
+
+.bumper .bumper-txt,
+a > .bumper:hover .bumper-icon {
+  transition-delay: 150ms;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  opacity: 1;
+}
+
+a > .bumper:hover .bumper-txt,
+.bumper .bumper-icon {
+  transition-delay: 0ms;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  opacity: 0;
+}
+
+.bumper .bumper-icon {
+  transform: translateX(-0.75rem) rotate(0deg);
+}
+
+a > .bumper:hover .bumper-icon {
+  transform: translateX(0) rotate(11deg);
+}
+
+.bumper .bumper-txt {
+  transform: translateX(0);
+}
+
+a > .bumper:hover .bumper-txt {
+  transform: translateX(0.75rem);
+}
+
+.bumper-bg > svg {
+  animation: matchbumper--background-rotate 15s linear infinite both, matchbumper--background-scale 1s cubic-bezier(0.5, 0, 0.5, 1) infinite alternate both;
+}
+
+@keyframes matchbumper--background-rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+@keyframes matchbumper--background-scale {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.25;
+  }
+}
 @container attr-category-wrapper (width > 16rem) {
   .attr-table-category-wrapper[data-list-view=false] .attr-table-category-list {
     grid-template-columns: 1fr 1fr;
