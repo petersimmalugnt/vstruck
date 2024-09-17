@@ -634,7 +634,7 @@
   border: 4px solid var(--bg-color, var(--linen, transparent));
 }
 
-.newcard-img-container:has(:not(newcard-image)) {
+.newcard-img-container:empty {
   background-image: linear-gradient(
     to bottom right,
     transparent calc(50% - 0.5px),
@@ -644,7 +644,7 @@
   );
 }
 
-.newcard-img-container:has(:not(newcard-image)):after {
+.newcard-img-container:empty:after {
   content: "Ingen bild";
   position: absolute;
   z-index: 2;
