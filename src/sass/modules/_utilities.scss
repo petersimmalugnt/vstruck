@@ -622,6 +622,10 @@
   );
 }
 
+[data-no-image="true"] .newcard-image {
+  display: none;
+}
+
 [data-no-image="true"]:after {
   content: "Ingen bild";
   position: absolute;
