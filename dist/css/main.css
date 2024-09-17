@@ -1443,6 +1443,27 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   border: 4px solid var(--bg-color, var(--linen, transparent));
 }
 
+[data-is-loading].newcard .newcard-preloader {
+  transition: background-color 0.5s 0.2s cubic-bezier(0.5, 0, 0.5, 1);
+}
+
+[data-is-loading=false].newcard .newcard-preloader {
+  background-color: transparent;
+}
+
+[data-is-loading].newcard .newcard-preloader-container,
+[data-is-loading].newcard .newcard-preloader-container > *:first-child {
+  transition: translate 0.5s cubic-bezier(0.75, 0, 0.75, 1);
+}
+
+[data-is-loading=false].newcard .newcard-preloader-container {
+  translate: 0 calc(-100% - 0.5rem);
+}
+
+[data-is-loading=false].newcard .newcard-preloader-container > *:first-child {
+  translate: 0 30rem;
+}
+
 .bumper .bumper-icon,
 .bumper .bumper-txt {
   transition-property: opacity, transform;
