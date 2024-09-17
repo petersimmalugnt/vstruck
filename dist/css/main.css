@@ -1463,6 +1463,43 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   translate: 0 4rem;
 }
 
+/* IMAGE MOVE */
+.newcard-moveimg-hovers:nth-child(1):hover ~ .newcard-image {
+  --truckmove: -15%;
+}
+
+.newcard-moveimg-hovers:nth-child(2):hover ~ .newcard-image {
+  --truckmove: -11.25%;
+}
+
+.newcard-moveimg-hovers:nth-child(3):hover ~ .newcard-image {
+  --truckmove: -7.5%;
+}
+
+.newcard-moveimg-hovers:nth-child(4):hover ~ .newcard-image {
+  --truckmove: -3.75%;
+}
+
+.newcard-moveimg-hovers:nth-child(5):hover ~ .newcard-image {
+  --truckmove: 0%;
+}
+
+.newcard-moveimg-hovers:nth-child(6):hover ~ .newcard-image {
+  --truckmove: 3.75%;
+}
+
+.newcard-moveimg-hovers:nth-child(7):hover ~ .newcard-image {
+  --truckmove: 7.5%;
+}
+
+.newcard-moveimg-hovers:nth-child(8):hover ~ .newcard-image {
+  --truckmove: 11.25%;
+}
+
+.newcard-moveimg-hovers:nth-child(9):hover ~ .newcard-image {
+  --truckmove: 15%;
+}
+
 .bumper .bumper-icon,
 .bumper .bumper-txt {
   transition-property: opacity, transform;
