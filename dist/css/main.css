@@ -1444,7 +1444,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
 }
 
 [data-is-loading].newcard .newcard-preloader {
-  transition: background-color 0.7s cubic-bezier(0.5, 0, 0.5, 1);
+  transition: background-color 0.5s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 [data-is-loading=false].newcard .newcard-preloader {
