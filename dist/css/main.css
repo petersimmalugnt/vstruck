@@ -1452,7 +1452,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     font-size: 1.25em;
   }
 }
-@container newcard-img-wrapper (width > 58rem) {
+@container newcard-img-wrapper (width > 60rem) {
   .newcard .bumper {
     font-size: 1.5em;
   }
