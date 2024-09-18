@@ -133,7 +133,7 @@
   font-size: 0.75em;
 }
 
-@container newcard-img-wrapper (width > 25rem) {
+@container newcard-img-wrapper (width > 24rem) {
   .newcard .label-wrapper {
     font-size: 1em;
   }
@@ -142,19 +142,19 @@
   }
 }
 
-@container newcard-img-wrapper (width > 35rem) {
+@container newcard-img-wrapper (width > 34rem) {
   .newcard .bumper {
     font-size: 1em;
   }
 }
 
-@container newcard-img-wrapper (width > 45rem) {
+@container newcard-img-wrapper (width > 44rem) {
   .newcard .bumper {
     font-size: 1.25em;
   }
 }
 
-@container newcard-img-wrapper (width > 60rem) {
+@container newcard-img-wrapper (width > 59rem) {
   .newcard .bumper {
     font-size: 1.5em;
   }
