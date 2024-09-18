@@ -1434,7 +1434,7 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   font-size: 0.75em;
 }
 
-@container newcard-img-wrapper (width > 24rem) {
+@container newcard-img-wrapper (width > 22rem) {
   .newcard .label-wrapper {
     font-size: 1em;
   }
@@ -1442,17 +1442,17 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     font-size: 0.875em;
   }
 }
-@container newcard-img-wrapper (width > 34rem) {
+@container newcard-img-wrapper (width > 32rem) {
   .newcard .bumper {
     font-size: 1em;
   }
 }
-@container newcard-img-wrapper (width > 44rem) {
+@container newcard-img-wrapper (width > 42rem) {
   .newcard .bumper {
     font-size: 1.25em;
   }
 }
-@container newcard-img-wrapper (width > 59rem) {
+@container newcard-img-wrapper (width > 58rem) {
   .newcard .bumper {
     font-size: 1.5em;
   }
