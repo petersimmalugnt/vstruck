@@ -1486,10 +1486,6 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     padding-bottom: 0.125rem;
   }
 }
-.newcard {
-  opacity: 0.3 !important;
-}
-
 @container newcard-main-content-wrapper (width > 56rem) {
   .newcard-main-content {
     grid-template-columns: minmax(0px, 1fr) minmax(0px, 1.5fr);
