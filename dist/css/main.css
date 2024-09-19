@@ -1588,12 +1588,20 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   --truckmove: 15%;
 }
 
+.trucks-grid-list [data-span-cols="4"].newcard {
+  grid-column-end: span 3;
+}
+
 @media (max-width: 991px) {
   .trucks-grid-list [data-span-cols="3"].newcard {
     grid-column-end: span 2;
   }
+  .trucks-grid-list [data-span-cols="4"].newcard {
+    grid-column-end: span 2;
+  }
 }
 @media (max-width: 767px) {
+  .trucks-grid-list [data-span-cols="4"].newcard,
   .trucks-grid-list [data-span-cols="3"].newcard,
   .trucks-grid-list [data-span-cols="2"].newcard {
     grid-column-end: span 1;
