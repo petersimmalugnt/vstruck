@@ -266,6 +266,9 @@
 }
 
 /* IMAGE MOVE */
+.newcard-img-container:not(:has(.newcard-image)) .newcard-moveimg-hovers {
+  display: none;
+}
 .newcard-moveimg-hovers:nth-child(1):hover ~ .newcard-image {
   --truckmove: -15%;
 }
