@@ -1519,11 +1519,11 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     padding: 5% 5% 5% 5%;
   }
 }
-.newcard-img-container:empty {
+.newcard-img-container:not(:has(.newcard-image)) {
   background-image: linear-gradient(to bottom right, transparent calc(50% - 0.5px), currentColor calc(50% - 0.5px), currentColor calc(50% + 0.5px), transparent calc(50% + 0.5px));
 }
 
-.newcard-img-container:empty:after {
+.newcard-img-container:not(:has(.newcard-image)):after {
   content: "Ingen bild";
   position: absolute;
   z-index: 2;
