@@ -1,8 +1,7 @@
-.terms-accordion[data-is-selected="false"] {
-  background-color: transparent;
-}
-
 @media screen {
+  .terms-accordion[data-is-selected="false"] {
+    background-color: transparent;
+  }
   .terms-accordion[data-is-selected="false"] .terms-accordion-slot {
     display: none;
   }
