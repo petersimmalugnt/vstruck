@@ -2694,6 +2694,10 @@ a > .bumper:hover .bumper-txt {
   display: none;
 }
 
+.terms-accordion[data-is-selected=false] {
+  background-color: transparent;
+}
+
 /* Utillities */
 /* Span cols & rows */
 [data-span-cols="1"] {
