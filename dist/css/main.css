@@ -2694,7 +2694,7 @@ a > .bumper:hover .bumper-txt {
   display: none;
 }
 
-.terms-accordion[data-is-selected=false] .terms-accordion-toggler:hover {
+.terms-accordion[data-is-selected=true] .terms-accordion-toggler:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
