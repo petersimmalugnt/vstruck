@@ -2698,10 +2698,11 @@ a > .bumper:hover .bumper-txt {
   background-color: transparent;
 }
 
-.terms-accordion[data-is-selected=false] .terms-accordion-slot {
-  display: none;
+@media screen {
+  .terms-accordion[data-is-selected=false] .terms-accordion-slot {
+    display: none;
+  }
 }
-
 /* Utillities */
 /* Span cols & rows */
 [data-span-cols="1"] {

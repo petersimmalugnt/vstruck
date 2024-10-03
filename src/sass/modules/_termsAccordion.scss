@@ -2,6 +2,8 @@
   background-color: transparent;
 }
 
-.terms-accordion[data-is-selected="false"] .terms-accordion-slot {
-  display: none;
+@media screen {
+  .terms-accordion[data-is-selected="false"] .terms-accordion-slot {
+    display: none;
+  }
 }
