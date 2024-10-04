@@ -2157,7 +2157,7 @@ a > .bumper:hover .bumper-txt {
   transform: scale(1);
 }
 
-@media (max-width: 478px) {
+@media (max-width: 479px) {
   [data-poi-is-open=true] .poi-overlay {
     opacity: 1 !important;
   }
