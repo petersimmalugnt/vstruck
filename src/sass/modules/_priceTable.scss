@@ -8,3 +8,6 @@
 .pt-item-price-container[data-line-through="true"] {
   color: var(--dark-grey);
 }
+.pt-item-price-container[data-line-through="true"] .pt-item-price-discount {
+  background-color: var(--light-grey);
+}

@@ -2533,6 +2533,10 @@ a > .bumper:hover .bumper-txt {
   color: var(--dark-grey);
 }
 
+.pt-item-price-container[data-line-through=true] .pt-item-price-discount {
+  background-color: var(--light-grey);
+}
+
 .quote-service-pricetable-container > :last-child {
   border: none !important;
 }
