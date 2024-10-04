@@ -964,6 +964,11 @@
   );
 }
 
+/* TEXT DECORATION */
+[data-line-through="true"] {
+  text-decoration: line-through;
+}
+
 /* PADDED COUNTER */
 @counter-style nrFormatFallback {
   system: numeric;

@@ -4,11 +4,7 @@
   background-color: var(--green);
   justify-self: end;
 }
-.pt-item-price-container[data-alt-style="oldPrice"] {
-  text-decoration: line-through;
-  color: var(--dark-grey);
-}
-.pt-item-price-container[data-alt-style="disable"] {
+.pt-item-price-container[data-line-through="true"] {
   color: var(--dark-grey);
 }
 
