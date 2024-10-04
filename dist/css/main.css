@@ -2159,6 +2159,9 @@ a > .bumper:hover .bumper-txt {
 
 /* position anchor point  */
 @media (min-width: 479px) {
+  [data-poi-is-open=true] .poi-overlay {
+    display: flex;
+  }
   [data-anchor-position*=top] {
     top: auto;
     bottom: 100%;
