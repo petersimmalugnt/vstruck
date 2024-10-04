@@ -44,7 +44,7 @@
 
 @media (max-width: 478px) {
   [data-poi-is-open="true"] .poi-overlay {
-    display: flex !important;
+    opacity: 1 !important;
   }
 }
 /* position anchor point  */
