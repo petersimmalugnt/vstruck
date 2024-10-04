@@ -2153,7 +2153,7 @@ a > .bumper:hover .bumper-txt {
 }
 
 [data-poi-is-open=true] .poi-popup {
-  opacity: 1 !important;
+  opacity: 1;
   transform: scale(1);
 }
 
@@ -2527,6 +2527,26 @@ a > .bumper:hover .bumper-txt {
 [data-bg=transparent],
 [data-bg=""]) {
   --lihover: var(--white);
+}
+
+.pt-item-price-container[data-alt-style=discount] {
+  font-size: 0.875rem;
+  padding: 0.125em 0.5em;
+  background-color: var(--green);
+  justify-self: end;
+}
+
+.pt-item-price-container[data-alt-style=oldPrice] {
+  text-decoration: line-through;
+  color: var(--dark-grey);
+}
+
+.pt-item-price-container[data-alt-style=disable] {
+  color: var(--dark-grey);
+}
+
+.quote-service-pricetable-container > :last-child {
+  border: none !important;
 }
 
 .quote-addon[data-is-selected=false] {
