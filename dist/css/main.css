@@ -2153,7 +2153,7 @@ a > .bumper:hover .bumper-txt {
 }
 
 [data-poi-is-open=true] .poi-popup {
-  opacity: 1;
+  opacity: 1 !important;
   transform: scale(1);
 }
 
@@ -2163,7 +2163,7 @@ a > .bumper:hover .bumper-txt {
   }
 }
 /* position anchor point  */
-@media (min-width: 479px) {
+@media (min-width: 478px) {
   [data-anchor-position*=top] {
     top: auto;
     bottom: 100%;
