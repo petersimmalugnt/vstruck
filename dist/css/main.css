@@ -2157,11 +2157,13 @@ a > .bumper:hover .bumper-txt {
   transform: scale(1);
 }
 
-/* position anchor point  */
-@media (min-width: 479px) {
+@media (max-width: 478px) {
   [data-poi-is-open=true] .poi-overlay {
     display: flex !important;
   }
+}
+/* position anchor point  */
+@media (min-width: 479px) {
   [data-anchor-position*=top] {
     top: auto;
     bottom: 100%;
