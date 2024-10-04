@@ -5,3 +5,6 @@
   ) {
   --lihover: var(--white);
 }
+.pt-item-price-container[data-line-through="true"] {
+  color: var(--dark-grey);
+}

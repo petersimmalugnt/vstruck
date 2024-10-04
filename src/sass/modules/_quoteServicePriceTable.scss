@@ -1,13 +1,3 @@
-.pt-item-price-container[data-alt-style="discount"] {
-  font-size: 0.875rem;
-  padding: 0.125em 0.5em;
-  background-color: var(--green);
-  justify-self: end;
-}
-.pt-item-price-container[data-line-through="true"] {
-  color: var(--dark-grey);
-}
-
 .quote-service-pricetable-container > :last-child {
   border: none !important;
 }
