@@ -2975,12 +2975,7 @@ a > .bumper:hover .bumper-txt {
 [data-bg=dark-steel-mix],
 [data-hover-bg=dark-steel-mix]:hover,
 [data-bg=dark-steel-mix] .dd-toggle::after,
-[data-bg=dark-steel-mix] .dd-link::after,
-[data-bg=dark-mix],
-[data-hover-bg=dark-mix]:hover,
-[data-bg=dark-mix] .dd-toggle::after,
-[data-bg=dark-mix] .dd-link::after {
-  --bg-color: var(--bg-color);
+[data-bg=dark-steel-mix] .dd-link::after {
   background-color: color-mix(in srgb, var(--bg-color, white), hsl(185, 20%, 30%) 60%) !important;
 }
 
