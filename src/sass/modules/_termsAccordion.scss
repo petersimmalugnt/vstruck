@@ -4,7 +4,7 @@
 
 @media screen {
   .terms-accordion[data-is-selected="false"] {
-    background-color: transparent;
+    background-color: var(--color-one, transparent);
   }
   .terms-accordion[data-is-selected="false"] .terms-accordion-slot {
     display: none;

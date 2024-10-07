@@ -1,3 +1,11 @@
 .quote-service-pricetable-container > :last-child {
   border: none !important;
 }
+@container quote-service-item (max-width: 25rem) {
+  .qsp-item-title-container {
+    grid-area: auto / auto / span 1 / span 3 !important;
+  }
+  .qsp-item-price-container {
+    grid-area: auto / auto / span 1 / span 1 !important;
+  }
+}
