@@ -2728,6 +2728,9 @@ a > .bumper:hover .bumper-txt {
 }
 
 @media screen {
+  .terms-accordion[data-var-color-one=""] {
+    --color-one: transparent;
+  }
   .terms-accordion[data-is-selected=false] {
     background-color: var(--color-one, transparent) !important;
   }
