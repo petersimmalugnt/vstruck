@@ -227,6 +227,14 @@
   background-color: rgba(255, 255, 255, 0.5) !important;
 }
 
+[data-bg="white75"],
+[data-hover-bg="white75"]:hover,
+[data-bg="white75"] .dd-toggle::after,
+[data-bg="white75"] .dd-link::after {
+  --bg-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75) !important;
+}
+
 [data-bg="dark-steel"],
 [data-hover-bg="dark-steel"]:hover,
 [data-bg="dark-steel"] .dd-toggle::after,
