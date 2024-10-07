@@ -3117,6 +3117,18 @@ a > .bumper:hover .bumper-txt {
   --color-one: var(--white);
 }
 
+[data-var-color-one=white25] {
+  --color-one: rgba(255, 255, 255, 0.25);
+}
+
+[data-var-color-one=white50] {
+  --color-one: rgba(255, 255, 255, 0.5);
+}
+
+[data-var-color-one=white75] {
+  --color-one: rgba(255, 255, 255, 0.75);
+}
+
 [data-var-color-one=dark-steel] {
   --color-one: var(--dark-grey);
 }
@@ -3180,6 +3192,18 @@ a > .bumper:hover .bumper-txt {
 
 [data-var-color-two=white] {
   --color-two: var(--white);
+}
+
+[data-var-color-tw0=white25] {
+  --color-two: rgba(255, 255, 255, 0.25);
+}
+
+[data-var-color-two=white50] {
+  --color-tw0: rgba(255, 255, 255, 0.5);
+}
+
+[data-var-color-two=white75] {
+  --color-two: rgba(255, 255, 255, 0.75);
 }
 
 [data-var-color-two=dark-steel] {
