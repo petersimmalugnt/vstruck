@@ -238,7 +238,11 @@
 [data-bg="dark-steel-mix"],
 [data-hover-bg="dark-steel-mix"]:hover,
 [data-bg="dark-steel-mix"] .dd-toggle::after,
-[data-bg="dark-steel-mix"] .dd-link::after {
+[data-bg="dark-steel-mix"] .dd-link::after,
+[data-bg="dark-mix"],
+[data-hover-bg="dark-mix"]:hover,
+[data-bg="dark-mix"] .dd-toggle::after,
+[data-bg="dark-mix"] .dd-link::after {
   --bg-color: var(--bg-color);
   background-color: color-mix(
     in srgb,
