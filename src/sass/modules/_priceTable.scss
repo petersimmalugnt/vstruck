@@ -15,3 +15,7 @@
 .pt-item-price-container:has(.pt-item-price-discount :first-child:not(:empty)) {
   justify-self: end;
 }
+
+.pt-slot > :last-child {
+  border: none !important;
+}

@@ -2541,7 +2541,7 @@ a > .bumper:hover .bumper-txt {
   justify-self: end;
 }
 
-.quote-service-pricetable-container > :last-child {
+.pt-slot > :last-child {
   border: none !important;
 }
 
