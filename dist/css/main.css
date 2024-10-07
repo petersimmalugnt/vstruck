@@ -2729,7 +2729,7 @@ a > .bumper:hover .bumper-txt {
 
 @media screen {
   .terms-accordion[data-is-selected=false] {
-    background-color: var(--color-one, transparent);
+    background-color: var(--color-one, transparent) !important;
   }
   .terms-accordion[data-is-selected=false] .terms-accordion-slot {
     display: none;
