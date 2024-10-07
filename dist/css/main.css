@@ -2545,6 +2545,33 @@ a > .bumper:hover .bumper-txt {
   border: none !important;
 }
 
+@container (max-width: 25rem) {
+  .quote-service-pricetable {
+    padding: 0.5rem 0.25rem 0.25rem 0.25rem;
+  }
+}
+@container (max-width: 37rem) {
+  .pt-item,
+  .pt-head {
+    gap: 1rem;
+  }
+  .pt-item {
+    grid-template-columns: min-content 2fr;
+  }
+  .pt-head {
+    grid-template-columns: minmax(1.5rem, 1.5rem) 2fr;
+  }
+}
+@container (max-width: 27rem) {
+  .pt-item {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    grid-template-columns: min-content 1.5fr;
+  }
+  .pt-head {
+    grid-template-columns: minmax(1.25rem, 1.25rem) 1.5fr;
+  }
+}
 @container quote-service-item (max-width: 25rem) {
   .qsp-item-title-container {
     grid-area: auto/auto/span 1/span 3 !important;
