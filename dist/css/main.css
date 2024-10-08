@@ -2572,18 +2572,6 @@ a > .bumper:hover .bumper-txt {
     grid-template-columns: minmax(1.25rem, 1.25rem) 1.5fr;
   }
 }
-@container quote-service-item (max-width: 25rem) {
-  .qsp-item-title-container {
-    grid-area: auto/auto/span 1/span 3 !important;
-  }
-  .qsp-item-price-container {
-    grid-area: auto/auto/span 1/span 1 !important;
-  }
-  .qsp-item-title-container,
-  .qsp-item-price-container {
-    align-self: end;
-  }
-}
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
