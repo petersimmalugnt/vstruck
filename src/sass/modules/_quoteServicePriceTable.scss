@@ -1,12 +1,4 @@
-// @container quote-service-item (max-width: 25rem) {
-//   .qsp-item-title-container {
-//     grid-area: auto / auto / span 1 / span 3 !important;
-//   }
-//   .qsp-item-price-container {
-//     grid-area: auto / auto / span 1 / span 1 !important;
-//   }
-//   .qsp-item-title-container,
-//   .qsp-item-price-container {
-//     align-self: end;
-//   }
-// }
+.quote-service-pricetable .pt-head,
+.quote-service-pricetable .pt-item {
+  padding: 1.5rem 1rem;
+}

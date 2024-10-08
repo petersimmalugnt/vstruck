@@ -2572,6 +2572,11 @@ a > .bumper:hover .bumper-txt {
     grid-template-columns: minmax(1.25rem, 1.25rem) 1.5fr;
   }
 }
+.quote-service-pricetable .pt-head,
+.quote-service-pricetable .pt-item {
+  padding: 1.5rem 1rem;
+}
+
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
