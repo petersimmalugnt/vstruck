@@ -1060,3 +1060,9 @@
   outline-style: none;
   outline-width: 0px;
 }
+
+/* SHADOW */
+
+[data-shadow="true"] {
+  box-shadow: 4px 4px 0px var(--vs-black);
+}
