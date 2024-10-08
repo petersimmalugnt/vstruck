@@ -1066,3 +1066,109 @@
 [data-shadow="true"] {
   box-shadow: 4px 4px 0px var(--vs-black);
 }
+
+/* BORDER */
+
+[data-border] {
+  --bordet-style: solid;
+  --border-color: var(--vs-black);
+  --border-width: 1px;
+}
+
+[data-border*="solid"] {
+  --border-style: solid;
+}
+[data-border*="dashed"] {
+  --border-style: dashed;
+}
+[data-border*="dotted"] {
+  --border-style: dotted;
+}
+
+[data-border*="transparent"] {
+  --border-color: transparent;
+}
+[data-border*="black"] {
+  --border-color: var(--vs-black);
+}
+[data-border*="white"] {
+  --border-color: var(--white);
+}
+[data-border*="white25"] {
+  --border-color: rgba(255, 255, 255, 0.25);
+}
+[data-border*="white50"] {
+  --border-color: rgba(255, 255, 255, 0.5);
+}
+[data-border*="white75"] {
+  --border-color: rgba(255, 255, 255, 0.75);
+}
+[data-border*="dark-steel"] {
+  --border-color: var(--dark-steel);
+}
+[data-border*="dark-steel-mix"] {
+  --border-color: color-mix(
+    in srgb,
+    var(--bg-color, white),
+    hsl(185deg 20% 30%) 60%
+  );
+}
+[data-border*="medium-steel"] {
+  --border-color: var(--silver);
+}
+[data-border*="steel"] {
+  --border-color: var(--light-grey);
+}
+[data-border*="wellpapp"] {
+  --border-color: var(--linen);
+}
+[data-border*="dark-wellpapp"] {
+  --border-color: var(--dark-linen);
+}
+[data-border*="orange"] {
+  --border-color: var(--orange);
+}
+[data-border*="red"] {
+  --border-color: var(--red);
+}
+[data-border*="yellow"] {
+  --border-color: var(--khaki);
+}
+[data-border*="blue"] {
+  --border-color: var(--light-sky-blue);
+}
+[data-border*="green"] {
+  --border-color: var(--green);
+}
+
+[data-border*="1px"] {
+  --border-width: 1px;
+}
+[data-border*="2px"] {
+  --border-width: 2px;
+}
+[data-border*=".125rem"] {
+  --border-width: 0.125rem;
+}
+[data-border*=".25rem"] {
+  --border-width: 0.25rem;
+}
+[data-border*=".5rem"] {
+  --border-width: 0.5rem;
+}
+
+[data-border*="top"] {
+  border-top: var(--border-width) var(--border-style) var(--border-color);
+}
+[data-border*="right"] {
+  border-right: var(--border-width) var(--border-style) var(--border-color);
+}
+[data-border*="bottom"] {
+  border-bottom: var(--border-width) var(--border-style) var(--border-color);
+}
+[data-border*="left"] {
+  border-left: var(--border-width) var(--border-style) var(--border-color);
+}
+[data-border*="all"] {
+  border: var(--border-width) var(--border-style) var(--border-color);
+}
