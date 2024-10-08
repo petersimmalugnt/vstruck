@@ -5,4 +5,8 @@
   .qsp-item-price-container {
     grid-area: auto / auto / span 1 / span 1 !important;
   }
+  .qsp-item-title-container,
+  .qsp-item-price-container {
+    align-self: end;
+  }
 }
