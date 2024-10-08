@@ -433,11 +433,11 @@
 [data-var-color-two="white"] {
   --color-two: var(--white);
 }
-[data-var-color-tw0="white25"] {
+[data-var-color-two="white25"] {
   --color-two: rgba(255, 255, 255, 0.25);
 }
 [data-var-color-two="white50"] {
-  --color-tw0: rgba(255, 255, 255, 0.5);
+  --color-two: rgba(255, 255, 255, 0.5);
 }
 [data-var-color-two="white75"] {
   --color-two: rgba(255, 255, 255, 0.75);
@@ -471,6 +471,59 @@
 }
 [data-var-color-two="green"] {
   --color-two: var(--green);
+}
+
+[data-var-color-three="currentcolor"],
+[data-var-color-three="currentColor"] {
+  --color-three: currentColor;
+}
+[data-var-color-three="transparent"] {
+  --color-three: transparent;
+}
+[data-var-color-three="black"] {
+  --color-three: var(--vs-black);
+}
+[data-var-color-three="white"] {
+  --color-three: var(--white);
+}
+[data-var-color-three="white25"] {
+  --color-three: rgba(255, 255, 255, 0.25);
+}
+[data-var-color-three="white50"] {
+  --color-three: rgba(255, 255, 255, 0.5);
+}
+[data-var-color-three="white75"] {
+  --color-three: rgba(255, 255, 255, 0.75);
+}
+[data-var-color-three="dark-steel"] {
+  --color-three: var(--dark-grey);
+}
+[data-var-color-three="medium-steel"] {
+  --color-three: var(--silver);
+}
+[data-var-color-three="steel"] {
+  --color-three: var(--light-grey);
+}
+[data-var-color-three="wellpapp"] {
+  --color-three: var(--linen);
+}
+[data-var-color-three="dark-wellpapp"] {
+  --color-three: var(--dark-linen);
+}
+[data-var-color-three="orange"] {
+  --color-three: var(--vs-prime);
+}
+[data-var-color-three="red"] {
+  --color-three: var(--red);
+}
+[data-var-color-three="yellow"] {
+  --color-three: var(--khaki);
+}
+[data-var-color-three="blue"] {
+  --color-two: var(--light-sky-blue);
+}
+[data-var-color-three="green"] {
+  --color-three: var(--green);
 }
 
 /* props margins & paddings */
