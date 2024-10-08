@@ -2,3 +2,22 @@
 .quote-service-pricetable .pt-item {
   padding: 1.5rem 1rem;
 }
+
+@container (max-width: 28rem) {
+  .qsp-item {
+    grid-auto-flow: row;
+  }
+  .qsp-item-price-container {
+    justify-self: start;
+  }
+}
+
+.quote-service-pricetable {
+}
+[data-is-open="false"] .quote-service-pricetable-container {
+  max-height: 13rem;
+}
+
+[data-is-open="true"] .qsp-full-view-button-wrapper {
+  display: none;
+}
