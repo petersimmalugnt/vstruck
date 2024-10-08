@@ -2590,7 +2590,7 @@ a > .bumper:hover .bumper-txt {
     max-height: 13rem;
   }
   [data-is-open=true] .qsp-full-view-button-wrapper {
-    display: none;
+    display: flex;
   }
 }
 .quote-addon[data-is-selected=false] {
