@@ -2541,6 +2541,10 @@ a > .bumper:hover .bumper-txt {
   justify-self: end;
 }
 
+.pt-slot > :last-child {
+  border: none !important;
+}
+
 @container (max-width: 25rem) {
   .quote-service-pricetable {
     padding: 0.5rem 0.25rem 0.25rem 0.25rem;
