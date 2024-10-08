@@ -12,12 +12,12 @@
   }
 }
 
-.quote-service-pricetable {
-}
-[data-is-open="false"] .quote-service-pricetable-container {
-  max-height: 13rem;
-}
+@media screen {
+  [data-is-open="false"] .quote-service-pricetable-container {
+    max-height: 13rem;
+  }
 
-[data-is-open="true"] .qsp-full-view-button-wrapper {
-  display: none;
+  [data-is-open="true"] .qsp-full-view-button-wrapper {
+    display: none;
+  }
 }
