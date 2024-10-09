@@ -1120,12 +1120,12 @@
   --shadow-size: 4px;
 }
 
-[data-shadow-size="em"] {
-  --shadow-size: 0.5em;
+[data-shadow-unit="em"] {
+  --shadow-size: 0.25em;
 }
 
-[data-shadow-size="rem"] {
-  --shadow-size: 0.5rem;
+[data-shadow-unit="rem"] {
+  --shadow-size: 0.25rem;
 }
 
 [data-shadow="true"] {
