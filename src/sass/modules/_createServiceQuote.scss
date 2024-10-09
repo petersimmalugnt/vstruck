@@ -57,3 +57,17 @@
     align-self: center;
   }
 }
+
+@container (max-width: 34rem) {
+  .service-quote-header-container {
+    grid-auto-flow: row;
+  }
+
+  .quote-service-rt {
+    padding: 1rem;
+  }
+
+  .service-quote-header-container .quote-usps-list {
+    padding: 1rem;
+  }
+}

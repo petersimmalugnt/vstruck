@@ -2631,6 +2631,17 @@ a > .bumper:hover .bumper-txt {
     align-self: center;
   }
 }
+@container (max-width: 34rem) {
+  .service-quote-header-container {
+    grid-auto-flow: row;
+  }
+  .quote-service-rt {
+    padding: 1rem;
+  }
+  .service-quote-header-container .quote-usps-list {
+    padding: 1rem;
+  }
+}
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
