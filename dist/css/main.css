@@ -2827,6 +2827,12 @@ a > .bumper:hover .bumper-txt {
     display: none;
   }
 }
+@container (min-width: 25rem) {
+  .staffitem[data-staffitem-horizontal=true] {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
 /* Utillities */
 /* Span cols & rows */
 [data-span-cols="1"] {
