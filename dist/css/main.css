@@ -2933,25 +2933,33 @@ a > .bumper:hover .bumper-txt {
   display: none;
 }
 
+[data-hide-scrollbar=false] {
+  --scrollbar-width: 0.5rem;
+  --scrollbar-track-color: var(--silver);
+  --scrollbar-thumb-color: var(--linen);
+  --scrollbar-thumb-box-shadow: 0px 0px 0px 1px var(--vs-black);
+  --scrollbar-thumb-hover-color: var(--vs-prime);
+}
+
 [data-hide-scrollbar=false]::-webkit-scrollbar {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
   border-radius: 0;
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-track {
-  background: var(--silver);
+  background: var(--scrollbar-track-color);
   border-radius: 0;
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-thumb {
-  background: var(--linen);
+  background: var(--scrollbar-thumb-color);
   border-radius: 0;
-  box-shadow: 0px 0px 0px 1px var(--vs-black);
+  box-shadow: var(--scrollbar-thumb-box-shadow);
 }
 
 [data-hide-scrollbar=false]::-webkit-scrollbar-thumb:hover {
-  background: var(--vs-prime);
+  background: var(--scrollbar-thumb-hover-color);
   border-radius: 0;
 }
 
