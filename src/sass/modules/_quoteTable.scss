@@ -8,7 +8,8 @@
 .quote-table-row:hover:first-child {
   background-color: inherit;
 }
-.quote-table-row:hover .quote-table-trucknocell {
+.quote-table-row:hover .quote-table-trucknocell,
+.quote-table-row:hover .quote-table-service {
   background-color: var(--linen);
 }
 .quote-table-row:hover .quote-table-cell:last-child {
@@ -36,7 +37,8 @@
 }
 
 @media (min-width: 992px) {
-  .quote-table-cell-truck:hover .quote-table-truckcard {
+  .quote-table-cell-truck:hover .quote-table-truckcard,
+  .quote-table-cell-service:hover .quote-table-service {
     display: flex;
   }
 }

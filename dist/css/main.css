@@ -2487,7 +2487,8 @@ a > .bumper:hover .bumper-txt {
   background-color: inherit;
 }
 
-.quote-table-row:hover .quote-table-trucknocell {
+.quote-table-row:hover .quote-table-trucknocell,
+.quote-table-row:hover .quote-table-service {
   background-color: var(--linen);
 }
 
@@ -2519,7 +2520,8 @@ a > .bumper:hover .bumper-txt {
 }
 
 @media (min-width: 992px) {
-  .quote-table-cell-truck:hover .quote-table-truckcard {
+  .quote-table-cell-truck:hover .quote-table-truckcard,
+  .quote-table-cell-service:hover .quote-table-service {
     display: flex;
   }
 }
