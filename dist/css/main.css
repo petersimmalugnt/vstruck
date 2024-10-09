@@ -2579,6 +2579,10 @@ a > .bumper:hover .bumper-txt {
   padding: 1.5rem 1rem;
 }
 
+[data-bg=wellpapp] > .quote-addons-container .qsp-item:hover {
+  background-color: white !important;
+}
+
 @container (max-width: 28rem) {
   .qsp-item {
     grid-auto-flow: row;
