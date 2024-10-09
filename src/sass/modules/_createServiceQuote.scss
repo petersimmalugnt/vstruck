@@ -1,0 +1,41 @@
+.quote-service-pricetable .pt-head,
+.quote-service-pricetable .pt-item {
+  padding: 1.5rem 1rem;
+}
+
+@container (max-width: 28rem) {
+  .qsp-item {
+    grid-auto-flow: row;
+  }
+  .qsp-item-price-container {
+    justify-self: start;
+  }
+}
+
+@media screen {
+  [data-is-open="false"] .quote-service-pricetable-container {
+    max-height: 13rem;
+  }
+
+  [data-is-open="false"] .qsp-full-view-button-wrapper {
+    display: flex;
+  }
+}
+
+.cqs-dd-wrapper[data-is-open="true"] {
+  background-color: white;
+  border-radius: 0.25rem 0.25rem 0px 0px;
+  border-color: var(--vs-black);
+}
+.cqs-dd-wrapper:hover .cqs-dd-toggler,
+.cqs-dd-wrapper[data-is-open="true"] .cqs-dd-toggler {
+  border-bottom-color: transparent;
+}
+.cqs-dd-wrapper[data-is-open="false"] .cqs-dd-toggler {
+}
+.cqs-dd-wrapper[data-is-open="false"] .cqs-dd-content {
+  display: none;
+}
+.cqs-dd-content :last-child {
+  border: none;
+}

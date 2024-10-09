@@ -2595,6 +2595,25 @@ a > .bumper:hover .bumper-txt {
     display: flex;
   }
 }
+.cqs-dd-wrapper[data-is-open=true] {
+  background-color: white;
+  border-radius: 0.25rem 0.25rem 0px 0px;
+  border-color: var(--vs-black);
+}
+
+.cqs-dd-wrapper:hover .cqs-dd-toggler,
+.cqs-dd-wrapper[data-is-open=true] .cqs-dd-toggler {
+  border-bottom-color: transparent;
+}
+
+.cqs-dd-wrapper[data-is-open=false] .cqs-dd-content {
+  display: none;
+}
+
+.cqs-dd-content :last-child {
+  border: none;
+}
+
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
