@@ -158,6 +158,14 @@
   --scrollbar-thumb-hover-color: var(--vs-prime);
 }
 
+[data-hide-scrollbar="false"][data-scrollbar-style="2"] {
+  --scrollbar-width: 0.25rem;
+  --scrollbar-track-color: var(--linen);
+  --scrollbar-thumb-color: var(--black);
+  --scrollbar-thumb-box-shadow: none;
+  --scrollbar-thumb-hover-color: var(--vs-prime);
+}
+
 [data-hide-scrollbar="false"]::-webkit-scrollbar {
   width: var(--scrollbar-width);
   height: var(--scrollbar-width);
