@@ -2646,17 +2646,6 @@ a > .bumper:hover .bumper-txt {
     padding: 1rem;
   }
 }
-@media print {
-  [data-service-toggle-on=false] {
-    display: none;
-  }
-}
-[data-service-toggle-on=false] .service-quote-header-container,
-[data-service-toggle-on=false] .quote-addons-container,
-[data-service-toggle-on=false] .service-quote-staff-wrapper {
-  display: none;
-}
-
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
@@ -2761,6 +2750,17 @@ a > .bumper:hover .bumper-txt {
 
 .existingdeal-container:hover .existingdeal-delete {
   translate: 0 0;
+}
+
+@media print {
+  [data-service-toggle-on=false] {
+    display: none;
+  }
+}
+[data-service-toggle-on=false] .service-quote-header-container,
+[data-service-toggle-on=false] .quote-addons-container,
+[data-service-toggle-on=false] .service-quote-staff-wrapper {
+  display: none;
 }
 
 .quote-addon[data-is-selected=false] {

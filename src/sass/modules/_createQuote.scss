@@ -58,3 +58,14 @@
 .existingdeal-container:hover .existingdeal-delete {
   translate: 0 0;
 }
+
+@media print {
+  [data-service-toggle-on="false"] {
+    display: none;
+  }
+}
+[data-service-toggle-on="false"] .service-quote-header-container,
+[data-service-toggle-on="false"] .quote-addons-container,
+[data-service-toggle-on="false"] .service-quote-staff-wrapper {
+  display: none;
+}
