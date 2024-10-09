@@ -2521,7 +2521,7 @@ a > .bumper:hover .bumper-txt {
 
 @media (min-width: 992px) {
   .quote-table-cell-truck:hover .quote-table-truckcard,
-  .quote-table-cell-service:hover .quote-table-service {
+  .quote-table-cell-service:hover .quote-table-service-slot {
     display: flex;
   }
 }
