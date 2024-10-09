@@ -2763,6 +2763,15 @@ a > .bumper:hover .bumper-txt {
   display: none;
 }
 
+[data-createquote-add-service] .createquote-add-btn:not(:hover) {
+  background-color: white;
+}
+
+[data-createquote-add-service=true] .createquote-add-btn,
+[data-createquote-add-service=false] .createquote-add-service-container {
+  display: none;
+}
+
 .quote-addon[data-is-selected=false] {
   outline-offset: -0.5px;
   outline-style: solid;
