@@ -1,0 +1,6 @@
+@container (min-width: 25rem) {
+  .staffitem[data-staffitem-layout="x"] {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
