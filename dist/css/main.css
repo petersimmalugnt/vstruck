@@ -886,17 +886,19 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
   transition-delay: 0s, 0s, 0.25s;
 }
 
-.landingpage-hero-link-wrapper:hover .landingpage-hero-marquee {
-  visibility: visible;
-  opacity: 1;
-  translate: 0% 0rem;
-  transition-timing-function: cubic-bezier(0, 0, 0, 1);
-  transition-duration: 0.25s, 1s, 0s;
-  transition-delay: 0s;
-}
+@media screen and (min-width: 677px) {
+  .landingpage-hero-link-wrapper:hover .landingpage-hero-marquee {
+    visibility: visible;
+    opacity: 1;
+    translate: 0% 0rem;
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    transition-duration: 0.25s, 1s, 0s;
+    transition-delay: 0s;
+  }
 
-.landingpage-hero-link-wrapper:hover .txt-marquee-sliding-container:hover {
-  animation-play-state: running;
+  .landingpage-hero-link-wrapper:hover .txt-marquee-sliding-container:hover {
+    animation-play-state: running;
+  }
 }
 
 .landing-hero-service-link,
