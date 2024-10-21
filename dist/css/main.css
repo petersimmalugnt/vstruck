@@ -895,12 +895,10 @@ div:has(.dropdown-wrapper[data-dd-active=true]) > .dropdown-wrapper:hover .dropd
     transition-duration: 0.25s, 1s, 0s;
     transition-delay: 0s;
   }
-
   .landingpage-hero-link-wrapper:hover .txt-marquee-sliding-container:hover {
     animation-play-state: running;
   }
 }
-
 .landing-hero-service-link,
 .landing-hero-truck-link {
   font-size: clamp(64px, 14vw, 280px);
