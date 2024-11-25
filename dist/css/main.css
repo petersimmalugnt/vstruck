@@ -2315,6 +2315,10 @@ a > .bumper:hover .bumper-txt {
   opacity: 1;
 }
 
+.watch-product-label-slot .attr-box {
+  flex-grow: 1;
+}
+
 .icons-wrapper {
   --s: 1.5rem;
   width: var(--s);
